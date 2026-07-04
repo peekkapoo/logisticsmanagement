@@ -1,0 +1,4 @@
+file,cot_bat_buoc
+buoc1_cellphones,"ten_may, gia_niem_yet, gia_khuyen_mai, cpu_model, gpu_model, ram_gb, ram_loai, luu_tru_gb, man_hinh_inch, do_phan_giai, tam_nen, do_phu_mau, pin_wh, can_nang_kg, bao_hanh_thang, url, ngay_thu_thap, ghi_chu"
+buoc2_benchmark,"model, loai, diem, ngay_truy_cap, url_nguon"
+buoc3_matran_quyet_dinh,"dong 1: Alternative + ma tieu chi C1..Cn; dong 2: type (benefit/cost); dong 3: weight (tu AHP); tu dong 4: moi dong 1 may"

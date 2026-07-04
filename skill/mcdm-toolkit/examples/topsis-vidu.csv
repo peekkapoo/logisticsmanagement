@@ -1,0 +1,6 @@
+Alternative,Gia,CPU,RAM
+type,cost,benefit,benefit
+weight,0.5714,0.2857,0.1429
+Laptop A,22000000,18000,16
+Laptop B,24500000,25000,16
+Laptop C,20500000,14000,8

@@ -19,8 +19,5 @@ Desktop.ini
 ~$*
 *.tmp
 
-# File khóa nội bộ của skill
-skill/.claude/
-
 # Inbox chứa file thô chưa phân loại của thành viên (backup qua ZIP, không qua git)
 02_du-lieu-tho/inbox/

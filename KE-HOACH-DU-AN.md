@@ -1,6 +1,6 @@
 # Plan: Cấu trúc dự án + README workflow chi tiết + hệ sinh thái skill cho đồ án MADM/MCDM
 
-> **Trạng thái:** BẢN NHÁP đang review — chưa thực thi. (Lưu ngày 2026-07-04)
+> **Trạng thái:** ĐÃ THỰC THI ngày 2026-07-04, kèm 2 điều chỉnh sau đó theo quyết định nhóm trưởng: (1) toàn bộ skill gộp về MỘT thư mục `skill\` và xóa `.claude\` — việc định tuyến skill chuyển sang bảng trong `CLAUDE.md`; (2) 4 skill tự tạo đã được đánh giá bằng bộ skill-creator/writing-skills và nâng cấp (description chuẩn CSO, Common Mistakes, Red Flags, references/, examples/).
 
 ## Context (Bối cảnh)
 

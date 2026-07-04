@@ -246,12 +246,15 @@ Chạy nhiều lượt như vậy để mục lục và tham chiếu chéo cập
 
 ## 8. Công cụ AI của dự án
 
-Thư mục `skill\` chứa các bộ kỹ năng cho AI. Ba nhóm chính phục vụ dự án:
+Toàn bộ 12 skill nằm trong một thư mục duy nhất `skill\`, mỗi skill một thư mục con có file `SKILL.md`. Skill không được phần mềm nạp tự động, thay vào đó file `CLAUDE.md` (AI luôn đọc mỗi phiên) chứa bảng định tuyến chỉ cho AI biết việc nào phải mở skill nào. Thành viên chỉ cần ra yêu cầu bình thường, AI tự tra bảng và đọc đúng skill; muốn chắc chắn thì nói thẳng tên skill, ví dụ "dùng mcdm-toolkit tính trọng số".
 
 | Skill | Dùng cho | Nguồn |
 |---|---|---|
+| `task-processor` | Điểm vào mặc định: phân tích yêu cầu, điều phối skill khác | Tạo riêng cho dự án |
 | `professional_writing` | Viết học thuật hai thứ tiếng, sinh LaTeX, rà trích dẫn | Có sẵn |
-| `pptx`, `xlsx`, `pdf` | Dựng slide, xử lý Excel, trích bảng từ paper PDF | Sẽ clone từ repo chính chủ anthropics/skills |
-| `mcdm-toolkit`, `crawl-laptop-data`, `likert-analysis` | Tính AHP/TOPSIS, thu thập dữ liệu laptop, phân tích khảo sát | Sẽ tạo riêng cho dự án |
+| `mcdm-toolkit`, `crawl-laptop-data`, `likert-analysis` | Tính AHP/TOPSIS, thu thập dữ liệu laptop, phân tích khảo sát | Tạo riêng cho dự án (kèm script đã kiểm thử + file mẫu trong `examples\`) |
+| `pptx`, `xlsx`, `pdf` | Dựng slide, xử lý Excel, trích bảng từ paper PDF | Clone từ repo chính chủ anthropics/skills |
+| `supply-chain-consultant` | Tư vấn chuyên môn logistics/SCM | Có sẵn |
+| `skill-creator`, `writing-skills`, `audit-skills` | Tạo, cải tiến và kiểm định an toàn skill | Có sẵn |
 
 Chi tiết phân tích và lý do chọn từng skill nằm trong [KE-HOACH-DU-AN.md](KE-HOACH-DU-AN.md), Phần 3.
