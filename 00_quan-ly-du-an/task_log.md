@@ -4,8 +4,8 @@
 > **Quy tắc đối với AI:** BẮT BUỘC phải đọc file này đầu tiên ở mỗi phiên chat, và CẬP NHẬT lại tiến độ vào file này trước khi kết thúc công việc. Mọi bản ghi nhận công việc mới ĐỀU PHẢI có thời gian (timestamp) theo format YYYY-MM-DD HH:MM:SS.
 
 ## 1. Trạng thái hiện tại (Current Status)
-- **Phase hiện tại:** Thu thập dữ liệu thử nghiệm (Crawl pilot) cho laptop văn phòng.
-- **Cập nhật gần nhất (2026-07-04 22:15:00):** Hoàn thành crawl dữ liệu laptop văn phòng từ CellphoneS (lọc theo giá KM 20-25tr).
+- **Phase hiện tại:** Tư vấn kiến trúc hệ thống, tích hợp Antigravity & NotebookLM.
+- **Cập nhật gần nhất (2026-07-04 22:45:00):** Tư vấn tính khả thi và giải pháp tích hợp NotebookLM vào Antigravity.
 
 ## 2. Công việc vừa hoàn thành (Recently Completed)
 - [x] [2026-07-04 19:28:12] Tạo `AGENTS.md` với các rules của dự án.
@@ -23,6 +23,8 @@
 - [x] [2026-07-04 22:05:00] Cập nhật toàn bộ project: Đổi đối tượng sang nhân viên văn phòng (README, KE-HOACH, LaTeX, Slide, v.v.), lưu trữ dữ liệu crawl cũ.
 - [x] [2026-07-04 22:15:00] Crawl CellphoneS (laptop văn phòng): Lọc 7 sản phẩm có giá KM từ 20-25tr. Lưu vào `02_du-lieu-tho\laptop-thi-truong\`.
 - [x] [2026-07-04 22:20:00] Lên chiến lược tìm kiếm tài liệu (Literature Review): cung cấp boolean strings cho Scopus và prompts cho Elicit AI, Consensus.
+- [x] [2026-07-04 22:45:00] Tư vấn tính khả thi và giải pháp tích hợp NotebookLM vào hệ thống Antigravity để trích xuất dữ liệu tự động.
+- [x] [2026-07-04 22:46:00] Biên dịch lại báo cáo LaTeX (main.pdf) để cập nhật trang bìa hiển thị đối tượng "Office Workers".
 
 ## 3. Các bước tiếp theo (Next Steps)
 - Nếu user duyệt danh sách 7 laptop văn phòng, chạy Bước 2 (map benchmark CPU/GPU hoặc trọng lượng/pin tuýp văn phòng).
