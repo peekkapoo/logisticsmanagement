@@ -4,8 +4,8 @@
 > **Quy tắc đối với AI:** BẮT BUỘC phải đọc file này đầu tiên ở mỗi phiên chat, và CẬP NHẬT lại tiến độ vào file này trước khi kết thúc công việc. Mọi bản ghi nhận công việc mới ĐỀU PHẢI có thời gian (timestamp) theo format YYYY-MM-DD HH:MM:SS.
 
 ## 1. Trạng thái hiện tại (Current Status)
-- **Phase hiện tại:** Cập nhật lại phạm vi dự án và chuẩn bị thu thập dữ liệu thử nghiệm mới.
-- **Cập nhật gần nhất (2026-07-04 22:05:00):** Đã đổi đối tượng từ "nhà thiết kế đồ họa" sang "nhân viên văn phòng". Chuyển dữ liệu crawl cũ vào thư mục `_cu`.
+- **Phase hiện tại:** Thu thập dữ liệu thử nghiệm (Crawl pilot) cho laptop văn phòng.
+- **Cập nhật gần nhất (2026-07-04 22:15:00):** Hoàn thành crawl dữ liệu laptop văn phòng từ CellphoneS (lọc theo giá KM 20-25tr).
 
 ## 2. Công việc vừa hoàn thành (Recently Completed)
 - [x] [2026-07-04 19:28:12] Tạo `AGENTS.md` với các rules của dự án.
@@ -21,10 +21,11 @@
 - [x] [2026-07-04 21:58:00] Crawl thử CellphoneS (laptop đồ họa 20-25tr): 20 sản phẩm raw → 5 sản phẩm sau lọc giá. Lưu CSV listing + CSV chi tiết vào `02_du-lieu-tho\laptop-thi-truong\`.
 - [x] [2026-07-04 22:00:00] Xóa skill `crawl-laptop-data` (trùng lắp với `data-pipeline`). Cập nhật `AGENTS.md` routing.
 - [x] [2026-07-04 22:05:00] Cập nhật toàn bộ project: Đổi đối tượng sang nhân viên văn phòng (README, KE-HOACH, LaTeX, Slide, v.v.), lưu trữ dữ liệu crawl cũ.
+- [x] [2026-07-04 22:15:00] Crawl CellphoneS (laptop văn phòng): Lọc 7 sản phẩm có giá KM từ 20-25tr. Lưu vào `02_du-lieu-tho\laptop-thi-truong\`.
 
 ## 3. Các bước tiếp theo (Next Steps)
-- Tiến hành crawl lại dữ liệu thử nghiệm cho đối tượng "laptop văn phòng 20-25tr" từ CellphoneS.
-- Cập nhật lại các tiêu chí đánh giá cho phù hợp với dân văn phòng (màn hình, bàn phím, pin, trọng lượng...) thay vì đồ họa (nếu cần, xin ý kiến User).
+- Nếu user duyệt danh sách 7 laptop văn phòng, chạy Bước 2 (map benchmark CPU/GPU hoặc trọng lượng/pin tuýp văn phòng).
+- Bước 3 (làm sạch + ma trận quyết định TOPSIS).
 - Sử dụng skill `task-processor` để tiếp nhận và điều phối mọi yêu cầu mới.
 
 ## 4. Cảnh báo & Ngữ cảnh quan trọng (Warnings & Context)

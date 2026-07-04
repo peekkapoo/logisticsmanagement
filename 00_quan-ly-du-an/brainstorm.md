@@ -46,13 +46,13 @@ Các bước thực hiện:
 
 - Thu thập dữ liệu về các sản phẩm laptop đang được bán tại thị trường hiện nay  
 - Lựa chọn mua hàng ở CellphoneS  
-- Dữ liệu thu thập là dữ liệu như giá tiền, chipset, card đồ họa, dung lượng, …
+- Dữ liệu thu thập là dữ liệu như giá tiền, chipset, trọng lượng, thời lượng pin, dung lượng RAM/SSD, …
 
 ***Bước 2: Xử lý dữ liệu***
 
 - Lọc ra các tiêu chí ứng với bộ tiêu chí đã thu được ở bước 1  
 - Các tiêu chí định lượng được thì giữ nguyên (giá, dung lượng, số tháng bảo hành…)  
-- Còn các tiêu chí như chipset, công nghệ màn hình, card đồ họa, … → phải sử dụng benchmark uy tín, lấy data đó để phân tích TOPSIS  
+- Còn các tiêu chí như chipset, dung lượng pin, trọng lượng, độ sáng màn hình … → phải sử dụng benchmark uy tín hoặc thông số từ hãng, lấy data đó để phân tích TOPSIS  
 - Các tiêu chí định tính như brand, ngoại hình,... thì chấm tay
 
 ***Bước 3: Phân tích dữ liệu***
