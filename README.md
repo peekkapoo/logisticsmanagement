@@ -24,7 +24,8 @@ Nguyên tắc xuyên suốt của hệ thống thư mục là dữ liệu chảy
 | Slide thuyết trình | `05_slide\` |
 | Bản nộp cuối cùng | `06_nop-bai\` |
 | Các bản sao lưu ZIP theo mốc | `07_sao-luu\` |
-| Công cụ AI hỗ trợ (skill) | `skill\` |
+| Kho tàng kiến thức AI & Công nghệ | `08_new_knowledge\` |
+| Công cụ AI hỗ trợ (skill) | `.agents\skills\` |
 
 Cây thư mục đầy đủ:
 
@@ -59,7 +60,11 @@ d:\LogManagement\
 │   └── outline-slide.md
 ├── 06_nop-bai\                    ← vùng THIÊNG LIÊNG
 ├── 07_sao-luu\
-└── skill\
+├── 08_new_knowledge\              ← kho tàng kiến thức AI & Công nghệ
+└── .agents\
+    ├── AGENTS.md                  ← luật dự án
+    ├── skills.json                ← đăng ký đường dẫn
+    └── skills\                    ← các module kỹ năng (skill)
 ```
 
 ## 3. Ba luật vàng
@@ -215,12 +220,9 @@ Chiến lược sao lưu gồm ba lớp, mỗi lớp chống một loại rủi 
 
 **Lớp 1 - Quy ước đặt tên** (mục 4) chống rủi ro ghi đè nhầm bản cũ khi nhiều người cùng sửa một tài liệu.
 
-**Lớp 2 - Git cho báo cáo LaTeX** chống rủi ro "hôm qua còn chạy được, hôm nay lỗi mà không biết đã sửa gì". Git do AI quản lý hộ, thành viên không cần biết gì về git. Chỉ cần nhớ hai câu lệnh nói với AI:
+**Lớp 2 - Git & GitHub** chống rủi ro "hôm qua còn chạy được, hôm nay lỗi mà không biết đã sửa gì". Hãy tham khảo tài liệu [02_kien-thuc-he-thong.md](08_new_knowledge/02_kien-thuc-he-thong.md) để biết cách quản lý đa vũ trụ qua Add, Commit và Push.
 
-- Kết thúc buổi làm việc, nói "lưu phiên bản báo cáo" kèm mô tả ngắn việc đã làm.
-- Cần quay lại bản cũ, nói "khôi phục báo cáo về phiên bản [mô tả hoặc ngày]".
-
-**Lớp 3 - Snapshot ZIP theo mốc** chống rủi ro hỏng máy, mất ổ cứng. Kết thúc mỗi phase, nén toàn bộ workspace (trừ `skill\` và file tạm) thành file đặt trong `07_sao-luu\` theo mẫu `YYYY-MM-DD_phase<N>_<ten-moc>.zip`, sau đó upload thủ công lên Google Drive của nhóm. Thư mục này chỉ chứa ZIP, tuyệt đối không giải nén đè ngược lại workspace.
+**Lớp 3 - Snapshot ZIP theo mốc** chống rủi ro hỏng máy, mất ổ cứng. Kết thúc mỗi phase, nén toàn bộ workspace (trừ `.agents\` và file tạm) thành file đặt trong `07_sao-luu\` theo mẫu `YYYY-MM-DD_phase<N>_<ten-moc>.zip`, sau đó upload thủ công lên Google Drive của nhóm. Thư mục này chỉ chứa ZIP, tuyệt đối không giải nén đè ngược lại workspace.
 
 ### Checklist kết thúc phase
 
@@ -233,27 +235,22 @@ Chiến lược sao lưu gồm ba lớp, mỗi lớp chống một loại rủi 
 
 ## 7. Hướng dẫn biên dịch báo cáo LaTeX
 
-Báo cáo dùng engine XeLaTeX với biber (không dùng pdflatex vì lý do tương thích font và tiếng Việt trong phần nháp). Máy cần cài MiKTeX (miktex.org) hoặc TeX Live. Trình tự biên dịch đầy đủ chạy trong thư mục `04_bao-cao-latex\` như sau:
+Báo cáo dùng engine XeLaTeX với biber. Thay vì chạy lệnh thủ công rườm rà, dự án đã được cấu hình tự động trên nền tảng **Antigravity IDE**:
 
-```
-xelatex main.tex
-biber main
-xelatex main.tex
-xelatex main.tex
-```
-
-Chạy nhiều lượt như vậy để mục lục và tham chiếu chéo cập nhật đúng. Cách đơn giản hơn cho người không quen dòng lệnh là mở dự án này bằng Claude Code và nói "biên dịch báo cáo", AI sẽ chạy và báo lỗi nếu có.
+1. Cài đặt extension **LaTeX Workshop** (`James-Yu.latex-workshop`).
+2. Hệ thống đã được cấu hình sẵn trong `.vscode/settings.json` để tự động dùng `xelatex` + `biber`.
+3. Bạn chỉ cần mở file `.tex`, bấm biểu tượng **View PDF** (hình kính lúp) ở góc phải. Mỗi khi bấm `Ctrl+S` (Lưu), PDF sẽ tự động biên dịch và xem trước ngay lập tức (Live Preview).
 
 ## 8. Công cụ AI của dự án
 
-Toàn bộ 12 skill nằm trong một thư mục duy nhất `skill\`, mỗi skill một thư mục con có file `SKILL.md`. Skill không được phần mềm nạp tự động, thay vào đó file `CLAUDE.md` (AI luôn đọc mỗi phiên) chứa bảng định tuyến chỉ cho AI biết việc nào phải mở skill nào. Thành viên chỉ cần ra yêu cầu bình thường, AI tự tra bảng và đọc đúng skill; muốn chắc chắn thì nói thẳng tên skill, ví dụ "dùng mcdm-toolkit tính trọng số".
+Toàn bộ các skill nằm trong thư mục `.agents\skills\`. Để Antigravity IDE có thể nạp các skill lồng sâu, hệ thống dùng file `.agents\skills.json` để đăng ký đường dẫn. Bộ não điều phối chính nằm ở file luật `.agents\AGENTS.md`.
 
 | Skill | Dùng cho | Nguồn |
 |---|---|---|
 | `task-processor` | Điểm vào mặc định: phân tích yêu cầu, điều phối skill khác | Tạo riêng cho dự án |
-| `professional_writing` | Viết học thuật hai thứ tiếng, sinh LaTeX, rà trích dẫn | Có sẵn |
+| `professional-writing` | (V3.3) Viết học thuật/blog chuyên nghiệp, thiết kế Tòa soạn, ép buộc trích dẫn (citation-check) | Nâng cấp từ Antigravity |
 | `mcdm-toolkit`, `crawl-laptop-data`, `likert-analysis` | Tính AHP/TOPSIS, thu thập dữ liệu laptop, phân tích khảo sát | Tạo riêng cho dự án (kèm script đã kiểm thử + file mẫu trong `examples\`) |
-| `pptx`, `xlsx`, `pdf` | Dựng slide, xử lý Excel, trích bảng từ paper PDF | Clone từ repo chính chủ anthropics/skills |
+| `pptx`, `xlsx`, `pdf` | Dựng slide, xử lý Excel, trích bảng từ paper PDF | Hệ sinh thái Antigravity |
 | `supply-chain-consultant` | Tư vấn chuyên môn logistics/SCM | Có sẵn |
 | `skill-creator`, `writing-skills`, `audit-skills` | Tạo, cải tiến và kiểm định an toàn skill | Có sẵn |
 
