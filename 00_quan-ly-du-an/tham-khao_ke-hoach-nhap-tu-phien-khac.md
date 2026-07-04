@@ -1,7 +1,7 @@
 # Logistics Management - MADM Project: Laptop Selection
 
 ## 1. Project Overview
-**Topic:** Multiple Attribute Decision Making (MADM) - Selecting a mid-range laptop (20-25M VND) for a graphic designer.
+**Topic:** Multiple Attribute Decision Making (MADM) - Selecting a mid-range laptop (20-25M VND) for an office worker.
 **Methodology:** 
 - Criteria Generation: Scientific Research -> Expert Interview -> Survey
 - Weighting: AHP (Analytic Hierarchy Process)
@@ -21,7 +21,7 @@
 
 ### Phase 1: Criteria Development (Tuần 1-2)
 - **Literature Review:** Liệt kê các tiêu chí phổ biến từ các bài báo khoa học về đánh giá thiết bị công nghệ.
-- **Expert Interview:** Chuẩn bị 5 câu hỏi phỏng vấn 3 chuyên gia (IT/Graphic Designers) để lọc lại tiêu chí cho bối cảnh Việt Nam.
+- **Expert Interview:** Chuẩn bị 5 câu hỏi phỏng vấn 3 chuyên gia (IT/Office Workers) để lọc lại tiêu chí cho bối cảnh Việt Nam.
 - **Survey:** Phát phiếu khảo sát Likert 5 điểm, phân tích mô tả để chốt danh sách tiêu chí cuối cùng (điểm trung bình > 3).
 
 ### Phase 2: Weighting with AHP (Tuần 3)

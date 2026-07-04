@@ -13,7 +13,7 @@ Các skill chuyên sâu đã được tích hợp trong thư mục `.agents/skil
 - `professional_writing`: Viết học thuật, LaTeX, literature review.
 - `mcdm-toolkit`: Tính toán AHP, TOPSIS.
 - `likert-analysis`: Phân tích khảo sát.
-- `crawl-laptop-data`: Crawl thông số và điểm benchmark laptop.
+- `data-pipeline`: Thu thập dữ liệu laptop, crawl, benchmark, làm sạch.
 - `supply-chain-consultant`: Tư vấn SCM.
 - `pptx`, `xlsx`, `pdf`: Xử lý định dạng file tương ứng.
 
