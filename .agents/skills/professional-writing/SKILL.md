@@ -1,5 +1,5 @@
 ---
-name: viet-chuyen-nghiep
+name: professional-writing
 description: Tòa soạn báo AI — viết tiếng Việt chuyên nghiệp. Tổng biên tập nhận đề bài → phân vai → điều phối các ban.
 ---
 
