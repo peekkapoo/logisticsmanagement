@@ -45,12 +45,12 @@ Từ kết quả phân tích, TBT chọn 3 vai:
 
 | Đề bài | 🔴 Chủ trì | 🟡 Phối hợp | 🟢 Kiểm tra |
 |--------|-----------|------------|------------|
-| Viết bài cảm xúc/blog | editorial/ | research/ (nếu cần) | review/ |
-| Phản bác/debunk | editorial/ | research/ | review/ |
-| Viết tài liệu kỹ thuật | editorial/ | research/ | review/ |
-| Phân tích data → viết | research/ → editorial/ | — | review/ |
+| Viết bài cảm xúc/blog | editorial/ | research/ (nếu cần) | review/ (+citation-check) |
+| Phản bác/debunk | editorial/ | research/ | review/ (+fact-check, +citation-check) |
+| Viết tài liệu kỹ thuật | editorial/ | research/ | review/ (+fact-check, +citation-check) |
+| Phân tích data → viết | research/ → editorial/ | — | review/ (+fact-check) |
 | Format cho kênh | publishing/ | — | review/ |
-| Viết bài báo/báo cáo học thuật (VN/EN/song ngữ) | research/ (literature) → editorial/ (technical+academic) | archive/ (pattern academic nếu có) | review/ (+citation-check, +latex-check nếu LaTeX, theo ngôn ngữ) |
+| Viết bài báo/báo cáo học thuật (VN/EN/song ngữ) | research/ (literature) → editorial/ (technical+academic) | archive/ (pattern academic nếu có) | review/ (+fact-check, +citation-check, +latex-check nếu LaTeX, theo ngôn ngữ) |
 | Cải tiến skill | development/ | archive/ | — |
 | Phân tích bài viết → nâng cấp skill | development/ | archive/ | — |
 
@@ -136,6 +136,7 @@ TBT tra cứu `archive/pattern-catalog.md` khi phân tích request (Bước 2, c
 - Bỏ qua thiết kế quy trình GATE (phải xuất evidence)
 - Ước lượng độ dài (đó là việc của lead)
 - Giao mục tiêu không rõ ràng
+- Phê duyệt Draft nếu bài viết thiếu danh mục trích dẫn (Nguồn tham khảo) đối với các thông tin kỹ thuật/số liệu.
 
 **✅ TBT nên:**
 - Giao mục tiêu rõ ràng: loại bài + tone
@@ -161,6 +162,6 @@ development/   Ban Phát triển   → lead.md quản lý: upgrade, style-audit,
 
 ---
 
-**Version:** 3.2
+**Version:** 3.3
 **Kiến trúc:** Tòa soạn báo (TBT → Lead → Staff)
-**Nguyên tắc:** TBT phân tích + thiết kế quy trình GATE, Lead lập task chi tiết
+**Nguyên tắc mới:** BẮT BUỘC kiểm tra trích dẫn (citation-check) và sự thật (fact-check) cho mọi định dạng bài viết. TBT phân tích + thiết kế quy trình GATE, Lead lập task chi tiết
