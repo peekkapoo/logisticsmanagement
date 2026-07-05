@@ -1,76 +1,74 @@
 # Danh sách Tiêu chí Đánh giá và Lựa chọn Laptop
-*Version: 1.0 (Draft) | Phân loại: Literature Review*
+*Version: 2.0 (Official) | Phân loại: Literature Review (APA 7th)*
 
-Dựa trên quá trình tổng quan tài liệu (literature review) từ các nghiên cứu quốc tế liên quan đến hành vi người tiêu dùng và các mô hình ra quyết định đa tiêu chí (MCDM), chúng tôi đã xác định và bóc tách thành 14 tiêu chí đánh giá chính yếu đối với sản phẩm laptop. Các tiêu chí này được phân thành 5 nhóm chính: (1) Nhóm Kinh tế, (2) Nhóm Hiệu năng phần cứng, (3) Nhóm Thiết kế, Màn hình & Giao tiếp, (4) Nhóm Tính di động & Độ bền, và (5) Thương hiệu & Hỗ trợ. Dưới đây là định nghĩa và cơ sở khoa học của từng tiêu chí.
+Dựa trên quá trình tổng quan tài liệu (literature review) chuyên sâu từ các nghiên cứu quốc tế về hành vi người tiêu dùng và các mô hình định lượng đa tiêu chí (MCDM), chúng tôi đã xác định và bóc tách hệ thống đánh giá thành 14 tiêu chí độc lập. Việc hiểu rõ bản chất và khía cạnh kỹ thuật của từng tiêu chí là tiền đề quan trọng để xây dựng mô hình lựa chọn tối ưu. Các tiêu chí này được phân thành 5 nhóm cốt lõi: (1) Nhóm Kinh tế, (2) Nhóm Hiệu năng phần cứng, (3) Nhóm Giao diện & Hiển thị, (4) Nhóm Tính di động & Độ bền, và (5) Thương hiệu & Hậu mãi. Dưới đây là diễn giải chi tiết cho từng tiêu chí kèm theo các minh chứng khoa học.
 
 ## 1. Nhóm Kinh tế (Economic Factors)
 
 **1.1. Giá cả (Price / Cost)**  
-Giá cả đề cập đến chi phí mua sắm thực tế của thiết bị, phản ánh sự phù hợp giữa tính năng sản phẩm và giới hạn ngân sách của người dùng hoặc tổ chức. Trong các mô hình ra quyết định, giá cả thường là tiêu chí định lượng và có tính chất "càng thấp càng tốt" (cost criterion). Nhiều nghiên cứu đã chỉ ra đây là yếu tố tiên quyết và có trọng số cao nhất tác động đến quyết định mua laptop của cả sinh viên lẫn nhân viên văn phòng [1], [2], [3], [4], [5], [6], [7].
+Giá cả luôn đóng vai trò là rào cản ngân sách đầu tiên (budget constraint) và là tiêu chí có trọng số chi phối mạnh mẽ nhất trong đại đa số các mô hình ra quyết định mua sắm đồ điện tử. Khái niệm giá cả không chỉ đơn thuần là chi phí mua thiết bị ban đầu (initial purchasing cost) mà còn hàm chứa tỷ lệ hiệu năng trên giá thành (price-to-performance ratio). Theo các nghiên cứu hành vi tiêu dùng, đối với cả đối tượng sinh viên lẫn nhân viên văn phòng, một thiết bị được đánh giá cao khi nó cung cấp cấu hình tối đa trong một giới hạn ngân sách nghiêm ngặt (Jiménez-Parra et al., 2014; Lam et al., 2023; Liao & Chuang, 2022; Maghsoudi et al., 2026; Rau & Fang, 2018; Sönmez Çakır & Pekkaya, 2020). Trong mô hình MCDM, đây là tiêu chí chi phí (cost criterion) điển hình, nghĩa là giá trị càng thấp thì sự hài lòng của người dùng càng cao, với điều kiện các thông số khác được giữ nguyên.
 
 ## 2. Nhóm Hiệu năng phần cứng (Hardware Performance)
 
 **2.1. Vi xử lý (CPU / Processor)**  
-Vi xử lý đóng vai trò là "bộ não" của máy tính, quyết định sức mạnh tính toán trung tâm, tốc độ xử lý dữ liệu và khả năng vận hành mượt mà các phần mềm chuyên dụng. Đối với môi trường văn phòng và doanh nghiệp, sức mạnh CPU ảnh hưởng trực tiếp đến năng suất làm việc, do đó nó thường xuyên được các học giả đưa vào làm tiêu chí kỹ thuật cốt lõi [1], [3], [4], [5], [6], [7], [8].
+Vi xử lý trung tâm (CPU) là linh kiện cốt lõi quyết định toàn bộ sức mạnh tính toán của hệ thống. Hiệu năng của CPU được đánh giá qua các thông số vi mô như số lượng nhân (cores), số luồng (threads), xung nhịp cơ bản (base clock) và xung nhịp tăng cường (boost clock). Trong kỷ nguyên số hóa, khi dân văn phòng phải xử lý các tập dữ liệu ngày càng lớn và làm việc trên các nền tảng đám mây, một CPU mạnh mẽ (ví dụ: dòng chip Intel Core i5/i7 hoặc AMD Ryzen 5/7 thế hệ mới) là điều kiện bắt buộc để ngăn chặn độ trễ (latency). Các nghiên cứu đều xếp CPU vào nhóm tiêu chí lợi ích (benefit criterion) quan trọng nhất tác động đến tuổi thọ phần mềm của máy (Kang et al., 2022; Lam et al., 2023; Liao & Chuang, 2022; Maghsoudi et al., 2026; Rau & Fang, 2018; Sönmez Çakır & Pekkaya, 2020).
 
 **2.2. Bộ nhớ trong (RAM)**  
-Bộ nhớ truy cập ngẫu nhiên (RAM) quyết định khả năng đa nhiệm của hệ thống. Dung lượng RAM lớn cho phép người dùng mở đồng thời nhiều tab trình duyệt, xử lý các bảng tính dung lượng cao và chạy ngầm các ứng dụng liên lạc mà không gặp hiện tượng thắt cổ chai [1], [3], [4], [5], [6], [8].
+Bộ nhớ truy cập ngẫu nhiên (RAM) đóng vai trò như một không gian làm việc tạm thời cho vi xử lý. Dung lượng RAM (ví dụ: 8GB, 16GB, 32GB) và chuẩn công nghệ (DDR4, DDR5, LPDDR5) trực tiếp quyết định khả năng đa nhiệm (multitasking) của laptop. Một mức RAM dư dả cho phép người dùng mở hàng chục tab trình duyệt web nặng, chạy mượt mà các bảng tính Excel hàng triệu dòng, và thao tác trên các phần mềm họp trực tuyến cùng lúc mà không gây hiện tượng tràn RAM (bottleneck). Các chuyên gia đánh giá RAM là yếu tố dễ nâng cấp nhưng lại mang lại sự cải thiện hiệu suất rõ rệt nhất (Kang et al., 2022; Lam et al., 2023; Maghsoudi et al., 2026; Rau & Fang, 2018; Sönmez Çakır & Pekkaya, 2020).
 
 **2.3. Dung lượng và Loại ổ cứng (Storage / HDD / SSD)**  
-Không gian lưu trữ dữ liệu không chỉ xét về mặt dung lượng (Capacity) mà còn ở tốc độ truy xuất file (Speed). Sự chuyển dịch từ ổ đĩa cơ (HDD) sang ổ cứng thể rắn (SSD) đã chứng minh hiệu quả rõ rệt trong việc khởi động hệ điều hành và truy xuất dữ liệu. Tiêu chí này được đánh giá cao trong các nghiên cứu về hiệu năng tổng thể của thiết bị máy tính cá nhân [1], [3], [4], [6], [7].
+Không gian lưu trữ dữ liệu không chỉ được đo lường qua dung lượng lưu trữ (như 256GB, 512GB, 1TB) mà quan trọng hơn là tốc độ truy xuất file tĩnh. Bước nhảy vọt về công nghệ từ ổ cứng cơ học (HDD) sang ổ cứng thể rắn chuẩn PCIe NVMe (SSD) đã rút ngắn thời gian khởi động hệ điều hành từ vài phút xuống còn vài giây. Tốc độ đọc/ghi dữ liệu ngẫu nhiên của SSD giúp hệ thống phản hồi ngay lập tức trước các lệnh của người dùng. Sự chuyển dịch này đã khiến tiêu chí ổ cứng luôn được xem xét kỹ lưỡng khi so sánh các thế hệ laptop (Liao & Chuang, 2022; Maghsoudi et al., 2026; Rau & Fang, 2018; Sönmez Çakır & Pekkaya, 2020).
 
 **2.4. Card đồ họa (VGA / GPU)**  
-Dù không phải là yếu tố sống còn đối với các tác vụ văn phòng cơ bản, card đồ họa rời (hoặc chip đồ họa tích hợp hiệu năng cao) vẫn là một thông số quan trọng đối với những cá nhân có nhu cầu xử lý hình ảnh, xuất video, hoặc làm việc liên quan đến thiết kế sáng tạo [1], [3], [4], [6].
+Mặc dù công việc văn phòng cơ bản (soạn thảo văn bản, gửi email) không đòi hỏi năng lực xử lý đồ họa cường độ cao, sự tích hợp của các đơn vị xử lý đồ họa (GPU) vẫn là một tiêu chí không thể bỏ qua. Đối với các công việc văn phòng đặc thù liên quan đến chỉnh sửa hình ảnh nhẹ, biên tập video, kiến trúc hoặc phân tích dữ liệu trực quan, một GPU rời (Dedicated GPU) hoặc một chip đồ họa tích hợp hiệu năng cao (như Intel Iris Xe hay AMD Radeon Graphics) là yếu tố quyết định độ mượt mà của khung hình (Maghsoudi et al., 2026; Rau & Fang, 2018; Sönmez Çakır & Pekkaya, 2020).
 
-## 3. Nhóm Thiết kế, Màn hình & Giao tiếp (Design, Display & Interface)
+## 3. Nhóm Giao diện & Hiển thị (Design, Display & Interface)
 
 **3.1. Màn hình (Display / Monitor Properties)**  
-Chất lượng hiển thị được định lượng qua kích thước, độ phân giải, độ phủ màu, và các tính năng bổ trợ (như chống chói, công nghệ lọc ánh sáng xanh bảo vệ mắt). Vì màn hình là giao diện tương tác chính, nó ảnh hưởng trực tiếp đến sức khỏe thị giác và độ thoải mái khi làm việc liên tục trong thời gian dài [1], [4], [5], [6], [7], [8].
+Màn hình là kênh tương tác thị giác duy nhất giữa con người và máy tính, do đó nó ảnh hưởng trực tiếp đến hiệu suất công thái học và sức khỏe của người dùng. Các tiêu chí phụ để đánh giá một màn hình xuất sắc bao gồm: kích thước đường chéo (thường từ 13.3 inch đến 15.6 inch), độ phân giải (FHD, 2K, 4K), tấm nền (IPS, OLED) mang lại góc nhìn rộng, độ chuẩn màu (sRGB, DCI-P3) và độ sáng tối đa (nits). Đặc biệt, tính năng chống lóa (anti-glare) và lọc ánh sáng xanh là những điểm cộng lớn đối với những nhân sự phải làm việc liên tục trước màn hình trên 8 tiếng mỗi ngày (Kang et al., 2022; Lam et al., 2023; Liao & Chuang, 2022; Maghsoudi et al., 2026; Rau & Fang, 2018; Sönmez Çakır & Pekkaya, 2020).
 
 **3.2. Bàn phím (Keyboard Comfort & Material)**  
-Độ thoải mái của bàn phím (bao gồm hành trình phím, khoảng cách giữa các phím và độ nảy) là một yếu tố công thái học (ergonomics) quan trọng, quyết định hiệu suất và trải nghiệm soạn thảo văn bản. Vật liệu chế tạo phím bấm cũng ảnh hưởng đến cảm giác gõ và độ hao mòn [4], [7].
+Bàn phím không đơn thuần là công cụ nhập liệu mà còn là yếu tố công thái học (ergonomics) tiên quyết. Trải nghiệm gõ phím được quyết định bởi hành trình phím (key travel) sâu, độ nảy đàn hồi (tactile feedback) tốt, và bố cục phím (layout) hợp lý. Một bàn phím chất lượng (như dòng ThinkPad) giúp giảm thiểu mệt mỏi cơ tay, hạn chế lỗi đánh máy và tăng tốc độ nhập liệu. Vật liệu phủ keycap chống bám vân tay và hệ thống đèn nền (backlight) cũng là những điểm nhấn quan trọng được giới chuyên gia đánh giá cao (Liao & Chuang, 2022; Maghsoudi et al., 2026).
 
 **3.3. Cổng kết nối (Connectivity / Ports)**  
-Tính đa dụng của laptop trong môi trường công sở phụ thuộc lớn vào sự phong phú của các cổng kết nối ngoại vi (ví dụ: USB Type-A, Type-C, cổng xuất hình HDMI, đầu đọc thẻ nhớ). Một thiết bị đầy đủ chuẩn kết nối giúp người dùng dễ dàng ghép nối với máy chiếu, màn hình phụ hoặc thiết bị lưu trữ ngoài mà không phụ thuộc vào các thiết bị chuyển đổi (hub) [1], [4], [6].
+Trong kỷ nguyên kết nối đa nền tảng, một chiếc laptop văn phòng tối ưu cần được trang bị đa dạng các cổng giao tiếp ngoại vi. Số lượng và chuẩn loại cổng (ví dụ: USB Type-A, USB Type-C hỗ trợ Thunderbolt, HDMI xuất hình ảnh, khe cắm thẻ nhớ SD, giắc cắm âm thanh 3.5mm) quyết định khả năng tích hợp linh hoạt của laptop vào môi trường công sở mà không cần sự hỗ trợ của các thiết bị chuyển đổi cồng kềnh (dongles/hubs) (Maghsoudi et al., 2026; Rau & Fang, 2018; Sönmez Çakır & Pekkaya, 2020).
 
 **3.4. Thiết kế ngoại hình (Appearance Design)**  
-Thiết kế ngoại hình bao gồm kiểu dáng công nghiệp, độ hoàn thiện tinh xảo, màu sắc và tính thời trang của thiết bị. Yếu tố thẩm mỹ đóng vai trò tác động mạnh đến tâm lý người mua, giúp họ thể hiện sự chuyên nghiệp và phong cách cá nhân, đặc biệt là trong môi trường làm việc doanh nghiệp [1], [2], [4], [5], [8].
+Yếu tố thẩm mỹ bề ngoài (aesthetic) bao gồm phong cách thiết kế, độ mỏng viền màn hình, mức độ hoàn thiện chi tiết (build quality) và màu sắc sản phẩm. Trong môi trường doanh nghiệp hiện đại, chiếc laptop còn được xem như một món phụ kiện thời trang, giúp người sử dụng định hình phong cách cá nhân và thể hiện sự chuyên nghiệp khi gặp gỡ đối tác. Mặc dù là yếu tố định tính, thiết kế ngoại hình có tác động mạnh mẽ đến cảm xúc và quyết định mua hàng tức thời (Jiménez-Parra et al., 2014; Kang et al., 2022; Lam et al., 2023; Maghsoudi et al., 2026; Sönmez Çakır & Pekkaya, 2020).
 
 ## 4. Nhóm Tính di động & Độ bền (Portability & Durability)
 
 **4.1. Trọng lượng và Kích thước (Portability / Weight / Size)**  
-Tính di động thể hiện qua trọng lượng nhẹ và độ mỏng, tạo điều kiện thuận lợi cho việc mang vác hàng ngày từ nhà đến công sở, hoặc trong những chuyến công tác. Khía cạnh này luôn nằm trong top các tiêu chí vật lý được giới văn phòng quan tâm nhất [1], [4], [5], [6].
+Tính di động (Portability) được đo lường cụ thể qua thông số trọng lượng (thường lý tưởng ở mức 1.0kg đến 1.5kg) và độ dày của máy. Cùng với xu hướng làm việc linh hoạt (hybrid working) và không gian làm việc chia sẻ (co-working space), khả năng dễ dàng đặt thiết bị vào balo, mang theo trong các chuyến công tác xa hoặc di chuyển liên tục giữa các phòng họp là một tiêu chuẩn bắt buộc. Trọng lượng nhẹ giúp giảm thiểu các vấn đề về cột sống và tăng tính cơ động cho dân văn phòng (Lam et al., 2023; Maghsoudi et al., 2026; Rau & Fang, 2018; Sönmez Çakır & Pekkaya, 2020).
 
 **4.2. Thời lượng pin (Battery Life)**  
-Thời lượng pin phản ánh khả năng duy trì hoạt động độc lập của thiết bị khi không kết nối với nguồn điện. Mức dung lượng pin lớn đáp ứng hoàn hảo nhu cầu làm việc linh hoạt (hybrid working) và tham gia các cuộc họp kéo dài mà không lo lắng về sự gián đoạn [1], [4], [5], [6], [7], [8].
+Thời lượng pin phản ánh khả năng duy trì hoạt động độc lập của thiết bị khi không có sẵn nguồn điện AC. Một viên pin có dung lượng (Whr) lớn kết hợp với vi xử lý tối ưu năng lượng sẽ cho phép laptop duy trì công việc trong suốt một ca làm việc tiêu chuẩn (8-10 tiếng). Yếu tố này loại bỏ sự phụ thuộc vào dây sạc và ổ cắm điện, tạo điều kiện làm việc linh hoạt tại các không gian mở như quán cà phê, phòng chờ sân bay, hay trong các cuộc thảo luận kéo dài (Kang et al., 2022; Lam et al., 2023; Liao & Chuang, 2022; Maghsoudi et al., 2026; Rau & Fang, 2018; Sönmez Çakır & Pekkaya, 2020).
 
 **4.3. Độ bền và Vật liệu khung vỏ (Durability / Shell Material)**  
-Khả năng chống chịu va đập cơ học và chất lượng chế tác khung vỏ (sử dụng hợp kim nhôm, magie, sợi carbon hoặc nhựa công nghiệp) giúp kéo dài tuổi thọ vòng đời thiết bị, giảm rủi ro hỏng hóc trong quá trình di chuyển thường xuyên. Đáng chú ý, một số nghiên cứu xu hướng tiêu dùng xanh còn đề cập đến vật liệu thân thiện với môi trường (như nhựa tái chế) như một lợi thế gia tăng [1], [5], [7].
+Độ bền cơ học của một chiếc laptop phụ thuộc hoàn toàn vào kết cấu vật liệu cấu thành khung vỏ (chassis). Các dòng máy cao cấp thường sử dụng hợp kim nhôm (aluminum), magie (magnesium) hoặc sợi carbon (carbon fiber) nhằm cân bằng giữa trọng lượng nhẹ và khả năng chống va đập, chống biến dạng. Một thiết bị đạt tiêu chuẩn độ bền quân đội (ví dụ MIL-STD-810G) sẽ mang lại tuổi thọ vòng đời dài hơn, giúp doanh nghiệp tối ưu hóa chi phí khấu hao tài sản cố định trong dài hạn (Lam et al., 2023; Liao & Chuang, 2022; Sönmez Çakır & Pekkaya, 2020).
 
 ## 5. Nhóm Thương hiệu & Hỗ trợ (Brand & Support)
 
 **5.1. Thương hiệu (Brand Image / Value)**  
-Danh tiếng, mức độ uy tín và giá trị nhận diện của thương hiệu sản xuất mang lại sự an tâm tuyệt đối cho người tiêu dùng. Các thương hiệu máy tính lớn, lâu đời thường được đánh giá cao hơn nhờ lịch sử chất lượng phần cứng bền bỉ và quy trình kiểm soát lỗi sản phẩm nghiêm ngặt [1], [2], [3], [5], [6].
+Thương hiệu đóng vai trò như một bảo chứng về mặt chất lượng. Uy tín thương hiệu được xây dựng dựa trên di sản phát triển sản phẩm, độ tin cậy của phần cứng qua nhiều thế hệ và mức độ nhận diện toàn cầu (ví dụ: Apple, Dell, HP, Lenovo). Trong các bài toán MCDM, thương hiệu thường được xem là một tiêu chí niềm tin; người dùng có xu hướng sẵn sàng chi trả mức giá "premium" (phần bù giá) để đổi lấy sự yên tâm về độ ổn định của hệ sinh thái và chất lượng linh kiện (Jiménez-Parra et al., 2014; Lam et al., 2023; Rau & Fang, 2018; Sönmez Çakır & Pekkaya, 2020).
 
 **5.2. Hậu mãi và Bảo hành (After-sales Service / Warranty)**  
-Các chính sách hỗ trợ kỹ thuật sau bán hàng, tốc độ sửa chữa, chế độ bảo hành tận nơi (on-site service) và đổi trả là yếu tố cốt lõi để hạn chế rủi ro và giảm thiểu thời gian gián đoạn công việc (downtime) của nhân viên cũng như doanh nghiệp [1], [4], [8].
+Chính sách hậu mãi bao gồm thời hạn bảo hành (thường từ 1 đến 3 năm), sự hiện diện của các trung tâm bảo hành ủy quyền, và các dịch vụ hỗ trợ nâng cao như bảo hành tận nơi (on-site service) hoặc hỗ trợ kỹ thuật 24/7. Khía cạnh này là chốt chặn cuối cùng giúp quản trị rủi ro; khả năng sửa chữa và thay thế linh kiện nhanh chóng giúp giảm thiểu tối đa thời gian chết (downtime), đảm bảo tính liên tục trong hoạt động kinh doanh của nhân sự và tổ chức (Kang et al., 2022; Maghsoudi et al., 2026; Sönmez Çakır & Pekkaya, 2020).
 
 ---
 
 ## Danh mục Tài liệu Tham khảo (References)
 
-[1] F. Sönmez Çakır and M. Pekkaya, "Determination of Interaction Between Criteria and the Criteria Priorities in Laptop Selection Problem," *International Journal of Fuzzy Systems*, vol. 22, no. 4, pp. 1177–1190, May 2020, doi: 10.1007/s40815-020-00857-2.
+Jiménez-Parra, B., Rubio, S., & Vicente-Molina, M.-A. (2014). Key drivers in the behavior of potential consumers of remanufactured products: a study on laptops in Spain. *Journal of Cleaner Production, 85*, 488–496. https://doi.org/10.1016/j.jclepro.2014.05.047
 
-[2] B. Jiménez-Parra, S. Rubio, and M.-A. Vicente-Molina, "Key drivers in the behavior of potential consumers of remanufactured products: a study on laptops in Spain," *Journal of Cleaner Production*, vol. 85, pp. 488–496, Dec. 2014, doi: 10.1016/j.jclepro.2014.05.047.
+Kang, M., Sun, B., Liang, T., & Mao, H.-Y. (2022). A study on the influence of online reviews of new products on consumers’ purchase decisions: An empirical study on JD.com. *Frontiers in Psychology, 13*. https://doi.org/10.3389/fpsyg.2022.983060
 
-[3] R. Elnatan and H. Tannady, "Alternatif pemilihan laptop bagi mahasiswa di jakarta utara menggunakan metode analytic hierarchy process," *Unpublished*, n.d.
+Lam, W. S., Lam, W. H., Liew, K. F., Bakar, M. A., & Lai, C. P. (2023). Evaluation and Selection of Mobile Phones using Integrated AHP-TOPSIS Model. *Journal of Advanced Research in Applied Sciences and Engineering Technology, 33*(2), 25–39. https://doi.org/10.37934/araset.33.2.2539
 
-[4] M. Maghsoudi, M. Bakhtiari, and H. Bakhtiari, "A hybrid framework for notebook market analysis: Integrating social media sentiment mining with expert knowledge for feature prioritization," *PLOS One*, vol. 21, no. 2, p. e0342067, Feb. 2026, doi: 10.1371/journal.pone.0342067.
+Liao, C.-S., & Chuang, H.-K. (2022). Determinants of innovative green electronics: An experimental study of eco-friendly laptop computers. *Technovation, 113*, 102424. https://doi.org/10.1016/j.technovation.2021.102424
 
-[5] W. S. Lam, W. H. Lam, K. F. Liew, M. A. Bakar, and C. P. Lai, "Evaluation and Selection of Mobile Phones using Integrated AHP-TOPSIS Model," *Journal of Advanced Research in Applied Sciences and Engineering Technology*, vol. 33, no. 2, pp. 25–39, Nov. 2023, doi: 10.37934/araset.33.2.2539.
+Maghsoudi, M., Bakhtiari, M., & Bakhtiari, H. (2026). A hybrid framework for notebook market analysis: Integrating social media sentiment mining with expert knowledge for feature prioritization. *PLOS One, 21*(2), e0342067. https://doi.org/10.1371/journal.pone.0342067
 
-[6] H. Rau and Y.-T. Fang, "Optimal time for consumers to purchase electronic products with consideration of consumer value and eco-efficiency," *Journal of Cleaner Production*, vol. 180, pp. 583–597, Apr. 2018, doi: 10.1016/j.jclepro.2018.01.123.
+Rau, H., & Fang, Y.-T. (2018). Optimal time for consumers to purchase electronic products with consideration of consumer value and eco-efficiency. *Journal of Cleaner Production, 180*, 583–597. https://doi.org/10.1016/j.jclepro.2018.01.123
 
-[7] C.-S. Liao and H.-K. Chuang, "Determinants of innovative green electronics: An experimental study of eco-friendly laptop computers," *Technovation*, vol. 113, p. 102424, May 2022, doi: 10.1016/j.technovation.2021.102424.
-
-[8] M. Kang, B. Sun, T. Liang, and H.-Y. Mao, "A study on the influence of online reviews of new products on consumers’ purchase decisions: An empirical study on JD.com," *Frontiers in Psychology*, vol. 13, Sep. 2022, doi: 10.3389/fpsyg.2022.983060.
+Sönmez Çakır, F., & Pekkaya, M. (2020). Determination of Interaction Between Criteria and the Criteria Priorities in Laptop Selection Problem. *International Journal of Fuzzy Systems, 22*(4), 1177–1190. https://doi.org/10.1007/s40815-020-00857-2
