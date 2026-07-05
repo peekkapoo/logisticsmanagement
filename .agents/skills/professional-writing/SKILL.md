@@ -145,7 +145,7 @@ TBT tra cứu `archive/pattern-catalog.md` khi phân tích request (Bước 2, c
 - Tra cứu archive/ trước khi bắt đầu
 - Để lead tự chọn staff và ước lượng độ dài
 - Gọi development/ sau bài phức tạp để rút kinh nghiệm
-- **Bắt buộc Ban Thu thập (research/):** Đọc sâu toàn văn nguồn tài liệu được cung cấp để trích xuất số liệu/luận điểm chính xác trước khi chuyển cho Ban Biên tập.
+- **Bắt buộc Ban Thu thập (research/):** Đọc sâu toàn văn (full-text) nguồn tài liệu PDF. ĐỂ TIẾT KIỆM TÀI NGUYÊN, Agent BẮT BUỘC phải gọi script `.agents/skills/professional-writing/scripts/academic_parser.py` để trích xuất nội dung PDF thành Markdown (chỉ lấy text thô). File Markdown này sẽ tự động được cache tại `02_du-lieu-tho/parsed_papers/`. Agent chỉ cần đọc file Markdown đã cache để lấy dữ liệu.
 
 ---
 
@@ -164,8 +164,8 @@ development/   Ban Phát triển   → lead.md quản lý: upgrade, style-audit,
 
 ---
 
-**Version:** 3.4
+**Version:** 3.5
 **Kiến trúc:** Tòa soạn báo (TBT → Lead → Staff)
 **Nguyên tắc mới:** 
 1. BẮT BUỘC kiểm tra trích dẫn (citation-check) và sự thật (fact-check) cho mọi định dạng bài viết. TBT phân tích + thiết kế quy trình GATE, Lead lập task chi tiết.
-2. BẮT BUỘC thu thập dữ liệu từ nguồn hoàn chỉnh (full-text), nghiêm cấm lọc từ khóa hời hợt từ metadata.
+2. BẮT BUỘC thu thập dữ liệu từ nguồn hoàn chỉnh (full-text) thông qua Academic Parser Tiered Pipeline, cache dữ liệu Markdown vào `02_du-lieu-tho/parsed_papers/` để tái sử dụng. Nghiêm cấm lọc từ khóa hời hợt từ metadata.

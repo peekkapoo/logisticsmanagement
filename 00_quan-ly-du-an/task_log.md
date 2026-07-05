@@ -33,6 +33,8 @@
 - [x] [2026-07-04 23:09:23] Người dùng chốt danh sách 11 tiêu chí, chính thức đóng Phase 1 và chuẩn bị chuyển sang Phase 2 (T1.6). Tiến hành sao lưu và lưu lịch sử.
 - [x] [2026-07-05 08:42:00] Tiếp nhận 17 file PDF đã được người dùng đổi tên qua Zotero, di chuyển vào `01_tai-lieu-tham-khao\bai-bao` (thay thế file cũ) và gộp nội dung `Exported Items.bib` vào `04_bao-cao-latex\references.bib`.
 - [x] [2026-07-05 09:01:00] Phân tách và chuẩn hóa danh sách tiêu chí thành 14 tiêu chí độc lập theo chuẩn học thuật (áp dụng skill `professional-writing`). Gắn trích dẫn in-text và xuất danh mục tài liệu tham khảo. Lưu tại `03_phan-tich\tieu-chi\2026-07-05_danh-sach-tieu-chi-chinh-thuc_v1.0_draft_AI.md`.
+- [x] [2026-07-05 09:34:00] Đã thực hiện Deep Read (đọc sâu toàn văn) 16 file PDF hợp lệ (loại bài unpublished). Audit và tuân thủ chặt chẽ skill `professional-writing`, viết lại hoàn toàn bản thảo Literature Review dựa trên số liệu, lập luận đối chiếu và citekey chính xác.
+- [x] [2026-07-05 09:43:00] Cải thiện tuyệt đối skill `professional-writing` lên v3.5: Tích hợp công cụ `academic_parser.py` (Tiered Pipeline: Docling -> pdfplumber -> pypdf) vào hệ thống để đọc mượt mà báo cáo khoa học chứa công thức và bảng biểu. Áp dụng cơ chế Cache `02_du-lieu-tho/parsed_papers/` tự động băm (MD5).
 
 ## 3. Các bước tiếp theo (Next Steps)
 - Nếu user duyệt danh sách 7 laptop văn phòng, chạy Bước 2 (map benchmark CPU/GPU hoặc trọng lượng/pin tuýp văn phòng).
