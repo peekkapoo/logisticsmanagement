@@ -263,3 +263,15 @@ Chi tiết phân tích và lý do chọn từng skill nằm trong [KE-HOACH-DU-A
 - **Văn phong:** Sử dụng ngôn từ đồng cảm, tránh lạm dụng thuật ngữ (de-jargonize), luôn có mô hình tư duy (Mental Model) đi kèm.
 - **Quy trình:** Phải được tạo bởi skill `professional-writing` để đảm bảo chất lượng nghiên cứu, biên tập và trích dẫn chuẩn mực.
 (Xem chi tiết Luật vàng số 5 trong file `.agents/AGENTS.md`)
+
+## 10. Hướng dẫn Prompting cho User (Best Practices)
+
+Để giao việc cho Agent một cách hiệu quả, đặc biệt trong các tác vụ viết học thuật và báo cáo (Phase 1 & Phase 6), người dùng (User) nên sử dụng các bộ prompt mẫu dưới đây nhằm tránh việc AI trả về kết quả quá "máy móc", lạm dụng gạch đầu dòng, hoặc sai lệch về chuẩn mực trích dẫn.
+
+### 10.1. Mẫu Prompt viết/sửa Literature Review (Tiếng Việt)
+> *"Sử dụng skill @[.agents/skills/professional-writing], viết [hoặc sửa lại] phần [Tên nội dung] theo chuẩn học thuật. Yêu cầu bắt buộc: KHÔNG dùng gạch đầu dòng hay đánh nhãn in đậm kiểu máy móc. Hãy viết thành các đoạn văn nối tiếp mượt mà, phân tích rõ sự đồng thuận/trái chiều (agreements/disagreements) của các tác giả. BẮT BUỘC thực hiện cross-ref check để đảm bảo 100% in-text citation khớp với danh mục References ở cuối bài."*
+
+### 10.2. Mẫu Prompt biên dịch sang Tiếng Anh (Phase 6)
+> *"Viết lại phần [Tên file nháp tiếng Việt] sang tiếng Anh học thuật để dùng cho báo cáo LaTeX. Yêu cầu bắt buộc: Dịch độc lập theo ý, KHÔNG dịch word-by-word. Linh hoạt thay đổi cấu trúc câu và thì ngữ pháp (Tenses) cho tự nhiên. Các trích dẫn phải được tích hợp mượt mà vào câu (ví dụ: Smith et al. (2024) argued that...). Cuối bài bắt buộc check lại Cross-Reference với file .bib."*
+
+*Lưu ý: Bạn có thể copy-paste thẳng các câu lệnh này vào chat để kích hoạt "chế độ nghiêm ngặt" của Agent.*

@@ -38,10 +38,18 @@
 - [x] [2026-07-05 10:10:00] Hoàn thành Deep Read 16 bài báo khoa học thông qua `academic_parser.py` (Cache Markdown MD5). Cập nhật và tinh chỉnh hệ thống tiêu chí đánh giá (bản Final) tại `03_phan-tich\tieu-chi\2026-07-05_danh-sach-tieu-chi-chinh-thuc_vFINAL.md` với các luận điểm và dẫn chứng định lượng cụ thể (trọng số AHP/TOPSIS).
 - [x] [2026-07-05 11:04:00] Thiết lập Luật số 5 vào `AGENTS.md` và `README.md` quy định chuẩn Tech-blog cho thư mục `08_new_knowledge`.
 - [x] [2026-07-05 11:04:00] Refactor 4 bài viết Tech-blog (04 đến 07) thành cấu trúc 5 bước (Hook, Analogy, Root Cause, Solution, Citations) và loại bỏ tiền tố đánh số ở tiêu đề chính.
+- [x] [2026-07-05 12:14:00] Hoàn tất sử dụng skill `professional-writing` gọi kịch bản `academic_parser.py` để parse thành công toàn bộ 17/17 bài báo khoa học PDF, lưu cache Markdown tại `02_du-lieu-tho\parsed_papers\`.
+- [x] [2026-07-05 12:22:00] Nâng cấp `academic_parser.py`: Thay thế Tier 2 (`pdfplumber`) bằng `pymupdf4llm` để xử lý triệt để bố cục 2 cột (2-column layout) của bài báo khoa học. Đã parse lại hoàn hảo 4 bài báo bị lỗi.
+- [x] [2026-07-05 14:06:00] Chạy thành công tiến trình băm hàng loạt (batch parsing) 17/17 file PDF bằng hệ thống Tiered Pipeline (ưu tiên Docling thay cho MinerU bị nghẽn trên CPU). Kiểm tra ngẫu nhiên thấy Markdown giữ nguyên cấu trúc rất tốt. Cập nhật bài blog giải thích nguyên lý CPU/GPU cho người dùng.
+- [x] [2026-07-05 14:13:48] Áp dụng vai trò TBT (skill `professional-writing`), thiết kế và chạy quy trình GATE để hoàn thiện toàn diện Hệ thống 14 Tiêu chí đánh giá Laptop. Trình sườn bài (Outline) cho user duyệt và sau đó xuất bản thành công bản thảo học thuật hoàn chỉnh (v4.1) tại `03_phan-tich\tieu-chi\2026-07-05_danh-sach-tieu-chi-chinh-thuc_vFINAL.md`.
+- [x] [2026-07-05 14:23:00] Hoàn tất triển khai 3 Subagents đọc sâu 17 bài báo khoa học. Xóa bỏ file `extracted_insights.md` sơ sài và thay thế toàn bộ bản thảo `vFINAL.md` thành phiên bản **Literature Review chuyên sâu (v4.2)**. Đã khai thác cực tốt các định nghĩa học thuật, mức độ quan trọng và các quan điểm trái chiều (Agreements/Disagreements) giữa các tệp khách hàng.
+- [x] [2026-07-05 14:31:00] Nâng cấp cấu hình lõi hệ thống dự án theo yêu cầu User: Cập nhật Luật số 6 (Academic Flow & Cross-Reference Check linh hoạt VN/EN) vào `AGENTS.md` và bổ sung Prompting Guide mẫu vào `README.md` nhằm loại bỏ triệt để văn phong máy móc, gạch đầu dòng và rác trích dẫn.
+- [x] [2026-07-05 14:37:00] Hoàn tất rà soát Cross-Reference cho báo cáo Literature Review (`vFINAL.md`). Loại bỏ các trích dẫn thừa không xuất hiện trong bài, định dạng lại Danh mục tài liệu tham khảo theo đúng chuẩn APA 7th Edition, và bổ sung Bảng Tổng hợp Tiêu chí - Nguồn trích dẫn ở cuối bài.
+- [x] [2026-07-05 14:40:00] User yêu cầu quay lại Phase 1: Xóa bỏ hoàn toàn bài báo "Elnatan and Tannady" khỏi dự án do không được xuất bản chính thức (không uy tín). Đã xóa PDF gốc, file Markdown parsed, và gỡ bỏ toàn bộ luận điểm/trích dẫn liên quan khỏi bản thảo Literature Review `vFINAL.md`. Tổng số bài báo hợp lệ rút xuống còn 15 bài.
 
 ## 3. Các bước tiếp theo (Next Steps)
-- Nếu user duyệt danh sách 7 laptop văn phòng, chạy Bước 2 (map benchmark CPU/GPU hoặc trọng lượng/pin tuýp văn phòng).
-- Bước 3 (làm sạch + ma trận quyết định TOPSIS).
+- Đầu việc phân tích ma trận quyết định AHP/TOPSIS cho 7 laptop văn phòng đã bị **Hủy (Cancelled)** theo yêu cầu của user.
+- Chờ chỉ thị tiếp theo từ user.
 - Sử dụng skill `task-processor` để tiếp nhận và điều phối mọi yêu cầu mới.
 
 ## 4. Cảnh báo & Ngữ cảnh quan trọng (Warnings & Context)

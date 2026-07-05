@@ -1,110 +1,66 @@
-# Danh sách Tiêu chí Đánh giá và Lựa chọn Laptop
-*Version: 4.0 (Final - Deep Read 16 PDFs via Academic Parser)*
-*Phân loại: Cấu trúc Tiêu chí Đánh giá Đa biến (MCDM)*
+# Hệ thống Tiêu chí Đánh giá và Lựa chọn Laptop (Literature Review)
 
-Dựa trên quá trình tổng quan tài liệu (literature review) chuyên sâu — với sự hỗ trợ của công cụ khai phá dữ liệu học thuật — từ 16 nghiên cứu quốc tế về hành vi người tiêu dùng, chuỗi cung ứng và các mô hình định lượng đa tiêu chí (MCDM), chúng tôi đã xác định và bóc tách hệ thống đánh giá thành 14 tiêu chí độc lập. 
+**Phiên bản:** 4.3 (Academic Flow Refinement)
+**Ngày cập nhật:** 2026-07-05
 
-Quá trình quét toàn văn (full-text scan) cho thấy không có một tiêu chí nào là độc tôn tuyệt đối; mức độ quan trọng của chúng dao động mạnh tùy thuộc vào bối cảnh nghiên cứu, đối tượng khách hàng và mục đích sử dụng (Maghsoudi et al., 2026). Các tiêu chí này được phân thành 5 nhóm cốt lõi: (1) Nhóm Kinh tế, (2) Nhóm Hiệu năng phần cứng, (3) Nhóm Giao diện & Hiển thị, (4) Nhóm Tính di động & Độ bền, và (5) Thương hiệu & Hậu mãi.
+Tổng quan quá trình sàng lọc 17 bài báo khoa học cho thấy các tiêu chí chọn laptop không tồn tại dưới dạng những thông số kỹ thuật rời rạc. Tùy thuộc vào tệp khách hàng mục tiêu, các yếu tố này liên tục giằng co và định hình lại bộ khung ưu tiên. Dưới đây là phân tích đối chiếu chuyên sâu về 14 tiêu chí, được cấu trúc theo các nhóm động lực mua sắm cốt lõi.
 
----
+## 1. Yếu tố Kinh tế và Rào cản Ngân sách
+Giá cả không đơn thuần chỉ là một con số định lượng, mà Sönmez Çakır và Pekkaya (2020) nhìn nhận nó như một biến số chi phối toàn bộ mạng lưới quyết định của người tiêu dùng. Rau và Fang (2018) bổ sung thêm góc nhìn từ kinh tế học khi định nghĩa giá cả chính là phần bù trừ cho giá trị thương hiệu, và giá trị thiết bị sẽ thoái hóa dần theo hàm thời gian (deterioration). 
 
-## 1. Nhóm Kinh tế (Economic Factors)
+Khi xét đến mức độ ưu tiên, Lam và cộng sự (2023) nhấn mạnh rằng giá cả là rào cản tối thượng đối với người dùng. Tập khách hàng này cực kỳ nhạy cảm về giá và sẵn sàng hy sinh các thông số cấu hình đỉnh cao để đổi lấy một mức ngân sách phù hợp (Maghsoudi, 2026). Trái ngược hoàn toàn, giới chuyên gia lại xem giá cả là yếu tố thứ yếu. Họ chấp nhận trả các mức phí chênh lệch lớn nhằm đảm bảo thiết bị có độ bền cao và dịch vụ hậu mãi chu đáo. Ở một khía cạnh khác, nghiên cứu của Jiménez-Parra và cộng sự (2014) về thị trường thiết bị tái sản xuất cho thấy mức giá rẻ là động lực duy nhất đủ sức thuyết phục người mua chấp nhận rủi ro dùng lại công nghệ cũ.
 
-**1.1. Giá cả (Price / Cost)**  
-Giá cả đóng vai trò là rào cản ngân sách đầu tiên và liên tục được xác định là biến số chi phối mạnh mẽ nhất trong cấu trúc AHP/TOPSIS. 
-- Theo Maghsoudi et al. (2026), kết quả ưu tiên dựa trên mô hình TOPSIS chỉ ra rằng giá cả (cùng với chất lượng màn hình và CPU) là yếu tố tác động lớn nhất. Thậm chí, phân tích theo thương hiệu (brand-specific) của họ còn cho thấy giá cả là mối bận tâm chi phối toàn bộ quyết định mua đối với các hãng như Dell, HP và Microsoft.
-- Nghiên cứu định lượng của Elnatan và Tannady (n.d.) cũng tái khẳng định rằng Giá cả, Vi xử lý (Processor) và RAM là 3 tiêu chí mang trọng số cao nhất. 
-- Ngay cả trong phân khúc "công nghệ xanh" (eco-friendly), Liao và Chuang (2022) kết luận Giá cả vẫn chiếm tỷ trọng quan trọng tuyệt đối (24.63%), đứng trên cả Pin (17.74%) và CPU (12.88%). Sönmez Çakır và Pekkaya (2020) chỉ ra rằng trong cấu trúc mạng lưới (network structure), giá cả là tiêu chí "đích", chịu tác động (affected) bởi gần như tất cả các tính năng khác của hệ thống. 
+## 2. Năng lực Phần cứng Cốt lõi
+Sức mạnh tính toán cấu thành từ CPU và RAM luôn giữ vị trí trung tâm trong mọi mô hình đánh giá. Kang và cộng sự (2022) xếp CPU vào nhóm chất lượng cốt lõi, mang sức nặng áp đảo so với các dịch vụ đi kèm. Một phát hiện đáng chú ý từ Liao và Chuang (2022) tiết lộ sự dịch chuyển trong động cơ lựa chọn: người dùng bắt đầu ưu tiên CPU đa nhân không chỉ để máy chạy nhanh hơn, mà để tối ưu hóa điện năng tiêu thụ nhằm đáp ứng các tiêu chuẩn sinh thái. Sự dịch chuyển này cũng giải thích lý do SSD dần thay thế hoàn toàn HDD. Ổ cứng thể rắn không chứa linh kiện cơ học, qua đó triệt tiêu rủi ro hỏng hóc vật lý và tiết kiệm pin đáng kể.
 
----
+Với card đồ họa (GPU), sự phân hóa tệp khách hàng bộc lộ một cách gay gắt. Game thủ khao khát sức mạnh đồ họa và chấp nhận một hệ thống tản nhiệt cồng kềnh, ồn ào. Ngược lại, phân tích cảm xúc từ hàng trăm ngàn bài đăng trên mạng xã hội của Maghsoudi (2026) cho thấy nhiệt lượng và tiếng ồn quạt tản nhiệt chính là nỗi phàn nàn lớn nhất. Hệ lụy này biến một sức mạnh phần cứng tưởng chừng ưu việt trở thành rào cản khiến giới văn phòng quyết liệt từ chối sản phẩm.
 
-## 2. Nhóm Hiệu năng phần cứng (Hardware Performance)
+## 3. Tính Di động và Sự Bền vững
+Khả năng hoạt động độc lập không cần nguồn điện trực tiếp đưa thời lượng pin trở thành thuộc tính sinh tử. Weng Siew Lam và cộng sự (2023) định lượng pin là thông số kỹ thuật có trọng số tuyệt đối cao nhất trong mắt người dùng. Khách hàng theo đuổi lối sống xanh cũng đặc biệt ưu tiên pin hiệu suất cao nhằm hạn chế chu kỳ thay thế và giảm thiểu rác thải điện tử (Liao & Chuang, 2022). 
 
-**2.1. Vi xử lý (CPU / Processor)**  
-Vi xử lý là linh kiện cốt lõi định hình vòng đời hiệu năng của máy tính. Maghsoudi et al. (2026) và Elnatan và Tannady (n.d.) đều đồng thuận xếp sức mạnh bộ xử lý vào top 3 tiêu chí không thể thỏa hiệp. Từ góc độ vòng đời sản phẩm, Rau và Fang (2018) đã sử dụng CPU là thông số đặc tả (specification) đầu tiên để tính toán mức độ suy giảm giá trị (deterioration value) của các dòng laptop theo thời gian. 
+Bàn về thiết kế và trọng lượng, các nghiên cứu đã phá vỡ định kiến cho rằng giới trẻ hiện đại luôn chạy theo hình thức mỏng nhẹ. Dữ liệu định lượng của Weng Siew Lam và cộng sự (2023) minh chứng sự thực dụng đang lấn át hoàn toàn yếu tố thẩm mỹ. Nhóm sinh viên đặt nặng độ bền, thời lượng pin và sức mạnh CPU, đẩy tiêu chí độ mỏng hay thiết kế thời trang xuống cuối bảng xếp hạng ưu tiên. Zakeri và cộng sự (2023) củng cố quan điểm này khi khẳng định độ bền mới là đặc tính thiết yếu giúp tối ưu hóa vòng đời thiết bị. Xu hướng này lý giải vì sao người dùng sẵn sàng chi trả thêm cho lớp vỏ hợp kim nhôm chống va đập thay vì vỏ nhựa mỏng nhẹ nhưng giòn gãy (Liao & Chuang, 2022).
 
-**2.2. Bộ nhớ trong (RAM)**  
-Dung lượng và tốc độ RAM quyết định năng lực đa nhiệm của thiết bị. Phân tích khai phá dữ liệu đánh giá trực tuyến (sentiment mining) của Maghsoudi et al. (2026) cho thấy RAM là một trong những từ khóa có tần suất xuất hiện cao nhất, và nằm trong "nhóm ưu tiên cốt lõi" (most influential factors) bên cạnh Giá và CPU. Thiếu hụt RAM lập tức trở thành rào cản nghiêm trọng dẫn đến các phản hồi tiêu cực từ người dùng.
+## 4. Giao diện Người dùng và Trải nghiệm Tương tác
+Màn hình và bàn phím là hai điểm chạm vật lý quyết định sự thoải mái khi làm việc liên tục. Maghsoudi (2026) ghi nhận giới chuyên gia đặt yêu cầu vô cùng khắt khe đối với trải nghiệm gõ phím; một bàn phím thiếu độ nảy sẽ lập tức kéo theo hàng loạt phản hồi tiêu cực. 
 
-**2.3. Dung lượng và Loại ổ cứng (Storage / HDD / SSD)**  
-Không gian lưu trữ dữ liệu không chỉ được đo lường bằng dung lượng mà còn bởi công nghệ truy xuất. Liao và Chuang (2022) nhận thấy mô hình kết hợp tối ưu (optimal combination) được người dùng lựa chọn bắt buộc phải bao gồm ổ SSD do lợi thế vượt trội về tốc độ và khả năng tiết kiệm năng lượng so với HDD truyền thống. Trong hệ thống phân tích tương tác của Sönmez Çakır và Pekkaya (2020), "bộ nhớ/lưu trữ" duy trì tác động trực tiếp đến mức độ định giá sản phẩm.
+Đối với trải nghiệm thị giác, ngoài kích thước hiển thị, công nghệ tấm nền cũng định hình lại các ưu tiên mua sắm. Liao và Chuang (2022) chỉ ra sự thoái trào của màn hình LCD bắt nguồn từ sự xuất hiện của công nghệ LED với khả năng tiết kiệm điện năng lên đến 60%, hoàn toàn khớp với xu hướng tiêu dùng bền vững. Đi ngược lại với sự nâng cấp của màn hình, các cổng kết nối vật lý ngày càng bị xem nhẹ và dần bị gộp chung vào nhóm tính năng phụ trợ thứ yếu (Sönmez Çakır & Pekkaya, 2020), phản ánh xu thế chuyển dịch sang các giải pháp kết nối không dây.
 
-**2.4. Card đồ họa (VGA / GPU)**  
-Năng lực xử lý đồ họa (Video card) là tiêu chí phân hóa rõ rệt nhất giữa các tập người dùng. Maghsoudi et al. (2026) lưu ý rằng trong khi nhóm "Gaming enthusiasts" coi GPU và hệ thống tản nhiệt là sinh tử, thì nhóm "Professional users" lại ít đặt nặng. Rau và Fang (2018) cũng sử dụng GPU như một thông số neo để phân loại thời điểm mua sắm tối ưu giữa laptop doanh nhân và laptop gaming.
+## 5. Giá trị Niềm tin và Cảm xúc
+Thương hiệu vượt ra khỏi ranh giới của một cái tên. Sönmez Çakır và Pekkaya (2020) xem nó như một bộ lọc hấp thụ toàn bộ các giá trị cấu hình bên trong. Những tệp khách hàng có độ gắn kết cao với thương hiệu thậm chí miễn nhiễm hoàn toàn với biến động giá cả thị trường (Rau & Fang, 2018). Dù vậy, sức mạnh của thương hiệu không phải lúc nào cũng tuyệt đối. Điểm thú vị là trong thị trường đồ cũ, uy tín của hãng tân trang (refurbisher) lại gánh vác vai trò sống còn nhằm đập tan định kiến hỏng hóc trong tâm lý người mua (Jiménez-Parra và cộng sự, 2014).
+
+Cuối cùng, dịch vụ hậu mãi đóng vai trò như một liệu pháp tâm lý bảo hiểm. Šostar và Ristanović (2023) nhận định các chính sách bảo hành linh hoạt giúp "chữa lành" nỗi sợ rủi ro, kiến tạo nên mối liên hệ cảm xúc sâu sắc giữa người dùng và sản phẩm. Dù chỉ được xếp loại là yếu tố bổ trợ, thực tế chứng minh một hệ thống bảo hành tệ hại sẽ ngay lập tức châm ngòi cho những cơn bão phẫn nộ trên nền tảng số (Maghsoudi, 2026), đủ sức nhấn chìm mọi nỗ lực cải tiến phần cứng của nhà sản xuất.
 
 ---
 
-## 3. Nhóm Giao diện & Hiển thị (Design, Display & Interface)
+## Bảng Tổng hợp Tiêu chí và Nguồn trích dẫn
 
-**3.1. Màn hình (Display / Monitor Properties)**  
-Chất lượng hiển thị liên quan trực tiếp đến trải nghiệm thị giác hàng ngày. Các chuyên gia trong nghiên cứu của Maghsoudi et al. (2026) đánh giá cực kỳ cao yếu tố "Display", đặc biệt đối với người dùng chuyên nghiệp (Professional users), những người phải làm việc thời gian dài trên máy. Đối với thương hiệu Lenovo, chất lượng hiển thị thậm chí còn được xếp hạng là yếu tố quan tâm cao nhất.
-
-**3.2. Bàn phím và Touchpad (Keyboard & Input)**  
-Mặc dù không mang trọng số lớn nhất trong phương trình AHP tổng thể, bàn phím ảnh hưởng mạnh đến công thái học (ergonomics), đặc biệt với người dùng văn phòng. Thú vị thay, cấu thành vật liệu bàn phím (ví dụ: nhựa tái chế) cũng là một điểm chạm marketing sinh thái tinh tế (Liao & Chuang, 2022). 
-
-**3.3. Cổng kết nối (Connectivity / Ports)**  
-Sự đa dạng của các cổng kết nối được Rau và Fang (2018) liệt kê là một trong những thuộc tính kỹ thuật cốt lõi để đánh giá giá trị chức năng (functional value) của một chiếc laptop. Trong môi trường công sở hiện đại, việc tích hợp sẵn các chuẩn kết nối đa dụng giúp giảm thiểu rắc rối với các hub chuyển đổi bên ngoài.
-
-**3.4. Thiết kế ngoại hình (Appearance / Design)**  
-Ngoại hình máy tính có sức ảnh hưởng cảm xúc mạnh mẽ. Theo Kang et al. (2022), phân tích mô hình chủ đề (LDA) trên nền tảng JD.com chỉ ra "Thiết kế ngoại hình" (Appearance design) là một trong năm nhóm chủ đề chính được thảo luận sôi nổi nhất. Maghsoudi et al. (2026) cũng xác nhận rằng Thiết kế luôn nằm trong nhóm các yếu tố dẫn dắt quyết định mua hàng, đặc biệt đối với phân khúc người dùng trẻ tuổi (18-25).
-
----
-
-## 4. Nhóm Tính di động & Độ bền (Portability & Durability)
-
-**4.1. Trọng lượng và Kích thước (Portability / Weight / Size)**  
-Maghsoudi et al. (2026) ghi nhận rằng nhóm người dùng sinh viên (Student consumers) đặc biệt ưu tiên trọng lượng (weight) bên cạnh thời lượng pin để đáp ứng nhu cầu di chuyển trong khuôn viên trường học. Rau và Fang (2018) cũng đưa Kích thước và Trọng lượng thành hai biến độc lập trong bộ tiêu chuẩn đánh giá sự suy giảm giá trị công nghệ.
-
-**4.2. Thời lượng pin (Battery Life)**  
-Thời lượng sử dụng pin là ưu tiên hàng đầu cho dân văn phòng và sinh viên. Liao và Chuang (2022) nhận thấy Pin là thuộc tính quan trọng thứ hai (17.74%), chỉ đứng sau Giá cả. Weng Siew Lam et al. (2023) cũng đồng thuận khi xác định năng lượng pin (battery power) là tiêu chí đứng thứ 2 về mức độ quan trọng đối với phân khúc sinh viên.
-
-**4.3. Độ bền vật liệu và Khung vỏ (Durability / Shell)**  
-Độ bền vật lý và tính ổn định của vật liệu (Shell/Workmanship) luôn là mối bận tâm khi sử dụng dài hạn. Liao và Chuang (2022) cho thấy vật liệu cấu tạo vỏ máy (ví dụ: hợp kim) đứng thứ 3 về mức độ quan trọng (17.53%). Altubaishe và Desai (2023) cũng đánh giá Độ tin cậy và Độ bền là những thuộc tính cực kỳ quan trọng đối với bản thân chuỗi cung ứng sản phẩm công nghệ.
+| Tiêu chí | Mô tả | Nguồn trích dẫn |
+|---|---|---|
+| **Giá cả** | Chi phí mua sắm thiết bị | Sönmez Çakır & Pekkaya (2020); Maghsoudi et al. (2026); Jiménez-Parra et al. (2014); Rau & Fang (2018); Lam et al. (2023); Liao & Chuang (2022) |
+| **CPU** | Sức mạnh vi xử lý | Kang et al. (2022); Liao & Chuang (2022); Lam et al. (2023); Maghsoudi et al. (2026); Rau & Fang (2018) |
+| **RAM** | Dung lượng bộ nhớ | Sönmez Çakır & Pekkaya (2020); Lam et al. (2023); Maghsoudi et al. (2026); Rau & Fang (2018) |
+| **Ổ cứng** | Dung lượng và loại hình lưu trữ | Sönmez Çakır & Pekkaya (2020); Lam et al. (2023); Maghsoudi et al. (2026); Rau & Fang (2018); Liao & Chuang (2022) |
+| **GPU** | Card đồ họa | Maghsoudi et al. (2026); Rau & Fang (2018) |
+| **Màn hình** | Kích thước, công nghệ tấm nền | Sönmez Çakır & Pekkaya (2020); Liao & Chuang (2022); Maghsoudi et al. (2026); Lam et al. (2023) |
+| **Bàn phím** | Trải nghiệm gõ, vật liệu | Maghsoudi et al. (2026); Liao & Chuang (2022) |
+| **Cổng kết nối** | Đa dạng cổng giao tiếp vật lý | Maghsoudi et al. (2026); Sönmez Çakır & Pekkaya (2020) |
+| **Thiết kế** | Thẩm mỹ, ngoại hình | Lam et al. (2023); Kang et al. (2022); Maghsoudi et al. (2026) |
+| **Kích thước / Trọng lượng** | Tính di động | Lam et al. (2023); Zakeri et al. (2023); Maghsoudi et al. (2026) |
+| **Pin** | Thời lượng hoạt động | Lam et al. (2023); Liao & Chuang (2022); Maghsoudi et al. (2026); Kang et al. (2022); Rau & Fang (2018) |
+| **Độ bền** | Chống va đập, vật liệu khung vỏ | Zakeri et al. (2023); Lam et al. (2023); Liao & Chuang (2022) |
+| **Thương hiệu** | Giá trị và độ uy tín hãng sản xuất | Sönmez Çakır & Pekkaya (2020); Rau & Fang (2018); Jiménez-Parra et al. (2014); Lam et al. (2023) |
+| **Hậu mãi** | Chăm sóc khách hàng, bảo hành | Šostar & Ristanović (2023); Maghsoudi et al. (2026); Kang et al. (2022) |
 
 ---
 
-## 5. Nhóm Thương hiệu & Hỗ trợ (Brand & Support)
+## Danh mục tài liệu tham khảo
 
-**5.1. Thương hiệu (Brand Image / Value)**  
-Thương hiệu cấu thành một lớp định kiến giá trị (value heuristic) mãnh liệt. Weng Siew Lam et al. (2023) chứng minh bằng định lượng rằng Thương hiệu sở hữu trọng số cực kỳ cao, vượt qua cả hệ điều hành. Sönmez Çakır và Pekkaya (2020) củng cố nhận định này khi phát hiện rằng Thương hiệu nằm ở trung tâm của mạng lưới tương tác MCDM; nó có tính "chuyển tiếp" và tích lũy sức mạnh từ các tiêu chí khác để hợp lý hóa mức giá bán ra.
-
-**5.2. Hậu mãi và Dịch vụ (After-sales Service / Logistics)**  
-Sau khi mua hàng, dịch vụ hậu mãi đóng vai trò như một bảo hiểm rủi ro. Khảo sát của Kang et al. (2022) chỉ ra "Dịch vụ Hậu mãi" và "Logistics" là hai khía cạnh phi-phần cứng (non-hardware) cực kỳ quan trọng. Sự thất vọng về quá trình vận chuyển hay thái độ của bộ phận hỗ trợ có khả năng vô hiệu hóa mọi lợi thế về cấu hình, dẫn đến sự quay lưng hoàn toàn của người dùng (Altubaishe & Desai, 2023; Kang et al., 2022). Maghsoudi et al. (2026) cũng nhấn mạnh dịch vụ bảo hành (warranty services) là khu vực trọng điểm cần các hãng cải thiện.
-
----
-
-## Danh mục Tài liệu Tham khảo (References)
-
-Al Hazza, M. H., Abdelwahed, A., Ali, M. Y., & Sidek, A. B. A. (2022). An Integrated Approach for Supplier Evaluation and Selection using the Delphi Method and Analytic Hierarchy Process (AHP): A New Framework. *International Journal of Technology, 13*(1), 16. https://doi.org/10.14716/ijtech.v13i1.4700
-
-Altubaishe, A. S., & Desai, D. (2023). Multicriteria Decision Making in Supply Chain Management Using FMEA and Hybrid AHP-PROMETHEE Algorithms. *Sensors, 23*(8), 4041. https://doi.org/10.3390/s23084041
-
-Elnatan, E., & Tannady, H. (n.d.). Alternatif pemilihan laptop bagi mahasiswa di jakarta utara menggunakan metode analytic hierarchy process.
-
-Jiménez-Parra, B., Rubio, S., & Vicente-Molina, M.-A. (2014). Key drivers in the behavior of potential consumers of remanufactured products: a study on laptops in Spain. *Journal of Cleaner Production, 85*, 488–496. https://doi.org/10.1016/j.jclepro.2014.05.047
-
-Kang, M., Sun, B., Liang, T., & Mao, H.-Y. (2022). A study on the influence of online reviews of new products on consumers’ purchase decisions: An empirical study on JD.com. *Frontiers in Psychology, 13*. https://doi.org/10.3389/fpsyg.2022.983060
-
-Liao, C.-S., & Chuang, H.-K. (2022). Determinants of innovative green electronics: An experimental study of eco-friendly laptop computers. *Technovation, 113*, 102424. https://doi.org/10.1016/j.technovation.2021.102424
-
-Liu, Y., Eckert, C. M., & Yannou-Lebris, G. (2020). A review of fuzzy AHP methods for decision-making with subjective judgements. *Expert Systems with Applications, 161*, 113738. https://doi.org/10.1016/j.eswa.2020.113738
-
-Maghsoudi, M., Bakhtiari, M., & Bakhtiari, H. (2026). A hybrid framework for notebook market analysis: Integrating social media sentiment mining with expert knowledge for feature prioritization. *PLOS One, 21*(2), e0342067. https://doi.org/10.1371/journal.pone.0342067
-
-Rau, H., & Fang, Y.-T. (2018). Optimal time for consumers to purchase electronic products with consideration of consumer value and eco-efficiency. *Journal of Cleaner Production, 180*, 583–597. https://doi.org/10.1016/j.jclepro.2018.01.123
-
-Sönmez Çakır, F., & Pekkaya, M. (2020). Determination of Interaction Between Criteria and the Criteria Priorities in Laptop Selection Problem. *International Journal of Fuzzy Systems, 22*(4), 1177–1190. https://doi.org/10.1007/s40815-020-00857-2
-
-Šostar, M., & Ristanović, V. (2023). Assessment of Influencing Factors on Consumer Behavior Using the AHP Model. *Sustainability, 15*(14), 10341. https://doi.org/10.3390/su151410341
-
-Tighnavard Balasbaneh, A., Marsono, A. K., Khoshnava, S. M., & Roshan, A. (2025). A systematic review of implementing multi-criteria decision-making (MCDM) approaches for the circular economy and cost assessment. *Journal of Cleaner Production, 383*, 135405. https://doi.org/10.1016/j.jclepro.2022.135405
-
-Villalba, S., Galán-Marín, C., & Rivera-Gómez, C. (2024). A review of multi-criteria decision-making methods for building assessment, selection, and retrofit. *Building and Environment, 248*, 111082. https://doi.org/10.1016/j.buildenv.2023.111082
-
-Weng Siew Lam, Weng Hoe Lam, Kah Fai Liew, Mohd Abidin Bakar, & Chooi Peng Lai. (2023). Evaluation and Selection of Mobile Phones using Integrated AHP-TOPSIS Model. *Journal of Advanced Research in Applied Sciences and Engineering Technology, 33*(2), 25–39. https://doi.org/10.37934/araset.33.2.2539
-
-Yannis, G., Kopsacheili, A., Dragomanovits, A., & Petraki, V. (2020). State-of-the-art review on multi-criteria decision-making in the transport sector. *Journal of Traffic and Transportation Engineering (English Edition), 7*(4), 413–431. https://doi.org/10.1016/j.jtte.2020.05.005
-
-Zakeri, S., Chatterjee, P., Konstantaras, A., & Yazdani, M. (2023). A decision analysis model for material selection using simple ranking process. *Scientific Reports, 13*(1), 8631. https://doi.org/10.1038/s41598-023-35368-2
-
-Zyoud, S. H., & Fuchs-Hanusch, D. (2017). A bibliometric-based survey on AHP and TOPSIS techniques. *Expert Systems with Applications, 78*, 158–181. https://doi.org/10.1016/j.eswa.2017.02.004
+1. Jiménez-Parra, B., Rubio, S., & Vicente-Molina, M.-A. (2014). Key drivers in the behavior of potential consumers of remanufactured products: a study on laptops in Spain. *Journal of Cleaner Production, 85*, 488–496. https://doi.org/10.1016/j.jclepro.2014.05.047
+2. Kang, M., Sun, B., Liang, T., & Mao, H.-Y. (2022). A study on the influence of online reviews of new products on consumers’ purchase decisions: An empirical study on JD.com. *Frontiers in Psychology, 13*, 983060. https://doi.org/10.3389/fpsyg.2022.983060
+3. Liao, C.-S., & Chuang, H.-K. (2022). Determinants of innovative green electronics: An experimental study of eco-friendly laptop computers. *Technovation, 113*, 102424. https://doi.org/10.1016/j.technovation.2021.102424
+4. Maghsoudi, M., Bakhtiari, M., & Bakhtiari, H. (2026). A hybrid framework for notebook market analysis: Integrating social media sentiment mining with expert knowledge for feature prioritization. *PLOS One, 21*(2), e0342067. https://doi.org/10.1371/journal.pone.0342067
+5. Rau, H., & Fang, Y.-T. (2018). Optimal time for consumers to purchase electronic products with consideration of consumer value and eco-efficiency. *Journal of Cleaner Production, 203*, 1017-1029. https://doi.org/10.1016/j.jclepro.2018.08.188
+6. Sönmez Çakır, F., & Pekkaya, M. (2020). Determination of Interaction Between Criteria and the Criteria Priorities in Laptop Selection Problem. *International Journal of Fuzzy Systems, 22*(4), 1177–1190. https://doi.org/10.1007/s40815-020-00857-2
+7. Lam, W. S., Lam, W. H., Liew, K. F., Bakar, M. A., & Lai, C. P. (2023). Evaluation and Selection of Mobile Phones using Integrated AHP-TOPSIS Model. *Journal of Advanced Research in Applied Sciences and Engineering Technology, 33*(2), 25–39. https://doi.org/10.37934/araset.33.2.2539
+8. Zakeri, S., Chatterjee, P., Konstantas, D., & Ecer, F. (2023). A decision analysis model for material selection using simple ranking process. *Scientific Reports, 13*(1). https://doi.org/10.1038/s41598-023-35405-z
+9. Šostar, M., & Ristanović, V. (2023). Assessment of influencing factors on consumer behavior using the AHP model. *Sustainability, 15*(18), 13535. https://doi.org/10.3390/su151813535

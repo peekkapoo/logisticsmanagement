@@ -7,11 +7,11 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding='utf-8')
 
 # Limit threads to prevent out of memory RAM spikes
-os.environ["OMP_NUM_THREADS"] = "1"
-os.environ["OPENBLAS_NUM_THREADS"] = "1"
-os.environ["MKL_NUM_THREADS"] = "1"
-os.environ["VECLIB_MAXIMUM_THREADS"] = "1"
-os.environ["NUMEXPR_NUM_THREADS"] = "1"
+os.environ["OMP_NUM_THREADS"] = "4"
+os.environ["OPENBLAS_NUM_THREADS"] = "4"
+os.environ["MKL_NUM_THREADS"] = "4"
+os.environ["VECLIB_MAXIMUM_THREADS"] = "4"
+os.environ["NUMEXPR_NUM_THREADS"] = "4"
 
 # Relocate AI models to D drive (prevent filling up C drive)
 models_dir = Path("d:/LogManagement") / ".agents" / "skills" / "professional-writing" / "models"
@@ -27,53 +27,79 @@ def get_file_hash(file_path):
         hasher.update(buf)
     return hasher.hexdigest()
 
+def parse_with_mineru(pdf_path, output_md_path):
+    """Tier 1: Use MinerU (Magic-PDF) for perfect 2-column & math extraction"""
+    try:
+        import subprocess
+        import tempfile
+        import shutil
+        import logging
+        
+        # MinerU has issues with Unicode paths on Windows (throws "Inconsistent number of pages: X!=-1").
+        # We copy the file to a safe ASCII temporary path, parse it, and then move the result back.
+        safe_temp_dir = tempfile.mkdtemp(prefix="mineru_")
+        safe_pdf_path = os.path.join(safe_temp_dir, "input.pdf")
+        shutil.copy2(pdf_path, safe_pdf_path)
+        
+        try:
+            cmd = f'magic-pdf -p "{safe_pdf_path}" -o "{safe_temp_dir}" -m txt'
+            result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
+            
+            if result.returncode != 0:
+                print(f"[MinerU CLI Error]\nSTDOUT: {result.stdout}\nSTDERR: {result.stderr}")
+                return False, f"MinerU CLI failed: {result.stderr[-200:]}"
+            
+            # Find the markdown file using glob
+            import glob
+            md_files = glob.glob(os.path.join(safe_temp_dir, "**", "*.md"), recursive=True)
+            if md_files:
+                # Get the first markdown file
+                shutil.copy2(md_files[0], output_md_path)
+                return True, "Parsed with MinerU (Tier 1)"
+            
+            print(f"[MinerU CLI Warn] No MD file found. STDOUT: {result.stdout}\nSTDERR: {result.stderr}")
+            return False, "MinerU finished but no Markdown file was found."
+        finally:
+            shutil.rmtree(safe_temp_dir, ignore_errors=True)
+            
+    except Exception as e:
+        print(f"[MinerU Error] {e}")
+        return False, str(e)
+
 def parse_with_docling(pdf_path, output_md_path):
-    """Tier 1: Use Docling to parse (Preserves structure, tables, formulas)"""
+    """Tier 2: Use Docling to parse (Preserves structure, tables, formulas)"""
+    import tempfile
+    import shutil
+    safe_temp_dir = tempfile.mkdtemp(prefix="docling_")
+    safe_pdf_path = os.path.join(safe_temp_dir, "input.pdf")
+    shutil.copy2(pdf_path, safe_pdf_path)
     try:
         from docling.document_converter import DocumentConverter
         converter = DocumentConverter()
-        result = converter.convert(pdf_path)
+        result = converter.convert(safe_pdf_path)
         markdown_text = result.document.export_to_markdown()
         with open(output_md_path, 'w', encoding='utf-8') as f:
             f.write(markdown_text)
-        return True, "Parsed with Docling (Tier 1)"
+        return True, "Parsed with Docling (Tier 2)"
     except Exception as e:
         print(f"[Docling Error] {e}")
         return False, str(e)
+    finally:
+        shutil.rmtree(safe_temp_dir, ignore_errors=True)
 
-def parse_with_pdfplumber(pdf_path, output_md_path):
-    """Tier 2: Use pdfplumber to extract raw text (Fallback 1)"""
+def parse_with_pymupdf4llm(pdf_path, output_md_path):
+    """Tier 3: Use pymupdf4llm to extract Markdown with layout (Fallback 2)"""
     try:
-        import pdfplumber
-        text = ""
-        with pdfplumber.open(pdf_path) as pdf:
-            for page in pdf.pages:
-                page_text = page.extract_text()
-                if page_text:
-                    text += page_text + "\n\n"
+        import pymupdf4llm
+        md_text = pymupdf4llm.to_markdown(pdf_path)
         with open(output_md_path, 'w', encoding='utf-8') as f:
-            f.write(text)
-        return True, "Parsed with pdfplumber (Tier 2)"
+            f.write(md_text)
+        return True, "Parsed with pymupdf4llm (Tier 3)"
     except Exception as e:
-        print(f"[pdfplumber Error] {e}")
+        print(f"[pymupdf4llm Error] {e}")
         return False, str(e)
 
-def parse_with_pypdf(pdf_path, output_md_path):
-    """Tier 3: Use pypdf to extract super raw text (Fallback 2)"""
-    try:
-        from pypdf import PdfReader
-        reader = PdfReader(pdf_path)
-        text = ""
-        for page in reader.pages:
-            page_text = page.extract_text()
-            if page_text:
-                text += page_text + "\n\n"
-        with open(output_md_path, 'w', encoding='utf-8') as f:
-            f.write(text)
-        return True, "Parsed with pypdf (Tier 3)"
-    except Exception as e:
-        print(f"[pypdf Error] {e}")
-        return False, str(e)
+
 
 def extract_academic_pdf(pdf_path, project_root="d:/LogManagement"):
     """
@@ -100,18 +126,18 @@ def extract_academic_pdf(pdf_path, project_root="d:/LogManagement"):
 
     print(f"Starting to parse PDF: {pdf_path.name}")
     
-    # Tier 1
+    # Tier 1 (MinerU - Disabled due to CPU deadlock / empty text issues)
+    # success, msg = parse_with_mineru(pdf_path, cache_file)
+    # if success:
+    #     return True, msg, str(cache_file)
+
+    # Tier 2 (Docling)
     success, msg = parse_with_docling(pdf_path, cache_file)
     if success:
         return True, msg, str(cache_file)
 
-    # Tier 2
-    success, msg = parse_with_pdfplumber(pdf_path, cache_file)
-    if success:
-        return True, msg, str(cache_file)
-
     # Tier 3
-    success, msg = parse_with_pypdf(pdf_path, cache_file)
+    success, msg = parse_with_pymupdf4llm(pdf_path, cache_file)
     if success:
         return True, msg, str(cache_file)
 

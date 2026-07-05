@@ -16,13 +16,6 @@
 | Subjective Norm | Áp lực xã hội từ gia đình, bạn bè | Jiménez-Parra et al. (2014) |
 | Motivations | Công nghệ mới nhất, giá rẻ, tác động môi trường | Jiménez-Parra et al. (2014) |
 | Marketing Mix Variables | Giá, thiết kế, danh tiếng thương hiệu, kênh phân phối | Jiménez-Parra et al. (2014) |
-| Harga | Giá | Elnatan & Tannady (2020) |
-| Processor | Thông số CPU | Elnatan & Tannady (2020) |
-| VGA | Thông số Card đồ họa | Elnatan & Tannady (2020) |
-| RAM | Dung lượng bộ nhớ | Elnatan & Tannady (2020) |
-| Kapasitas HDD | Dung lượng lưu trữ | Elnatan & Tannady (2020) |
-| Keunggulan | Lợi thế bổ sung (DVD, Bluetooth, Camera) | Elnatan & Tannady (2020) |
-| Merek | Thương hiệu | Elnatan & Tannady (2020) |
 | 16 Notebook Attributes | Price, Design, Display, CPU, RAM, Storage, Battery, Warranty, Weight, GPU, Size, Port, Keyboard, Webcam, Fan, Charger | Maghsoudi et al. (2026) |
 | Technical specification | Mật độ điểm ảnh, RAM, CPU, Pin, Thời gian chờ | Lam et al. (2024) |
 | Physical Properties | Trọng lượng, Độ mỏng, Độ bền, Kích thước màn hình, Hình dáng | Lam et al. (2024) |
