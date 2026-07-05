@@ -31,11 +31,7 @@
 - [x] [2026-07-04 23:06:53] Tự động trích xuất các DOI từ file CSV và gọi API `doi.org` để sinh thành công file `04_bao-cao-latex\references.bib` với 98 danh mục trích dẫn (T1.4).
 - [x] [2026-07-04 23:07:58] Gộp kết quả NotebookLM và dữ liệu Subagents, phân nhóm thành 11 tiêu chí sơ bộ tại `03_phan-tich\tieu-chi\2026-07-04_danh-sach-tieu-chi-so-bo_v1.0_draft_AI.md` (T1.5).
 - [x] [2026-07-04 23:09:23] Người dùng chốt danh sách 11 tiêu chí, chính thức đóng Phase 1 và chuẩn bị chuyển sang Phase 2 (T1.6). Tiến hành sao lưu và lưu lịch sử.
-
-
-
-
-
+- [x] [2026-07-05 08:42:00] Tiếp nhận 17 file PDF đã được người dùng đổi tên qua Zotero, di chuyển vào `01_tai-lieu-tham-khao\bai-bao` (thay thế file cũ) và gộp nội dung `Exported Items.bib` vào `04_bao-cao-latex\references.bib`.
 
 ## 3. Các bước tiếp theo (Next Steps)
 - Nếu user duyệt danh sách 7 laptop văn phòng, chạy Bước 2 (map benchmark CPU/GPU hoặc trọng lượng/pin tuýp văn phòng).
