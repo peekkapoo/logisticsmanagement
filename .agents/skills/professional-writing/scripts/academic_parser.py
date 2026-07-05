@@ -3,8 +3,24 @@ import sys
 import hashlib
 from pathlib import Path
 
+# Force stdout to utf-8 to handle unicode characters in filenames (e.g. Šostar)
+sys.stdout.reconfigure(encoding='utf-8')
+
+# Limit threads to prevent out of memory RAM spikes
+os.environ["OMP_NUM_THREADS"] = "1"
+os.environ["OPENBLAS_NUM_THREADS"] = "1"
+os.environ["MKL_NUM_THREADS"] = "1"
+os.environ["VECLIB_MAXIMUM_THREADS"] = "1"
+os.environ["NUMEXPR_NUM_THREADS"] = "1"
+
+# Relocate AI models to D drive (prevent filling up C drive)
+models_dir = Path("d:/LogManagement") / ".agents" / "skills" / "professional-writing" / "models"
+os.makedirs(models_dir, exist_ok=True)
+os.environ["HF_HOME"] = str(models_dir)
+os.environ["TORCH_HOME"] = str(models_dir)
+
 def get_file_hash(file_path):
-    """Tính mã băm MD5 của file PDF để làm tên file cache an toàn."""
+    """Calculate MD5 hash of the PDF file to use as a safe cache filename."""
     hasher = hashlib.md5()
     with open(file_path, 'rb') as f:
         buf = f.read()
@@ -12,7 +28,7 @@ def get_file_hash(file_path):
     return hasher.hexdigest()
 
 def parse_with_docling(pdf_path, output_md_path):
-    """Tier 1: Sử dụng Docling để parse (Giữ nguyên cấu trúc, bảng biểu, công thức)"""
+    """Tier 1: Use Docling to parse (Preserves structure, tables, formulas)"""
     try:
         from docling.document_converter import DocumentConverter
         converter = DocumentConverter()
@@ -26,7 +42,7 @@ def parse_with_docling(pdf_path, output_md_path):
         return False, str(e)
 
 def parse_with_pdfplumber(pdf_path, output_md_path):
-    """Tier 2: Sử dụng pdfplumber để lấy text thô (Fallback 1)"""
+    """Tier 2: Use pdfplumber to extract raw text (Fallback 1)"""
     try:
         import pdfplumber
         text = ""
@@ -43,7 +59,7 @@ def parse_with_pdfplumber(pdf_path, output_md_path):
         return False, str(e)
 
 def parse_with_pypdf(pdf_path, output_md_path):
-    """Tier 3: Sử dụng pypdf để lấy text siêu thô (Fallback 2)"""
+    """Tier 3: Use pypdf to extract super raw text (Fallback 2)"""
     try:
         from pypdf import PdfReader
         reader = PdfReader(pdf_path)
@@ -61,28 +77,28 @@ def parse_with_pypdf(pdf_path, output_md_path):
 
 def extract_academic_pdf(pdf_path, project_root="d:/LogManagement"):
     """
-    Hàm chính xử lý việc trích xuất văn bản từ PDF thành Markdown.
-    Có cơ chế lưu cache để tránh parse lại.
+    Main function to handle extracting text from PDF to Markdown.
+    Includes a caching mechanism to avoid re-parsing.
     """
     pdf_path = Path(pdf_path).resolve()
     if not pdf_path.exists():
         return False, f"File not found: {pdf_path}", None
 
-    # Khởi tạo thư mục cache
+    # Initialize cache directory
     cache_dir = Path(project_root) / "02_du-lieu-tho" / "parsed_papers"
     os.makedirs(cache_dir, exist_ok=True)
 
-    # Đặt tên file cache dựa trên MD5 để tránh trùng tên nhưng nội dung khác nhau
+    # Set cache filename based on MD5 to prevent name collision with different contents
     file_md5 = get_file_hash(pdf_path)
     base_name = pdf_path.stem
     safe_name = "".join([c if c.isalnum() or c in ('-', '_') else '_' for c in base_name])
     cache_file = cache_dir / f"{safe_name}_{file_md5[:8]}.md"
 
-    # Trả về kết quả nếu đã được parse trước đó
+    # Return result if already parsed previously
     if cache_file.exists():
         return True, "Loaded from Cache", str(cache_file)
 
-    print(f"Bắt đầu parse PDF: {pdf_path.name}")
+    print(f"Starting to parse PDF: {pdf_path.name}")
     
     # Tier 1
     success, msg = parse_with_docling(pdf_path, cache_file)

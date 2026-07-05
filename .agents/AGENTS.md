@@ -26,3 +26,14 @@ Các skill chuyên sâu đã được tích hợp trong thư mục `.agents/skil
 - **Báo cáo LaTeX (`04_bao-cao-latex\`)**: Biên dịch bằng `xelatex` + `biber`.
 - **Tính toán AHP/TOPSIS**: Sử dụng script thông qua `mcdm-toolkit`, tuyệt đối không tự tính tay. Ma trận nào CR > 0.1 bị xem là hỏng, dừng và báo user.
 - **Viết báo cáo**: Nháp tiếng Việt trước, viết lại tiếng Anh độc lập (không dịch word-by-word) thông qua skill `professional_writing`.
+
+## 5. Tiêu chuẩn Tech-blog Vibecoding (`08_new_knowledge\`)
+Thư mục `08_new_knowledge` là "bộ não thứ hai" của user (Non-IT). Khi lưu kiến thức mới vào đây, Agent **BẮT BUỘC** phải tuân thủ:
+1. **Flow Logic 5 bước (Chỉ là luồng tư duy ẩn, KHÔNG đặt tiêu đề máy móc kiểu "The Hook", "The Analogy"):** 
+   - *Bước 1 (Mở bài):* Tình huống lỗi/Nỗi đau thực tế. Đặt tiêu đề gợi sự đồng cảm.
+   - *Bước 2 (Giải thích):* Bắt buộc dùng phép ẩn dụ đời thường (Mental Model) để giải thích khái niệm IT. Đặt tiêu đề ẩn dụ.
+   - *Bước 3 (Nguyên nhân):* Giải thích bản chất học thuật dựa trên phép ẩn dụ. 
+   - *Bước 4 (Giải pháp):* Code/Các bước khắc phục rõ ràng.
+   - *Nguồn trích dẫn:* Nguồn trích dẫn (Footnote `[1]`, `[2]`) từ Official Docs, Reputable Forums, Academic Papers. Tiêu đề: "Nguồn tham khảo".
+2. **Quy trình:** Bắt buộc dùng skill `professional-writing` (TBT → Lead → Staff) để đảm bảo chất lượng research và văn phong đồng cảm, dễ hiểu (de-jargonized).
+3. **Quy tắc đặt tiêu đề (H1):** Tiêu đề chính bên trong bài viết KHÔNG ĐƯỢC chứa các tiền tố đánh số như "Bài 01:", "Bài 02:". Việc đánh số thứ tự chỉ được dùng cho tên file để hệ thống quản lý.

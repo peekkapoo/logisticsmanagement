@@ -35,6 +35,9 @@
 - [x] [2026-07-05 09:01:00] Phân tách và chuẩn hóa danh sách tiêu chí thành 14 tiêu chí độc lập theo chuẩn học thuật (áp dụng skill `professional-writing`). Gắn trích dẫn in-text và xuất danh mục tài liệu tham khảo. Lưu tại `03_phan-tich\tieu-chi\2026-07-05_danh-sach-tieu-chi-chinh-thuc_v1.0_draft_AI.md`.
 - [x] [2026-07-05 09:34:00] Đã thực hiện Deep Read (đọc sâu toàn văn) 16 file PDF hợp lệ (loại bài unpublished). Audit và tuân thủ chặt chẽ skill `professional-writing`, viết lại hoàn toàn bản thảo Literature Review dựa trên số liệu, lập luận đối chiếu và citekey chính xác.
 - [x] [2026-07-05 09:43:00] Cải thiện tuyệt đối skill `professional-writing` lên v3.5: Tích hợp công cụ `academic_parser.py` (Tiered Pipeline: Docling -> pdfplumber -> pypdf) vào hệ thống để đọc mượt mà báo cáo khoa học chứa công thức và bảng biểu. Áp dụng cơ chế Cache `02_du-lieu-tho/parsed_papers/` tự động băm (MD5).
+- [x] [2026-07-05 10:10:00] Hoàn thành Deep Read 16 bài báo khoa học thông qua `academic_parser.py` (Cache Markdown MD5). Cập nhật và tinh chỉnh hệ thống tiêu chí đánh giá (bản Final) tại `03_phan-tich\tieu-chi\2026-07-05_danh-sach-tieu-chi-chinh-thuc_vFINAL.md` với các luận điểm và dẫn chứng định lượng cụ thể (trọng số AHP/TOPSIS).
+- [x] [2026-07-05 11:04:00] Thiết lập Luật số 5 vào `AGENTS.md` và `README.md` quy định chuẩn Tech-blog cho thư mục `08_new_knowledge`.
+- [x] [2026-07-05 11:04:00] Refactor 4 bài viết Tech-blog (04 đến 07) thành cấu trúc 5 bước (Hook, Analogy, Root Cause, Solution, Citations) và loại bỏ tiền tố đánh số ở tiêu đề chính.
 
 ## 3. Các bước tiếp theo (Next Steps)
 - Nếu user duyệt danh sách 7 laptop văn phòng, chạy Bước 2 (map benchmark CPU/GPU hoặc trọng lượng/pin tuýp văn phòng).

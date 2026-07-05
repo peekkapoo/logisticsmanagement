@@ -1,0 +1,1632 @@
+# Altubaishe_and_Desai_-_2023_-_Multicriteria_decision_making_in_supply_chain_management_using_FMEA_and_hybrid_AHP-PROMETHEE_algorithms_345208d3.md
+- Using FMEA and Hybrid AHP-PROMETHEE Algorithms
+- to compare different suppliers [39]. The criteria considered in supplier evaluation are
+- by other techniques, including the analytic hierarchy process (AHP), analytic network
+- Shaw et al. (2012) used a combination of fuzzy AHP and fuzzy objective linear
+- hybrid AHP-PROMOTHEE-based FMEA [54] method is validated on a case study for
+- Identification of criteria an d sub-criteria for supplier selection
+- Stage 3 Use AHP to calculate the weights for each criterion
+- Calculation of global weight of each criterion
+- 3.1.I SnTtAhiGsEs t(eI)p S,etlheectisounp opf lCierritsereilae catnido nSuteba-Cmritiedreian tifies a set of criteria and sub-criteria
+- a unique set of criteria based on its supply chain sensor network. Based on the tier
+- level in the supply chain, it may be important to include upstream-tier corporations
+- to determine the selection criteria. The criteria and sub-criteria for supplier selection
+- Cost Inboundtransportationcost 3 2 1 6 2 3 1 6 2 3 1 6
+- Durability 2 4 1 8 3 1 1 3 4 3 1 12
+- the sub-criteria, and alternatives. (Figure 2). The first level includes the goal, which is
+- CRs were obtained for the criteria pairwise matrix and for each sub-criterion by using
+- AHP-PROMOTHEE is applied to a case study, as discussed in the methodology sec-
+- the main criteria and sub-criteria using Equation (1). Table 9 shows the computation
+- Criterion Cost Quality Deliverability Totalweight
+- Cost 1 2 7 0.609 0.643 0.412 1.663 0.555
+- Criterion quality Reliability Durability Totalweight
+- Durability 7 0.5 1 0.467 0.304 0.318 1.089 0.363
+- The consistency ratios (C.R.) for all pairwise comparisons among the criteria and
+- assumes that the decision-maker is able to weigh the criteria appropriately. Therefore,
+- respective sub-criteria weights. Table 11 shows the global weights. In this case study,
+- Cost 0.55 Inboundtransportationcost 0.193 0.106
+- Supplier Transportation Support Quality Reliability Durability Traceability
+- Transportation Support Quality Reliability Durability Traceability
+- Transportation Support Quality Reliability Durability Traceability
+- makers to rank the supplier alternatives effectively and provide valuable guidance in
+- framing supplier selection strategies. An important aspect of the new methodology is
+- to the product cost (RPN = 6), which contradicts the corporate cost reduction strategy.
+- be adopted and implemented by any industry. Each of the sub-systems (FMEA, AHP,
+- regards to cost, quality, and deliverability criteria chosen for our case study. However,
+- brand. Supply chain risk management (SCRM) is one of the key components for an
+- in supplier selection using FMEA with hybrid AHP-PROMETHEE methods. A four-
+- global weights for the sub-criteria. The consistency check for criteria and sub-criteria
+- weights were implemented in the PROMETHEE algorithm to rank suppliers based on
+
+# Elnatan_and_Tannady_-_Alternatif_pemilihan_laptop_bagi_mahasiswa_di_jakarta_utara_menggunakan_metode_analytic_hierarchy_process_e59bf71b.md
+- the selection of laptops as a daily driver for students in North Jakarta, research using the AHP method to analyze several alternatives
+- that have been determined based on filling priority weights between criteria and criteria, and alternatives with alternatives for each
+- criterion. The results of this study indicate that the price, processor, and RAM criteria are the three biggest criteria determining
+- laptop selection. The alternative chosen in this study is the ASUS A456URKeywords: laptop, bobot prioritas, AHP
+- Keywords: laptop, priority weights, AHP
+- Utara, penelitian menggunakan metode AHP untuk menganalisis beberapa alternatif yang telah ditentukan berdasarkan pengisian
+- penelitian ini menunjukkan bahwa kriteria harga, processor, dan RAM merupakan tiga kriteria terbesar penentu pemilihan laptop.
+- Kata kunci: laptop, bobot prioritas, AHP
+- digunakan dalam membantu mempermudah pengambilan keputusan adalah AHP (Analytical Hierarchy Process).
+- Menurut Sunarsa & Handayani (2016) AHP dapat membantu mendapatkan hasil pengambilan keputusan dari
+- keputusan pemilihan laptop menggunakan metode AHP.
+- 2. AHP (Analytical Hierarchy Process)
+- solusi/tindakan yang bermanfaat dalam menyelesaikan suatu permasalahan dengan efektif dan efisien. AHP
+- Saaty & Vargas (2012, p.3) menyatakan bahwa AHP adalah teori umum tentang pengukuran yang digunakan untuk
+- tingkat berganda. AHP memberikan manfaat dalam pengambilan keputusan untuk memilih alternatif terbaik
+- berdasarkan kriteria tertentu. Menurut Chin et al. (1999) yang dikutip oleh Zaim et al. (2012), AHP tidak hanya
+- (Saaty & Vargas, 2012, p.1). AHP merupakan metode yang dapat digunakan untuk mengembangkan pengukuran
+- Menurut Alonso & Lamata (2006) seperti dikutip oleh Qubaisi et al. (2016), AHP memiliki penilaian sistematis
+- penerapan nyata dan diuji secara teoritis digunakan untuk menentukan intensitas penilaian pada elemen AHP pada
+- daily driver. Melalui survei pendahuluan ini diperoleh latar belakang masalah tentang AHP yang merupakan salah
+- metode AHP sebagai alat dalam pengambilan keputusan. Setelah mempelajari penelitian terdahulu terkait AHP,
+- batasan masalah untuk penelitian ini dan mencari studi literatur mengenai penggunaan AHP sebagai alat pengambilan
+- diolah AHP kepada 30 mahasiswa yang berkuliah di Jakarta Utara. Pengolahan data yang dilakukan peneliti adalah
+- Sunarsa & Handayani (2016) adalah Merek, Processor, VGA, RAM, Kapasitas HDD, Keunggulan, dan Harga.
+- Processor Intel Core i5/2.5 – 3.10 GHz Intel Core i5/2.5 – 3.10 GHz Intel Core i5/2.5 – 3.10 GHz
+- RAM 4 GB 4 GB 4 GB
+- HDD 1 TB 1 TB 1 TB
+- Data masukan bagi AHP didapat dari pengisian kuisioner oleh 30 mahasiswa yang sedang berkuliah di universitas di
+- masing kriteria dari 30 mahasiswa dihitung menggunakan template pengerjaan AHP pada software Microsoft Excel
+- tertinggi dengan persentase sebesar 19,9% yaitu, harga. Kriteria kedua tertinggi dengan nilai 19,64% yaitu, processor.
+- kriteria VGA, kapasitas HDD, keunggulan, dan merek dengan nilai sebesar 15,32%, 12,97%, 9,12%, dan 6,15%. Hasil
+- Bobot prioritas dari setiap kriteria yang telah ditentukan, yaitu merek (6,15%), processor (19,64%), VGA (15,32%),
+- RAM (16,89%), kapasitas HDD (12,97%), keunggulan (9,12%), dan harga (19,9%). Bobot prioritas total dari setiap
+- Hasil pengambilan keputusan pemilihan laptop menggunakan metode AHP, yaitu alternatif ASUS dengan tipe
+- [7] Rosta, Jevi & Tannady, Hendy. (2013). Aplikasi AHP Dalam Menentukan Kandidat Gubernur DKI Jakarta 2012-2017. ComTech: Computer,
+
+# Jiménez-Parra_et_al__-_2014_-_Key_drivers_in_the_behavior_of_potential_consumers_of_remanufactured_products_a_study_on_laptops_in_Spain_113f5bf0.md
+- * Correspondingauthor. Avenida deElvas,s/n,06006 Badajoz,Badajoz, Spain. which firms can design and implement the most appropriate
+- facturing? Indeed, in their definition of the concept, Atasu et al. quality,performance,warranty,andafter-salesservicessimilarto
+- anindividualtocarryoutthisparticulartypeofbehavior(pur- (price, quality, performance, etc.) they had about the product as
+- based on an experiment that simulated the purchasing act of a Baker and Ozaki, 2008), price (Agrawal et al., 2012; Atasu et al.,
+- in this scale (price, product, promotion, and distribution) had for Age30orolder 33 2.16%
+- performance, etc.) and its price (Agrawal et al., 2012; Mukherjee EmploymentStatus
+- relationships by the resampling technique known as boot- green consumer segment representsan important marketing oppor-
+- Overall, the respondents showed that price and environmental With this work, our intention has been to contribute to the
+- As regards the marketing mix variables, the results indeed boththe product's price andthe reputation of theOEMorof the
+- consumer's intention to purchase a remanufactured laptop com- purchasetheseproducts.Allthesevariables(price,brandreputa-
+- circles, which we have found to be an important referent in the
+- identified as “key drivers” such as the price and the OEM's or Arvola,A.,Vasallo,M.,Dean,M.,Lampila,P.,Saba,A.,La€hteenma€ki,L.,etal.,2008.
+
+# Kang_et_al__-_2022_-_A_study_on_the_influence_of_online_reviews_of_new_products_on_consumers__purchase_decisions_an_empirical_study_on_JD_com_f0d3520c.md
+- including design factors, laptop setup factors, logistics factors, after-sales
+- undoubtedly a difficult task for companies. The stronger the important to both consumers and businesses. According to
+- are still not successfully promoted (Cooper, 2012). According theinformationofproductattributes(e.g.,harddisk,processor,
+- a certain brand. Because of the lack of first-hand sensory computable digital information, and identify hidden topic
+- appearance as the body and screen without scratches, and most of the existing studies on the impact of online reviews
+- collection time to the earliest online review appearance time, scatter and penalizes excessive overload of topics, minimizing
+- the laptop with the latest review appearance time also reach
+- and (3) remove stop words. This step is an important task in
+- appearance design factor, laptop setup factor, logistics service
+- factor, after-sales service factor, and user experience factor.
+- appearance design, laptop setup, and user experience are all Perplexity-Varvaluesofdifferenttopicnumbers.
+- product quality factors; then logistics services and after-sales
+- Top10topicwords Package Memory Expressdelivery After-sales Soundquality
+- Delicate Screen Attitude JDMerchantService Costperformance
+- Texture Battery Transport Compensation Sharpness
+- Design Application Fast Problem Reaction
+- QualityColor Processor Logistics Experience Powerconsumption
+- Appearance Memory Expressdelivery After-sales Soundquality
+- avoidance are important drivers of information seeking the new product and that the product is generally considered
+- reviews about logistics and after-sales, the more information
+- H2b:Positiveemotionalpolarityofonlinereviewsregarding and after-sales service are unstable (Mudambi and Schuff,
+- same product (Sun, 2011). In research related to cognitive number of online reviews about design, laptop setup, logistics
+- dissonance theory, Sidnam-Mauch and Bighash (2021) found and after-sales, user experience, etc. have positive emotional
+- the design, settings, and user experience of a new laptop. andonlinereviewvarianceundertheproductqualityfactor
+- regarding design, laptop setup, logistics and after-sales, and partofthefigureisthepreprocessingprocessofthetext,which
+- sales price of product i on JD.com in week t (we use the
+- (2)Influenceofpositiveemotionalpolarityofonlinereviews and after-sales service system, and also proposed a series of
+- from Model 3, the negative effect of price on the purchase the possible bi-directional causality between the volume of
+- of consumers, including the appearance design factor, laptop
+- setup factor, logistics service factor, after-sales service factor, Managerial implications
+- online reviews play an important role as heuristic attributes
+- Engel, J. F., and Roger, D. (1995). Blackwell (1982), Consumer Behavior. effectsofonlinecustomerreviewsonbrand,price,andproductattributes.Int.J.
+
+# Liao_and_Chuang_-_2022_-_Determinants_of_innovative_green_electronics_an_experimental_study_of_eco-friendly_laptop_computers_f382ca06.md
+- Green electronics the e-waste they create, sustainability should be included in their design and innovation. This study examines the
+- relative importance of various attributes of laptops, as perceived by users. The most important attribute of
+- laptops is price, followed by battery, shell, central processing unit (CPU), monitor, storage device, and keyboard.
+- The most preferred combination of attributes for an eco-friendly laptop consists of median price, solar battery,
+- alloy-based shell, multicore CPU, LED monitor, SSD storage device, and recycled paper keyboard. Various
+- In the past decade, technology and product development in the considerate design and manufacturing to increase the number of
+- of the product life cycle, including extraction and use of raw materials, and innovative standards—affect eco-friendly laptop design and
+- Acer, Samsung, Vivo, and Dell—have begun to design “green” elec- end-of-life processes (Kaewunruen et al., 2019; Sun et al., 2015), pro-
+- tronics that treat environmental attributes as design objectives rather vision of information systems (Gu et al., 2017; Wang and Wang, 2017),
+- engage in green innovation not only minimize production waste and cost (2) the conversion of that invention into a business or other useful
+- Any type of innovation-design planning and practice must satisfy customers through markets (Chesbrough, 2006). Each step requires
+- collaboration-oriented approaches can stimulate new trains of thought, recycled, and is low in cost (IF Design, 2021). These material properties,
+- green innovation. Consumers can take proactive roles in defining and vide design flexibility to create truly environmentally friendly and
+- Such collaborative design not only delivers core benefits to users but manage its projects according to their commercial potential. Some
+- (Curran, 2013; Finnveden et al., 2009), design for environment (DFE) attract publicity and generate sales. Regardless of whether a product
+- of green electronics products according to sustainability specifications rediscovery of old styles. Even if a new design stems from a dedicated,
+- In the sustainable development era, firms should integrate ideas for provide important insights, they do not offer sufficient information
+- design, or corporate environmental management.” Several studies consideration of stakeholders during the decision-making phase,
+- ronmental initiatives, products, services, and processes that reduce future business models. Among stakeholders, users are important ex-
+- Green innovation aims to adjust the design of existing products or existence of powerful green users who can influence environmental
+- tions of fashion, in which any novel design can be appealing, as long as it ment activities enable organizations to learn about and respond to real
+- even if that design has no other function. well-being, and increase sustainability.
+- of theories to describe the implementation of green innovation. For 2.3. Green electronics design and development
+- distinguish themselves from their competitors by using available re- siderations into product design, material sourcing and selection,
+- ergy, and improve the design and quality of their products (Berchicci electronic products promote reuse and recycling by imposing collection
+- and Bodewes, 2005; Chang and Chen, 2013; Chen et al., 2006; Lin and and recovery quotas and reduce e-waste by enhancing product design.
+- configurations for environmental protection (Aguilera-Caracuel and facilitated. Specific features, reflected in product design, provide sig-
+- energy-efficient storage devices (e.g., solid-state drives [SDDs]) more ences structure to derive the part-worths (regression coefficients) for
+- important. According to Al Assaf et al. (2013), HDDs consume 3.7 W on each attribute level. For a data regression involving known data (e.g.,
+- energy conversion and storage systems benefit from efficient and eco-
+- nomic storage and minimize energy losses during discharging (Luo et al., where Znk = the preference judgment of respondent n for stimulus
+- and municipalities with considerable revenue. Finally, price is a key common unit, we can calculate importance values by taking the utility
+- profit targets, competitor price levels, and users’ willingness to pay. The attribute processing strategies adopted by a respondent (Hensher, 2006;
+- ence points. Utility information indicates varying cost performance
+- connected to eco-friendly laptop design.
+- significant computer design experience and worked for computer 9 invalid questionnaires, leaving 317 valid questionnaires, correspond-
+- core processors), storage devices (HDD and SSD), batteries (solar, items, to assess the internal consistency of the model variables. Ac-
+- and price (28,000 New Taiwan [NT] dollars, 38,000 NT, and 48,000 NT; stimuli was 0.89, indicating that our study achieved good consistency.
+- relevant features to characterize a new product that would achieve observed and predicted rank order for the holdout profiles as a check on
+- using critical eco-friendly laptop attributes, in an experimental design.
+- selected a fractional factorial design and constructed a set of 36 profiles
+- using orthogonal array design (see Fig. 1). We asked respondents to
+- criteria. They depict perceptual groupings, and thus the proximity of
+- By positioning the objects in multidimensional space, using the criteria
+- 2. CPU Multicore processors can integrate information across maps to determine which evaluative
+- 3. Storage device HDD In Fig. 2, Dimension 1 (the horizontal axis) contains three attribute
+- SSD vectors—energy saving, pollution prevention, and waste recycling—that
+- NiMH battery cluster relatively close together, representing a preference for conser-
+- NiCd battery vation prevention/recycling. The perceptual map indicates that con-
+- Recycled plastic battery as the best element, followed by storage device, monitor, CPU,
+- 7. Price 28,000 NT consumers prefer them less and consider them similar in nature; that is,
+- the four evaluative criteria and thus evaluate them negatively.
+- Measure Items n Percentage ence group, they view price as the most important element, followed by
+- Gender Male 154 48.58 monitor and battery. Most other attributes are closer together along this
+- vation criteria are centralized and far from the other attributes. How-
+- 4.3. Conjoint analysis: relative importance of attributes, rank, and part-
+- of the attributes. The most important attribute is price (24.63%), fol-
+- lowed by battery (17.74%), shell (17.53%), and CPU (12.88%). Of in-
+- termediate importance are monitor (9.52%), storage device (9.30%),
+- and keyboard (8.40%). As Table 3 indicates, for all respondents, the
+- price, solar battery, alloy-based shell, multicore CPU, LED monitor, SSD
+- storage device, and recycled paper keyboard. This combination gives
+- NPD, this finding contributes to the design of personalized laptop
+- Price 24.63% 1 1. 28,000 NT 0.0219 Price is an important consideration factor for almost all age groups. The
+- 2. 38,000 NT 0.1901 age group of 30–39 years assigns higher importance to price and battery,
+- Battery 17.74% 2 1. Solar battery 0.2046 to compatibility and recycling, reflected by high price and shell utilities.
+- 3. NiCd battery (cid:0) 0.2431 Gender is not an important factor in determining the choice of eco-
+- CPU 12.88% 4 1. Multicore 0.0273
+- processors battery. This finding may be correlated with the notion that those with
+- 2. Multiple single- (cid:0) 0.0273 lower education tend to choose shell and battery, while those with
+- Monitor 9.52% 5 1. LED 0.0577 lower income group (≤25,000 NT) perceive price to be an important
+- Storage 9.30% 6 1. HDD (cid:0) 0.1410 attribute when choosing an eco-friendly laptop, but those in the higher
+- device 2. SSD 0.1410 income group (≥45,001 NT) identify battery as more important.
+- Keyboard 8.40% 7 1. Recycled plastic (cid:0) 0.0418
+- respondent’s utilities, we can predict the respondent’s rank order of they relate to eco-friendly laptop development; it identifies the relative
+- product 26 (28,000 NT, NiCd battery, recycled paper shell, multiple
+- user value of price, battery, shell, CPU, monitor, storage device, and
+- single-core CPU, LCD monitor, SSD storage device, recycled plastic
+- keyboard. It reveals that users prefer (1) compatibility with regard to
+- Obs. Utility Price Battery Shell CPU Monitor Device Keyboard
+- 26 7.92 28,000 NT NiCd Paper Multiple single-core LCD SSD Plastic
+- 32 7.68 48,000 NT NiCd Plastic Multiple single-core LED SSD Plastic
+- 22 7.67 28,000 NT NiMH Alloys Multiple single-core LCD SSD Plastic
+- 9 7.58 28,000 NT NiCd Paper Multiple single-core LED HDD Paper
+- 34 7.55 28,000 NT Solar Plastic Multiple single-core LED SSD Plastic
+- 11 7.52 28,000 NT NiMH Paper Multiple single-core LED HDD Plastic
+- 18 7.47 48,000 NT Solar Paper Multiple single-core LED SSD Paper
+- 31 7.47 48,000 NT NiMH Plastic Multiple single-core LED SSD Paper
+- 29 7.19 38,000 NT NiCd Alloys Multiple single-core LED SSD Plastic
+- 25 7.15 28,000 NT NiMH Alloys Multiple single-core LCD HDD Plastic
+- 8 7.10 48,000 NT Solar Alloys Multiple single-core LCD SSD Paper
+- 35 6.94 48,000 NT Solar Paper Multiple single-core LED HDD Paper
+- 24 6.69 48,000 NT NiMH Plastic Multiple single-core LCD HDD Paper
+- 5 6.46 28,000 NT NiMH Paper Multicore LED SSD Plastic
+- 27 6.45 38,000 NT NiCd Paper Multiple single-core LCD HDD Paper
+- 28 6.42 38,000 NT Solar Plastic Multiple single-core LCD SSD Plastic
+- 12 6.20 38,000 NT NiMH Alloys Multiple single-core LCD HDD Paper
+- 19 6.01 28,000 NT Solar Alloys Multicore LED SSD Paper
+- 20 6.02 28,000 NT NiCd Plastic Multicore LCD SSD Paper
+- 36 5.97 48,000 NT NiCd Alloys Multicore LCD SSD Plastic
+- 10 5.90 38,000 NT Solar Plastic Multiple single-core LCD HDD Plastic
+- 13 5.87 48,000 NT NiMH Paper Multicore LCD SSD Paper
+- 15 5.70 48,000 NT NiCd Alloys Multicore LED HDD Plastic
+- 6 5.57 48,000 NT NiCd Plastic Multicore LED HDD Plastic
+- 17 5.49 28,000 NT Solar Alloys Multicore LED HDD Paper
+- 21 5.48 28,000 NT NiCd Plastic Multicore LCD HDD Paper
+- 33 5.43 48,000 NT NiMH Paper Multicore LCD HDD Plastic
+- 7 5.40 38,000 NT NiMH Alloys Multicore LED SSD Paper
+- 23 5.39 38,000 NT NiCd Paper Multicore LCD SSD Paper
+- 2 5.26 38,000 NT NiMH Plastic Multicore LED SSD Paper
+- 3 5.10 28,000 NT Solar Plastic Multicore LCD HDD Paper
+- 14 5.08 38,000 NT Solar Paper Multicore LCD SSD Plastic
+- 30 5.06 48,000 NT Solar Alloys Multicore LCD HDD Plastic
+- 1 5.01 38,000 NT NiCd Alloys Multicore LED HDD Paper
+- 16 4.82 38,000 NT NiMH Plastic Multicore LED HDD Plastic
+- 4 4.71 38,000 NT Solar Paper Multicore LED HDD Plastic
+- Socio-economic variables Levels Price (%) Battery (%) Shell (%) CPU (%) Monitor (%) Device (%) Keyboard (%)
+- price, energy savings, and pollution prevention; (2) waste recycling with Power features continue to play an important role in the design of
+- regard to battery; (3) waste recycling with regard to shell; (4) energy processors. With regard to CPUs, respondents most prefer multicore
+- savings with regard to CPU; (5) pollution prevention compatibility with processors for saving laptop energy. Because CPUs reduce execution
+- storage device; and (7) usability and recycling with regard to keyboard. (Coskun et al., 2008; Liao et al., 2017), laptop manufacturers should
+- Overall, price is users’ most important consideration when they reap the benefits of multicore processors by designing power-efficient
+- of price to users’ choice of particular eco-friendly products. In our study, to the median income group (25,001 NT–45,000 NT), manufacturers can
+- prices ranged from 28,000 NT to 38,000 NT; price levels higher than 38, benefit from the energy resource savings of CPUs. With regard to mon-
+- tance to pay more than that amount for eco-friendly laptops. Price re- provide the same or better service to users, by relying on light-emitting
+- show, users place price ahead of criteria that describe products’ envi- metals, such that their recovery rate reaches more than 90% (Peeters
+- that providing price compatibility will add consumption value to their markets.
+- products. Such price strategies can be implemented through tactics that With regard to storage devices, users prefer SSDs over traditional
+- grees of importance for attributes based on age, gender, education, in- sumption. Because SSDs do not have moving parts for data storage, they
+- come level, and laptop experience show that price is more important are not at risk of any sort of physical damage from movement. This
+- monetary value of the products and more likely to view price as a battery-powered devices such as laptop computers. Our study shows that
+- barrier. lower-income (≤25,000 NT) users regard computational storage devices
+- From an environmental perspective, our results show that laptop as notably more important; they assign high utility values to energy-
+- batteries are important to users in terms of their energy savings, pollu- efficient perceptions and practices. It also shows that users prefer
+- importance of laptop batteries differs according to groups; older re- User participatory design strategies play a key role in green pro-
+- as more important choice factors. Magnesium/aluminum alloys are the potentially hazardous materials. Many electronic product developments
+- to participating in electronic product design to express their needs and Cho, Y., Koo, Y., Huh, S.Y., Lee, M., 2015. Evaluation of a consumer incentive program
+- the characteristics of price, battery, shell, CPU, monitor, storage device, manufacture. Microelectron. Int 23 (2), 45–50. https://doi.org/10.1108/
+- and keyboard to maximize user value. Development trends change 13565360610659716.
+- laptop design is proceeding in the right direction by emphasizing the application to sustainability. Curr Opin Chem Eng 2 (3), 273–277. https://doi.org/
+- Agui p le e r r a fo -C rm ar a a n c c u e e : l , a n J. i , n O st r i t t i u z t - i d o e n -M al a a n p d p o r j o a a n c a h , . N O . r , g 2 a 0 n 1 E 3 n . v G ir r o ee n n 2 i 6 n ( n 4 o ) v , a 3 t 6 io 5 n – 3 a 8 n 5 d . h fi t n t a p n s: c / i / a d l oi. DeMendonça, M., Baxter, T.E., 2001. Design for the environment (DFE)—an approach to
+- Al Assaf, M.M., Jiang, X., Abid, M.R., Qin, X., 2013. Eco-storage: a hybrid storage system
+- with energy-efficient informed prefetching. J Signal Process Syst 72 (3), 165–180. IF Design, 2021. Paper PP Alloy/Partially recycled material for notebooks. [online].
+- Alrik o s f s o m n e , t S h . o , d O s b a e n r d g, a T p . p , l 2 ic 0 a 0 t 8 io . n C s o . n E j n o v in ir t o a n n a S l c y i s P is o f ll o u r t e R n e v s i r 1 o 5 n m (3 e ) n , t 2 a 4 l 4 e – v 2 a 5 lu 7 a . t i h o t n tp : s a :/ r / e d v o ie i. w Dexigner, 2011. Three PEGA D&E Products Win iF Design Award for 2011 [online].
+- ://ieeexplore.ieee.org/document/1373297. DisplaySearch, 2011. LED & CCFL Backlight Cost Report second quarter 2011.
+- Ayvaz, B., Bolat, B., Aydın, N., 2015. Stochastic reverse logistics network design for
+- purchase budget and preferred brand when buying by AHP method. Med J Soc Sci 6
+- Fletcher, K.T., Goggin, P.A., 2001. The dominant stances on ecodesign: a critique. Design
+- stated choice experiment design. Transportation 39 (2), 235–245. https://doi.org/ India. Int J Adv Res Manag Soc Sci 5 (12), 119–129.
+- and prospect. Environ Impact Assess Rev 27 (4), 287–300. https://doi.org/10.1016/ Robinson, D.E., 1958. Fashion theory and product design. Harvard Bus Rev 36 (6),
+- to pay a price premium for national brands over private labels. J Market Manag 31 Sancha, C., Wong, C.W., Thomsen, C.G., 2016. Buyer–supplier relationships on
+- storage systems. Adv Sci 4 (9), 1700104. https://doi.org/10.1002/advs.201700104. 1000–1013. https://doi.org/10.1002/bse.1963.
+- Heidelberg, pp. 165–180. design of telecare products and services: a qualitative study. J Med Internet Res 16
+- environmental sustainability problems: a comprehensive review and meta-analysis. design. J Clean Prod 18 (8), 833–842. https://doi.org/10.1016/j.
+
+# Liu_et_al__-_2020_-_A_review_of_fuzzy_AHP_methods_for_decision-making_with_subjective_judgements_f8e8fff0.md
+- A review of fuzzy AHP methods for decision-making with subjective
+- AHP proposed by Saaty (1980) has been applied extensively to
+- Itbecomescomplicatedwhentherearemultiplecriteria.Thesecri- sets proposed by Zadeh (1965) are combined with AHP, namely
+- veryvariedperformance.Formalmethodsareneededtoensurea tage of AHP and has been widely applied (Mardani, Jusoh, &
+- suchasAnalyticHierarchyProcess(AHP), Techniquefor Orderof lows establishing the comparison matrix, aggregating multiple
+- Dursun (2016) and Zimmer, Fröhling,and Schultmann(2016) for research has examined fuzzy AHP in terms of these aspects and
+- 130022,China. AHP structures a problem in a hierarchical way, descending
+- from a goal to criteria, sub-criteriaand alternatives in successive
+- to9level-scalestoderivetheirweights.However,pairwisecom- fuzzy multi-criteria decision-making (MCDM) method (Kubler
+- parison, the essence of AHP, introduces imprecision because it etal.,2016).Itisappliedinvariousindustries,forexampleairline
+- building a fuzzy AHP model have been proposed. They vary in tion(Balusa&Gorai,2018;Budak&Ustundag,2015;Naderzadeh,
+- where fuzzy AHP is applied to the decision-making problems in
+- the light grey boxes show the common steps between AHP and
+- the principle of fuzzy AHP method. Section 3 shows the
+- research methodology of this study. There are four important
+- aspects to develop a fuzzy AHP model, which are explained in
+- sub-criteria (Criterion1 to Criterion 3) and alternatives(Supplier
+- importantwaytoensurevalidpairwisejudgements. tal difference between fuzzy AHP and AHP. It results in that the
+- techniques to derive weights/priorities in AHP cannot directly be
+- used.Severalfuzzysetsareapplicabletoestablishthecomparison formed to ‘global weights’ by multiplying with the weight of
+- opinionswillbeaggregated.AsillustratedinFig.1,ittakesplace tion of its priorities under all the criteria/sub-criteria. w is the
+- ing the pairwise comparisons (as labelled by ① in Fig. 1) or the terionj;nisthenumberofcriteria/sub-criteria.
+- for the consistency. Suppose that criterion 1 is more important gation topic. Fuzzy AHP is a generic decision-making method,
+- ments between criteria 1, 2 and 3 are in conflict. This step takes tive criteria and brings out many situations for which fuzzy AHP
+- lated weights of sub-criteria are ‘local weights’, which are trans- ing to their properties (cf. fishbone diagram in Fig. 2). Each part
+- It is the fundamental step of building a fuzzy AHP model to
+- cles using fuzzy AHP in the review paper by Kubler et al. (2016)
+- ‘FAHP/Fuzzy AHP/Fuzzy Analytic Hierarchy Process’. They were bercanbefuzzified.Forexample,2isdefinitelyclosetoitself,soits
+- uationprocess; another in AHP. In fuzzy AHP 2e replaces 2. Including a series of
+- cause important difficulties in data processing such as hard to
+- (cid:4) v (x). In intuitionistic fuzzy AHP, (l(x), v (x), p (x)) is used to terms, which links the verbal and numerical expressions. (9)-
+- important’, ‘equally to weakly important’, ‘weakly important’,
+- ‘weakly to fairly important’, ‘fairly important’, ‘fairly to strongly
+- is the weight of C
+- importance of experts and the weight of the relative degree of
+- weight of expert in weighted arithmetic mean. This variable is a entarithmeticoperationsdefinedonthesesets.Itseemstobethe
+- compromise between the weight of expert and the difference of onlyaggregationoperationdefinedfortrapezoidalintervaltype-2
+- ) be the n performance criteria. Ceij their fuzzy AHP model. It has the following steps. As introduced
+- matrix. It has been widely used to calculate fuzzy weights, e.g. middle value of the fuzzy weight of criterion C, w , is calcu-
+- of rank reversal and independent on order of operations
+- normalised to generate the fuzzy weight of a criterion, as shown
+- Step 4: Use the two constants to adjust the lower and upper Bysettingthevaluesofaandl(usuallysetas0.5and0.5),weight
+- bounds of the fuzzy weight of criterion C i obtained in step 2. calculationturnstofindingtheeigenvectorbySaaty’sk max method.
+- weights from the matrix in AHP. This method can be adapted to Pitchipoo et al. (2013) also calculate weights by converting
+- the non-linear model as Eq. (36) where w i is the weight and k is Similarly,IFWAoperators,introducedinaggregationforgroup
+- crisp weight vector W* and k*. k*>0 indicates that all solution
+- with 3 criteria. Table 4 shows their comparisons against C . The
+- is applied by Sarfaraz, Jenab, and D’Souza (2012) to rank ERP
+- determine the relative importance and neglecting them leads to derived along with the weights of criteria from the models. This
+- parisonmatrixcanbeconsideredasconsistentwhentheratioof interpretation of GCI analogous to the consistency index in AHP
+- consistencycheckensuresthattheresultsareproducedbasedon unnormalised weight vector W with AHP model that calculates
+- AHP model in the literature. Except the problematic ones (i.e. eF
+- weights, the problem of solving a fuzzy AHP model
+- reduces to solving an AHP model T
+- natives.Thereseemsnoexplanationonthechoiceofthescalein One possible solution is that the experts evaluate the criteria
+- the principle that AHP has a 9-level scale for the top of pairwise
+- Otherwise, the experts need re-compare the criteria/alternatives
+- when the numberof criteria/alternatives is large. In addition, re-
+- setsregardingthetypes,thechosenfuzzynumbersandthedef- fuzzy paradigm to AHP is not clear, especially given that Saaty
+- assurance.Peoplefrompurchasinghavebetterknowledgetocom- tages of AHP, i.e. structuring the problems, calculating both
+- pare the cost related criteria while those from quality assurance weights and priorities and well-proved mathematical properties.
+- to judge which expert overall is more important than another. niques for building fuzzy AHP models in term of representation,
+- various fields), but is limited because the degree of membership fuzzy AHP models used in different decision-making topics in
+- techniques in the four important aspects of a fuzzy AHP model,
+- 2 Büyüközkan,Feyziog e-logistics TOPSIS TFN5 TFN EAM – EAM –
+- 6 Wangetal.(2009) – TOPSIS TFN5 TFN Lambda-max Geometric – Saaty
+- 9 ChenandHung Pharmaceutical TOPSIS TFN6 TFN Geometricmean Arithmetic – Saaty
+- 11 S(cid:1)en,S(cid:1)en,andBas(cid:1)ligil Electronic Max-min TFN9 Crisp(criteria EAM – EAM –
+- 12 Sun(2010) – TOPSIS TFN9 TFN Geometricmean – COA(butfuzzy –
+- 13 ChenandYang – TOPSIS TFN6 TFN ModifiedEAM Geometric EAM FP
+- 18 Zeydan,Çolpan,and Automobile TOPSIS TFN9 TFN7 EAM Arithmetic – Yno
+- 20 Büyüközkan(2012) Automotive TOPSIS TFN11 TFN Geometricmean Weighted COA Saaty
+- 25 Zouggariand – TOPSIS TFN5 TFN EAM Max-min EAM Saaty
+- 27 Ghorbani, agricultural TOPSIS TFN5 TFN EAM – EAM –
+- 28 Kannanetal.(2013) Automobile TOPSIS TFN9 TFN9 EAM Geometric EAM Saaty
+- 31 Roshandel,Miri- material TOPSIS TFN5 TFN Arithmeticmean Arithmetic – –
+- 32 Viswanadhamand – TOPSIS TFN5 TFN EAM Arithmetic EAM –
+- 38 Beikkhakhianetal. – TOPSIS TFN9 TFN5 Eigenvectorbased Geometric Indexof Saaty
+- 42 Yaylaetal.(2015) Logistics TOPSIS TFN5 TFN Geometricmean – COAforBNP –
+- 43 Büyüközkanand Automotive TOPSIS Intuitionistic Intuitionistic Weightofa IFWA – Saaty,
+- 45 PrakashandBarua Logistics TOPSIS TFN7 TFN EAM Max-min EAM –
+- 48 WangChen,Chou, Manufacturing TOPSIS TFN6 TFN EAM Arithmetic EAM –
+- 51 Göreneretal.(2017) Airline TOPSIS Intervaltype Intervaltype Geometricmean Geometric -Fuzzyweights Saaty
+- 54 CelikandAkyuz Maritimetrans TOPSIS Intervaltype- Intervaltype- Geometricmean – COA –
+- 56 Liuetal.(2019) Agriculture TOPSIS TFN9 TFN Geometricmean Geometric COA Saaty
+- 2 Yazdani-Chamziniand TOPSIS TFN9 TFN EAM Arithmeticmean EAM –
+- 7 ChoudharyandShankar TOPSIS TFN9 TFN EAM – EAM –
+- 11 Erbasetal.(2018) TOPSIS TFN5 TFN Geometricmean – COA Saaty
+- 18 Kilic,SelimzaimandDelen TOPSIS TFN9 Crispvalue Geometricmean Arithmeticmean COA –
+- 20 Efe(2016) TOPSIS TFN5 TFN EAM – EAM/COA Saaty
+- 21 Taylanetal.(2014) TOPSIS TFN5 TFN EAM -Mentionedaveraging EAM –
+- 22 Baysal,Kaya,Sarucan, TOPSIS TFN5 Arithmeticmean – Indexof –
+- 24 García-Cascales(2012) TOPSIS TFN5 TFN Arithmeticmean – – –
+- 29 Vinodh,Prasanna,and TOPSIS TFN9 TFN Geometricmean – COA –
+- 32 Mahjourietal.(2017) TOPSIS TFN5 TFN Geometricmean Arithmeticmean – –
+- 46 Zyoud,Kaufmann,Shaheen, TOPSIS TFN5 TFN EAM Max-min EAM –
+- 47 SirisawatandKiatcharoenpol TOPSIS TFN9 TFN EAM EAM –
+- 48 CelikandAkyuz(2018) TOPSIS Intervaltype2 – Geometricmean – COA Saaty
+- 50 SinghandSarkar(2019) TOPSIS TFNself- TFN EAM – EAM –
+- approach with IF AHP and IF VIKOR for selecting hazardous waste carriers.
+- selection using a fuzzy AHP-VIKOR based approach. International Journal of
+- Ayag, Z. (2010). A combined fuzzy AHP-simulation approach to CAD software
+- ranking suppliers using fuzzy TOPSIS-AHP methods. Expert Systems with fuzzy preference relations. International Journal of Computer Integrated
+- Bostancioglu, E. (2020). Double skin façade assessment by fuzzy AHP and Facchinetti,G.,Ricci,R.G.,&Muzzioli,S.(1998).Noteonrankingfuzzytriangular
+- Calabrese,A.,Costa,R.,Levialdi,N.,&Menichini,T.(2019).Integratingsustainability AHP optimization model for network selection in heterogeneous wireless
+- into strategic decision-making: A fuzzy AHP method for the selection of networks.AppliedSoftComputing,67,800–811.
+- Calabrese, A., Costa, R., & Menichini, T. (2013). Using Fuzzy AHP to manage Hashemian,S.M.,Behzadian,M.,Samizadeh,R.,&Ignatius,J.(2014).Afuzzyhybrid
+- Cebeci, U. (2009). Fuzzy AHP-based decision support system for selecting ERP Ju,Y.,Ju,D.,Gonzalez,E.D.R.S.,Giannakisc,M.,&Wang,A.(2018).Studyofsite
+- Celik,E.,&Akyuz,E.(2018).Anintervaltype-2fuzzyAHPandTOPSISmethodsfor Jung, H. (2011). A fuzzy AHP–GP approach for integrated production-planning
+- Celik, M., Deha Er, I., & Ozok, A. F. (2009). Application of fuzzy extended AHP Kahraman, C., Beskese, A., & Kaya, I. (2010). Selection among ERP outsourcing
+- methodology on shipping registry selection: The case of Turkish maritime alternatives using a fuzzy multi-criteria decision making methodology.
+- Chai, J., Liu, J. N. K., & Ngai, E. W. T. (2013). Application of decision-making multi criteria decision making method and multi-objective programming
+- supplier selection: A fuzzy-AHP approach. International Journal ofProduction usinganalytichierarchyprocess,fuzzysettheoryandneuralnetwork.Journalof
+- Chang, D.-Y. (1996). Applications of the extent analysis method on fuzzy AHP. Karsak, E. E., & Dursun, M. (2016). Taxonomy and review of non-deterministic
+- Chen,L.-H.,&Hung,C.-C.(2010).Anintegratedfuzzyapproachfortheselectionof AHP model and Fuzzy Copras. Process Integration and Optimization for
+- aspects.MathematicalProblemsinEngineering,2016,1–10. survey & testbed of fuzzy AHP (FAHP) applications. Expert Systems with
+- matricesq.JournalofMathematicalPsychology,29,387–405. convenience store location through integration of fuzzy AHP and artificial
+- Emrouznejad, A., & Marra, M. (2017). The state of the art development of AHP Liu,Y.,Eckert,C.,Bris,G.Y.-L.,&Petit,Galle(2019).Afuzzydecisiontooltoevaluate
+- Mahjouri,M.,Ishak,M.B.,Torabian,A.,Manaf,L.A.,Halimoon,N.,&Ghoddusi,J. Samanlioglu, F., & Ayag, Z. (2017). A fuzzy AHP-PROMETHEE II approach for
+- using integrated multi-criteria decision-making techniques and fuzzy logic. Intelligent&FuzzySystems,33,859–871.
+- Mosadeghi,R.,Warnken,J.,Tomlinson,R.,&Mirfenderesk,H.(2015).Comparisonof Singh, P. K., & Sarkar, P. (2019). A framework based on fuzzy AHP-TOPSIS for
+- Comparative analysis of ahp-topsis and fuzzy ahp models in selecting Sirisawat, P., & Kiatcharoenpol, T. (2018). Fuzzy AHP-TOPSIS approaches to
+- integrated approach of fuzzy linguistic preference based AHP and Fuzzy ManufacturingSystems,31,240–252.
+- Rezaei, J., & Ortt, R. (2013). Multi-criteria supplier segmentation using a fuzzy vanLaarhoven,P.J.M.,&Pedrycz,W.(1983).AfuzzyextensionofSaaty’spriority
+- Roshandel, J., Miri-Nargesi, S. S., & Hatami-Shirkouhi, L. (2013). Evaluating and ecosystem, performance and risk criteria. International Journal of Production
+- TOPSIS.AppliedMathematicalModelling,37,10170–10181. Wang, J.-W., Cheng, C.-H., & Huang, K.-C. (2009). Fuzzy hierarchical TOPSIS for
+- TransactionsonFuzzySystems,22,749–761. group multi-criteria supplier selection problem. Engineering Applications of
+- applications of fuzzy AHP. European journal of operational research, 116, LP: Linearprogramming
+
+# Maghsoudi_et_al__-_2026_-_A_hybrid_framework_for_notebook_market_analysis_integrating_social_media_sentiment_mining_with_expert_knowledge_for_feature_prioritization_f131c725.md
+- observed purchasing patterns, with features subsequently ranked using the TOPSIS
+- multi-criteria decision-making method. Findings reveal that price, display quality,
+- CPU performance, RAM capacity, and design constitute the most influential factors in
+- tems, battery chargers, and warranty services, indicating critical improvement areas.
+- which permits unrestricted use, distribution, Brand-s pecific analysis demonstrates that display quality ranks highest for Lenovo,
+- and reproduction in any medium, provided the while price dominates concerns for Dell, HP, and Microsoft, validating distinct mar-
+- features. These features range from processing power and graphics performance to
+- portability, design aesthetics, battery life, and overall user experience [3].
+- feature prioritization through the TOPSIS method. By integrating these components,
+- through the combined application of fuzzy logic and TOPSIS. Third, we present empirical findings that detail how different
+- cations. Section 2 reviews the existing literature relevant to sentiment analysis, consumer electronics, and multi-criteria
+- patterns and technological advances. Previous research has identified price, performance, and portability as traditional
+- Student consumers prioritize battery life and weight, reflecting their need for all-day usage and campus mobility. Profes-
+- sional users focus on display quality and keyboard comfort, essential for extended work sessions and productivity tasks. Gam-
+- ing enthusiasts emphasize GPU performance and cooling systems, critical for sustained high-performance computing [17].
+- (18–25) show higher sensitivity to design aesthetics and brand image, while older professionals (35–50) prioritize
+- ies comparing students vs working professionals, [18] show similar base brand and screen-size preferences, though
+- Price sensitivity varies significantly across segments. While budget-conscious students demonstrate high price elastic-
+- ity, business users show willingness to pay premiums for durability and support services [19]. This heterogeneity in price
+- Neural Networks (CNNs) and Recurrent Neural Networks (RNNs), including Long Short-Term Memory (LSTM) networks,
+- 2.5. Multi-criteria decision making: Fuzzy logic and TOPSIS
+- priorities requires robust decision-making frameworks capable of handling multiple criteria simultaneously. Multi-Criteria
+- The Technique for Order of Preference by Similarity to Ideal Solution (TOPSIS), developed by Hwang and Yoon
+- logic. TOPSIS ranks alternatives based on their geometric distance from positive and negative ideal solutions,
+- effectively balancing multiple criteria to identify optimal choices [61]. The method has been successfully applied
+- Its ability to incorporate both benefit and cost criteria makes it particularly suitable for analyzing consumer prefer-
+- purchase behavior, and TOPSIS synthesizes these inputs to generate prioritized recommendations that balance con-
+- of ABSA methodology, and the robust decision-making frameworks provided by fuzzy logic and TOPSIS, this article pres-
+- TOPSIS’s systematic prioritization capabilities, we provide a more nuanced and actionable framework for notebook manu-
+- The two streams converge at the Identify Priorities stage, where the TOPSIS multi-criteria decision-making method
+- (like fans) but unwilling to purchase when price or display don’t meet expectations. This experiential knowledge bridges
+- the TOPSIS method (Technique for Order of Preference by Similarity to Ideal Solution). TOPSIS is a powerful multi-criteria
+- The steps involved in the TOPSIS method are:
+- The creation of weighted matrices involves multiplying the normalized matrix by the weight of v =r w . The matrix is
+- utilized. This involved creating a list of keywords relevant to laptops in general and specific to each brand. By leveraging
+- “laptop,” “Asus,” “MacBook,” and “CPU” were used to filter relevant reviews. For each brand, specific product names and
+- model identifiers were included to ensure a broad and representative sample of reviews. The query lists for each brand
+- The elimination of reviews was guided by specific criteria to improve the dataset’s relevance and quality. Short
+- brand bias that could skew sentiment analysis results. Temporal distribution analysis reveals consistent data collection across the
+- reviews of laptops from Twitter, aiming to extract sentiments associated with specific aspects such as “battery,” “screen,”
+- and “price” to gain insights into user satisfaction across seven major brands.
+- “battery,” “RAM,” and “price.” For instance, in the review “Super great laptop even though it had 8 GB of RAM, it is also
+- very thin and lightweight, and the battery lasts a long time,” the identified aspects were “RAM,” “weight,” and “battery,” with
+- target aspect list based on frequency analysis. The final list of target aspects included [‘ram’, ‘display’, ‘keyboard’, ‘price’,
+- ‘battery’, ‘storage’, ‘gpu’, ‘cpu’, ‘charger’, ‘warranty’, ‘design’, ‘webcam’, ‘port’, ‘size’, ‘fan’, ‘weight’].
+- is noted in aspects such as design, with 82.2% positive feedback, weight at 72.5%, GPU with 70.7%, and CPU at 69.0%.
+- issues with cooling efficiency, battery charging.
+- Balanced sentiments are observed in features like RAM, with 61.4% positive feedback, display at 55.7%, keyboard at
+- 56.6%, and storage at 56.2%. These features generally meet user expectations but suggest areas where small improve-
+- ments could enhance satisfaction. The display and battery, which attract the most reviews, are crucial features for users,
+- underscoring their significant role in the overall user experience. Additionally, the price, with a 65.3% positivity rate,
+- reflects user sensitivity to cost versus value, emphasizing the importance of competitive pricing strategies.
+- ination of individual laptop brands. By analyzing user sentiments for each brand, we can uncover unique insights and
+- brand-specific trends that might not be visible in the aggregate data. This targeted analysis will deepen our understanding
+- of consumer preferences and pain points for each brand, providing valuable guidance for targeted improvements and
+- The design stands out with an impressive 92.3% positive feedback, underscoring its aesthetic appeal and ergonomic
+- terms of performance, Asus laptops receive strong approval for their CPU (78.7% positive) and GPU (68.5% positive),
+- showcasing robust processing and graphics capabilities. However, there are notable concerns regarding the fan system
+- primarily due to battery charging reliability issues. Warranty services received considerable negative feedback (79.6%
+- Fig 5. Brand-specific sentiment patterns across seven notebook manufacturers revealing unique strengths and weaknesses per brand.
+- 2. Acer: User sentiments towards Acer laptops reveal a mixed bag of strengths and challenges. Battery life stands out
+- with a prominent 70.4% positive sentiment, reflecting high user satisfaction (Fig 5). The display quality is another high-
+- light, praised for its visual excellence (76.2% positive). Acer excels in GPU (81.4% positive) and CPU (80.5% positive)
+- ative) and warranty (56.5% negative) further highlights reliability issues. The keyboard also receives notable criticism
+- 3. Apple: Apple laptops are celebrated for their distinct features, though not without critical feedback. Design is a stand-
+- out feature with a notable 67.5% positivity rate, emphasizing aesthetics and ergonomic appeal (Fig 5). Weight is also
+- positively received (68.1% positive), contributing to the laptops’ portability. However, concerns about the fan (84.6%
+- negative sentiment), charger (73.4% negative), keyboard (60.5% negative), and warranty (61.0% negative) indicate
+- 4. Dell: Dell laptops are well-regarded for their overall performance and design appeal (Fig 5). Design receives an impres-
+- sive 88.0% positive feedback, reflecting its aesthetic and ergonomic strengths. Weight is another positive aspect
+- (81.0% positive), contributing to its portability. Performance-wise, Dell laptops excel in GPU (76.3% positive) and CPU
+- 5. HP: HP laptops earn high praise for their design (95.4% positive sentiment), emphasizing aesthetic and ergonomic
+- qualities (Fig 5). Weight is also positively received (75.0% positive), contributing to their portability. Performance
+- aspects such as CPU (81.7% positive) and GPU (84.3% positive) capabilities are well-regarded. However, critical feed-
+- 6. Lenovo: User sentiments towards Lenovo laptops highlight strong design appeal (89.0% positive sentiment), empha-
+- sizing aesthetics and ergonomic considerations (Fig 5). Weight is also positively received (80.0% positive), contributing
+- to their portability. Performance-wise, Lenovo excels in CPU (81.0% positive) and GPU (72.0% positive) capabilities.
+- 7. Microsoft: Microsoft laptops receive commendation for their design (75.7% positive sentiment), highlighting aesthetic
+- and ergonomic features (Fig 5). Performance aspects such as CPU (64.7% positive) and GPU (57.4% positive) capa-
+- and warranty (70.0% negative), indicating areas needing improvement.
+- from a purchase. This practical knowledge helps weight the importance of sentiments in real purchasing contexts. Using
+- and negative sentiments. Features such as price, display, and RAM exhibit high average scores for both posi-
+- cost-effectiveness of the notebook, and any dissatisfaction in these areas can greatly deter potential buyers. On the
+- er’s motivation to purchase a notebook. Additionally, the relatively moderate scores for features like the keyboard,
+- webcam, and port (0.5, 0.3583, and 0.5 respectively) indicate that while these factors are important, they are not as
+- pivotal as the core performance and design features.
+- Sentiment RAM High High Very High High Very High High High Very High High High
+- Display High Very High Very High Very High High Very High Very High High Very High High
+- Keyboard Medium Medium Medium Medium Medium Medium Medium Medium Medium Medium
+- Price Very High Very High Very High Very High Very High Very High Very High Very High Very High Very High
+- Battery High High High Medium High High High High High High
+- Storage High High High High High High High High High High
+- GPU Medium Medium High Medium High Medium Medium High Medium Medium
+- CPU High High Very High High Very High High High Very High High High
+- Warranty Medium High Medium Medium High High Medium Medium High High
+- Design Medium High Very High High High Very High High High Very High High
+- Port Medium Medium Medium Medium Medium Medium Medium Medium Medium Medium
+- Size Medium High High High Medium High High Medium High Medium
+- Weight Medium High High High Medium High High Medium High Medium
+- Negative RAM High High Very High High Very High High High Very High High High
+- Sentiment Display High Very High Very High High High Very High High High Very High High
+- Keyboard Medium Medium Medium Medium Medium Medium Medium Medium Medium Medium
+- Price Very High Very High Very High Very High Very High Very High Very High Very High Very High Very High
+- Battery High High High Medium High High High High High High
+- Storage High High High High High High High High High High
+- GPU Medium Medium High Medium Medium Medium Medium High Medium Medium
+- CPU High High Very High High Very High High High Very High High High
+- Warranty Medium High Medium Medium High High Medium Medium High High
+- Design Medium Medium High Medium Medium High Medium Medium High Medium
+- Port Medium Medium Medium Medium Medium Medium Medium Medium Medium Medium
+- Size Medium Medium Medium Medium Medium Medium Medium Medium Medium Medium
+- Weight Medium Medium Medium Medium High Medium Medium Medium Medium Medium
+- 4.5. TOPSIS-based prioritization of notebook features
+- The Technique for Order of Preference by Similarity to Ideal Solution (TOPSIS) represents the synthesis stage of our
+- The TOPSIS methodology serves three critical functions in our framework. First, it transforms multi-dimensional sen-
+- Preparation and Implementation of TOPSIS Analysis:
+- 1. Decision Matrix Construction: A matrix was created with notebook features (e.g., RAM, Display, CPU) as rows and
+- The results obtained from TOPSIS calculations are detailed in Table 7, which delineates a distinct hierarchy of con-
+- sumer preferences. Key findings highlight that price, design, display, CPU, and RAM are paramount factors influencing
+- The integration of ABSA and TOPSIS methodologies in this study provides a more nuanced understanding of the note-
+- that drive actual purchase decisions. TOPSIS addresses this limitation by incorporating expert knowledge to weight the
+- Table 7. TOPSIS-based prioritization ranking of 16 notebook features.
+- Rank Notebook Feature TOPSIS Score
+- genuine consumer pain points such as cooling systems and battery chargers with predominantly negative sentiments,
+- while TOPSIS contextualized these findings by revealing that despite strong negative responses, these features have
+- minimal impact on purchase decisions compared to core attributes like price and display quality. This dual-perspective
+- The TOPSIS prioritization results presented in Table 8 reveal important insights about brand-specific strengths and
+- brand’s unique competitive advantages and natural differentiation opportunities.
+- For premium positioning, Apple and Microsoft show distinct patterns where design and display quality rank highly,
+- aligning with their focus on creative professionals and business users. Apple’s lower emphasis on price (ranking 2nd)
+- reflects its established premium brand equity, while Microsoft’s similar pattern supports its Surface line’s positioning as
+- In the value segment, brands like Acer and Asus show price and RAM as top priorities, consistent with their
+- strategy of offering performance-oriented machines at competitive prices. Acer’s top ranking of RAM reflects its
+- gaming laptop focus, while Asus balances price with display quality to serve both budget-conscious and enthusiast
+- For business-oriented brands, Lenovo’s unique prioritization of display quality over price aligns with its ThinkPad heri-
+- tage of serving professional users who value screen quality for extended work sessions. Dell and HP show similar pat-
+- terns with price leading, reflecting their broad market approach spanning from entry-level to premium segments.
+- These brand-specific patterns suggest that rather than converging on a single “ideal” notebook profile, manufacturers
+- its design excellence, and value brands should focus on delivering performance at attractive price points. The data sup-
+- Table 8. The results of TOPSIS prioritization by brands.
+- Rank Acer Apple Asus Dell HP Lenovo Microsoft
+- 1 RAM Price Price Price Price Display Price
+- 2 Display Display Display Display Display Price Display
+- 3 Price CPU RAM CPU RAM RAM CPU
+- 4 CPU RAM CPU RAM CPU CPU RAM
+- 5 Storage Storage Storage Battery Battery Battery Storage
+- 6 Battery Battery Battery Storage Storage Storage Battery
+- 7 Warranty Warranty Warranty Warranty Design Design Warranty
+- 8 Design Design Design Design Warranty Warranty Design
+- 9 Size GPU Weight Weight Weight Weight GPU
+- 10 Weight Weight GPU Size GPU GPU Weight
+- 11 GPU Size Size GPU Size Size Size
+- 12 Keyboard Port Keyboard Port Port Port Keyboard
+- 13 Port Keyboard Port Keyboard Keyboard Keyboard Port
+- In conclusion, the TOPSIS prioritization results offer a data-driven framework for notebook manufacturers to align their
+- dynamics, consumer behavior, and brand-specific factors to develop truly effective and sustainable strategies in the highly
+- approach to enhance their competitive positioning in the market. The TOPSIS prioritization results, coupled with sentiment
+- within each brand’s unique market context.
+- The analysis reveals that while certain features consistently rank highly across brands, such as price, display quality,
+- and core performance components, the specific prioritization patterns align with and validate each brand’s existing mar-
+- of the notebook market. For instance, Apple’s emphasis on design excellence serves creative professionals, Lenovo’s
+- display quality focus aligns with business users’ extended work sessions, while Acer’s RAM prioritization supports gaming
+- Given these brand-specific patterns, manufacturers should interpret our findings as optimization guidance within their
+- chosen market segments rather than universal prescriptions. The following insights should be adapted to each brand’s
+- Regarding pricing strategies, while price ranks consistently high, its implementation varies by segment. Premium
+- brands like Apple can maintain higher price points justified by design and ecosystem integration, while value-focused
+- brands like Acer and Asus should continue optimizing cost structures to offer competitive pricing without compromising
+- For display technology, the high consumer priority suggests all brands should invest in this area, but through different
+- Core performance features (RAM, CPU) remain fundamental, but their emphasis should align with use cases. Gaming
+- cisely because they are overlooked. A brand could distinguish itself by transforming these “hygiene factors” into compet-
+- II. Establish cross-functional teams that understand both the brand’s strategic positioning and evolving consumer prefer-
+- III. Develop product roadmaps that strengthen existing brand advantages while selectively addressing weaknesses that
+- uations through fuzzy logic, and feature prioritization using TOPSIS methodology. The framework effectively addressed
+- The ABSA component successfully extracted sentiments toward 16 key notebook attributes, revealing that design, weight,
+- GPU, and CPU received predominantly positive feedback, while cooling systems and battery chargers emerged as pri-
+- The TOPSIS-based prioritization revealed that price, display quality, CPU performance, RAM capacity, and design con-
+- stitute the most influential factors in notebook purchasing decisions. Importantly, the brand-specific analysis demonstrated
+- distinct prioritization patterns that align with each manufacturer’s market positioning: Lenovo’s emphasis on display quality
+- reflects its business-oriented focus, Apple’s design prominence aligns with its creative professional target market, and
+- value-focused brands like Acer and Asus show price and RAM as top priorities consistent with their performance-oriented
+- learning-based sentiment analysis can be systematically integrated with structured expert knowledge and multi-criteria
+- While this research provides valuable insights into consumer preferences and brand positioning in the notebook market,
+- identical search parameters. However, our large sample size (329,091 tweets) and extended collection period (18 months)
+- preferences may shift substantially in response to disruptive innovations such as the introduction of new processor
+- architectures, display technologies, or form factors. Additionally, seasonal patterns related to academic calendars, holiday
+- The TOPSIS method, while robust and widely validated in multi-criteria decision-making contexts, assumes indepen-
+- dence among criteria. However, notebook features such as CPU performance, RAM capacity, and overall system respon-
+- siveness are inherently interrelated [88]. Similarly, design aesthetics and weight considerations often involve trade-offs,
+- as do battery life and processing power. This assumption of independence represents a theoretical simplification that
+- Although this sample size aligns with established practices in fuzzy multi-criteria decision-making studies, it may constrain
+- Methodologically, exploring alternative multi-criteria decision-making methods that explicitly model feature interdepen-
+- address the independence assumption limitation. Integration of machine learning techniques for dynamic feature weight-
+- 61. Kumar P, Sarkar P. A comparison of the AHP and TOPSIS multi-criteria decision-making tools for prioritizing sub-watersheds using morphometric
+- ational Complex Building Projects: A Delphi Study Using the TOPSIS Method. Appl Sci. 2021;11(17):7906. https://doi.org/10.3390/app11177906
+- 65. Roma P, Aloini D. How does brand-related user-generated content differ across social media? Evidence reloaded. J Bus Res. 2019;96:322–39.
+
+# Rau_and_Fang_-_2018_-_Optimal_time_for_consumers_to_purchase_electronic_products_with_consideration_of_consumer_value_and_eco-efficiency_d35b4fcb.md
+- a relatively good product selection order of Ultrabooks for price-conscious and environmentally
+- years, government agencies, manufacturers, and consumers have attempted to use green design
+- existing criteria such as product function, specification, price, time of release, brand, and energy
+- efficiency. In fact, all the evaluation criteria are required for the consideration of a single decision
+- represents the value gained at the time of purchase, and CP(t) represents the consumer cost at the time
+- of the functional value, the brand value is usually one of the factors that consumers will consider
+- study assumes that the material cost and manufacturing costs of products with similar functions
+- price (P), will decrease as time goes on and when new products appear under general market
+- mechanisms. This study used data from Amazon [18] to obtain product historical price curves
+- The TOPSIS (Technique for Order Preference by Similarity to Ideal Solution) method is a
+- This study used the screen sizes and types of notebook computers available in the market to
+- Display 13.3(cid:48)(cid:48) 13.3(cid:48)(cid:48) 15.6(cid:48)(cid:48) 15.6(cid:48)(cid:48) 18.4(cid:48)(cid:48) 17.3(cid:48)(cid:48)
+- Display(Resolution) 13.3(cid:48)(cid:48)(1920×1080) 13.3(cid:48)(cid:48)(3200×1800) 13.3(cid:48)(cid:48)(3200×1800) 13.3(cid:48)(cid:48)(3840×2160)
+- CPU/RAM GeekbenchPerformance1 Score↑ 7700 8150 0.94 0.34
+- Display Resolution Pixel↑ 1,296,000 1,296,000 1 0.17
+- Battery Maxstandbytime Hours↑ 12 10 1.20 0.15
+- Weight Weight kg↓ 1.35 1.2 0.89 0.09
+- Intel HD Graphics Intel HD
+- Video Card Intel HD Graphics 520 Intel HD Graphics 600
+- Display (Resolution) 13.3′′ (1920 × 1080) 13.3′′ (3200 × 1800) 13.3′′ (3200 × 1800)
+- Hard Drive SSD 128 G SSD 256 G SSD 128 GB SSD 512 GB
+- Battery life 10 h 12 h 12 h 16 h
+- System weight 1.2 kg 1.18 kg 1.2 kg 1.1 kg
+- CPU/RAM Geekbench Performance 1 Score ↑ 7700 8150 0.94 0.34
+- Display Resolution Pixel ↑ 1,296,000 1,296,000 1 0.17
+- Battery Max standby time Hours ↑ 12 10 1.20 0.15
+- Weight Weight kg ↓ 1.35 1.2 0.89 0.09
+- Performance, Loathing Point Performance, Memory Performance, and Stream Performance [31]. 2 G3D
+- 3.1.2. Calculation of Brand Value
+- As for the calculation of product brand value, this study defines brand value as the amount the
+- products are used as the products’ purchase cosPt CP, whiBle CB (BOM cost) aMnd CM (manufacturing
+- cost) were obtained on the basis of the Notebook Teardowns and Cost Benchmarking Report released
+- Table 5. Brand value of case products A–F.
+- After finding the product functional value-time function and the brand value-time function,
+- than product B in both functional and brand value deterioration. This means that the functions,
+- specifications, brand, and price of case product A were of the higher specifications and relatively
+- functional deterioration is much faster than the brand value deterioration. This is because although
+- After finding the product functional value-time function and the brand value-time function,
+- Figure 7. Purchase cost-time curve for case products A and B.
+- Based on the aforementioned calculations, the product value and product purchasing cost-time
+- 9, and 10. After substituting the product value VP(t), and the product purchasing cost CP(t), into
+- P the product value VP(t)C is larger than the rate of deterioration for the product purchasing cost
+- functional value and purchasing cost are not significantly affected by the introduction of new
+- product value due to the release of a new-generation product of the same brand.
+- the product value VP(t) is larger than the rate of deterioration for the product purchasing cost
+- Figure 8 that Product B’s deterioration in product value VP(t) and purchasing cost CP(t) is larger
+- than Product A’s. Since Product A has a higher functional value and brand value, its product
+- functional value and purchasing cost are not significantly affected by the introduction of new
+- product value due to the release of a new-generation product of the same brand.
+- Figure 8. Product value and product purchasing cost-time function curves for ultrabooks
+- Figure 9. Product value and product purchasing cost-time function curves for business notebooks
+- Figure 10. Product value and product purchasing cost-time function curves for gaming notebooks
+- product purchasing cost CP(t) becomes greater than the deterioration of product value VP(t) for
+- product purchasing cost C (t) becomes greater than the deterioration of product value V (t)
+- value VP(t) is greater than the deterioration of the product purchasing cost CP(t), similar to the
+- product purchasing cost CP(t) becomes greater than the deterioration of product value VP(t) for
+- in the sales price is still greater than the reduction in specifications and functions (product value);
+- product purchasing orders. These groups are the brand and function conscious group, price and
+- For the indifferent consumer group, the weightings of three key weights are the same. TOPSIS is
+- purchasing order for the different types of consumers (brand and function, price and cost,
+- brand value and specifications, will be their preference. Owing to the high deterioration of
+- Figure 15. Evaluation order for the suggested product purchase (brand-conscious and function-conscious
+- Figure 16. Evaluation order for suggested product purchase (price- and cost-conscious consumer group).
+- of new products and should be bought when their price drops so as to obtain the best value. As for
+- gaming notebooks, owing to their high specifications and low market price reduction, it is best to buy
+- consumers toward all of the product types. We found that ultrabooks were the most suitable for price-
+- for consumers that were indifferent (general consumers). Owing to the high brand value of ultrabook
+- Product A and the general-use of Product C, they are more suitable for brand-conscious and function-
+- suggestions of all four consumer groups considered owing to its high selling price and low price
+- the price or cost but also value and environmental impact. This can also serve as a reference for
+- consumer value (defined by the product value and product cost) and environmental impact of the
+- model, which used the TOPSIS method with three factors; product value, product-purchasing cost,
+- business notebooks it is best to buy them later, when their price drops because they are not
+- This study provided more factors to consider, not just the price or cost but also value and
+- 18. Amazon. Price History Charts. 2016. Available online: https://camelcamelcamel.com/ (accessed on
+
+# Sönmez_Çakır_and_Pekkaya_-_2020_-_Determination_of_interaction_between_criteria_and_the_criteria_priorities_in_laptop_selection_problem_74e23880.md
+- Determination of Interaction Between Criteria and the Criteria
+- Abstract The statistic of global laptop shipment showed along with having the highest priority, and the price cri-
+- that 161.6 million laptops were sold, 65.23% more than terion is obviously being affected by all criteria.
+- 2017. So, laptop demand is quite high and needs to be Keywords MCDM (cid:2) AHP (cid:2) Fuzzy AHP (cid:2) DEMATEL (cid:2)
+- multi-criteria decision-making (MCDM) methods in
+- action between criteria, and the criteria priorities in laptop
+- laptop literature, and fuzzy AHP is for criteria priorities. Computers can be examined under three main titles:
+- The price and brand image of a laptop have more interre- desktop-PC, laptops, and tablets. Figure 1 shows net
+- lated action than the other main criteria. According to computer sales from 2010 to 2017 and estimated sales
+- results, the brand image is determined as the most impor- volumes from 2018 to 2023. Figure 1 shows that desktop
+- tant criteria. Along with the brand image, other/peripheral and PC sales have been declining, but laptop and tablet
+- among six main criteria. The brand image along with the increased again. Considering that the life expectancy of a
+- price had a dominant effect on other criteria according to computer is 5 years, it can be seen how widespread com-
+- lowing information: speed, storage, monitor and other/pe- selection process stems from the existence of alternative
+- ripheral properties criteria have overall effecting feature brands, models and integrated features.
+- Ag˘dacı,Bartın,Turkey by determining the priorities of these criteria with an
+- Multi-criteria decision-making (MCDM) techniques are
+- research gaps in the related literature. Firstly, AHP/ANP
+- methods are commonly used in determining criteria prior-
+- and the fuzzy environment in views of experts’ criteria
+- that the main/sub-criteria expressions/concepts considered
+- summarized as follows: (1) multi-criteria/variable can be
+- no compliance in the criteria priorities obtained as a result
+- ison of decision criteria; COPRAS treats the criteria as
+- nents in a decision environment consisting of criteria and
+- mances where there are conflicting criteria (max–min);
+- essence, AHP, DEMATEL, Entropy, CRITIC can be used
+- for determining the priority of the criteria in MCDM
+- The study aims to determine the criteria priorities in thecriterion,andthetotalinteractions;(2)toshowdrawing
+- laptop selection, the impact levels of criteria with using a and presenting the diagrams for inter-criteria interaction
+- diagram of these criteria via MCDM methods and present model, thus showing that the inter-criteria interaction
+- aimofthisstudyistoshowthattheinteractionbetweenthe tive way; (3) determining the 6 main criteria priorities via
+- criteria taken into consideration in the laptop selection fuzzyAHPand20sub-criteria;(4)theviewsobtainedfrom
+- demic studies on laptop selection, it is seen that AHP approachandthenobtainedthegroupjudgmentswhichare
+- method is the most preferred among the MCDM methods used in AHP-DEMATEL calculations as data.
+- in determining criteria priorities, and ANN, CRITIC Theremainingpartofthispaperisstructuredasfollows:
+- or Fuzzy AHP-DEMATEL model application is not DEMATELmethod,inthefourthsectionAHP,inthefifth
+- encountered in related literature, for such evaluations of section fuzzy AHP methods are explained. The sixth sec-
+- criteria used in the present study in the selection of com- tion is where criterion significance ratings and analysis of
+- study was conducted and the criteria that could affect the
+- main/sub-criteria to be used in the analyses were clarified The AHP and DEMATEL methods have been used alone
+- was ensured that these criteria were graded with pair- many decision problems since the years of participating in
+- comparisons by expert views. AHP and fuzzy AHP meth- the literature. Table 2 presents some models used for
+- ods were used for determining the criteria priorities and computer selection and some work done by leaning or
+- DEMATELmethodwasusedtodeterminetheinteractions hybridizing with DEMATEL and AHP.
+- of each criteria with the other criteria. InTable 2,someexamplesofMCDMmethodsusagein
+- The highlights of the study can be expressed for espe- computer selection in the literature and the main criteria
+- gories for Price, Speed categories, Storage/Memory/Me- therelationsaccordingtotypeandothercriteria[33].Inthe
+- morycategories,Brandcategories,SizeandOtherfeatures method, the criteria that have a higher impact on other
+- in the selection of Laptop or Personnel Computer. Main criteria and are assumed to have high priority are called
+- and sub-criteria are created with the information obtained. cause criteria, whereas those that are influenced and
+- The most important criteria are determined as memory assumed to have low priority are called outcome criteria.
+- (0.430) [20], processing speed (0.2742) [19], brand and Alongwithdeterminingthepriorities,Paksoy[39]declares
+- warranty(0.22) [21], Hdd/Ram/cache memory (0.28) [22], the output of DEMATEL as follows:
+- speed (0.22) [23]. The determined most important criteria
+- • Identification of criteria clusters that affect other
+- show that memory, speed, brand image must be taken into
+- consideration. AHP/ANP methods are commonly used in
+- • Determination of cause criteria that most affect other
+- criteria priority calculations, but no research using
+- • Determination of the most affected result criteria from
+- between criteria in related literature.
+- sub-criteria are formed, expert opinions are taken for the
+- whole criterion in the table. The main criteria and sub-
+- criteria, which are found to be the most important, have
+- simplify the relationship between complex management methods and criteria can be compared.
+- problems or criteria [4, 31]. The DEMATEL method can
+- 2 0 a (cid:2)(cid:2)(cid:2) a 3 The usage of tolerated consistent AHP and fuzzy AHP
+- A¼6 6 . . . . . . . . 7 7 ð1Þ AHP allows determining the priorities of the criteria
+- because they are ‘‘ineffective’’ if the criteria are compared tencies of all pair-comparisons used in determining calcu-
+- with each other. Other process steps are summarized in lations of the criteria priorities. One-side scale values of
+- Table 4. two-way pair-comparisons in AHP are listed in Table 5.
+- The main advantage of the DEMATEL method is AHP has been widely used in recent years to determine
+- including indirect relationships with a conciliatory cause the criteria priorities with pair-comparisons, especially
+- and effect model [38]. The threshold value is determined generating criteria priorities for selecting/sorting of proper
+- by the decision-makers or experts. The effect direction alternatives in MCDM calculations. The AHP calculation
+- 4 Analytic Hierarchy Process (AHP) Method table,inadditiontodeterminingthecriteriaprioritiesinthe
+- AHP is a method developed by Saaty in 1980 for solving cross-consistency confirmed pair-comparisons represented
+- problems with a large number of criteria and alternatives, as a single number (CR, at stages 4–5) is evaluated as the
+- which are used to determine the criteria priorities or to advantageous face of AHP. The most important advantage
+- conduct selecting/sorting of alternatives using pair-com- of the AHP method over the other methods is the pair-
+- parisons. AHP can be considered as the most widely used comparison matrices which are made to determine the
+- MCDM method for solving MCDM problems in almost relative importance of the criteria at the same level in the
+- mining priorities of the existing criteria in such a process.
+- Fuzzy AHP (FAHP) is a modified basic of the AHP >:
+- is a synthetic extension of the classical AHP method [41]. Function l lower, m mean and u upper shows the value.
+- The main difference between AHP and FAHP can be Two fuzzy numbers can be added and subtracted, multi-
+- guisticexpressionsforcalculationsinsteadofrealnumbers. expressions are used in AHP as shown in Table 5. Trian-
+- These linguistic expressions are equally important, abso- gular fuzzy number equivalents of these expressions are
+- lute important, etc. [42]. In obtaining fuzzy numbers, given in Table 7.
+- Zadeh[17]introducedthefuzzyclusteringprocessandthis Table 8 shows the fuzzy AHP steps. Existing data will
+- the options in a multi-criteria environment by using fuzzy since no pair-comparison which consists of only scaling
+- Chou procedure is used for removing blurriness. with ‘‘w = (1/r)/(Sum(1/r))’’. 20 sub-criteria questions
+- exist since one of the main criteria (M1—price of the
+- product) has no sub-criteria. Along with their bold abbre-
+- 6 Determining the Interaction Between Criteria viations, all the main/sub-criteria of the study in laptop
+- and the Criteria Priorities in Laptop Selection selection problems are listed in Table 9.
+- interaction/causal relationship between criteria via who are willing and available, have selected via the con-
+- DEMATEL, and the criteria priorities via AHP in the venience sampling method. They have knowledge/experi-
+- parisons of main criteria. Acquired values from 23 experts restofthemareworkinginthisindustry.Mostofthemare
+- for so many criteria are not the same, then, in general, we male (65.2%, 15 people), have more than 5 years of
+- main criteria and 21 sub-criteria are specified according to andhasreceivedagreatdealofattentioninthepastdecade
+- (0–4) scaled 30 pair-comparisons of main criteria on that include imprecise and uncertain information. The
+- AHP calculations. Moreover, five-point scaled (1—least and total interactions separately in even ranking form for
+- important to 5—extreme important) 20 sub-criteria criteria/factors. And also the DEMATEL technique con-
+- verts the interrelations between criteria/factors into an
+- impact relation (interactions) diagram, both of these tion between criteria by using these 23 matrices. Accord-
+- The interaction between main criteria is determined via interaction matrix is calculated by using these pair-com-
+- the main criteria conducted in two main scenarios. Con- The constructed interaction matrix in terms of DSen-1a
+- have interactions with each criteria, especially at a high
+- values to the other criteria (D values), M1 and M6 have levelwithM6-Brand,andthenM2-SpeedandM3-Storage.
+- totally highly been effected values from the other criteria As the laptop ‘‘Price’’ dominantly affects the criteria of
+- (R values), and then these criteria are more interactive (or ‘‘Brand’’, ‘‘Speed’’ and ‘‘Storage’’, also laptop ‘‘Price’’ is
+- relationship) criteria than others (D ? R values). Rela- dominantly affected by the same three criteria. In terms of
+- tively net effecting criteria are M2 and M3 with having comparisons, since M1-Price’s affecting values are clearly
+- effected criteria are M1 and partly M6 with having nega- Pricecriteriacanbenamedasbeingeffectedcriteriawhich
+- M1 and M6 criteria having more distinct interrelations in
+- M6-Brand criteria has a cumulative inter-reaction with
+- another perspective, M1-Price and M6-Brand have almost
+- other criteria in terms of experts’ views. This image is
+- affected values to/from the other criteria, and then more respect to D ? R and D - R values.
+- interactive criteria than others. Relatively net effecting The main criteria priority calculations are conducted
+- criteria are M2 and M3, and relatively net effected criteria accordingtofourAHPscenariosandtwomainDEMATEL
+- are M1 and M6. Then all these relatively effecting/being scenarios. AHP scenarios are summarized in Table 14. In
+- affected results of these four DEMATEL scenarios pro- the calculation processes of AHP scenarios, most of the
+- DSen-2bdiagramisreportedalongwithdiagramsofDSen- six criteria [24, 50, 51] is accepted. By accepting Dodd
+- are represented in Fig. 4. and the main criteria priorities are calculated by using
+- with having many more drawings that have significantly six main criteria. The priorities are determined by
+- FAHP and FAHPw, a simple fuzzy AHP approach is which are calculated from interaction volumes. High
+- conducted, general views of experts for criteria priorities interaction volumes may not always mean high priority.
+- metric means ofeach main criteria are calculated by using alternative decision priorities maybe be different than in
+- geometric means are calculated by using the same pair- According to AHP-priorities in terms of the scenario in
+- comparison scores but 16 experts’ views are doubled Table 15, the main criteria priorities are almost the same
+- The priorities obtained from AHP method can be decided as M6-Brand, then M5-Other and M1-Price. M3
+- DEMATELmethod;DEMATELcanbeusedespeciallyin DEMATEL-priorities the most important criteria are
+- criteria [49]. In most cases, DEMATEL-priorities have a relatively have the least score. So, these results can be
+- tendency to have equal priorities, maybe because of the interpreted as follows. AHP-priorities represent a more
+- Table16 Mainandsub-criteriaprioritiesviaFAHP priorities. The other 15 sub-criteria have priority scores
+- M1-Price;.1736 S1-Price 1.000 1 .1736 1
+- S3-RAM-sp .3071 2 .0266 16
+- the most important stages of the purchase decision of a
+- M3-Storage;.0868 S5-RAM-cap .2212 4 .0192 21
+- S6-HDD/SDD .2584 2 .0224 19
+- MCDM methods are preferred for important individual or
+- models have been developed to make this important ana-
+- S10-Size .2446 3 .0380 13
+- via the AHP and DEMATEL method, which are widely
+- S14-Weight .2630 2 .0546 6
+- S15-Battery .1967 4 .0408 11
+- According to results, price and other/peripheral proper-
+- M6-Brand;.2899 S17-Service .1809 5 .0524 9
+- ties of a laptop have more interrelated action with criteria
+- S18-Design .2140 2 .0620 3
+- the most important main criteria in the laptop selection
+- problem. Along with the brand image, other/peripheral
+- S21-Durability .1913 3 .0555 5 properties and price criteria have a totally two-thirds
+- Rpriorityrankinmaincriteriaorallingroup,wcriteriapriorities (67.11%) priority among six main criteria. In the related
+- in laptop selection. For example, as M1-Price has the
+- tion processes of the alternatives and the criteria cannot
+- out of 6, M1-Price has a priority of about 17.36% ranking
+- important criterion may be determined as storage capacity
+- [20], running speed [19], brand and warranty [21], Hdd/
+- Ram/cache memory [22], speed [23], while in this study,
+- of related AHP literature and almost the same priorities
+- the brand image, the reason of which can be examined
+- determined in AHP scenarios. According to FAHP priori-
+- other criteria according to interaction matrices/diagrams.
+- When the results of AHP and DEMATEL are considered
+- together, the brand image and price criteria can be con-
+- sidered as the most important criteria in the laptop selec-
+- about criteria and their interaction directions and magni-
+- tudes. For example, speed, storage, monitor and other/pe-
+- The determined sub-criteria priorities are listed in
+- ripheral properties criteria have overall effecting feature
+- Table 16. S1-Price (17.36%) has the highest priorities
+- but not strongly, while brand image which stands in the
+- mainly because of being also main criteria and having no
+- other sub-criteria. Then S19-Eco-fri (6.55%) and S18-De-
+- having the highest priority, and the price criterion is
+- sign (6.20%) sub-criteria of M6-Brand have quite high
+- obviously being affected by all criteria. The results of the
+- priorities. However, RAM-cap (1.92%) and S8-Proc-cache
+- (1.96%) sub-criteria of M3-Storage have quite low
+- then they emphasized that the brand criterion has the
+- criteriainvestigationsfordecision-makersofthelaptop,PC objective weights in multiple criteria problems: The critic
+- the objective criteria determining methods which use
+- market data, in order to compare the criteria priorities, or 20. Sumi, R.S., Kabir, G.: Analytical hierarchy process for higher
+- 1. Triantaphyllou, E.: Multi-criteria decision making methods. In: computersevaluationusingmultiple-criteriadecisionanalysis.In
+- 3. Chen, S.J., Hwang, C.L.: Fuzzy multiple attribute decision puter systems: Structuring a multi-criteria approach. J. Inf. Sys.
+- Springer, Berlin (1981). https://doi.org/10.1007/978-3-642- better laptop with conflicting criteria using TOPSIS. Int. J. Inf.
+- 12. Trajcovic, S., Avakumovic, D., Opricovic, S.: Multi criteria 33. Tseng, M.L., Lin, Y.H.: Application of fuzzy DEMATEL to
+- statistics and economics, Prague, 2015, 723–732. https://pdfs. 51. Pekkaya, M., Erol, F.: Generating priority series via AHP for
+- 40. Hamzac¸ebi, C., Pekkaya, M.: Determining of stock investments Turkey. Her areas of expertise are Multi-Criteria Decision-Making,
+- 41. Kabir, G., Hasin, M.A.A.: Comparative analysis of AHP and completedherMasterandDoctoratestudiesinthefieldofNumerical
+- 42. Chou, Y.C., Sun, C.C., Yen, H.Y.: Evaluating the criteria for Hybridization’’from GebzeTechnical University.She has bookson
+- integrated fuzzy AHP and fuzzy DEMATEL approach. Appl. Partial Least Squares Structural Equation Modeling (PLS-SEM)
+- application of fuzzy AHP and fuzzy TOPSIS. Symmetry 11(2), Ph.D. degrees (2006–2011) in business administration, Zonguldak
+- AHP yo¨ntemi kullanılarak tedarikc¸ilerin performansının o¨lc¸u¨l- University Council of Turkey in September 2015 on numerical
+- Econometrics,OperationsResearchandStatistics(ISEOS2016), (2015–…). His research interests are multi-criteria decision-making,
+- 47. Roszkowska, E.: Rank ordering criteria weighting methods-a severalworkshops.
+
+# Tighnavard_Balasbaneh_et_al__-_2025_-_A_systematic_review_of_implementing_multi-criteria_decision-making__MCDM__approaches_for_the_circular_economy_and_cost_assessment_38c52be1.md
+- A Systematic Review of Implementing Multi-Criteria
+- evaluations of economic cost and social impact. Criteria are incommensurable as each
+- pairwise comparisons of criteria, facilitating clarity in high-stakes or multifaceted deci-
+- “multi criteria decision making”, “MCDM”, and “multi criteria decision making”. The
+- that focusing solely on cost may not provide the best solution for industry, as such an
+- Another important metric presented in Table 4 is the Total Link Strength, which
+- hierarchy process, cost effectiveness, energy utilization, manufacturing, recycling, and
+- a cost-benefit analysis in decision-making. One study evaluated the cost-benefit in the
+- Reference [24] implemented AHP and PROMETHEE (preference ranking organization
+- TOPSIS (FTOPSIS), and Multi-Objective Linear Programming (MOLP). Reference [53]
+- weights. Reference [43] applied MCDM by combining the Delphi Method, AHP, and
+- lutions that industries can use to overcome the cost barriers and encourage circularity
+- among the most important issues and barriers in implementing circular supply chains.
+- studies combined methods like AHP and TOPSIS [50] or hybridized tools such as DE-
+
+# Weng_Siew_Lam_et_al__-_2023_-_Evaluation_and_selection_of_mobile_phones_using_integrated_AHP-TOPSIS_model_a6cc8266.md
+- Evaluation and Selection of Mobile Phones using Integrated AHP-TOPSIS
+- Received in revised form 28 September 2023 in the selection of mobile phones. There are multiple criteria that need to be considered
+- is a Multi-Criteria Decision Making (MCDM) problem. This paper aims to propose a
+- MCDM model to identify the decision criteria’ priority in the mobile phones’ selection
+- using integrated AHP-TOPSIS model. Furthermore, the goal of the study is to find out
+- study is conducted to determine the priority of decision criteria and mobile phones
+- among the undergraduate students with AHP-TOPSIS model. The results indicate that
+- Mobile phones; Multi-Criteria Decision out the most desired mobile phone and the most significant decision factor in the
+- Making; AHP; TOPSIS; priority mobile phones’ selection among undergraduate students with AHP-TOPSIS model.
+- process, the mobile phone users need to consider multiple criteria in choosing the best mobile phone.
+- Therefore, the evaluation and selection process of mobile phones is treated as multi-criteria decision
+- (AHP) model to find out the preference of the mobile phones among mobile phone users. In their
+- study, the decision criteria are basic built-in functions, hardware features, price, and brand. Hu et al.,
+- the customers’ satisfactions and demands. The decision criteria are mobile convenience, product
+- function, and customer equity. Chakraborty et al., [5] presented an AHP model to prioritize the
+- criteria that consumers will consider while purchasing the smart phones in India. The listed criteria
+- that considered in the study are affordability, design, brand, operating system, functionality, and
+- lastly user experience. In their research, the results demonstrated that brand is the most crucial
+- affordability, and finally design. Yildiz and Ergul [6] have done a study in the selection process of the
+- Analytic Hierarchy Process-Technique for Order of Preference by Similarity to Ideal Solution (AHP-
+- TOPSIS) is an integrated MCDM model which assists to determine the best alternatives based on
+- multiple factors [9,10]. AHP model is capable to identify the priority of the decision factors whereas
+- TOPSIS model is proposed to identify the ranking of the decision alternatives according to the idea of
+- and the farthest proximity from the negative ideal solution (NIS). AHP-TOPSIS model has been
+- In today's world, smartphone is quite important to teenagers and undergraduate students.
+- and selection of mobile phones among undergraduate students with AHP-TOPSIS model. Thus, the
+- study aims to propose a MCDM model for the evaluation and selection of mobile phones with AHP-
+- TOPSIS model. Furthermore, the study aims to consider all important decision criteria and sub-criteria
+- smartphone makers [26]. However, the mobile phone brand such as Oppo and Vivo are not
+- undergraduate students using the proposed AHP-TOPSIS model. The reduction in cost of mobile
+- In this research paper, integrated TOPSIS and AHP model is proposed for the selection and
+- evaluation of mobile phones. The advantage of AHP model is to find out the decision criteria’ priority
+- on the PIS and NIS with TOPSIS model [15]. Figure 1 displays the proposed research framework which
+- i. Stage 1: Identification of the decision alternatives, decision criteria, and sub-criteria for
+- ii. Stage 2: Application of AHP methodology to find the importance of decision criteria’ and
+- sub-criteria’ weight. At this stage, the overall ranking of decision criteria and sub-criteria
+- iii. Stage 3: The TOPSIS model is proposed for ranking of the best decision alternative for
+- mobile phone selection. The TOPSIS model is suitable to address the complex decision-
+- phones among Samsung, Apple, Oppo, Huawei, and Vivo using AHP-TOPSIS model. The first level in
+- decision criteria. A total of five decision alternatives are illustrated in the third level.
+- Level 2 (Decision criteria) Technical specification
+- The decision criteria and sub-criteria for the selection of mobile phones presented in Table 2.
+- Main decision criteria and sub-criteria
+- choosing the mobile phones based on multiple criteria with the proposed AHP-TOPSIS model. As
+- shown in Table 2, the main decision criteria consist of technical specification, physical properties,
+- The AHP model was first introduced by Saaty [29–32]. AHP is a scientific model in MCDM which
+- [12]. Determination of decision criteria’ and sub-criteria’ weights are crucial for ranking the optimal
+- mobile phone selection. The AHP model is a pairwise comparison approach which is utilized to get
+- the relative importance of decision criteria and sub-criteria [12]. In the study, AHP model is proposed
+- to find the weights of the decision criteria and sub-criteria at the second stage [28–31]. The
+- procedures of AHP model are depicted below [33].
+- ii. Step 2: Collection of data from target respondents. Establish the decision criteria’ pairwise
+- shows that the AHP outcome is reliable and acceptable and no further evaluation is required. On the
+- TOPSIS is a MCDM model that used to rank the alternatives and select the most preferred
+- alternative based on multiple criteria [38]. TOPSIS model is classified as a distance measure method
+- proximity from the PIS [15,39-42]. TOPSIS model is easy to use [43]. Moreover, the step numbers for
+- TOPSIS model are still the same regardless of the number of criteria and alternatives [44]. The
+- procedures of TOPSIS model are presented below [38].
+- The weights of the decision criteria that determined by the AHP model is utilized to
+- measure the relative importance of different selection criteria. The weighted normalized
+- decision matrix is established by multiplying the weights of the decision criteria,
+- vii. Step 7: Rank the alternatives according to c
+- Based on the second stage of the proposed MCDM model with AHP, Figure 2 displays the weights
+- mobile phones. The next priority of decision criteria is basic built-in functions, and finally physical
+- user related features are the most important criteria in the mobile phones’ selection among
+- Fig. 2. Weights of the decision criteria
+- Table 4 provides the priority weights among criteria and sub-criteria. The sub-criteria’ normalized
+- weights within the criteria and their ranking within each of the main criteria have been identified
+- 4. When considering the sub-criteria under each main criterion, the sub-criteria such as pixel density,
+- weight, aesthetic, and polyphonic ring tones are the least considerable factors for the main criteria
+- respectively. On the other hand, battery power is the most considerable factor in technical
+- specification criterion with the weight of 0.2841, while durability is the most preferable factor in
+- physical properties with the weight of 0.3249. Cost and password lock are the most influential factors
+- in the selection of mobile phones for the criteria user related features and basic built-in functions
+- with the weight of 0.3403 and 0.3699, respectively.
+- Priority weights in the AHP decision tree
+- Weight between the Weight within the Ranking within Weight among sub- Overall
+- criteria (%) criteria (%) the criteria criteria (%) ranking
+- RAM 0.2198 3 0.0707 6
+- Processor 0.2589 2 0.0833 3
+- Battery Power 0.2841 1 0.0914 2
+- Weight 0.1072 5 0.0192 18
+- Durability 0.3249 1 0.0582 8
+- Screen Size 0.2565 2 0.0459 11
+- Cost 0.3403 1 0.1061 1
+- Brand 0.2456 2 0.0766 4
+- The normalized weight of the sub-criteria is given in Figure 7. At the final stage of the proposed
+- MCDM model with TOPSIS, the ranking of the mobile phones is determined. The weighted normalized
+- decision matrix v is formed by multiplying the decision weights that are results of the AHP model at
+- Fig. 7. The normalized weight of sub-criteria
+- Decision criteria Positive ideal solution (PIS) Negative ideal solution (NIS)
+- phones. This indicates that Apple has excelled other mobile phones in terms of all decision criteria
+- obtained demonstrate that the AHP-TOPSIS model is robust.
+- Mobile phone Relative closeness coefficient (c ) Rank
+- be taken into consideration in the process of evaluation. AHP-TOPSIS model is proposed in the study
+- to identify the decision criteria’ priority in the mobile phones’ selection. Besides, the study aims to
+- built-in functions, and finally physical properties. In this study, cost, battery power, and processor
+- have been identified as the top three important sub-criteria among undergraduate students.
+- selection among undergraduate students. The hybrid of AHP and TOPSIS model assists the decision
+- maker to consider and determine the optimal decision based on the PIS as well as NIS. AHP-TOPSIS
+- model addresses the important research direction of obtaining AHP weighted features for use in the
+- the most desired mobile phone and the most significant decision criteria and sub-criteria in the
+- AHP-TOPSIS model can be adopted and extended for evaluation process and selection of mobile
+- FMCGDM FUZZY MULTIPLE CRITERIA GROUP DECISION MAKING APPROACH." Gomal University Journal of
+- system for mobile phone selection: Design, implementation, and evaluation." Expert Systems with Applications 37,
+- [5] Chakraborty, Soham, Shashwat Srivastava, and Karishma Das. "Application of Analytic Hierarchy Process (AHP) to
+- [6] Yildiz, Aytac, and Engin Ufuk Ergul. "A two-phased multi-criteria decision-making approach for selecting the best
+- Malaysia with AHP-TOPSIS model." J Eng Appl Sci 13 (2018): 3226-3231.
+- [10] Velasquez, Mark and Hester, Patrick T. "An analysis of multi-criteria decision making methods." International
+- [12] Ghorui, Neha, Arijit Ghosh, Ebrahem A. Algehyne, Sankar Prasad Mondal, and Apu Kumar Saha. "AHP-TOPSIS
+- [13] Chou, Tsung-Yu, and Yen-Ting Chen. "Applying fuzzy AHP and TOPSIS method to identify key organizational
+- strategy for wind turbines using an integrated AHP-TOPSIS decision model." Energies 10, no. 5 (2017): 642.
+- [15] Wang, Chia-Nan, Ying-Fang Huang, I-Fang Cheng, and Van Thanh Nguyen. "A multi-criteria decision-making
+- (MCDM) approach using hybrid SCOR metrics, AHP, and TOPSIS for supplier evaluation and selection in the gas and
+- Dao et al., "A hybrid approach using GIS-based fuzzy AHP–TOPSIS assessing flood hazards along the south-central
+- of decision-making for estimating the durability of web application." Symmetry 12, no. 11 (2020): 1770.
+- fuzzy TOPSIS analytical hierarchy process (AHP) and failure mode and effects analysis (FMEA)." Agriculture 10, no.
+- Zafar A. Khan. "Composite multi-criteria decision analysis for optimization of hybrid renewable energy systems for
+- with generalized fuzzy TOPSIS in application of smart phone selection." Neutrosophic Sets and Systems 32 (2020):
+- [34] Saaty, Thomas L. "An exposition of the AHP in reply to the paper “remarks on the analytic hierarchy
+- [37] Ilham, Zul. "Multi-criteria decision analysis for evaluation of potential renewable energy resources in
+- TOPSIS method." Indian Journal of Science and Technology 5, no. 3 (2012): 2289-2294.
+- [40] Gerogiannis, Vassilis C., Panos Fitsilis, and Achilles D. Kameas. "Using a combined intuitionistic fuzzy set-TOPSIS
+- [44] İç, Yusuf Tansel. "An experimental design approach using TOPSIS method for the selection of computer-integrated
+- [45] Soad, Mariyati Mat, Hanizam Ibrahim, and Siti Hajar Ismail. "Design and Development of Portable Pneumatic with
+
+# Yannis_et_al__-_2020_-_State-of-the-art_review_on_multi-criteria_decision-making_in_the_transport_sector_4eb4a7bb.md
+- Receivedinrevisedform measures, and transport options evaluation, various multi-criteria methods have been
+- and policies, the design of infrastructure works and the se- (cid:1) MCDM leads to better-considered, justifiable, explainable
+- port related decisions was cost effectiveness analysis (CEA),
+- and safety decision-making, is cost benefit analysis (CBA),
+- which is based on the calculation of the total cost of the
+- as examples of multi-criteria analysis (Department for
+- The criteria applied to the selection of publications to be
+- concepts and procedure for multi-criteria decision-making
+- importance of the criteria. Disagreements tend to appear in
+- multi-criteria analysis techniques in transport related
+- criteria decision-making (MCDM) techniques. MCDM, also
+- known as multiple-criteria decision analysis, is a sub-disci-
+- criteria,bothquantitativeandqualitative,indecision-making 2. Transport sector MCDM techniques
+- and/or citizens). It is important taking into account the etal.,1998).
+- applied regardless of the selected multi-criteria aggregation Methods that encompass a finite number of alternative
+- relation to defined attributes/criteria and their weights. The beginning,constraintsareanalyzed,andthebestsolutionis
+- criteria for the evaluation of solutions and variable con- solution”bymeansofinteractiveprocedures(Omann,2004).
+- (PROMETHEE),analytichierarchyprocess(AHP),etc. problems are usually characterized by a finite number of
+- number of alternative solutions are appropriate for “well- policy measures, etc.), a complex set of objectives, criteria
+- questions the underlying theoretical basis of the AHP
+- 3. Review of relevant research and case Successful applications of AHP in transport sector deci-
+- (apart from the decision-maker and the analyst), etc. These Since AHP is a flexible method, many researchers have
+- combination of AHP methodology for determining criteria
+- AHPdevelopedbySaaty(1980)seemstobethemostcommon to ideal solution (TOPSIS) to obtain final project rankings,
+- The basic characteristic of the AHP method is the use of Metropolitan Planning Organizations Transportation
+- options with respect to the various criteria and to estimate assessment of alternative transportation policies
+- criteria weights (Velasquez and Hester, 2013). AHP is based incorporating utility functions to develop quantitative
+- onthefollowingfourprinciples(Saaty,1995). criteria scores to a predefined scale ranging from (cid:3)1 (worst
+- performance) to 1 (best performance), AHP for determining
+- (cid:1) Decompositions.Acomplexproblemisdecomposedintoa criteria weights, according to policy priorities set out from
+- principleofhierarchiccompositiontoprovidetheoverall of options, grouping criteria in three clusters (socio-
+- (cid:1) Sensitivity analysis. The stability of the outcome to coherency, strategic/political concerns), and utilising AHP
+- changesintheimportanceofthecriteriaisdeterminedby for determining criteria weights by performing pairwise
+- AHP method combined with a Delphi procedure for the
+- scalable and caneasilyadjustin size to accommodate deci- stakeholdersoncriteriaweightshasalsobeenappliedbyLe
+- the alternatives independent of the decision criteria and of assessment(COSIMA),whichinvolvesthecombinationofcost
+- in isolation, but only in comparison with the rest, without in eastern Europe. AHP has also been integrated with
+- 2013). Also, criticism can be identified regarding the “rank geospatial AHP-based decision-making framework that
+- addinganotheroptiontothelistofoptionsbeingevaluated, (criteria scores) towards graphic deliverables (maps) that
+- planners involved in the design of interstate highway I-269 while the ANP to rank the evaluation criteria and the
+- citizens. The criteria that were taken into account were the
+- criterion in each pair, i.e., instead of indicating “how many tive model, is probably the simplest multi-criteria analysis
+- (as in AHP), the actors are requested to indicate relative againstanumberofdecisioncriteria.Theoverallperformance
+- criteria weights for each pair of criteria. The method is of each option is generated by multiplying the performance
+- considered by the authors as an easier way to interpret, score on each criterion by the weight of that criterion, and
+- by many people when stating the proportion of an element simplearithmetic, and is only appropriate if the criteria are
+- crucial public bus transport supply quality criteria and to offers the advantage of taking uncertainty into account, by
+- combination of fuzzy and interval AHP, in the Mersin eachoftheconsequences,whichrequiresstrongerassump-
+- fleet size modeling an individual's decision process when
+- AHP,thatisalsobasedonpairwisecomparisonstomeasure factors about that trip (Deshmukh et al., 2018). The model
+- sion problem into a hierarchy with a goal, decision criteria, Using SAW technique, Ensor (2003)developeda software
+- risks, each incorporating subgroups and relevant criteria. A appropriateness of the built-in criteria, the extensive
+- applications the extensive criteria list and the size of the secondaryroadnetworkinIreland(Guhnemannetal.,2011),
+- criteria support), while there is no overwhelming reason to and utilizing the concept of “pseudo-criterion”, the method
+- outranking as a way of supporting multi-criteria decision- European Transport Policy, each with different objectives in
+- fourteen second-level criteria and multiple third-level sub- Apart from the aforementioned, more commonly used
+- criteria/indicators. Both methods resulted in identical methods, other MCDA/MCA techniques have also been
+- sensitivity analysis, by altering criteria weights or problems. Olivkova(cid:3) (2017)hasappliedasimplemulticriteria
+- hierarchy process (GAHP) and PROMETHEE for the examining the following criteria: simplicity and comfort,
+- criteria of transport types were: travel cost, travel time, Cundric et al. (2008) developed a multi-attribute decision
+- criteria, the ranking of the alternatives and the sensitivity (numeric) ones, thus making it suitable for less formalized
+- to respond adequately under conflicting criteria, and are uncertainty,usingacross-efficiencyfuzzydataenvelopment
+- particularly useful in decision problems that require public analysis (DEA) technique. Sun et al. (2016) combined AHP
+- Authoritiesin1999wasduplicated,usingELECTREIIImethod, operations and service. The AHP method quantified
+- method, the same alternative design prevails, but it is now understudy.
+- very slightly behind, which had not been identified in the multi-criteria decision-making techniques, namely TOPSIS,
+- allows for an enhanced comprehension of a complicated criteria, for the evaluation of three urban mobility projects
+- measuring the closeness of the alternative with respect to criteria contributing to the objectives of that specific
+- farthest from the negative ideal solution. A positive ideal very different concerns, as manifested in different criteria
+- alternativerankings.Thecloserthealternativeistotheideal Thailand. They investigated an extensive set of criteria
+- application of three multi-criteria decision-making (ROC)weightingmethodtodeterminecriteriaweights.
+- techniques, namely TOPSIS, VIKOR and GRA, with fuzzy
+- criteria, for the evaluation of the three previous urban 3.2. MODMapplications
+- A “reference point theory” method (like TOPSIS tions”decisionproblemsinthetransportsectorusuallyrefer
+- hypothetical alternative highway improvement designs. optimization of required crew size in the mass transit
+- system, each response of an alternative on an objective is municipal authorities. Four optimization criteria were
+- et al., 2011; Macharis and Bernardini, 2015; Macharis and values of criteria constituting the objective function are
+- including qualitative as well as quantitative criteria with two employees, recalculating the values of criteria and
+- hierarchy structure of goals/objectives/criteria is common removedfromthelist,whilethenewsolutionisaddedto
+- of goals/objectives/criteria is not necessarily shared by criteria are reached, representing the decision-makers'
+- certainareaofthePareto-optimalsetbyafocusedbeamof problems can be found. Therefore, multi-criteria decision-
+- criteria has not been explored (although a common MCA another” is also available to the decision-maker. Other
+- method, like AHP, could be used for that purpose). Corte(cid:3)s methods (such as AHP or outranking methodseELECTRE,
+- as the recommended crew size in a mass transit system
+- indicators of the decision problem is a critical part of the measureperformanceagainstthem.Criteria(attributes)and
+- essentialreasonforinterestinthedecisionsituation.Criteria, Possible criteria related to the aforementioned objectives in
+- objectives correspond to criteria and the third level to in- (cid:1) Transportsystemefficiency:minimizetraveltime, maxi-
+- against the objectives without explicit definition of criteria. networks, maximize ability to effectively connect origins
+- therefore important to avoid including indications of (cid:1) Equity and social inclusion: maximize accessibility for
+- transport sector problems are AHP (especially for criteria
+- performance of options against criteria, indicators are con- PROMETHEE, REGIME, etc.), and SAW. In many occasions, a
+- an indicator for criterion “construction cost”). Constructed presentationoftheresults.
+- uation, various multi-criteria methods have been developed transport pricing alternatives, application of transport
+- and effectively applied to complement conventional cost demandmanagement,etc.).
+- portation projects, alternative design solutions of an infra-
+- Category Author Year Context/application Transport Subjectofevaluation MCDMmethod Formofdata Criteria
+- AHPand Kopytovand 2012 Alternativesof All (cid:4) AHP (cid:4) (cid:4) (cid:4) (cid:4) (cid:4) (cid:4) (cid:4)
+- Gerceketal. 2004 AlternativeLRT Rail (cid:4) AHP (cid:4) (cid:4) (cid:4) (cid:4) (cid:4)
+- Tabucanonaand 1995 Ruralhighway Road (cid:4) AHP (cid:4) (cid:4) (cid:4) (cid:4) (cid:4) (cid:4) (cid:4)
+- Yedlaand 2003 Transportation Road (cid:4) AHP (cid:4) (cid:4) (cid:4) (cid:4) (cid:4)
+- Nosaland 2014 Evaluationofvariants Road (cid:4) AHP (cid:4) (cid:4) (cid:4) (cid:4) (cid:4)
+- Pe(cid:3)rezetal. 2015 Passengertransfer Road (cid:4) AHP (cid:4) (cid:4) (cid:4) (cid:4) (cid:4)
+- Postorinand 2012 Identificationofthe Air (cid:4) AHP (cid:4) (cid:4) (cid:4) (cid:4) (cid:4)
+- Tsamboulasand 2003 Transportation All (cid:4) AHP-MAUT-utility (cid:4) (cid:4) (cid:4) (cid:4) (cid:4) (cid:4) (cid:4)
+- Ambrasaiteetal. 2011 Alternativesfor Rail (cid:4) AHP-CBA (cid:4) (cid:4) (cid:4) (cid:4) (cid:4) (cid:4)
+- Stichetal. 2011 Prioritize Road (cid:4) AHP-GISsupport (cid:4) (cid:4) (cid:4) (cid:4)
+- Category Author Year Context/application Transport Subjectofevaluation MCDMmethod Formofdata Criteria
+- Sunetal. 2016 Evaluationoftransit Rail (cid:4) DEA-AHP-GISsupport (cid:4) (cid:4) (cid:4)
+- Category Author Year Context/application Transport Subjectofevaluation MODMmethod Formofdata Criteria
+- transport: from CBA (cost benefit analysis) to MCDA
+- (multiple criteria decision analysis). In: European Transport
+- Gercek, H., Karpak, B., Kilincaslan, T., 2004. A multiple criteria
+- flexible criteria weights for multicriteria transport project
+- national road infrastructure programme using multi-criteria
+- preferences using multi-criteria decision making for
+- multi-criteria analysis to the evaluation process of
+- objective decision-making for road design. Transport 23 (3),
+- Kopytov, E., Abramov, D., 2012. Multiple-criteria analysis and
+- De Brucker, K., Macharis, C., Verbeke, A., 2011. Multi-criteria
+- criteria decision analysis for the evaluation of transport
+- Macharis, C., Januarius, B., 2010. The multi-actor multi-criteria
+- US vehicle fleet size. In: 147th TMS Annual Meeting &
+- criteria Transportation Evaluation: Issues and Solutions.
+- Ensor, J., 2003. Multi-criteria Analysis: an Alternative Approach
+- criteria analysis (MAMCA) as a tool to support sustainable
+- EuropeanJournalofOperationalResearch187(1),1e18. Tabucanon, M.T., Lee, H., 1995. Multiple criteria evaluation of
+- stakeholder consensus for a sustainable transport Topcu, Y., Onar, S., 2011. A multi-criteria decision model for
+- development decision by the fuzzy AHP and interval AHP. urban mass transit systems. In: The 41st International
+- criteria evaluation of variants of the integration of urban Springer,Singapore,pp.55e63.
+- Omann, I., 2004. Multi-criteria Decision Aid as an Approach for policies: application for the Athens 2004 Olympic Games.
+- Pe(cid:3)rez,J.C.,Carrillo,M.H.,Montoya-Torres,J.R.,2015.Multi-criteria framework of environmental impacts and costs of transport
+- 69e87. Velasquez, M., Hester, P., 2013. An analysis of multi-criteria
+- criteria decision-making analysis to a regional multi-airport OperationsResearch10(2),56e66.
+- Saaty, T.L., 1995. Transport planning with multiple criteria: the andEnvironment7(1),27e47.
+- projects: towards a multi-criterion analysis. Southern Yedla, S., Shrestha, R.M., 2003. Multi-criteria approach for the
+- TransactionsonEngineeringManagement51(3),300e313. Zak, J., 2011. The methodology of multiple criteria decision
+- Shelton, J., Medina, M., 2010. Integrated multiple-criteria making/aiding in public transportation. Journal of Advanced
+- multi-actor multi-criteria transit system selection model: a methods. European Journal of Operational Research 107 (3),
+- criteria decision making theory and practice. Omega 20 trade-offs between business-as-usual and alternate
+- criteria decision making to highlight stakeholders' values in Washington DC, 2012.
+- terns, transport policy tools, transport infrastructure design, formationisavailableat:www.nrso.ntua.gr/p/vpetraki/.
+
+# Zakeri_et_al__-_2023_-_A_decision_analysis_model_for_material_selection_using_simple_ranking_process_2af941bb.md
+- A large number of materials and various criteria fashion material selection problems as complex multi-
+- criteria decision-making (MCDM) problems. This paper proposes a new decision-making method called
+- criteria weights has a direct impact on the outcomes of the new method. In contrast to current MCDM
+- criteria weights based on expert assessment. The result of SRP is compared with a number of MCDM
+- on criteria weights. The findings demonstrated that SRP is extremely reliant on criteria weights and
+- its reliability rises with the number of criteria, making it a perfect tool for solving challenging MCDM
+- Material selection problems and multi-criteria decision-making (MCDM) methods have strong relationships.
+- design revolves around the objectives of achieving high performance, minimizing costs, and being environmen-
+- design is the selection of materials that fulfill the design criteria while delivering the highest level of performance
+- of the most suitable materials from a range of available alternatives based on multiple criteria. Multi-Criteria
+- a set of alternatives that differ across several criteria or dimensions. The goal of MCDM is to identify the best
+- the evaluation and selection of the most suitable material from a set of alternatives based on multiple criteria.
+- alternatives accordingly. Material selection decisions typically involve multiple conflicting criteria, such as cost,
+- performance, durability, physical and engineering properties, environmental factors, cost, and manufacturabil-
+- ity, among others. These criteria may have different units of measurement, making it challenging to compare
+- the design and development of products. Many researchers have drawn attention to the connection between
+- various material properties and varied criteria. Reference8 also mentioned that MCDM methods aid in achiev-
+- criteria. The use of MCDM methods in material selection problems has several advantages. First, it provides a
+- systematic and objective approach to evaluate and rank materials based on multiple criteria. Second, it helps
+- decision-makers to identify the critical criteria that have the most significant impact (having highest weight
+- methods are widely used in material selection problems for computing the criteria weights and determining the
+- rank of materials. Different scholars have proposed various categories for these two tasks. MCDM weighting
+- assign weights to the criteria, whereas the objective weighting methods extract the criteria weights from the
+- 3. Confliction between the nature of the criteria in the MCDM problems with multiple layers of criteria,
+- 4. The number of non-beneficial criteria,
+- 5. The number of criteria.
+- In this case, material selection problems always involve many alternatives and criteria, where with increasing
+- the number of criteria, the reliability of the MCDM methods used for ranking the material decreases. To solve
+- ranking the alternatives against each criterion. The precision of criteria weight estimation directly affects the
+- solve a material selection problem. Criteria weights of the problem are reassessed by the seven experts through
+- to bridge the structural and processual gaps in AHP and BWM. The paper presents several contributions centered
+- quality and enhanced product life cycle, while inaccurate selection leads to increased design cost, lack of pro-
+- similarity to ideal solution (TOPSIS) developed by Hwang and Y oon11, analytic hierarchy process (AHP) by
+- points multi-criteria decision-making method (RBOP) by Zakeri.20, step-wise weight assessment ratio analysis
+- ation using imprecise weight estimates (IMP) method proposed by Jessop24, and best–worst method (BWM)
+- Opricovic & Tzeng28 compared the extended VIKOR method with TOPSIS, PROMETHEE, and ELECTRE, where
+- the TOPSIS and VIKOR generated the same ranking for the two best alternatives while the ratio was different. By
+- utilizing Kendall’s tau-b test and Spearman’s rho test to determine the significance of rank correlation between
+- (CP), TOPSIS, AHP, VIKOR, and ELECTRE under a fuzzy environment. According to Ref.30, the inconsistency
+- The most important reasons that directly affect the final output of the MCDM methods are 1. Determining
+- criteria weights; and 2. Policies/philosophies for evaluating alternatives. The application of these two items to
+- MCDM methods for criteria weighting. One of the main challenges in MCDM problems is to determine the
+- relative importance of each criterion. Criteria weighting methods are used to assign weights to the criteria,
+- reflecting their relative importance in the decision-making process. Criteria weighting methods in MCDM
+- environment are mostly divided into subjective and objective methods. There is also a third type of weight-
+- criteria are difficult to quantify. On the other hand, objective weighting methods extract weights directly from
+- methods are Digital Logic and Modified Digital Logic methods32, Pairwise Comparison (e.g. AHP), Best–worst
+- CRiteria Importance Through Intercriteria Correlation) m ethods37. An overview of MCDM weighting methods
+- the complex material selection problems to evaluate the importance of the selected criteria are shown in Table 1.
+- AHP and BWM methods are observed to be very popular methods for criteria weighting in material selec-
+- tion problems. AHP provides a systematic and structured approach to decision-making and helps to organize
+- problem and the relationships between the criteria. On the other hand, BWM is a straightforward method that
+- requires decision-makers to select the best and worst criteria from a set of options, making it easy to understand
+- objective methods for computing criteria weights for material selection applications. Compared to other objec-
+- tive weighting methods, most studies employed Shannon’s entropy to compute the criteria weights in this cat-
+- based on the removal effects of criteria (MEREC) and logarithmic percentage change driven objective weighting
+- Author(s) Case application Criteria Subjective weighting method
+- Das et al.38 Material selection case study of spur gear reduction unit 1. The pressure angle, 2. Module, 3. Number of teeth to AHP
+- Patnaik et al.10 To select the best composite materials for wear-resistant 1. Physical properties, 2. Mechanical properties, 3. Slurry AHP
+- Appearance, 15. Oxidation resistance, 16. Oxidation rate
+- Prasad et al.40 Coating material for magnesium alloy constant, 17. Impact resistance, 18. The possibility of Fuzzy AHP
+- substrate, 16. Bond strength, 17. Durability, 18. Brittleness,
+- 1. Cost, 2. Visual and aesthetic modeling, 3. Tensile
+- 1. Melting temperature, 2. Latent heat storage capacity, 3.
+- Yang et al.43 Phase change material selection for solar domestic hot 1. Latent heat, 2. Density, 3. Specific heat for solid, 4. Spe- AHP
+- water system cific heat for liquid, 5. Thermal conductivity and 6. Cost
+- Grachev et al.45 Dental material selection in manufacturing removable 1. Mechanical properties, 2. Biological properties, 3. Tribo- AHP
+- dentures logical properties, 4. Technological properties and 5. Cost
+- Author(s) Case application Criteria Objective weighting method
+- Bhowmik et al.46 Energy-efficient materials mal Conductivity, 5. Thermal Expansion, 6. Resistivity, 7. Cost, Entropy
+- Oluah et al.47 Latent heat storage materials for optimal performance of a 1. Heat of Fusion, 2. Thermal Conductivity, 3. Density, and 4. Entropy
+- cific modulus, 5. Moisture Absorption, and 6. Cost
+- Greenhouse Gas, 6. Cost, and 7. Agglomeration
+- 1. Price, 2. Tensile Strength, 3. Young’s Modulus, 4. Density,
+- Ulutaş et al.51 Building insulation material selection coefficient, 3. embodied carbon, 4. embodied energy, 5. cost, 6. MEREC and LOPCOW
+- 3. Distance-based methods such as TOPSIS, Evaluation based on Distance from Average Solution (EDAS),
+- 4. Pairwise comparison such as AHP and ANP.
+- and maintenance, durability, quietness, style and comfort, sustainability, and cost-effectiveness have been used
+- as criteria. Singh et al.55 employed a hybrid model of ELECTRE II and entropy to solve the friction composite
+- alternatives, and maximum temperature limit, recyclability, elongation, weight, thermal conductivity, tensile
+- strength, cost, and toxicity level as the criteria. Using six criteria containing creep strength, resistance to oxida-
+- late the criteria weights, and the PROMETHEE II, TOPSIS, and VIKOR methods to rank the materials under
+- consideration. Bhaskar and K han1 evaluated seven materials based on ten material selection criteria to identify
+- the best polymer-based biomaterial for dental applications using ELECTRE, PROMTHEE, VIKOR, TOPSIS,
+- proposed an integrated approach that employed GRA to rank materials based on cost, material properties, and
+- and TOPSIS, to select the optimal green material for sustainable rubbish bins based on multiple criteria. Sang-
+- weighting method that integrated AHP, Fuzzy AHP, and quality function deployment (QFD) methods to solve
+- developed a systematic evaluation framework using GRA to rank natural fiber materials as reinforcement com-
+- analysis was to achieve a reduction in transportation weight, which is crucial for improving fuel efficiency
+- the relative weights of various evaluation criteria, while VIKOR method was employed to rank the composite
+- MCDM methods and utilized AHP—entropy methods to determine the criteria weights. VIKOR, TOPSIS and
+- EXPROM2 methods were used to rank the alternative materials. The ranking was based on the compromised
+- weight obtained through AHP and entropy methods. Bhaskar & Khan1 showcased the effectiveness of five dif-
+- evaluated seven materials based on ten criteria and utilized AHP to determine criteria weights. The materials were
+- ranked using AHP-VIKOR, AHP-TOPSIS, AHP-MOORA, AHP-ELECTRE, and AHP-PROMTHEE methods.
+- dentures. Their approach combined AHP-Extended VIKOR method and involved analyzing interval quantita-
+- sustainable structural material using a hybrid MCDM method that combined AHP, TOPSIS, and VIKOR in a
+- ued intuitionistic fuzzy sets and MABAC to address the issue of incomplete weight information in automotive
+- AHP and grey correlation TOPSIS (GC-TOPSIS) methods to select the optimal green decoration materials
+- into account technical, environmental, social, and economic criteria for ranking concrete materials. The frame-
+- of ranking orders using AHP-TOPSIS method. Deshmukh & Angira.75, used VIKOR and TOPSIS to solve the
+- weight information. The approach extended CODAS method by incorporating interval-valued intuitionistic
+- fuzzy numbers. Yadav et al.78 proposed a novel MCDM approach based on TOPSIS-PSI for choosing the best
+- approach, combining Fuzzy AHP, TOPSIS, and EDAS methods, for the selection of pyrolysis materials. The
+- criteria were defined based on the objective of achieving maximum bio-oil yield during pyrolysis. Kar & J ha80
+- struction materials using ANP-TOPSIS method. The criteria weights were determined using ANP, while TOPSIS
+- tural steel was the best material. Another hybrid method of VIKOR and TOPSIS could be found in Ref.81, where
+- developed a method for selecting an appropriate normalization method in TOPSIS when choosing the optimal
+- scores to evaluate the effectiveness of the normalization method. Kumar et al.83 applied TOPSIS method to
+- The study considered seven alternative materials and six criteria for material selection in the optimal design. The
+- optimal material based on the defined criteria. Abishini & Karthikeyan85 investigated the use of AHP, TOPSIS,
+- using the TOPSIS method, and the results showed that Ethylene Vinyl Acetate was the best material. Sharma
+- et al.87 investigated the optimal material selection problem for railway wagons using VIKOR, TOPSIS, PROM-
+- Basalt was found as the best natural for long lasting composites followed by flax and Kenaf respectively. Rank-
+- with a large number of alternatives and criteria?".
+- best material and compared the rankings derived using COPRAS, TOPSIS, VIKOR, SAW, MOORA, and PSI to
+- based TOPSIS, Target-based VIKOR and Interval target-based VIKOR methods. Despite generating different
+- posed two materials as the best. To analyze the similarity of MCDM outputs, Spearman rank correlation coef-
+- presented five material selection examples and compared the rankings using DEA, VIKOR, TOPSIS, ELECTRE
+- Tian et al.73 Building decoration material selection (Solid wood) Grey correlation-TOPSIS
+- Ahmed et al.74 Ranking concrete supplementary material TOPSIS
+- Deshmukh & Angira75 Material selection problem for the bridge of RF-MEMS shunt capacitive switches TOPSIS
+- Yadav et al.78 Material selection in marine applications TOPSIS-PSI
+- Zhang et al.90 Bone transplant replacement material selection TOPSIS
+- Dhanalakshmi et al.79 Pyrolysis material selection TOPSIS and EDAS
+- Kar & J ha80 Construction material selection TOPSIS
+- Yang et al.82 Tribological coating material selection TOPSIS
+- Kumar et al.83 Glazing material for solar thermal application TOPSIS
+- Aires & Ferreira84 Flywheel material selection R-TOPSIS
+- Kazemian et al.86 Material selection of intraoral stents TOPSIS
+- Sharma et al.87 Lightweight material for railway vehicles TOPSIS
+- different ranking results and slight differences in the selected materials. The authors concluded that TOPSIS and
+- ing a component of the decision-making process, such as criteria weights, could significantly impact the final
+- problem. To validate the results, a sensitivity analysis was conducted to explore the influence of criteria weights
+- III. The results obtained from ELECTRE III were compared with SAW, TOPSIS, COPRAS, and MULTIMOORA.
+- a poor material selection result might have been obtained. Another significant difference between the rank-
+- obtained from these methods were compared with TOPSIS, VIKOR, and AHP in terms of calculation time,
+- analysis or Spearman’s rank correlation coefficient. Through two examples, it was concluded that COPRAS and
+- The research methodology is constructed on three main procedures, 1. Computing the criteria weights; 2. Select-
+- making alternative’s rank analysis with other MCDM
+- works with criteria weights. SRP has the following simple steps:
+- Step 1 Defining criteria for the evaluation of the alternatives where Ai signifies the alternatives, cj states the
+- criteria, and i={1,...,m} and j={1,...,n}.
+- value of rij in the beneficial criteria ( maxrij ) and lower value of rij in the non-beneficial criteria ( min rij ). The
+- rank of i th alternative against j th criterion.
+- for the importance wrights of criteria and X" shows the weighted ranking matrix.
+- mediocre criteria. The vital criterion plays the role of the most important criterion, which has the most impact in
+- and immaterial criteria select by the decision-maker(s), while the algorithm determines the following vital and
+- immaterial criteria. There exists a third criterion, called the mediocre criterion. It refers to a criterion that affects
+- reaching the decision-making goal to a lesser extent than the vital criteria and higher than the immaterial crite-
+- weights of criteria in a one-goal decision-making problem.
+- Step 1 The algorithm begins with determining the vital, immaterial, and mediocre criteria by the
+- Step 2 After selecting the vital and immaterial criteria, the second step is to allocate five and one as the cor-
+- responding values for the vital and immaterial criteria, respectively.
+- Step 3 Comparing the remaining criteria against the vital and immaterial criteria following the numerical-
+- immaterial criteria according to the linguistic/numeric scale in (Fig. 2) is the fourth step of the VIMM algorithm.
+- between the y th criterion in the x th comparison, and the immaterial and vital criteria respectively, x states the
+- number of comparison process, and y stands for the number of criteria.
+- Phase 5 Re-executing steps 3 and 4 until the number of remaining criteria reaches 2 for an even number of
+- criteria or 1 for an odd number of criteria.
+- Phase 6 Computing the weights of criteria according to Eqs. (9), (10), where ( n j=1 Wj =1)
+- the materials, their properties, and the weights of the criteria for the evaluation of the materials are represented.
+- vital and material criteria as the input for the VIMM method. VIMM method is applied to the case to compute
+- the weights of criteria in the third section. The evaluation process of the material is represented in the fourth
+- to store solar energy. Criteria taken in consideration are Latent Heat J/Kg (c 1 ) , Density Kg/m3 (c 2 ) , Specific Heat
+- kJ/kg K (c 3 ) , Specific Heat kJ/kg K (c 4 ) , Thermal Conductivity W/m K (c 5 ) and Cost (c 6 ) . Among all the crite-
+- criterion i.e. higher the value better the alternative. Cost is non-beneficial criterion i.e. lower the value better the
+- (PCM) Latent heat J/Kg (c1) Density Kg/m3 (c2) (Cp(s))(c3) (Cp(l))(c4) K (c5) Cost (c6)
+- Criteria c1 c2 c3 c4 c5 c6
+- Weight 0.4901 0.1674 0.0528 0.0528 0.2109 0.0261
+- Table 6. Criteria weights for the considered material selection case study.
+- selection’s decision matrix, including the materials and the criteria for the evaluation, is demonstrated in Tables 4
+- and 5 respectively. The weights of the criteria are also illustrated in Table 6.
+- criteria weights. The original criteria weights are exhibited in Table 6.
+- The number of pairwise comparisons in VIMM for the even number of criteria is (n/2), where n is the number
+- of criteria. Therefore, in this case, there are two comparison processes. The seven experts are asked to select three
+- criteria as the vital and immaterial criterion for each comparison based on the criteria priority of being the best
+- choice to meet the properties of the vital or immaterial criteria. Table 7 demonstrates expert responses, where
+- the set of natural numbers, and ψ Zy and ψ Zy are the cardinal numbers, representing the frequency of the criteria
+- that decision-makers selected as the vital and immaterial criteria respectively see Eqs. (11) and (12).
+- of responses of DMs (Table 8), the vital and immaterial selected by DMs criteria are shown in Tables 9 and 10.
+- Table 7. Responses of decision-makers for selection of vital and immaterial criteria in the two comparison
+- Criteria ψZ1 ψZ2 ψZ3 ψZ1 ψZ2 ψZ3 ψZ1 ψZ2 ψZ3 ψZ1 ψZ2 ψZ3
+- Criteria ψZ1 ψZ2 ψZ3 ψZ1 ψZ2 ψZ3
+- Criteria ψZ1 ψZ2 ψZ3 ψZ1 ψZ2 ψZ3
+- Determining the vital and immaterial criteria. The collected data in the previous section are evaluated in this
+- section to determine the vital and immaterial criteria. The evaluation comprises two steps as follows:
+- quency of vital and immaterial criteria. The step is conducted using Eqs. (13), (14), (15), (16) and (17).
+- Step 2 The second step is to determine the vital and immaterial criteria in each comparison which is computed
+- Table 11. The vital criteria selection for two comparison processes based on expert opinions.
+- Table 12. The immaterial criteria selection for two comparison processes based on the experts’ opinion.
+- In this case, we consider ξ,µ,ν =0 for the selection of the immaterial and vital criteria. According to Eqs.
+- mined as the second vital criterion in the second comparison. Criterion c6 (Cost) plays the immaterial criterion
+- role and c4 (Specific Heat) is selected by the experts to affect the criteria weighting process as the second immate-
+- Computing weights of criteria. The prerequisite of VIMM algorithm is the goal definition, where if there
+- for the computation of the vital and immaterial criteria, we relied on the experts’ opinions and the vital and
+- immaterial criteria in the second comparison are selected by them. In our case, there are no mediocre criteria
+- The first step of computing weights of criteria is to allocate 5 and 1 to the first selected vital and immaterial
+- criteria which are c1 , the Latent Heat, and c6 , the Cost, then:
+- of the remaining criteria and the selected vital and immaterial are shown in Tables 13 and 14, where the scale as
+- Criteria c2 c3 c4 c5
+- Table 13. Comparison of latent heat (vital criterion) with other criteria.
+- Criteria c2 c3 c4 c5
+- Table 14. Comparison of cost (immaterial criterion) against other criteria.
+- Table 15. Distances between the criteria and first vital and immaterial criteria.
+- criteria, and the vital and immaterial criteria are shown in Table 15, where d+ stands for the distance between
+- the criteria and the immaterial criterion, while d− displays the distance between the criteria and the vital crite-
+- rion. To display the computation of d+ and d− , the following examples are provided. The normalized distance
+- The next step is to compute the first criteria’ scores and identify the second vital and immaterial using the
+- Specific Heat and Thermal Conductivity are calculated as the immaterial and vital criteria, respectively. In the
+- next step, the remaining criteria are compared with the second vital and immaterial criteria, the Thermal Con-
+- Table 17. The first scores, and the second vital and immaterial criteria.
+- Table 18. Comparison of the vital criterion c5(thermal conductivity) with the remaining criteria.
+- Table 19. Comparison of the immaterial criterion, c4(specific heat, (Cp(l)), against the remaining criteria.
+- Criteria + − +′ −′
+- Table 20. Normalized distance matrix and second scores of criteria.
+- Criteria 1 2 3 Vital Immaterial
+- Table 22. Derived criteria weights.
+- criterion and the Specific Heat (Cp(s)) is the last immaterial criterion. The scoring continues until all criteria
+- received their final 5 and 1 values. The allocation of value to the vital criteria continues to the last comparison,
+- while the immaterial criteria receive merely one time their corresponding value. The criteria weights as derived
+- PCM SRi R i Rank by SRP
+- of criteria play the leading role in evaluating the decision-making problems’ alternatives. Since the new method
+- Although the criteria weights have already been determined by Rathod and Kanzaria96, yet we asked seven
+- experts to re-evaluate the criteria. VIMM, a reliable MCDM subjective weighting method, is used for extracting
+- opinions of the decision-makers. The original criteria weights, as determined by Rathod and Kanzaria96, are also
+- the criteria weights (see Table 25).
+- to criteria weights, different weight sets computed by two most popular MCDM objective weighting methods
+- demonstrates high sensitivity of SRP to criteria weighting. Reliability of SRP is directly related to the reliability
+- Figure 4. Comparative analysis of rankings affected by the criteria weights computed by the VIMM method
+- and the original criteria weights.
+- of weighting method used to assess the criteria under investigation. In this paper, VIMM method is used as a
+- subjective weighting tool to derive criteria weights from decision-makers’ opinions. This goal-oriented MCDM
+- weighting method is more reliable than classic forms of BWM and AHP. According to Zakeri et al.9, there are
+- parison, where n(n−1)/2 and 2n−3 number of comparisons are required for AHP and BWM respectively, while
+- VIMM needs merely (n−1)/2 and n/2 number of comparisons for even and odd numbers of criteria in the evalu-
+- ation process. In contrast to AHP method, VIMM is not limited to the number of criteria since it re-evaluates the
+- criteria in every process. VIMM is designed to consider the decision-making goal(s) by proposing two scenarios,
+- where the first scenario is developed to evaluate the weights of criteria in a decision-making problem with one
+- of the criteria weights. Thus, it is a proper pair for SRP in ranking alternatives to a decision-making problem.
+- Four MCDM methods, including WPM, VIKOR, and TOPSIS have also been applied to compare the results
+- of criteria equals n≥(2k−2) , which is the limitation of AHP in the evaluation of criteria where it is restricted
+- where δ i is the performance of i th alternative, ζR denotes weight of each rank, R stands for each rank, and Ai
+- Rank 1 Rank 2 Rank 3 Rank 4 Rank 5 Rank 6 Rank 7 Rank 8 Rank 9
+- Figure 8. Distribution of each material rank according to the MCDM methods.
+- PCM F A R 1 1 F A R 2 2 F A R 3 3 F A R 4 4 F A R 5 5 F A R 6 6 F A R 7 7 F A R 8 8 F A R 9 9 δi Rank
+- ARAS COPRAS AHP SRP with VIMM
+- The comparative rankings analysis -the performance analysis. Similar to SRP, AHP is also highly
+- sensitive to criteria weights. This section uses the Zakeri–Konstantas performance correlation coefficient and
+- Figure 11. Performance similarity evaluation of ARPAS, COPRAS, and AHP with SRP using Zakeri-
+- tas performance correlation coefficient is a new nonparametric measure of rank correlation that measures the
+- its corresponding rank in the data sets generated by the two MCDM methods. Equations (24) and (25) depict
+- and Rh show the rank of i th alternative generated by l th MCDM algorithm and the rank of i th alternative gener-
+- rank using Eq. (27), and the total performance using Eq. (28). The performance analysis results are exhibited
+- The results also show that AHP and SRP are different in generating results.
+- dependent each method is on the weights of criteria. As a result, a new statistical measure called dependency
+- an increased sensitivity of the method to changes in criteria weights, which in turn results in greater reliability.
+- wcF stand for the real importance, the fair vital importance, fair feeble importance of x th criteria, and weights
+- of the rest criteria, respectively. The constant values of
+- denote the rank i th alternative ( Ai ), affected by the fair vital impor-
+- tance, fair feeble importance, and the real importance. (cid:31) cx also demonstrates the overall dependency of the rank
+- generated by an MCDM method to a criterion. (cid:31) stands for the dependency of a ranking to the criteria, where
+- Table 27. Constant values of the fair vital importance based on the number of criteria, 20 criteria,
+- Table 28. Constant values of the fair feeble importance based on the number of criteria, 20 criteria,
+- and the more dependency to the criteria. In contrast, (cid:31)≥0.5 portrays the unreliability of the generator, or the
+- Figure 12 depict the changes in each material’s rank caused by applying each criterion’s corresponding fair
+- vital importance and fair feeble importance compared to the original ranking associated with the criteria’s real
+- almost no changes were detected in the rankings affected by the feeble fair criteria, which indicates that the
+- SRP becomes more sensitive to weight changes by increasing the number of criteria. Figure 13, developed using
+- SRP method is reliable in analyzing problems with six criteria. Since SRP method employs the ranks of each
+- alternative in each criterion, and the criteria weight plays a critical role in determining the generated rankings,
+- weight of c1 . (b) Changes in ranking, affected by the vital and feeble fair importance values, associated with
+- weight of c2 criterion. (c) Changes in ranking, affected by the vital and feeble fair importance values, associated
+- with weight of c3 criterion. (d) Changes in ranking, affected by the vital and feeble fair importance values,
+- associated with weight of c4 criterion. (e) Changes in ranking, affected by the vital and feeble fair importance
+- values, associated with weight of c5 criterion. (f)Changes in ranking, affected by the vital and feeble fair
+- importance values, associated with weight of c6 criterion.
+- reliability of the method improves with increasing criteria, making it an effective tool for solving complex
+- represent the output of x th MCDM method, y th MCDM method, i th alternative’s rank in
+- x th MCDM method, and the same alternative’s rank in y th MCDM method, respectively. Td(Rx,RV) denote the
+- Specific Heat (Cp(l)) Thermal Conductivity Cost
+- TOPSIS, ARAS, COPRAS, and AHP showed that VIKOR has the most resemblance in evaluating materials with
+- SRP. Applying the Canberra distance puts AHP higher than TOPSIS as the second most resemblance method
+- to the SRP in solving the material selection problem. In contrast, the Manhattan distance considers TOPSIS the
+- VIKOR WPM TOPSIS ARAS COPRAS AHP
+- Distance AHP COPRAS ARAS TOPSIS WPM VIKOR
+- VIKOR WPM TOPSIS ARAS COPRAS AHP
+- VIKOR WPM TOPSIS ARAS COPRAS AHP
+- Chi‑square distance. The Chi-square distance analysis reveals that AHP is the second most similar MCDM
+- most similar method to SRP dominantly, TOPSIS is the second MCDM method that shows similarity to SRP in
+- larity, where VIKOR, TOPSIS, and AHP, with a considerable distance, are the most similar methods to the SRP
+- The rank reversal phenomenon: A comparison between SRP and other rank reversal free
+- MCDM methods. The rank reversal phenomenon refers to the occurrence of changes in the relative rank-
+- VIKOR WPM TOPSIS ARAS COPRAS AHP
+- VIKOR WPM TOPSIS ARAS COPRAS AHP
+- have been proven to be rank reversal-free, including Characteristic Objects Method (COMET) proposed by
+- immune to the rank reversal paradox. COMET method considers the correlations between the criteria, and
+- be robust and effective in avoiding the rank reversal paradox in various applications, such as those described in
+- Wątróbski et al.105, Shekhovtsov et al.106, Faizi et al.107, and Palczewski & Sałabun108. To test the rank reversal para-
+- suggesting that SRP is a rank reversal free MCDM method.
+- natives and fifteen criteria. All the criteria are beneficial, having equal weights. The ranking of alternatives is
+- shown in Table 32, where A6 is assigned the first rank. In the case of adding a new alternative with the same
+- problem with a larger number of alternatives and fewer criteria. This example includes twenty alternatives and
+- four criteria, each with equal weights, as shown in Table 33. To illustrate the robustness of SRP, a new alternative
+- PCM c1 c2 c3 c4 c5 c6 SRi R i Original rank New rank
+- The above examples revealed that the SRP method is utterly immune to the rank reversal paradox. As men-
+- tioned earlier, SPOTIS, COMET, and SIMUS are also rank reversal-free MCDM methods. The complexity of any
+- Figure 19. The correlation between two ranks to assess the rank reversal incident.
+- Weight 0.067 0.067 0.067 0.067 0.067 0.067 0.067 0.067 0.067 0.067 0.067 0.067 0.067 0.067 0.067
+- Alternative SRi R i SRi2 R i2 Original rank New rank
+- Table 32. The different alternatives’ rankings to test the rank reversal paradox.
+- Weight 0.25 0.25 0.25 0.25
+- Alternative C1 C2 C3 C4 SRi R i SRi2 R i2 Original rank New rank
+- Material selection problems are complex MCDM problems that comprise many options and criteria. To solve
+- method was employed. However, since SRP relies heavily on the criteria weights in generating rankings, it is
+- to extract the criteria weights through a decision-making process involving seven experts. By utilizing the newly
+- proposed method to validate MCDM methods based on the analysis of their dependency on criteria weights, it
+- was found that the SRP method is sensitive to changes in the criteria weights. Even slight changes in the weights
+- were put under the fair compromise category by the results of CDI. The new measure will decrease the cost of
+- the COPRAS than AHP and ARAS. Four different similarity measures are also applied to evaluate the similarity
+- 5. The reliability of SRP increases by increasing the number of criteria, making it ideal for solving complex
+- decision-making problems involving a large number of criteria and alternatives.
+- SRP, it is observed that SRP behaves similar to distance-based methods, e.g. VIKOR and TOPSIS, and also
+- shows a resemblance to AHP in some results.
+- problems where the number of criteria is less than six, which makes it an ideal method for solving complex
+- MCDM problems involving higher number of criteria. Future research would be interesting in assessing the
+- ing the interpretation with other statistical techniques and CDI to validate the outcomes. Integrating criteria
+- VIMM: the first scenario as a weighting method because of its reliability. It is also suggested to use AHP and
+- SRP for resolving different types of MCDM problems with multiple-layer criteria is the concluding suggestion
+- selection in engineering design: Case study of cryogenic storage tank. Complex Intell. Syst. https://d oi.o rg/1 0.1 007/s 40747-0 21-
+- 7. Agrawal, R. Sustainable material selection for additive manufacturing technologies: A critical analysis of rank reversal approach.
+- 8. Chatterjee, S. & Chakraborty, S. Material selection of a mechanical component based on criteria relationship evaluation and
+- 9. Zakeri, S., Ecer, F., Konstantas, D. & Cheikhrouhou, N. The vital-immaterial-mediocre multi-criteria decision-making method.
+- based on AHP-MOORA approach. Mater. Today 33, 5659–5663. https://d oi.o rg/1 0.1 016/j.m atpr.2 020.0 4.0 63 (2020).
+- 11. Rahim, A. A., Musa, S. N., Ramesh, S. & Lim, M. K. Development of a fuzzy-TOPSIS multi-criteria decision-making model for
+- sustainability assessment framework based on BIM and Fuzzy-AHP. Build. Environ. https://d oi.o rg/1 0.1 016/j.b uilde nv.2 021.
+- 13. Zoghi, M., Rostami, G., Khoshand, A. & Motalleb, F. Material selection in design for deconstruction using Kano model, fuzzy-
+- AHP and TOPSIS methodology. Waste Manag. Res. https://d oi.o rg/1 0.1 177/2 F0734 242X2 11013 904 (2021).
+- 15. Peng, C., Feng, D. & Guo, S. Material selection in green design: A method combining DEA and TOPSIS. Sustainability 13(10),
+- 19. Jahan, A. & Zavadskas, E. K. ELECTRE-IDAT for design decision-making problems with interval data and target-based criteria.
+- 20. Zakeri, S. Ranking based on optimal points multi-criteria decision-making method. Grey Syst. https://d oi.o rg/1 0.1 108/G S-0 9-
+- 21. Keršulienė, V. & Turskis, Z. Integrated fuzzy multiple criteria decision making model for architect selection. Technol. Econ. Dev.
+- making for ranking and measuring criteria values. Aust. J. Basic Appl. Sci. 5(12), 2034–2040 (2011).
+- 23. Xu, X. The SIR method: A superiority and inferiority ranking method for multiple criteria decision making. Eur. J. Oper. Res.
+- 24. Jessop, A. IMP: A decision aid for multiattribute evaluation using imprecise weight estimates. Omega 49, 18–29. https://d oi.o rg/
+- 25. Rezaei, J. Best-worst multi-criteria decision-making method. Omega 53, 49–57. https://d oi.o rg/1 0.1 016/j.o mega.2 014.1 1.0 09
+- 29. Zamani-Sabzi, H., King, J. P., Gard, C. C. & Abudu, S. Statistical and analytical comparison of multi-criteria decision-making
+- 31. Zardari, N. H., Ahmed, K., Shirazi, S. M. & Yusop, Z. B. Weighting Methods and their Effects on Multi‑criteria Decision Making
+- 32. Dehghan-Manshadi, B., Mahmudi, H., Abedian, A. & Mahmudi, R. A novel method for materials selection in mechanical design:
+- 35. Siskos, E. & Tsotsolas, N. Elicitation of criteria importance weights through the Simos method: A robustness concern. Eur. J.
+- 37. Wang, D. & Zhao, J. Design optimization of mechanical properties of ceramic tool material during turning of ultra-high-strength
+- steel 300M with AHP and CRITIC method. Int. J. Adv. Manufac. Technol. 84(9–12), 2381–2390. https://d oi.o rg/1 0.1 007/s 00170-
+- 38. Das, D., Bhattacharya, S. & Sarkar, B. Decision-based design-driven material selection: a normative-prescriptive approach for
+- simultaneous selection of material and geometric variables in gear design. Mater. Des. 92, 787–793. https://d oi.o rg/1 0.1 016/j.
+- 40. Prasad, R. V., Rajesh, R. & Thirumalaikumarasamy, D. Selection of coating material for magnesium alloy using Fuzzy AHP-
+- TOPSIS. Sādhanā 45(1), 1–20. https://d oi.o rg/1 0.1 007/s 12046-0 19-1 261-3 (2020).
+- 43. Yang, W.-C., Ri, J.-B., Yang, J.-Y. & Kim, J.-S. Materials selection criteria weighting method using analytic hierarchy process
+- (AHP) with simplest questionnaire and modifying method of inconsistent pairwise comparison matrix. Proc. Inst. Mech. Eng.
+- 46. Bhowmik, C., Gangwar, S., Bhowmik, S. & Ray, A. Selection of energy-efficient material: An entropy–TOPSIS approach. In Soft
+- using the entropy weight and TOPSIS methodology. Energy Build. 217, 109967. https://d oi.o rg/1 0.1 016/j.e nbuil d.2 020.1 09967
+- 48. Mahajan, A., Binaz, V., Singh, I. & Arora, N. Selection of natural fiber for sustainable composites using hybrid multi criteria
+- 49. Akgün, H., Yapıcı, E., Özkan, A., Günkaya, Z. & Banar, M. A combined multi-criteria decision-making approach for the selec-
+- tion of carbon-based nanomaterials in phase change materials. J. Energy Storage 60, 106619. https://d oi. org/1 0. 1016/j.e st.2 023.
+- 52. Gupta, S. M., & Ilgin, M. A. Multiple criteria decision making applications in environmentally conscious manufacturing and
+- 59. Kirişci, M., Demir, I. & Şimşek, N. Fermatean fuzzy ELECTRE multi-criteria group decision-making and most suitable biomedi-
+- criteria. Int. J. Mater. Eng. Innov. 8(3/4), 250. https://d oi.o rg/1 0.1 504/i jmate i.2 017.0 90241 (2017).
+- 70. Gadhave, P. D., Prabhune, C. & Pathan, F. Selection of phase change material for domestic water heating using multi criteria
+- 71. Bhuiyan, M. M. A. & Hammad, A. A hybrid multi-criteria decision support system for selecting the most sustainable structural
+- weight information. Appl. Soft Comput. 38, 703–713. https://d oi.o rg/1 0.1 016/j.a soc.2 015.1 0.0 10 (2016).
+- AHP-TOPSIS approach. Adv. Mater. Sci. Eng. https://d oi.o rg/1 0.1 155/2 019/2 85048 0 (2019).
+- using Ashby, TOPSIS and VIKOR. Trans. Electr. Electron. Mater. 20(3), 181–188. https://d oi.o rg/1 0.1 007/s 42341-0 18-0 0094-3
+- sustainable material selection in construction projects with incomplete weight information. Symmetry 11(3), 393. https://d oi.
+- 78. Yadav, S., Pathak, V. K. & Gangwar, S. A novel hybrid TOPSIS-PSI approach for material selection in marine applications.
+- TOPSIS and EDAS as an auxiliary tool for pyrolysis material selection and its application. Biomass Convers. Biorefinery https://
+- 80. Kar, S. & Jha, K. N. Assessing criticality of construction materials for prioritizing their procurement using ANP-TOPSIS. Int. J.
+- 81. Patra, P. & Angira, M. Investigation on dielectric material selection for RF-MEMS shunt capacitive switches using ashby, TOPSIS
+- 82. Yang, W.-C., Chon, S.-H., Choe, C.-M. & Yang, J.-Y. Materials selection method using TOPSIS with some popular normalization
+- applications using TOPSIS methodology. Int. J. Ambient Energy 42(3), 274–278. https://d oi.o rg/1 0.1 080/0 14307 50.2 018.1 5426
+- 84. de Aires, R. F. & Ferreira, L. A new multi-criteria approach for sustainable material selection problem. Sustainability 14(18),
+- Multi-criteria multi-physics design approach. Mater. Des. 225, 111558. https://d oi.o rg/1 0.1 016/j.m atdes.2 022.1 11558 (2023).
+- 87. Sharma, V. et al. Multi-criteria decision making methods for selection of lightweight material for railway vehicles. Materials
+- 90. Zhang, K., Zhan, J. & Yao, Y. TOPSIS method based on a fuzzy covering approximation space: An application to biological
+- 92. Mousavi-Nasab, S. H. & Sotoudeh-Anvari, A. A comprehensive MCDM-based approach using TOPSIS, COPRAS and DEA as
+- 93. Zhang, H. et al. Materials selection of 3D-printed continuous carbon fiber reinforced composites considering multiple criteria.
+- 94. Zhang, Q., Hu, J., Feng, J. & Liu, A. A novel multiple criteria decision making method for material selection based on GGPFWA
+- 96. Rathod, M. K. & Kanzaria, H. V. A methodological concept for phase change material selection based on multiple criteria deci-
+- 99. Bączkiewicz, A. et al. Comparative analysis of solar panels with determination of local significance levels of criteria using the
+- mcdm methods resistant to the rank reversal phenomenon. Energies 14(18), 5727. https://d oi.o rg/1 0.3 390/e n1418 5727 (2021).
+- 102. Dezert, J., Tchamova, A., Han, D., & Tacnet, J. M. The SPOTIS rank reversal free method for multi-criteria decision-making
+- 103. Žižović, M., Pamučar, D., Albijanić, M., Chatterjee, P. & Pribićević, I. Eliminating rank reversal problem using a new multi-
+- 104. Munier, N. A new approach to the rank reversal phenomenon in MCDM with the SIMUS method. Multiple criteria decision
+- 106. Shekhovtsov, A., Więckowski, J., Kizielewicz, B., & Sałabun, W. Effect of Criteria Range on the Similarity of Results in the COMET
+- 111. Liu, H. C., You, J. X., Zhen, L. & Fan, X. J. A novel hybrid multiple criteria decision making model for material selection with
+- target-based criteria. Mater. Des. 60, 380–390. https://d oi.o rg/1 0.1 016/j.m atdes.2 014.0 3.0 71 (2014).
+- 112. Toledo, H., Martínez-Gómez, J. & Nicolalde, J. F. Selection of rear axle tip alternative material of a car by multi-criteria means.
+
+# Šostar_and_Ristanović_-_2023_-_Assessment_of_influencing_factors_on_consumer_behavior_using_the_AHP_model_9ba49cf8.md
+- satisfaction. It is important to note that not all consumers are the same and individual
+- The analytic hierarchy process (AHP) method has proven to be an excellent tool
+- that consumers are always considering price, religious orientation, and culture in the
+- sition to bargain for a price and decide on which product to buy considering the price and
+- important to note that the sample participating in the research was chosen by random
+- to certain criteria. In this study, we use the AHP method, which has been applied to
+- ranking, and, in the end, the selection of the best variant. The application of the AHP
+- concept enables the quantification of the relationship between components (goals, criteria,
+- ranking, and, in the end, the selection of the best variant. The application of the AHP
+- within the AHP model to increase the quality and efficiency of all his decisions [56].
+- that the AHP is one of the most preferred methods in multiple decision-making. Figure 4
+- summarizes the advantages of the AHP method for problem-solving and decision-mak-
+- The basic concept of the AHP method consists of three principles of analytical think-
+- of the use of AHP methods and results through iterations can be found in the article [53].
+- the matrix. Weight vectors for each level are obtained. In the last step, all results are
+- according to the size of the calculated weight. The highest values give the best solution to
+- ranked according to the size of the calculated weight. The highest values give the best
+- Unlike many researchers who before us presented the application of the AHP method
+- through basic steps, we will present the basic concept of the AHP method in more detail,
+- 1. Determine the aim, criteria, and variants of the decision problem—to compile the
+- 1. Determine the aim, criteria, and variants of the decision problem—to compile the
+- The experts carried out the process of weighting the criteria and variants. Experts
+- Saaty’s scale is used for pairwise comparisons of target-related criteria and then
+- The last phase in the AHP method’s hierarchy structure is the calculation of the
+- Figure 11. Priority vectors for criteria using the LLSM. Note: C—customs, M—morals, F—influence
+- tained according to the standard AHP method are sufficiently precise in assessing the
+- (B) and lifestyle (LS) are the most important goal criteria. On the other hand, morality (M)
+- Sustainability 2023, 15, x FaOnRd PcEuEsRt oRmEVsI E(CW) are the criteria with the least influence. Now, using LLSM, we computed 16 of 25
+- certain criteria between the two models (AM and LLSM in AHP) but they are negligible.
+- The synthesis of the priority vectors of variants concerning all criteria according to
+- in the standard AHP method, that personal and psychological factors dominate the other
+- vector priority estimation, which in this case was obtained by applying the standard AHP
+- icant impact of personal budget, price increases, and job loss on consumer behavior is
+- price increases, increased online shopping, and product delivery delays. There are also
+- nificant impact of personal budget, price increases, and job loss on consumer behavior
+- psychological factors dominate, while (ii) the key criteria for the consumer are budget
+- Table 2. Priority vectors for variants by criteria.
+- Variants/Criteria C M FP E LS B C-19 SN
+- As the eigenvalue (EV) method is an integral part of the standard AHP method the
+- 0.10 when all variants are evaluated against the criteria. Therefore, it can be said that, in
+- Variants/Criteria C M FP E LS B C-19 SN
+- of 0.10 when all variants are evaluated against the criteria. Therefore, it can be said
+- The final priority vectors of the variants in relation to the criteria and in relation to
+- the goal are obtained by multiplying the priority vector of certain criteria with the values
+- of the priority vector of the variants in relation to the given criteria (Figure 14).
+- Figure 14. Final priority vectors in standard AHP method, using the additive normalization method.
+- By synthesizing the priority vectors of the variants in relation to all criteria, it is also
+- Verification of all steps in the hierarchical structure of the AHP method was carried
+- out through a common table of all weight vectors. In the final table (Table 4), the last field
+- corresponds to the sum of all criteria values (the last row). That identity is equal to 1. In
+- Table 4. Total weight and rank of variants.
+- Rank 8 7 6 5 2 1 4 3
+- The results of the implemented AHP method are presented in the final Table 4. A
+- summary of the obtained values criteria and variants is given. The figures in the last two
+- rows of Table 2 show the criteria results (values in parentheses and rank). Budget (0.26) is
+- The next important factor is lifestyle (0.22), which refers to the usual way of life and daily
+- Verification of all steps in the hierarchical structure of the AHP method was car-
+- ried out through a common table of all weight vectors. In the final table (Table 4), the
+- Rank 8 7 6 5 2 1 4 3
+- The results of the implemented AHP method are presented in the final Table 4. A
+

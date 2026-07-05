@@ -255,3 +255,11 @@ Toàn bộ các skill nằm trong thư mục `.agents\skills\`. Để Antigravit
 | `skill-creator`, `writing-skills`, `audit-skills` | Tạo, cải tiến và kiểm định an toàn skill | Có sẵn |
 
 Chi tiết phân tích và lý do chọn từng skill nằm trong [KE-HOACH-DU-AN.md](KE-HOACH-DU-AN.md), Phần 3.
+
+## 9. Kho tàng kiến thức Vibecoding (08_new_knowledge)
+
+Đây là "bộ não thứ hai" đúc kết lại các bài học, lỗi kỹ thuật, và kiến thức mới sinh ra trong quá trình thực hiện dự án. Vì đối tượng đọc là người có background Non-IT, tất cả bài viết trong thư mục `08_new_knowledge\` BẮT BUỘC tuân thủ:
+- **Cấu trúc 5 bước:** Hook (Nỗi đau) -> Analogy (Ẩn dụ đời thường) -> Root Cause (Bản chất học thuật) -> Solution (Cách giải quyết) -> Citations (Trích dẫn).
+- **Văn phong:** Sử dụng ngôn từ đồng cảm, tránh lạm dụng thuật ngữ (de-jargonize), luôn có mô hình tư duy (Mental Model) đi kèm.
+- **Quy trình:** Phải được tạo bởi skill `professional-writing` để đảm bảo chất lượng nghiên cứu, biên tập và trích dẫn chuẩn mực.
+(Xem chi tiết Luật vàng số 5 trong file `.agents/AGENTS.md`)
