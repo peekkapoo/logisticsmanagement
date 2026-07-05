@@ -1,0 +1,53 @@
+% ============================================================
+% BAO CAO MADM/MCDM - Laptop Selection using AHP-TOPSIS
+% Bien dich: xelatex main.tex -> biber main -> xelatex x2
+% Preamble ke thua mau da kiem chung trong
+% skill/professional_writing/publishing/latex.md (ban tieng Anh)
+% ============================================================
+\documentclass[12pt,a4paper]{report}
+
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage{english}
+\setmainfont{Times New Roman}
+
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{booktabs}        % bang dep: \toprule \midrule \bottomrule, khong ke doc
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{microtype}
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage[style=apa,backend=biber]{biblatex}
+\addbibresource{references.bib}
+
+\usepackage{hyperref}        % load gan cuoi
+\usepackage{cleveref}        % PHAI load SAU hyperref
+
+\title{A Hybrid AHP--TOPSIS Approach to Laptop Selection\\
+       for Graphic Designers in Vietnam}
+\author{Group [X] --- Logistics Management\\
+        University of Finance --- Marketing}
+\date{\today}
+
+\begin{document}
+
+\input{chapters/00-frontmatter}
+\input{chapters/01-introduction}
+\input{chapters/02-literature}
+\input{chapters/03-methodology}
+\input{chapters/04-results}
+\input{chapters/05-discussion}
+\input{chapters/06-conclusion}
+
+\printbibliography[heading=bibintoc]
+
+\appendix
+% TODO Phase 6: them cac phu luc
+% \input{appendices/A-survey-questionnaire}   % bang hoi khao sat Likert
+% \input{appendices/B-ahp-matrices}           % ma tran so sanh cap day du
+% \input{appendices/C-laptop-data}            % du lieu laptop + benchmark
+
+\end{document}
