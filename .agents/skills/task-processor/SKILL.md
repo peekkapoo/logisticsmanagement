@@ -1,6 +1,6 @@
 ---
 name: task-processor
-description: Use when the user gives any task or request for the MADM/MCDM laptop-selection project — research, survey, interview, AHP, TOPSIS, data collection, report writing, slides, or file management — especially when the request is vague, incomplete, out of pipeline order, or spans multiple steps. Also use when unsure which specialist skill applies, and on /task-processor. Trigger words: làm giúp, phân tích, tính toán, viết, thu thập, khảo sát, xử lý dữ liệu, chạy AHP/TOPSIS.
+description: "Use when the user gives any task or request for the MADM/MCDM laptop-selection project — research, survey, interview, AHP, TOPSIS, data collection, report writing, slides, or file management — especially when the request is vague, incomplete, out of pipeline order, or spans multiple steps. Also use when unsure which specialist skill applies, and on /task-processor. Trigger words: làm giúp, phân tích, tính toán, viết, thu thập, khảo sát, xử lý dữ liệu, chạy AHP/TOPSIS."
 ---
 
 # Task Processor — Nhạc trưởng dự án MADM/MCDM
