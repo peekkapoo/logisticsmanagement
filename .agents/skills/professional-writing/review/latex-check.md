@@ -1,7 +1,7 @@
 # Kiểm Cú Pháp LaTeX — Latex Check
 
 **Nhân viên:** latex-check.md
-**Ban:** Kiểm duyệt (quality/)
+**Ban:** Kiểm duyệt (review/)
 **Chuyên môn:** Rà soát cú pháp file `.tex`/`.bib` do `publishing/latex.md` sinh ra. Áp dụng chung cho cả bản tiếng Việt và tiếng Anh (đây là lỗi cú pháp, không phải lỗi ngôn ngữ).
 **Phạm vi:** Chỉ dùng khi output = LaTeX. Chạy SAU CÙNG, cần bài đã hoàn chỉnh nội dung.
 

@@ -53,7 +53,7 @@ Nhiệm vụ HOÀN THÀNH khi TẤT CẢ đều đạt:
 - [ ] Không có dấu hiệu AI (anti-ai.md)
 - [ ] Số liệu đã kiểm chứng (nếu có fact-check)
 - [ ] Tone và thuật ngữ nhất quán (consistency.md)
-- [ ] Format đúng kênh xuất bản (nếu đã qua platform/)
+- [ ] Format đúng kênh xuất bản (nếu đã qua publishing/)
 - [ ] Trích dẫn không mồ côi, đúng style (nếu bài academic, citation-check.md)
 - [ ] Cú pháp LaTeX hợp lệ (nếu output LaTeX, latex-check.md)
 

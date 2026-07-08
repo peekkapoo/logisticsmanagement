@@ -35,4 +35,4 @@ Khi nhận nhiệm vụ:
 
 - Nhận input từ: Ban Biên tập (bài viết đã xong nội dung)
 - Giao output cho: Ban Kiểm duyệt (duyệt lần cuối cả nội dung lẫn format)
-- Khi bị quality/ từ chối vì lỗi format: sửa format, giao lại
+- Khi bị review/ từ chối vì lỗi format: sửa format, giao lại

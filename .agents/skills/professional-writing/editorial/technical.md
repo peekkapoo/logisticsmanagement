@@ -88,7 +88,7 @@ Mỗi đoạn kết nối tự nhiên qua:
 
 Khách quan, chuyên môn nhưng không khô khan, rõ ràng nhưng không đơn giản hóa quá mức.
 
-→ Quy tắc anti-AI và anti-English chi tiết: xem `quality/natural.md`
+→ Quy tắc anti-AI và anti-English chi tiết: xem `review/natural.md`
 
 ---
 

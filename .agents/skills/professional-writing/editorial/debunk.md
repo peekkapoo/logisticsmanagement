@@ -1,7 +1,7 @@
 # Phản Bác — Debunk
 
 **Nhân viên:** debunk.md
-**Ban:** Biên tập (style/)
+**Ban:** Biên tập (editorial/)
 **Chức năng:** Phản bác có cấu trúc, phản biện tế nhị, bình luận bổ sung góc nhìn.
 
 ---

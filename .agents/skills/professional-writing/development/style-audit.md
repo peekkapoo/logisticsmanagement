@@ -1,9 +1,9 @@
 # Phân Tích Phong Cách Viết
 
-**Module:** M2 — Meta  
+**Ban:** Phát triển (development/)
 **Loại:** ⚪ Tùy chọn  
 **Mục đích:** Phương pháp phân tích có hệ thống một bài viết (output hoặc bài mẫu bên ngoài) để rút ra kỹ thuật, pattern, style DNA.  
-**Được gọi bởi:** `meta/upgrade.md` hoặc trực tiếp khi user đưa bài mẫu.
+**Được gọi bởi:** `development/upgrade.md` hoặc trực tiếp khi user đưa bài mẫu.
 
 ---
 
@@ -99,8 +99,8 @@ KỸ THUẬT ĐÃ DÙNG (nếu có):
 
 **Output cho upgrade.md:**
 - Kỹ thuật mới chưa có trong skill → đề xuất bổ sung
-- Quy tắc mới phát hiện → đề xuất cho `quality/`
-- Pattern đáng ghi nhận → đề xuất cho `style/`
+- Quy tắc mới phát hiện → đề xuất cho `review/`
+- Pattern đáng ghi nhận → đề xuất cho `editorial/`
 
 ---
 
@@ -121,7 +121,7 @@ Khi phân tích output của chính mình, kiểm tra thêm:
 - Encyclopedic knowledge: Biết rộng nhưng thiếu chiều sâu đặc thù?
 - Cultural genericism: Tham chiếu văn hóa quá chung chung?
 
-→ Nếu phát hiện → sửa bài viết hoặc ghi nhận vào `quality/natural.md` để tránh lần sau.
+→ Nếu phát hiện → sửa bài viết hoặc ghi nhận vào `review/natural.md` để tránh lần sau.
 
 ---
 

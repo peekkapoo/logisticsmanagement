@@ -1,7 +1,7 @@
 # Academic English — Quy Ước Tiếng Anh Học Thuật
 
 **Nhân viên:** academic-en.md
-**Ban:** Kiểm duyệt (quality/)
+**Ban:** Kiểm duyệt (review/)
 **Chuyên môn:** Rà soát bản tiếng Anh của bài academic — quy ước NGƯỢC với các file tiếng Việt (`punctuation.md`, `capitalization.md`, `natural.md`, `anti-ai.md`), vốn không áp dụng cho bản tiếng Anh.
 **Phạm vi:** Chỉ dùng khi output = bản tiếng Anh của bài academic. Không dùng cho bản tiếng Việt.
 

@@ -1,8 +1,8 @@
 # Kiểm Tra Nhất Quán
 
-**Module:** Q4 — Quality  
+**Ban:** Kiểm duyệt (review/)
 **Loại:** 🔵 Mặc định  
-**Mục đích:** Đảm bảo nội dung tạo ra nhất quán và không xung đột khi nhiều modules được load cùng lúc.
+**Mục đích:** Đảm bảo nội dung tạo ra nhất quán và không xung đột khi nhiều module được load cùng lúc.
 
 ---
 
@@ -11,17 +11,17 @@
 Khi 2 module cùng nói về 1 chủ đề ở mức chi tiết khác nhau:
 
 ```
-quality/  = NỀN TẢNG (baseline) — luôn đúng, áp dụng mọi nơi
+review/     = NỀN TẢNG (baseline) — luôn đúng, áp dụng mọi nơi
     ↓
-style/   = CỤ THỂ HÓA (override) — thắng khi cùng chủ đề với quality/
+editorial/  = CỤ THỂ HÓA (override) — thắng khi cùng chủ đề với review/
     ↓
-platform/ = FORMAT-ONLY — chỉ trình bày, không can thiệp nội dung/style
+publishing/ = FORMAT-ONLY — chỉ trình bày, không can thiệp nội dung/style
 ```
 
 **Ví dụ:**
 - `natural.md` nói "đoạn văn 1-6 câu" (baseline)
-- `emotional.md` nói "70-20-10" (cụ thể hóa cho storytelling)
-- → Khi load cả hai: dùng 70-20-10. Không mâu thuẫn — emotional CỤ THỂ HÓA quy tắc chung.
+- `rhythm.md` nói "70-20-10" (cụ thể hóa cho storytelling)
+- → Khi load cả hai: dùng 70-20-10. Không mâu thuẫn — rhythm.md CỤ THỂ HÓA quy tắc chung.
 
 ---
 
@@ -41,7 +41,7 @@ Hai module cùng nói về 1 chủ đề, Agent không biết nghe ai.
 
 **Cách phát hiện:** Sau khi viết xong, đọc lại và hỏi: "Quy tắc này đến từ module nào? Có module khác đang load nói khác không?"
 
-**Xử lý:** Module style/ cụ thể hóa quality/. Nếu vẫn không rõ → mặc định theo quality/ (an toàn hơn).
+**Xử lý:** Module editorial/ cụ thể hóa review/. Nếu vẫn không rõ → mặc định theo review/ (an toàn hơn).
 
 ### 3. Khoảng trống logic (Coverage Gap)
 
@@ -49,7 +49,7 @@ Tình huống thực tế mà không module nào cover.
 
 **Cách phát hiện:** Request không khớp bất kỳ điều kiện kích hoạt nào trong registry.
 
-**Xử lý:** Dùng V1 (emotional) làm fallback mặc định. Ghi nhận gap vào `meta/upgrade.md` để bổ sung module sau.
+**Xử lý:** Dùng story-core + hook-close + rhythm (bộ mặc định của editorial/) làm fallback. Ghi nhận gap vào `development/upgrade.md` để bổ sung module sau.
 
 ### 4. Tham chiếu hỏng (Reference Integrity)
 
@@ -63,9 +63,9 @@ Module trỏ đến file/nội dung không còn tồn tại.
 
 ## Checklist (chạy sau khi viết xong)
 
-- [ ] Bài viết không vi phạm quy tắc nào trong Q1 (punctuation)?
-- [ ] Bài viết không vi phạm quy tắc nào trong Q2 (natural)?
-- [ ] Nếu dùng cả quality/ + style/: style/ CỤ THỂ HÓA chứ không MÂU THUẪN quality/?
+- [ ] Bài viết không vi phạm quy tắc nào trong punctuation.md?
+- [ ] Bài viết không vi phạm quy tắc nào trong natural.md?
+- [ ] Nếu dùng cả review/ + editorial/: editorial/ CỤ THỂ HÓA chứ không MÂU THUẪN review/?
 - [ ] Tone nhất quán từ đầu đến cuối (không nhảy giữa casual và formal)?
 - [ ] Thuật ngữ nhất quán (không dùng 2 từ khác nhau cho cùng 1 khái niệm)?
-- [ ] Nếu phát hiện gap → đã ghi vào `meta/upgrade.md`?
+- [ ] Nếu phát hiện gap → đã ghi vào `development/upgrade.md`?

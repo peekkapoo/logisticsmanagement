@@ -1,7 +1,7 @@
 # Xây Story — Story Core
 
 **Nhân viên:** story-core.md
-**Ban:** Biên tập (style/)
+**Ban:** Biên tập (editorial/)
 **Chức năng:** Xây dựng câu chuyện từ insight — logic chain, show/tell, dịch thuật ngữ.
 
 ---

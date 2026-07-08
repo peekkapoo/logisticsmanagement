@@ -1,7 +1,7 @@
 # Lật Góc — Reframe
 
 **Nhân viên:** reframe.md
-**Ban:** Biên tập (style/)
+**Ban:** Biên tập (editorial/)
 **Chức năng:** Đặt tên hiện tượng, đảo kỳ vọng, giải thích bằng cấu trúc song song.
 
 ---

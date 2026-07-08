@@ -1,7 +1,7 @@
 # Kiểm Chứng Trích Dẫn — Citation Check
 
 **Nhân viên:** citation-check.md
-**Ban:** Kiểm duyệt (quality/)
+**Ban:** Kiểm duyệt (review/)
 **Chuyên môn:** Đối chiếu trích dẫn in-text với danh mục tài liệu tham khảo, đúng định dạng citation style đã chọn.
 **Phạm vi:** Dùng cho cả bản tiếng Việt và tiếng Anh của bài academic. Khác `fact-check.md` (kiểm nội dung claim đúng/sai) — file này chỉ kiểm TÍNH TOÀN VẸN VÀ ĐỊNH DẠNG của trích dẫn.
 

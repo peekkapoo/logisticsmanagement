@@ -1,9 +1,9 @@
 ---
 name: professional-writing
-description: Tòa soạn báo AI — viết tiếng Việt chuyên nghiệp. Tổng biên tập nhận đề bài → phân vai → điều phối các ban.
+description: Tòa soạn báo AI viết tiếng Việt chuyên nghiệp — dùng khi cần viết hoặc rà soát bài blog/cảm xúc, bài đăng Facebook, bài phản bác (debunk), tài liệu kỹ thuật, hoặc báo cáo/bài báo học thuật (tiếng Việt, tiếng Anh, hoặc song ngữ, kể cả xuất LaTeX .tex/.bib). Tổng biên tập nhận đề bài → phân tích → điều phối các ban Thu thập/Biên tập/Kiểm duyệt/Xuất bản/Tư liệu/Phát triển theo quy trình GATE. Kích hoạt khi user yêu cầu "viết bài", "viết blog", "phản bác/debunk", "viết báo cáo/luận văn/bài báo khoa học", "rà soát/biên tập bài viết tiếng Việt", hoặc "cải tiến skill viết".
 ---
 
-# Viết Chuyên Nghiệp 3.2 — Tổng Biên Tập
+# Viết Chuyên Nghiệp 4.0 — Tổng Biên Tập
 
 Nhận đề bài → phân tích → chọn ban → thiết kế quy trình GATE → điều phối thực hiện.
 

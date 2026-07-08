@@ -85,7 +85,7 @@ Rà soát sau mỗi bài phức tạp:
 ├── File nào < 30 dòng? → Cân nhắc gộp
 ├── Nội dung trùng giữa 2 file? → Hợp nhất
 ├── Lead file outdated? → Cập nhật bảng nhân sự
-├── Bài mẫu mới? → Lưu vào examples/
+├── Bài mẫu mới? → Lưu vào archive/
 └── Tổng instructions mỗi lượt load vẫn ≤ 200 dòng?
 ```
 

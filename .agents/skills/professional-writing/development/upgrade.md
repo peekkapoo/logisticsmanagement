@@ -18,7 +18,7 @@
 
 ### Bước 1: Phân tích output
 
-Dùng `meta/style-audit.md` để phân tích bài viết đã hoàn tất:
+Dùng `development/style-audit.md` để phân tích bài viết đã hoàn tất:
 - Chạy staged assessment (4 tầng)
 - Rút style DNA và kỹ thuật đã dùng
 - Chạy AI self-check
@@ -28,13 +28,13 @@ Dùng `meta/style-audit.md` để phân tích bài viết đã hoàn tất:
 
 Mở `SKILL.md` → đọc registry → kiểm tra:
 - Kỹ thuật đó đã có trong module nào chưa?
-- Lỗi đó đã được ghi trong `quality/` chưa?
+- Lỗi đó đã được ghi trong `review/` chưa?
 
 ### Bước 3: Đề xuất bổ sung
 
 Nếu phát hiện điều mới:
-- **Kỹ thuật mới** → bổ sung vào module style phù hợp
-- **Quy tắc mới** → bổ sung vào module quality phù hợp
+- **Kỹ thuật mới** → bổ sung vào module editorial/ phù hợp
+- **Quy tắc mới** → bổ sung vào module review/ phù hợp
 - **Pattern mới** → báo cáo cho user trước khi thêm
 
 ### Bước 4: Thực hiện bổ sung
@@ -45,7 +45,7 @@ Sau khi user duyệt, thêm nội dung vào module đích.
 
 ## Quy Chuẩn Bổ Sung
 
-### Kỹ thuật mới (vào style/)
+### Kỹ thuật mới (vào editorial/)
 
 Mỗi kỹ thuật phải có đủ 5 thành phần:
 
@@ -64,7 +64,7 @@ Mỗi kỹ thuật phải có đủ 5 thành phần:
 [Anti-pattern, điều tránh]
 ```
 
-### Quy tắc mới (vào quality/)
+### Quy tắc mới (vào review/)
 
 Mỗi quy tắc phải có:
 
@@ -118,3 +118,4 @@ Mọi thay đổi ghi vào đây:
 | 2026-03-09 | `editorial/lead.md` | Nhận ước lượng độ dài (chuyển từ TBT xuống lead) | Redesign v3.1 |
 | 2026-03-09 | `archive/lead.md` | Thêm cơ chế tra cứu + cập nhật kho tư liệu | Redesign v3.1 |
 | 2026-07-04 | **Mở rộng Academic + LaTeX** | +research/literature.md, +editorial/academic.md, +review/academic-en.md, +review/citation-check.md, +review/latex-check.md, +publishing/academic.md, +publishing/latex.md; cập nhật SKILL.md (câu hỏi Bước 2, bảng Bước 3, GATE mẫu), tất cả lead.md liên quan, và ngoại lệ hedging/headers trong anti-ai.md/natural.md | Yêu cầu user mở rộng viết học thuật song ngữ VN-EN + xuất LaTeX |
+| 2026-07-07 | **Dọn sạch cho Claude — v4.0** | Xóa `scripts/` (academic_parser.py, batch_parse.py — pipeline MinerU/Docling/pymupdf4llm hardcode path riêng máy, dư thừa vì Claude đọc PDF trực tiếp) và cache model đi kèm; SKILL.md bỏ yêu cầu gọi script, thay bằng đọc PDF trực tiếp; sửa tham chiếu lỗi thời sót lại từ trước refactor v3.0 (`quality/`→`review/`, `style/`→`editorial/`, `platform/`→`publishing/`, `meta/`→`development/`, `examples/`→`archive/`) tại archive/lead.md, development/{lead,research-framework,style-audit}.md, editorial/{lead,technical,debunk,metaphor,hook-close,emphasis,story-core,reframe,rhythm}.md, publishing/lead.md, research/lead.md, review/{lead,consistency,academic-en,anti-ai,capitalization,citation-check,latex-check,natural,punctuation}.md, README.md; viết lại `description` SKILL.md để liệt kê rõ tình huống kích hoạt | Chuẩn bị skill độc lập cho Claude |

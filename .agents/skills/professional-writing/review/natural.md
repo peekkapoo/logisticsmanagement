@@ -1,7 +1,7 @@
 # BTV Văn Phong Tự Nhiên — Natural
 
 **Nhân viên:** natural.md
-**Ban:** Kiểm duyệt (quality/)
+**Ban:** Kiểm duyệt (review/)
 **Chuyên môn:** Đảm bảo văn viết tự nhiên như người Việt — văn phạm, format, ký hiệu nối câu.
 **Phạm vi:** Áp dụng cho bản tiếng Việt. Bản tiếng Anh dùng `academic-en.md` thay thế.
 

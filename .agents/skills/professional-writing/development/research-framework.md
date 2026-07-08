@@ -89,7 +89,7 @@ Khi đã phân tích đủ ~20 bài trở lên:
 ```
 1. Đọc bảng tổng hợp pattern
 2. Lọc pattern mới (chưa có trong skill)
-3. Phân loại: thuộc ban nào? (style/, quality/, content/)
+3. Phân loại: thuộc ban nào? (editorial/, review/, research/)
 4. Viết format chuẩn nhân viên (header + quy tắc + checklist)
 5. Cập nhật lead file → bảng nhân sự
 6. Cập nhật SKILL.md nếu cần thêm dispatch mới

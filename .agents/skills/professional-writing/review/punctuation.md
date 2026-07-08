@@ -1,7 +1,7 @@
 # BTV Dấu Câu — Punctuation
 
 **Nhân viên:** punctuation.md
-**Ban:** Kiểm duyệt (quality/)
+**Ban:** Kiểm duyệt (review/)
 **Chuyên môn:** Quy tắc dấu câu, spacing — những lỗi kỹ thuật AI thường mắc khi viết tiếng Việt.
 **Phạm vi:** Áp dụng cho bản tiếng Việt. Bản tiếng Anh dùng `academic-en.md` (quy ước ngược lại: Oxford comma bắt buộc, em-dash cho phép).
 

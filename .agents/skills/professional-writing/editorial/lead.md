@@ -55,8 +55,8 @@ Nhiệm vụ HOÀN THÀNH khi:
 ## Hợp đồng ban giao
 
 - Nhận input từ: Ban Thu thập (Content Brief) hoặc Tổng biên tập (đề bài trực tiếp)
-- Giao output cho: Ban Xuất bản (nếu cần format) hoặc Ban Kiểm duyệt (quality/)
-- Khi bị quality/ từ chối vì lỗi nội dung: sửa theo phiếu từ chối, giao lại
+- Giao output cho: Ban Xuất bản (nếu cần format) hoặc Ban Kiểm duyệt (review/)
+- Khi bị review/ từ chối vì lỗi nội dung: sửa theo phiếu từ chối, giao lại
 
 ### Hành động bàn giao (GATE)
 

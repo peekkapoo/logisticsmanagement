@@ -1,7 +1,7 @@
 # Đóng Khung — Hook & Close
 
 **Nhân viên:** hook-close.md
-**Ban:** Biên tập (style/)
+**Ban:** Biên tập (editorial/)
 **Chức năng:** Mở bài + kết bài — đóng khung câu chuyện bằng hook mạnh và close ám ảnh.
 
 ---

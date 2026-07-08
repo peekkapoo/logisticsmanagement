@@ -5,9 +5,10 @@
 
 ## 1. Trạng thái hiện tại (Current Status)
 - **Phase hiện tại:** Tư vấn kiến trúc hệ thống, tích hợp Antigravity & NotebookLM.
-- **Cập nhật gần nhất (2026-07-05 09:01:00):** Đã phân tách 14 tiêu chí chuẩn học thuật, gắn trích dẫn in-text và danh mục tài liệu (T1.5 - Tinh chỉnh). Chuẩn bị chuyển sang Phase 2.
+- **Cập nhật gần nhất (2026-07-08 10:20:00):** Hoàn thành research + lên Implementation Plan nâng cấp kịch bản phỏng vấn v1.0 → v2.0. Chờ user review và duyệt trước khi thực thi.
 
 ## 2. Công việc vừa hoàn thành (Recently Completed)
+- [x] [2026-07-08 10:20:00] Research phương pháp luận phỏng vấn bán cấu trúc (IPR Framework — Castillo-Montoya 2016, Delphi-AHP — Al Hazza et al. 2022, Cognitive Probing — Willis 2005). Lên Implementation Plan chi tiết nâng cấp kịch bản phỏng vấn v1.0 → v2.0 với 7 thay đổi lớn (Informed Consent, Stimulus Cards, Trade-off Scenarios, RQ-IQ Mapping, Template ghi chép, Closing protocol). Plan lưu tại artifact, **chờ user review**.
 - [x] [2026-07-04 19:28:12] Tạo `AGENTS.md` với các rules của dự án.
 - [x] [2026-07-04 19:28:43] Di chuyển thư mục `skill` cũ sang `.agents/skills`.
 - [x] [2026-07-04 19:30:05] Tạo file bộ nhớ `task_log.md`.
@@ -57,6 +58,7 @@
 - [x] [2026-07-05 21:15:04] Sửa lỗi cú pháp YAML (dấu hai chấm) trong file `SKILL.md` của `task-processor`. Áp dụng skill `professional-writing` (TBT) để biên soạn và xuất bản bài Tech-blog giải thích lỗi YAML này vào `08_new_knowledge\2026-07-05_yaml-parsing-error_v1.0_final_agent.md`.
 - [x] [2026-07-05 22:15:00] Khởi động Phase 2 (Phỏng vấn chuyên gia). Thiết lập Kế hoạch triển khai chốt phương án phỏng vấn người thật. Hoàn thành T2.1: Viết kịch bản phỏng vấn bán cấu trúc tại `02_du-lieu-tho\phong-van\2026-07-05_kich-ban-phong-van_v1.0_draft_AI.md`. Hoàn thành T2.2: Lập danh sách chuyên gia dự kiến tại `00_quan-ly-du-an\bien-ban-hop\2026-07-05_danh-sach-chuyen-gia.md`.
 - [x] [2026-07-06 17:15:00] Thực hiện commit và push toàn bộ thay đổi của dự án lên kho lưu trữ.
+- [x] [2026-07-08 10:11:00] Merge toàn diện skill `professional-writing` từ bản cải tiến Claude (`professional-writing-improved`). Sửa ~25 file tham chiếu lỗi thời (`quality/`→`review/`, `style/`→`editorial/`, `meta/`→`development/`, `platform/`→`publishing/`, `examples/`→`archive/`). Cập nhật description YAML, version header lên v4.0, README và changelog. GIỮ NGUYÊN `scripts/academic_parser.py` cho Antigravity. Xóa thư mục tạm `professional-writing-improved/`.
 
 ## 3. Các bước tiếp theo (Next Steps)
 - Đầu việc phân tích ma trận quyết định AHP/TOPSIS cho 7 laptop văn phòng đã bị **Hủy (Cancelled)** theo yêu cầu của user.

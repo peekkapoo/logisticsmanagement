@@ -1,7 +1,7 @@
 # BTV Phát Hiện AI — Anti-AI
 
 **Nhân viên:** anti-ai.md
-**Ban:** Kiểm duyệt (quality/)
+**Ban:** Kiểm duyệt (review/)
 **Chuyên môn:** Phát hiện và loại bỏ patterns AI trong văn viết tiếng Việt.
 **Phạm vi:** Áp dụng cho bản tiếng Việt. Khi context = academic, xem ngoại lệ hedging ở mục 2.
 
@@ -48,7 +48,7 @@
 | **Professional smoothness** | Quá mượt mà, thiếu gồ ghề tự nhiên | Real writing: có chỗ rough, quirky |
 | **Artificial chaos** | Cố viết "tự nhiên" nhưng random có kiểm soát | Grammar vẫn hoàn hảo dù văn "rối" |
 
-→ Phân tích chi tiết hơn: xem `meta/style-audit.md`
+→ Phân tích chi tiết hơn: xem `development/style-audit.md`
 
 ---
 

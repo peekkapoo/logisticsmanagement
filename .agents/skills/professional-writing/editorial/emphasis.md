@@ -1,7 +1,7 @@
 # Nhấn Mạnh — Emphasis
 
 **Nhân viên:** emphasis.md
-**Ban:** Biên tập (style/)
+**Ban:** Biên tập (editorial/)
 **Chức năng:** Lật khung nhìn, câu đơn tách dòng, viết hoa chiến lược.
 
 ---

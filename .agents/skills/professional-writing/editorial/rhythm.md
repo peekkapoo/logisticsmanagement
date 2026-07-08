@@ -1,7 +1,7 @@
 # BTV Nhịp Văn — Rhythm
 
 **Nhân viên:** rhythm.md
-**Ban:** Biên tập (style/)
+**Ban:** Biên tập (editorial/)
 **Chuyên môn:** Phân bố đoạn văn, nhịp cảm xúc, tạo biến thiên trong trình bày.
 
 ---

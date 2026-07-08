@@ -33,5 +33,5 @@ Nhiệm vụ HOÀN THÀNH khi:
 ## Hợp đồng ban giao
 
 - Nhận input từ: Tổng biên tập (đề bài)
-- Giao output cho: Ban Biên tập (style/) dạng Content Brief
-- Khi bị quality/ từ chối vì lỗi số liệu: kiểm tra lại nguồn, cập nhật Content Brief
+- Giao output cho: Ban Biên tập (editorial/) dạng Content Brief
+- Khi bị review/ từ chối vì lỗi số liệu: kiểm tra lại nguồn, cập nhật Content Brief

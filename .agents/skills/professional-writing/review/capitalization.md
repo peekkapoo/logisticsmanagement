@@ -1,7 +1,7 @@
 # BTV Viết Hoa & Tiêu Đề — Capitalization
 
 **Nhân viên:** capitalization.md
-**Ban:** Kiểm duyệt (quality/)
+**Ban:** Kiểm duyệt (review/)
 **Chuyên môn:** Quy tắc viết hoa và phân cấp tiêu đề trong tiếng Việt.
 **Phạm vi:** Áp dụng cho bản tiếng Việt. Bản tiếng Anh dùng `academic-en.md` (Title Case cho heading theo APA/IEEE).
 

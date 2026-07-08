@@ -1,7 +1,7 @@
 # Ẩn Dụ — Metaphor
 
 **Nhân viên:** metaphor.md
-**Ban:** Biên tập (style/)
+**Ban:** Biên tập (editorial/)
 **Chức năng:** Ẩn dụ mở rộng, chồng lớp lực tác động, vòng lặp tự củng cố.
 
 ---

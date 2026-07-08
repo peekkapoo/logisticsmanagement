@@ -35,7 +35,7 @@ Khi được gọi:
 ## Cam kết hoàn thành
 
 - [ ] Bài mẫu có metadata đầy đủ (modules, ngày, loại đề bài)
-- [ ] Bài mẫu đã được quality/ thông qua
+- [ ] Bài mẫu đã được review/ thông qua
 
 ## Hợp đồng ban giao
 
