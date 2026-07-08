@@ -4,10 +4,11 @@
 > **Quy tắc đối với AI:** BẮT BUỘC phải đọc file này đầu tiên ở mỗi phiên chat, và CẬP NHẬT lại tiến độ vào file này trước khi kết thúc công việc. Mọi bản ghi nhận công việc mới ĐỀU PHẢI có thời gian (timestamp) theo format YYYY-MM-DD HH:MM:SS.
 
 ## 1. Trạng thái hiện tại (Current Status)
-- **Phase hiện tại:** Tư vấn kiến trúc hệ thống, tích hợp Antigravity & NotebookLM.
-- **Cập nhật gần nhất (2026-07-08 10:20:00):** Hoàn thành research + lên Implementation Plan nâng cấp kịch bản phỏng vấn v1.0 → v2.0. Chờ user review và duyệt trước khi thực thi.
+- **Phase hiện tại:** Phỏng vấn chuyên gia (Expert Interview).
+- **Cập nhật gần nhất (2026-07-08 23:50:00):** Hoàn thành biên soạn Kịch bản phỏng vấn v2.0 draft theo đúng IPR Framework (Castillo-Montoya, 2016). Kịch bản bao gồm đầy đủ Informed Consent, Thẻ kích thích, Kịch bản đánh đổi (trade-off) và Ma trận RQ-IQ. File lưu tại `03_phan-tich/phong-van/`.
 
 ## 2. Công việc vừa hoàn thành (Recently Completed)
+- [x] [2026-07-08 23:50:00] Áp dụng quy trình GATE (professional-writing) biên soạn `2026-07-08_kich-ban-phong-van_v2.0_draft_AI.md`. Đã trích xuất insight từ 16 bài báo để tạo thẻ kích thích (Stimulus Cards) và thiết kế kịch bản đánh đổi dựa trên thực tế ngành. File đang ở `03_phan-tich` chờ nhóm duyệt và test.
 - [x] [2026-07-08 10:20:00] Research phương pháp luận phỏng vấn bán cấu trúc (IPR Framework — Castillo-Montoya 2016, Delphi-AHP — Al Hazza et al. 2022, Cognitive Probing — Willis 2005). Lên Implementation Plan chi tiết nâng cấp kịch bản phỏng vấn v1.0 → v2.0 với 7 thay đổi lớn (Informed Consent, Stimulus Cards, Trade-off Scenarios, RQ-IQ Mapping, Template ghi chép, Closing protocol). Plan lưu tại artifact, **chờ user review**.
 - [x] [2026-07-04 19:28:12] Tạo `AGENTS.md` với các rules của dự án.
 - [x] [2026-07-04 19:28:43] Di chuyển thư mục `skill` cũ sang `.agents/skills`.
