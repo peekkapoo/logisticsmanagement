@@ -4,10 +4,15 @@
 > **Quy tắc đối với AI:** BẮT BUỘC phải đọc file này đầu tiên ở mỗi phiên chat, và CẬP NHẬT lại tiến độ vào file này trước khi kết thúc công việc. Mọi bản ghi nhận công việc mới ĐỀU PHẢI có thời gian (timestamp) theo format YYYY-MM-DD HH:MM:SS.
 
 ## 1. Trạng thái hiện tại (Current Status)
-- **Phase hiện tại:** Phỏng vấn chuyên gia (Expert Interview).
-- **Cập nhật gần nhất (2026-07-08 23:50:00):** Hoàn thành biên soạn Kịch bản phỏng vấn v2.0 draft theo đúng IPR Framework (Castillo-Montoya, 2016). Kịch bản bao gồm đầy đủ Informed Consent, Thẻ kích thích, Kịch bản đánh đổi (trade-off) và Ma trận RQ-IQ. File lưu tại `03_phan-tich/phong-van/`.
+- **Phase hiện tại:** Phỏng vấn chuyên gia (Expert Interview) — task T2.1 kịch bản đã ở bản v3.0, chờ nhóm duyệt + pilot test (IPR Phase 3-4) trước khi copy vào vùng đóng băng.
+- **Cập nhật gần nhất (2026-07-09 00:16:00):** Viết mới hoàn toàn Kịch bản phỏng vấn **v3.0 song ngữ VN-EN** (thay bản v2.0), giữ gọn 13 câu / 20-30 phút. Đã **sửa 3 lỗi trích dẫn** của bản v2.0 sau khi đối chiếu full-text các paper parsed, và **hòa giải RQ** với bộ RQ chính thức của báo cáo. Bản v2.0 cũ đã chuyển vào `03_phan-tich/phong-van/_cu/`. Còn 1 việc treo: **thống nhất persona** ("nhân viên văn phòng" vs "người thiết kế đồ họa" trong `01-introduction.tex`).
 
 ## 2. Công việc vừa hoàn thành (Recently Completed)
+- [x] [2026-07-09 00:16:00] **T2.1 — Nâng cấp kịch bản phỏng vấn lên v3.0 (song ngữ VN-EN).** Áp dụng quy trình GATE (professional-writing): research (Content Brief) → editorial VN → editorial EN (viết lại độc lập) → review → publishing. Xuất `03_phan-tich/phong-van/2026-07-09_kich-ban-phong-van_v3.0_draft_AI.md` (VN) và `..._interview-protocol_v3.0_draft_AI_EN.md` (EN). Cấu trúc 13 câu / 5 phần + 3 phụ lục (Ma trận IO-RQ, Thẻ kích thích, Template ghi chép).
+  - **Sửa 3 lỗi trích dẫn stimulus của bản v2.0** (đã verify verbatim với `02_du-lieu-tho/parsed_papers/`): (1) số CPU/RAM=0.8333 gán lại đúng cho **Maghsoudi (2026)** thay vì Kang (2022) — Kang là nghiên cứu review online JD.com; (2) bỏ **Zakeri (2023)** khỏi thẻ Pin/Trọng lượng (là paper chọn vật liệu, không nói trọng lượng), thẻ B chỉ giữ Lam (2023) với sắc thái đúng (Pin #1 trong nhóm kỹ thuật 0.2841, tổng thể Giá cả mới #1); (3) bỏ **Šostar (2023)** khỏi luận điểm "hậu mãi = bảo hiểm rủi ro" (paper nói về yếu tố cá nhân/ngân sách), neo hậu mãi vào warranty của Maghsoudi (0.6667, #8 TOPSIS).
+  - **Hòa giải RQ:** Phụ lục A dùng tầng trung gian "Mục tiêu phỏng vấn (IO-A→D)" lồng dưới bộ RQ *chính thức* của báo cáo (RQ1 tiêu chí / RQ2 trọng số / RQ3 laptop), thay bộ "4 RQ" tự chế của bản v2.0. Phỏng vấn = Delphi Round 1 phục vụ RQ1 + mồi RQ2.
+  - **Verify:** audit câu dẫn dắt (leading question) sạch ở cả 2 bản; citation không mồ côi/không thừa; leo 13 câu đều map được IO/RQ. Chuyển bản v2.0 cũ vào `_cu/` (giữ, không xóa theo quy tắc §4).
+  - ⚠️ **Treo:** persona trong `01-introduction.tex` (problem statement, TODO Phase 6) ghi "người thiết kế đồ họa", lệch với "nhân viên văn phòng" ở tiêu chí v5.0 + kế hoạch Phase 2. Kịch bản dùng nhất quán "nhân viên văn phòng"; **chưa sửa** intro.tex — nhóm cần thống nhất.
 - [x] [2026-07-08 23:50:00] Áp dụng quy trình GATE (professional-writing) biên soạn `2026-07-08_kich-ban-phong-van_v2.0_draft_AI.md`. Đã trích xuất insight từ 16 bài báo để tạo thẻ kích thích (Stimulus Cards) và thiết kế kịch bản đánh đổi dựa trên thực tế ngành. File đang ở `03_phan-tich` chờ nhóm duyệt và test.
 - [x] [2026-07-08 10:20:00] Research phương pháp luận phỏng vấn bán cấu trúc (IPR Framework — Castillo-Montoya 2016, Delphi-AHP — Al Hazza et al. 2022, Cognitive Probing — Willis 2005). Lên Implementation Plan chi tiết nâng cấp kịch bản phỏng vấn v1.0 → v2.0 với 7 thay đổi lớn (Informed Consent, Stimulus Cards, Trade-off Scenarios, RQ-IQ Mapping, Template ghi chép, Closing protocol). Plan lưu tại artifact, **chờ user review**.
 - [x] [2026-07-04 19:28:12] Tạo `AGENTS.md` với các rules của dự án.
@@ -62,8 +67,11 @@
 - [x] [2026-07-08 10:11:00] Merge toàn diện skill `professional-writing` từ bản cải tiến Claude (`professional-writing-improved`). Sửa ~25 file tham chiếu lỗi thời (`quality/`→`review/`, `style/`→`editorial/`, `meta/`→`development/`, `platform/`→`publishing/`, `examples/`→`archive/`). Cập nhật description YAML, version header lên v4.0, README và changelog. GIỮ NGUYÊN `scripts/academic_parser.py` cho Antigravity. Xóa thư mục tạm `professional-writing-improved/`.
 
 ## 3. Các bước tiếp theo (Next Steps)
-- Đầu việc phân tích ma trận quyết định AHP/TOPSIS cho 7 laptop văn phòng đã bị **Hủy (Cancelled)** theo yêu cầu của user.
-- Chờ chỉ thị tiếp theo từ user.
+- **T2.1 (tiếp):** Nhóm đọc chéo kịch bản v3.0 (IPR Phase 3) + pilot test nội bộ 1 thành viên (IPR Phase 4). Chỉ **sau khi duyệt** mới copy bản final vào `02_du-lieu-tho/phong-van/` qua inbox (vùng đóng băng).
+- **Cần quyết:** thống nhất persona ("nhân viên văn phòng" vs "người thiết kế đồ họa") để đồng bộ `01-introduction.tex` với tài liệu tiêu chí.
+- **T2.3:** Tiến hành phỏng vấn 3-5 chuyên gia thực tế (danh sách tại `00_quan-ly-du-an/bien-ban-hop/2026-07-05_danh-sach-chuyen-gia.md`).
+- Tùy chọn: xuất bản LaTeX của phụ lục kịch bản để nhúng vào báo cáo (đang chờ user quyết Markdown hay LaTeX).
+- Đầu việc AHP/TOPSIS trước đó đã bị **Hủy** — sẽ chạy lại ở Phase 4 sau khi chốt trọng số.
 - Sử dụng skill `task-processor` để tiếp nhận và điều phối mọi yêu cầu mới.
 
 ## 4. Cảnh báo & Ngữ cảnh quan trọng (Warnings & Context)

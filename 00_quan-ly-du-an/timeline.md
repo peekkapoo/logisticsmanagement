@@ -30,6 +30,15 @@
 
 *Ký hiệu trạng thái: ⬜ Chưa làm · 🔄/⏳ Đang làm · ✅ Xong (đạt DoD + đã tạo ZIP sao lưu)*
 
+**Tasks:**
+- [x] T2.1 | Viết kịch bản phỏng vấn bán cấu trúc | Bản **v3.0 song ngữ VN-EN** tại `03_phan-tich/phong-van/` (13 câu, 5 phần + 3 phụ lục). Áp IPR Framework + Delphi–AHP + Cognitive Probing. Đã sửa 3 lỗi trích dẫn của bản v2.0 và hòa giải RQ với bộ RQ chính thức. Bản v1.0/v2.0 cũ lưu trữ. **⏳ chờ nhóm duyệt + pilot test.**
+- [x] T2.2 | Lập danh sách chuyên gia dự kiến | `00_quan-ly-du-an/bien-ban-hop/2026-07-05_danh-sach-chuyen-gia.md`
+- [ ] T2.3 | Phỏng vấn 3-5 chuyên gia thực tế (sau khi pilot test kịch bản) | Ghi chú lưu `02_du-lieu-tho/phong-van/`
+- [ ] T2.4 | Tổng hợp, mã hóa dữ liệu phỏng vấn, hiệu chỉnh bộ tiêu chí | `03_phan-tich/`
+- [ ] T2.5 | Họp nhóm chốt bộ tiêu chí sau phỏng vấn | —
+
+> ⚠️ **Việc treo cần thống nhất:** persona nghiên cứu — `01-introduction.tex` (problem statement) ghi "người thiết kế đồ họa", lệch với "nhân viên văn phòng" ở tiêu chí v5.0 và kế hoạch Phase 2. Kịch bản v3.0 dùng nhất quán "nhân viên văn phòng".
+
 ## Phân công task chi tiết
 
 Bảng dưới điền dần khi nhóm họp phân công. Mã task tra trong README mục 5.
@@ -47,3 +56,6 @@ Bảng dưới điền dần khi nhóm họp phân công. Mã task tra trong REA
 |---|---|
 | 2026-07-04 | Khởi tạo workspace, README, kế hoạch tổng thể, push GitHub |
 | 2026-07-04 | Hoàn thành T1.1, T1.2: Thu thập 17 bài báo khoa học, phân loại vào `01_tai-lieu-tham-khao` |
+| 2026-07-05 | Đóng Phase 1: chốt bộ 14 tiêu chí (`v5.0_final_user.md`) + Literature Review sau khi deep-read 15 bài |
+| 2026-07-05 | T2.1 (v1.0) + T2.2: kịch bản phỏng vấn sơ bộ và danh sách chuyên gia |
+| 2026-07-09 | T2.1 (v3.0 song ngữ VN-EN): viết mới kịch bản, sửa 3 lỗi trích dẫn, hòa giải RQ; chờ pilot test |
