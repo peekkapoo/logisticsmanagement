@@ -1,6 +1,6 @@
 ---
 name: professional-writing
-description: Tòa soạn báo AI viết tiếng Việt chuyên nghiệp — dùng khi cần viết hoặc rà soát bài blog/cảm xúc, bài đăng Facebook, bài phản bác (debunk), tài liệu kỹ thuật, hoặc báo cáo/bài báo học thuật (tiếng Việt, tiếng Anh, hoặc song ngữ, kể cả xuất LaTeX .tex/.bib). Tổng biên tập nhận đề bài → phân tích → điều phối các ban Thu thập/Biên tập/Kiểm duyệt/Xuất bản/Tư liệu/Phát triển theo quy trình GATE. Kích hoạt khi user yêu cầu "viết bài", "viết blog", "phản bác/debunk", "viết báo cáo/luận văn/bài báo khoa học", "rà soát/biên tập bài viết tiếng Việt", hoặc "cải tiến skill viết".
+description: Tòa soạn báo AI viết tiếng Việt chuyên nghiệp — dùng khi cần viết hoặc rà soát bài blog/cảm xúc, bài đăng Facebook, bài phản bác (debunk), tài liệu kỹ thuật, hoặc báo cáo/bài báo học thuật (tiếng Việt, tiếng Anh, hoặc song ngữ, kể cả xuất LaTeX .tex/.bib). Đồng thời bao gồm cả việc đọc sâu nhiều bài báo khoa học (đọc paper, literature review, deep read), trích xuất tiêu chí đánh giá, và tổng hợp citekey. Tổng biên tập nhận đề bài → phân tích → điều phối các ban Thu thập/Biên tập/Kiểm duyệt/Xuất bản/Tư liệu/Phát triển theo quy trình GATE. Kích hoạt khi user yêu cầu "viết bài", "viết blog", "phản bác/debunk", "viết báo cáo/luận văn/bài báo khoa học", "rà soát/biên tập bài viết tiếng Việt", "cải tiến skill viết", "đọc paper", "trích tiêu chí", hoặc "literature review".
 ---
 
 # Viết Chuyên Nghiệp 4.0 — Tổng Biên Tập

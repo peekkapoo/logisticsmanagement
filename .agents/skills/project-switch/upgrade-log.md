@@ -36,6 +36,11 @@ Cột **Portable**: `generic` = mang sang project nào cũng dùng được · `
 
 ## Changelog
 
+## 2026-07-09 (e) — Refactor kiến trúc Agent tương thích Antigravity IDE
+**Sửa/Gộp:** Phục hồi nguyên vẹn `professional-writing`, gộp lại chức năng đọc sâu (literature review) và xóa subagent `literature-researcher`. Chuyển đổi toàn bộ kiến trúc (cả `.claude` và `.codex`) về một nguồn duy nhất là `.agents/skills/` chuẩn của Antigravity IDE. Xóa bỏ hoàn toàn `CLAUDE.md` và dời `AGENTS.md` vào thư mục Workspace Customizations Root (`.agents/AGENTS.md`).
+**Vì sao:** Dự án đã chuyển sang sử dụng hệ sinh thái mới Antigravity IDE, yêu cầu cấu trúc gọn gàng, tự động nhận diện kỹ năng (skills) qua `.agents/skills/<tên>/SKILL.md` và luật (rules) qua `.agents/AGENTS.md`. Mô hình Dual-Agent cũ bị thay thế bởi 1 lõi Antigravity mạnh mẽ.
+**Bài học cho project sau:** Tránh tình trạng phân mảnh logic trên nhiều module con nếu chung một context cốt lõi. Sự chuyển đổi môi trường Agent (VD: từ Claude sang Antigravity) cần refactor sớm để hạn chế lỗi runtime do sai đường dẫn.
+
 ## 2026-07-09 (d) — Tích hợp OfficeCLI theo hướng wrapper CLI
 **Thêm:** skill `officecli` cho Claude/Codex và subagent Claude `office-docs`; cập nhật routing task-processor + AGENTS. Skill gọi binary `officecli` nếu có, dùng `view/get/query/set/add/remove/validate`, và không clone/copy source OfficeCLI vào repo.
 **Vì sao:** project thường cần sửa/QA `.docx`, `.xlsx`, `.pptx`; OfficeCLI cho vòng render/inspect/fix tốt hơn trong khi vẫn giữ repo gọn.
@@ -56,11 +61,11 @@ Cột **Portable**: `generic` = mang sang project nào cũng dùng được · `
 Đây là project nơi bộ công cụ hình thành. Chuỗi nâng cấp trong ngày:
 
 **Thêm:** hạ tầng "một nguồn luật, hai cửa vào" — `AGENTS.md` gốc (tool-agnostic, Codex đọc trực tiếp) + `CLAUDE.md` (import `@AGENTS.md`, phần riêng Skill/Agent tool).
-**Sửa:** chuyển skill từ `.agents/skills/` (Antigravity) sang `.claude/skills/` để Claude Code tự nạp; làm phẳng mọi skill về 1 cấp; catalog script CLI trong AGENTS.md để Codex chạy được dù không có cơ chế skill.
-**Vì sao:** project chạy song song Claude Code + Codex trong VSCode; hai công cụ đọc cấu hình khác nhau (CLAUDE.md vs AGENTS.md ở gốc; Claude tự nạp `.claude/skills` còn Codex thì không).
-**Bài học cho project sau:** luôn đặt luật chung ở `AGENTS.md` gốc + `CLAUDE.md` mỏng import nó; skill để `.claude/skills/<tên>/SKILL.md` (1 cấp); mọi năng lực "tính toán" nên có script CLI để Codex tái dùng.
+**Sửa:** chuyển skill từ `.agents/skills/` (Antigravity) sang `.agents/skills/` để Claude Code tự nạp; làm phẳng mọi skill về 1 cấp; catalog script CLI trong AGENTS.md để Codex chạy được dù không có cơ chế skill.
+**Vì sao:** project chạy song song Claude Code + Codex trong VSCode; hai công cụ đọc cấu hình khác nhau (CLAUDE.md vs AGENTS.md ở gốc; Claude tự nạp `.agents/skills` còn Codex thì không).
+**Bài học cho project sau:** luôn đặt luật chung ở `AGENTS.md` gốc + `CLAUDE.md` mỏng import nó; skill để `.agents/skills/<tên>/SKILL.md` (1 cấp); mọi năng lực "tính toán" nên có script CLI để Codex tái dùng.
 
-**Sửa (consolidate):** gom 3 skill authoring rời rạc (`skill-creator`/`writing-skills`/`audit-skills`) thành lớp orchestrator `skill-smith` — subagent Claude `.claude/agents/skill-smith.md` + mirror `.codex/skills/skill-smith/`. Giữ 3 skill gốc làm kho tri thức/tooling.
+**Sửa (consolidate):** gom 3 skill authoring rời rạc (`skill-creator`/`writing-skills`/`audit-skills`) thành lớp orchestrator `skill-smith` — subagent Claude `.agents/agents/skill-smith.md` + mirror `.agents/skills/skill-smith/`. Giữ 3 skill gốc làm kho tri thức/tooling.
 **Vì sao:** ba skill là một vòng đời liền mạch (tạo → viết → audit); rời rạc khiến phải tự ghép.
 **Bài học:** mẫu **subagent BỌC skill** (frontmatter `skills:`) — subagent lo cô lập ngữ cảnh, skill lo tri thức; không nhân bản.
 

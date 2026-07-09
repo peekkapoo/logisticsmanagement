@@ -25,7 +25,7 @@ Nguyên tắc xuyên suốt của hệ thống thư mục là dữ liệu chảy
 | Bản nộp cuối cùng | `06_nop-bai\` |
 | Các bản sao lưu ZIP theo mốc | `07_sao-luu\` |
 | Kho tàng kiến thức AI & Công nghệ | `08_new_knowledge\` |
-| Công cụ AI hỗ trợ (skill) | `.claude\skills\` |
+| Công cụ AI hỗ trợ (skill) | `.agents\skills\` |
 
 Cây thư mục đầy đủ:
 
@@ -63,7 +63,7 @@ d:\LogManagement\
 ├── 08_new_knowledge\              ← kho tàng kiến thức AI & Công nghệ
 ├── AGENTS.md                      ← luật dự án (dùng chung Claude Code + Codex)
 ├── CLAUDE.md                      ← điểm vào Claude Code (import @AGENTS.md)
-└── .claude\
+└── .agents\
     └── skills\                    ← các module kỹ năng (skill)
 ```
 
@@ -222,7 +222,7 @@ Chiến lược sao lưu gồm ba lớp, mỗi lớp chống một loại rủi 
 
 **Lớp 2 - Git & GitHub** chống rủi ro "hôm qua còn chạy được, hôm nay lỗi mà không biết đã sửa gì". Hãy tham khảo tài liệu [02_kien-thuc-he-thong.md](08_new_knowledge/02_kien-thuc-he-thong.md) để biết cách quản lý đa vũ trụ qua Add, Commit và Push.
 
-**Lớp 3 - Snapshot ZIP theo mốc** chống rủi ro hỏng máy, mất ổ cứng. Kết thúc mỗi phase, nén toàn bộ workspace (trừ `.claude\skills\`, cache model và file tạm) thành file đặt trong `07_sao-luu\` theo mẫu `YYYY-MM-DD_phase<N>_<ten-moc>.zip`, sau đó upload thủ công lên Google Drive của nhóm. Thư mục này chỉ chứa ZIP, tuyệt đối không giải nén đè ngược lại workspace.
+**Lớp 3 - Snapshot ZIP theo mốc** chống rủi ro hỏng máy, mất ổ cứng. Kết thúc mỗi phase, nén toàn bộ workspace (trừ `.agents\skills\`, cache model và file tạm) thành file đặt trong `07_sao-luu\` theo mẫu `YYYY-MM-DD_phase<N>_<ten-moc>.zip`, sau đó upload thủ công lên Google Drive của nhóm. Thư mục này chỉ chứa ZIP, tuyệt đối không giải nén đè ngược lại workspace.
 
 ### Checklist kết thúc phase
 
@@ -243,7 +243,7 @@ Báo cáo dùng engine XeLaTeX với biber. Thay vì chạy lệnh thủ công r
 
 ## 8. Công cụ AI của dự án
 
-Toàn bộ các skill nằm trong thư mục `.claude\skills\` (Claude Code tự động nạp các skill có `SKILL.md` ở cấp một). Luật dự án dùng chung nằm ở `AGENTS.md` gốc — Codex đọc trực tiếp, còn Claude Code đọc qua `CLAUDE.md` (dòng `@AGENTS.md`). Sửa luật thì sửa ở `AGENTS.md`.
+Toàn bộ các skill nằm trong thư mục `.agents\skills\` (Antigravity tự động nạp các skill có `SKILL.md` ở cấp một). Luật dự án dùng chung nằm ở `.agents\AGENTS.md` gốc. Sửa luật thì sửa ở `.agents\AGENTS.md`.
 
 | Skill | Dùng cho | Nguồn |
 |---|---|---|
@@ -269,7 +269,7 @@ Chi tiết phân tích và lý do chọn từng skill nằm trong [KE-HOACH-DU-A
 Để giao việc cho Agent một cách hiệu quả, đặc biệt trong các tác vụ viết học thuật và báo cáo (Phase 1 & Phase 6), người dùng (User) nên sử dụng các bộ prompt mẫu dưới đây nhằm tránh việc AI trả về kết quả quá "máy móc", lạm dụng gạch đầu dòng, hoặc sai lệch về chuẩn mực trích dẫn.
 
 ### 10.1. Mẫu Prompt viết/sửa Literature Review (Tiếng Việt)
-> *"Sử dụng skill @[.claude/skills/professional-writing], viết [hoặc sửa lại] phần [Tên nội dung] theo chuẩn học thuật. Yêu cầu bắt buộc: KHÔNG dùng gạch đầu dòng hay đánh nhãn in đậm kiểu máy móc. Hãy viết thành các đoạn văn nối tiếp mượt mà, phân tích rõ sự đồng thuận/trái chiều (agreements/disagreements) của các tác giả. BẮT BUỘC thực hiện cross-ref check để đảm bảo 100% in-text citation khớp với danh mục References ở cuối bài."*
+> *"Sử dụng skill @[.agents/skills/professional-writing], viết [hoặc sửa lại] phần [Tên nội dung] theo chuẩn học thuật. Yêu cầu bắt buộc: KHÔNG dùng gạch đầu dòng hay đánh nhãn in đậm kiểu máy móc. Hãy viết thành các đoạn văn nối tiếp mượt mà, phân tích rõ sự đồng thuận/trái chiều (agreements/disagreements) của các tác giả. BẮT BUỘC thực hiện cross-ref check để đảm bảo 100% in-text citation khớp với danh mục References ở cuối bài."*
 
 ### 10.2. Mẫu Prompt biên dịch sang Tiếng Anh (Phase 6)
 > *"Viết lại phần [Tên file nháp tiếng Việt] sang tiếng Anh học thuật để dùng cho báo cáo LaTeX. Yêu cầu bắt buộc: Dịch độc lập theo ý, KHÔNG dịch word-by-word. Linh hoạt thay đổi cấu trúc câu và thì ngữ pháp (Tenses) cho tự nhiên. Các trích dẫn phải được tích hợp mượt mà vào câu (ví dụ: Smith et al. (2024) argued that...). Cuối bài bắt buộc check lại Cross-Reference với file .bib."*
