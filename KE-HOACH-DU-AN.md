@@ -1,6 +1,8 @@
 # Plan: Cấu trúc dự án + README workflow chi tiết + hệ sinh thái skill cho đồ án MADM/MCDM
 
-> **Trạng thái:** ĐÃ THỰC THI ngày 2026-07-04, kèm 2 điều chỉnh sau đó theo quyết định nhóm trưởng: (1) toàn bộ skill gộp về MỘT thư mục `skill\` và xóa `.claude\` — việc định tuyến skill chuyển sang bảng trong `CLAUDE.md`; (2) 4 skill tự tạo đã được đánh giá bằng bộ skill-creator/writing-skills và nâng cấp (description chuẩn CSO, Common Mistakes, Red Flags, references/, examples/).
+> ⚠️ **TÀI LIỆU LỊCH SỬ (2026-07-04).** File này ghi lại kế hoạch gốc và lý do các quyết định; **không phản ánh cấu trúc hiện tại**. Một số đường dẫn/tên đã đổi từ đó: skill nay nằm ở `.claude\skills\`; luật dự án ở `AGENTS.md` gốc (Claude Code đọc qua `CLAUDE.md`); tên đúng là `professional-writing` (gạch nối) và `data-pipeline` (thay cho `crawl-laptop-data` đã xóa); thư mục tạo skill là `skill-creating-assesment` (đã làm phẳng thành `skill-creator`/`writing-skills`/`audit-skills`). Nguồn luật/cấu trúc hiện hành: đọc `AGENTS.md` và `README.md`.
+>
+> **Trạng thái (ghi thời điểm 2026-07-04):** ĐÃ THỰC THI ngày 2026-07-04, kèm 2 điều chỉnh sau đó theo quyết định nhóm trưởng: (1) toàn bộ skill gộp về MỘT thư mục và xóa các bản trùng; (2) 4 skill tự tạo đã được đánh giá bằng bộ skill-creator/writing-skills và nâng cấp (description chuẩn CSO, Common Mistakes, Red Flags, references/, examples/).
 
 ## Context (Bối cảnh)
 

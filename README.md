@@ -25,7 +25,7 @@ Nguyên tắc xuyên suốt của hệ thống thư mục là dữ liệu chảy
 | Bản nộp cuối cùng | `06_nop-bai\` |
 | Các bản sao lưu ZIP theo mốc | `07_sao-luu\` |
 | Kho tàng kiến thức AI & Công nghệ | `08_new_knowledge\` |
-| Công cụ AI hỗ trợ (skill) | `.agents\skills\` |
+| Công cụ AI hỗ trợ (skill) | `.claude\skills\` |
 
 Cây thư mục đầy đủ:
 
@@ -61,9 +61,9 @@ d:\LogManagement\
 ├── 06_nop-bai\                    ← vùng THIÊNG LIÊNG
 ├── 07_sao-luu\
 ├── 08_new_knowledge\              ← kho tàng kiến thức AI & Công nghệ
-└── .agents\
-    ├── AGENTS.md                  ← luật dự án
-    ├── skills.json                ← đăng ký đường dẫn
+├── AGENTS.md                      ← luật dự án (dùng chung Claude Code + Codex)
+├── CLAUDE.md                      ← điểm vào Claude Code (import @AGENTS.md)
+└── .claude\
     └── skills\                    ← các module kỹ năng (skill)
 ```
 
@@ -126,7 +126,7 @@ Phase này thu thập tiêu chí từ các nghiên cứu đã công bố. Nguyê
 | T1.5 | Gộp tiêu chí trùng lặp, phân nhóm (hiệu năng, giá, thiết kế, dịch vụ...), lập danh sách tiêu chí sơ bộ | `03_phan-tich\tieu-chi\` |
 | T1.6 | Họp nhóm rà soát và chốt danh sách sơ bộ | Biên bản họp |
 
-**Công cụ:** Scholar Gateway (tìm paper), skill `professional_writing` mô-đun `research/literature.md` (quy trình trích metadata), skill `pdf` (trích bảng từ paper).
+**Công cụ:** Scholar Gateway (tìm paper), skill `professional-writing` mô-đun `research/literature.md` (quy trình trích metadata), skill `pdf` (trích bảng từ paper).
 
 **DoD:** có ít nhất 10 paper trong thư mục, bảng tổng hợp đầy đủ metadata cho từng tiêu chí, file .bib chạy không lỗi.
 
@@ -191,13 +191,13 @@ Phase này trả lời câu hỏi của tình huống giả định. Dữ liệu
 | T5.6 | Phân tích độ nhạy, thử thay đổi trọng số xem thứ hạng có đổi không | `03_phan-tich\topsis\` |
 | T5.7 | Diễn giải kết quả, viết ghi chú vì sao máy đứng đầu thắng, chuẩn bị luận giải "vì sao giai đoạn này dùng TOPSIS thay vì AHP" | `03_phan-tich\topsis\` |
 
-**Công cụ:** skill `crawl-laptop-data` và `mcdm-toolkit` (sẽ tạo), skill `xlsx`.
+**Công cụ:** skill `data-pipeline` (crawl + làm sạch) và `mcdm-toolkit`, skill `xlsx`.
 
 **DoD:** ma trận quyết định đầy đủ nguồn gốc từng con số, bảng xếp hạng kèm phân tích độ nhạy, ghi chú diễn giải đã viết xong.
 
 ### Phase 6 - Báo cáo và slide
 
-Đây là phase duy nhất làm việc bằng tiếng Anh. Quy trình viết theo skill `professional_writing` gồm hai lượt, viết nháp tiếng Việt trước để cả nhóm góp ý nhanh, sau đó viết lại bản tiếng Anh độc lập từ dàn ý và dữ liệu đã chốt.
+Đây là phase duy nhất làm việc bằng tiếng Anh. Quy trình viết theo skill `professional-writing` gồm hai lượt, viết nháp tiếng Việt trước để cả nhóm góp ý nhanh, sau đó viết lại bản tiếng Anh độc lập từ dàn ý và dữ liệu đã chốt.
 
 | Mã | Task | Kết quả lưu tại |
 |---|---|---|
@@ -210,7 +210,7 @@ Phase này trả lời câu hỏi của tình huống giả định. Dữ liệu
 | T6.7 | Tổng duyệt thuyết trình, canh thời gian, phân vai người nói | Biên bản họp |
 | T6.8 | Chạy checklist rà soát cuối, copy bản nộp vào `06_nop-bai\`, tạo ZIP sao lưu cuối | `06_nop-bai\`, `07_sao-luu\` |
 
-**Công cụ:** skill `professional_writing` (viết, citation-check, latex-check), skill `pptx` và `dataviz` (slide).
+**Công cụ:** skill `professional-writing` (viết, citation-check, latex-check), skill `pptx` và `dataviz` (slide).
 
 **DoD:** PDF báo cáo biên dịch không lỗi, mọi trích dẫn khớp danh mục, slide đã tổng duyệt, `06_nop-bai\` chứa đúng bộ file nộp.
 
@@ -222,7 +222,7 @@ Chiến lược sao lưu gồm ba lớp, mỗi lớp chống một loại rủi 
 
 **Lớp 2 - Git & GitHub** chống rủi ro "hôm qua còn chạy được, hôm nay lỗi mà không biết đã sửa gì". Hãy tham khảo tài liệu [02_kien-thuc-he-thong.md](08_new_knowledge/02_kien-thuc-he-thong.md) để biết cách quản lý đa vũ trụ qua Add, Commit và Push.
 
-**Lớp 3 - Snapshot ZIP theo mốc** chống rủi ro hỏng máy, mất ổ cứng. Kết thúc mỗi phase, nén toàn bộ workspace (trừ `.agents\` và file tạm) thành file đặt trong `07_sao-luu\` theo mẫu `YYYY-MM-DD_phase<N>_<ten-moc>.zip`, sau đó upload thủ công lên Google Drive của nhóm. Thư mục này chỉ chứa ZIP, tuyệt đối không giải nén đè ngược lại workspace.
+**Lớp 3 - Snapshot ZIP theo mốc** chống rủi ro hỏng máy, mất ổ cứng. Kết thúc mỗi phase, nén toàn bộ workspace (trừ `.claude\skills\`, cache model và file tạm) thành file đặt trong `07_sao-luu\` theo mẫu `YYYY-MM-DD_phase<N>_<ten-moc>.zip`, sau đó upload thủ công lên Google Drive của nhóm. Thư mục này chỉ chứa ZIP, tuyệt đối không giải nén đè ngược lại workspace.
 
 ### Checklist kết thúc phase
 
@@ -243,13 +243,13 @@ Báo cáo dùng engine XeLaTeX với biber. Thay vì chạy lệnh thủ công r
 
 ## 8. Công cụ AI của dự án
 
-Toàn bộ các skill nằm trong thư mục `.agents\skills\`. Để Antigravity IDE có thể nạp các skill lồng sâu, hệ thống dùng file `.agents\skills.json` để đăng ký đường dẫn. Bộ não điều phối chính nằm ở file luật `.agents\AGENTS.md`.
+Toàn bộ các skill nằm trong thư mục `.claude\skills\` (Claude Code tự động nạp các skill có `SKILL.md` ở cấp một). Luật dự án dùng chung nằm ở `AGENTS.md` gốc — Codex đọc trực tiếp, còn Claude Code đọc qua `CLAUDE.md` (dòng `@AGENTS.md`). Sửa luật thì sửa ở `AGENTS.md`.
 
 | Skill | Dùng cho | Nguồn |
 |---|---|---|
 | `task-processor` | Điểm vào mặc định: phân tích yêu cầu, điều phối skill khác | Tạo riêng cho dự án |
 | `professional-writing` | (V3.3) Viết học thuật/blog chuyên nghiệp, thiết kế Tòa soạn, ép buộc trích dẫn (citation-check) | Nâng cấp từ Antigravity |
-| `mcdm-toolkit`, `crawl-laptop-data`, `likert-analysis` | Tính AHP/TOPSIS, thu thập dữ liệu laptop, phân tích khảo sát | Tạo riêng cho dự án (kèm script đã kiểm thử + file mẫu trong `examples\`) |
+| `mcdm-toolkit`, `data-pipeline`, `likert-analysis` | Tính AHP/TOPSIS, thu thập/làm sạch dữ liệu laptop, phân tích khảo sát | Tạo riêng cho dự án (kèm script đã kiểm thử + file mẫu trong `examples\`) |
 | `pptx`, `xlsx`, `pdf` | Dựng slide, xử lý Excel, trích bảng từ paper PDF | Hệ sinh thái Antigravity |
 | `supply-chain-consultant` | Tư vấn chuyên môn logistics/SCM | Có sẵn |
 | `skill-creator`, `writing-skills`, `audit-skills` | Tạo, cải tiến và kiểm định an toàn skill | Có sẵn |
@@ -262,14 +262,14 @@ Chi tiết phân tích và lý do chọn từng skill nằm trong [KE-HOACH-DU-A
 - **Cấu trúc 5 bước:** Hook (Nỗi đau) -> Analogy (Ẩn dụ đời thường) -> Root Cause (Bản chất học thuật) -> Solution (Cách giải quyết) -> Citations (Trích dẫn).
 - **Văn phong:** Sử dụng ngôn từ đồng cảm, tránh lạm dụng thuật ngữ (de-jargonize), luôn có mô hình tư duy (Mental Model) đi kèm.
 - **Quy trình:** Phải được tạo bởi skill `professional-writing` để đảm bảo chất lượng nghiên cứu, biên tập và trích dẫn chuẩn mực.
-(Xem chi tiết Luật vàng số 5 trong file `.agents/AGENTS.md`)
+(Xem chi tiết Luật vàng số 5 trong file `AGENTS.md`, mục 8)
 
 ## 10. Hướng dẫn Prompting cho User (Best Practices)
 
 Để giao việc cho Agent một cách hiệu quả, đặc biệt trong các tác vụ viết học thuật và báo cáo (Phase 1 & Phase 6), người dùng (User) nên sử dụng các bộ prompt mẫu dưới đây nhằm tránh việc AI trả về kết quả quá "máy móc", lạm dụng gạch đầu dòng, hoặc sai lệch về chuẩn mực trích dẫn.
 
 ### 10.1. Mẫu Prompt viết/sửa Literature Review (Tiếng Việt)
-> *"Sử dụng skill @[.agents/skills/professional-writing], viết [hoặc sửa lại] phần [Tên nội dung] theo chuẩn học thuật. Yêu cầu bắt buộc: KHÔNG dùng gạch đầu dòng hay đánh nhãn in đậm kiểu máy móc. Hãy viết thành các đoạn văn nối tiếp mượt mà, phân tích rõ sự đồng thuận/trái chiều (agreements/disagreements) của các tác giả. BẮT BUỘC thực hiện cross-ref check để đảm bảo 100% in-text citation khớp với danh mục References ở cuối bài."*
+> *"Sử dụng skill @[.claude/skills/professional-writing], viết [hoặc sửa lại] phần [Tên nội dung] theo chuẩn học thuật. Yêu cầu bắt buộc: KHÔNG dùng gạch đầu dòng hay đánh nhãn in đậm kiểu máy móc. Hãy viết thành các đoạn văn nối tiếp mượt mà, phân tích rõ sự đồng thuận/trái chiều (agreements/disagreements) của các tác giả. BẮT BUỘC thực hiện cross-ref check để đảm bảo 100% in-text citation khớp với danh mục References ở cuối bài."*
 
 ### 10.2. Mẫu Prompt biên dịch sang Tiếng Anh (Phase 6)
 > *"Viết lại phần [Tên file nháp tiếng Việt] sang tiếng Anh học thuật để dùng cho báo cáo LaTeX. Yêu cầu bắt buộc: Dịch độc lập theo ý, KHÔNG dịch word-by-word. Linh hoạt thay đổi cấu trúc câu và thì ngữ pháp (Tenses) cho tự nhiên. Các trích dẫn phải được tích hợp mượt mà vào câu (ví dụ: Smith et al. (2024) argued that...). Cuối bài bắt buộc check lại Cross-Reference với file .bib."*
