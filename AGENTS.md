@@ -79,6 +79,7 @@ Skills nằm ở `.claude/skills/<tên>/SKILL.md`.
 | Loại việc | Module (`.claude/skills/…`) |
 |---|---|
 | Điều phối / định vị task mơ hồ, đa bước | `task-processor` |
+| Bối cảnh hoá toolkit khi sang project mới | `project-switch` (đề xuất→chờ duyệt) |
 | Viết VN/EN, LaTeX, citation | `professional-writing` |
 | **Đọc sâu nhiều paper**, trích tiêu chí/citation | **Claude:** subagent `literature-researcher` · **Codex:** `.codex/skills/literature-researcher/` |
 | Tính AHP, TOPSIS, sensitivity | `mcdm-toolkit` |
@@ -100,6 +101,8 @@ Skills nằm ở `.claude/skills/<tên>/SKILL.md`.
 | `data-gatherer` | data-pipeline, xlsx | `.codex/skills/data-gatherer/` | Crawl/làm mới dữ liệu laptop khối lượng lớn |
 
 Codex không có subagent → đọc folder `.codex/skills/<tên>/SKILL.md` tương ứng khi làm loại việc đó.
+
+**Upgrade-log (bắt buộc).** Mỗi khi nâng cấp một skill/subagent/luật, ghi lại vào `.claude/skills/project-switch/upgrade-log.md` (đã nâng gì · vì sao · bài học). File này đi kèm toolkit khi copy sang project mới, giúp project sau kế thừa lịch sử thay vì làm lại. Khi chuyển sang project mới, dùng skill `project-switch` để bối cảnh hoá lại toàn bộ.
 
 ---
 
