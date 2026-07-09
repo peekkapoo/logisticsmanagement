@@ -88,6 +88,7 @@ Skills nằm ở `.claude/skills/<tên>/SKILL.md`.
 | Thao tác nhanh dữ liệu (làm sạch lẻ) | `data-pipeline` |
 | Câu hỏi logistics/SCM chuyên sâu | `supply-chain-consultant` |
 | Dựng slide / Excel / trích PDF | `pptx` / `xlsx` / `pdf` |
+| Tạo/đọc/sửa/QA Office files (.docx/.xlsx/.pptx) qua CLI | `officecli` |
 | Tạo/cải tiến/audit skill | **Claude:** subagent `skill-smith` (Agent tool) · **Codex:** đọc `.codex/skills/skill-smith/SKILL.md` |
 
 Điểm vào mặc định cho yêu cầu mơ hồ hoặc đa phase: **`task-processor`** (Định vị → Làm rõ → Task Brief → Điều phối).
@@ -99,6 +100,7 @@ Skills nằm ở `.claude/skills/<tên>/SKILL.md`.
 | `skill-smith` | skill-creator, writing-skills, audit-skills | `.codex/skills/skill-smith/` | Tạo → viết chuẩn → audit một skill |
 | `literature-researcher` | pdf, professional-writing | `.codex/skills/literature-researcher/` | Đọc sâu hàng loạt paper, trích tiêu chí/citation (ngốn ngữ cảnh) |
 | `data-gatherer` | data-pipeline, xlsx | `.codex/skills/data-gatherer/` | Crawl/làm mới dữ liệu laptop khối lượng lớn |
+| `office-docs` | officecli, pptx, xlsx, pdf | `.codex/skills/officecli/` | Xử lý Office files dài/nhiều file cần render/validate/QA riêng |
 
 Codex không có subagent → đọc folder `.codex/skills/<tên>/SKILL.md` tương ứng khi làm loại việc đó.
 

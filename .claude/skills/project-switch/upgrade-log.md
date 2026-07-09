@@ -24,6 +24,8 @@ Cột **Portable**: `generic` = mang sang project nào cũng dùng được · `
 | `skill-smith` | subagent | generic | Tạo → viết chuẩn → audit skill (bọc skill-creator/writing-skills/audit-skills) |
 | `literature-researcher` | subagent | generic | Đọc sâu nhiều paper, trích tiêu chí/citation (bọc pdf + professional-writing) |
 | `pdf` / `xlsx` / `pptx` | skill | generic | Xử lý file định dạng |
+| `officecli` | skill | generic | Wrapper CLI cho Word/Excel/PowerPoint (.docx/.xlsx/.pptx) không vendor source OfficeCLI |
+| `office-docs` | subagent | generic | Xử lý Office files dài/nhiều file, bọc officecli + pptx/xlsx/pdf |
 | `mcdm-toolkit` | skill | **domain** | AHP/TOPSIS — chỉ hợp project MCDM/ra quyết định đa tiêu chí |
 | `likert-analysis` | skill | **domain** | Phân tích khảo sát Likert |
 | `data-pipeline` | skill | generic | Thu thập/làm sạch/xuất dữ liệu có cấu trúc |
@@ -33,6 +35,11 @@ Cột **Portable**: `generic` = mang sang project nào cũng dùng được · `
 ---
 
 ## Changelog
+
+## 2026-07-09 (d) — Tích hợp OfficeCLI theo hướng wrapper CLI
+**Thêm:** skill `officecli` cho Claude/Codex và subagent Claude `office-docs`; cập nhật routing task-processor + AGENTS. Skill gọi binary `officecli` nếu có, dùng `view/get/query/set/add/remove/validate`, và không clone/copy source OfficeCLI vào repo.
+**Vì sao:** project thường cần sửa/QA `.docx`, `.xlsx`, `.pptx`; OfficeCLI cho vòng render/inspect/fix tốt hơn trong khi vẫn giữ repo gọn.
+**Bài học cho project sau:** tool ngoài nên tích hợp bằng adapter skill + version/install check trước; chỉ vendor source khi thật sự cần fork/audit sâu.
 
 ## 2026-07-09 (c) — Chỉnh scope project: laptop văn phòng không khóa ngân sách
 **Sửa:** cập nhật scope trong `AGENTS.md`, `README.md`, artifact phỏng vấn v3.0 VN/EN, skeleton LaTeX/slide, `data-gatherer` và `data-pipeline`: dự án tập trung vào tiêu chí mua laptop cho nhân viên văn phòng, không khóa trước một mức giá cụ thể. Giá/ngân sách trở thành một tiêu chí đánh giá hoặc rule lọc dữ liệu sẽ chốt riêng nếu cần.
