@@ -85,9 +85,11 @@ Skills nằm ở `.claude/skills/<tên>/SKILL.md`.
 | Thu thập/làm sạch dữ liệu laptop, benchmark | `data-pipeline` |
 | Câu hỏi logistics/SCM chuyên sâu | `supply-chain-consultant` |
 | Dựng slide / Excel / trích PDF | `pptx` / `xlsx` / `pdf` |
-| Tạo/kiểm định skill | `skill-creator`, `writing-skills`, `audit-skills` |
+| Tạo/cải tiến/audit skill | **Claude:** subagent `skill-smith` (Agent tool) · **Codex:** đọc `.codex/skills/skill-smith/SKILL.md` |
 
 Điểm vào mặc định cho yêu cầu mơ hồ hoặc đa phase: **`task-processor`** (Định vị → Làm rõ → Task Brief → Điều phối).
+
+Vòng đời skill (tạo → viết chuẩn → audit) được gom vào lớp orchestrator **`skill-smith`**: Claude gọi subagent `.claude/agents/skill-smith.md`; Codex đọc `.codex/skills/skill-smith/SKILL.md`. Cả hai điều phối và trỏ về 3 skill gốc còn giữ làm kho tri thức/tooling: `.claude/skills/{skill-creator,writing-skills,audit-skills}`.
 
 ---
 
