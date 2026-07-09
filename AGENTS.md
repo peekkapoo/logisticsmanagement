@@ -79,17 +79,27 @@ Skills nằm ở `.claude/skills/<tên>/SKILL.md`.
 | Loại việc | Module (`.claude/skills/…`) |
 |---|---|
 | Điều phối / định vị task mơ hồ, đa bước | `task-processor` |
-| Viết VN/EN, literature review, LaTeX, citation | `professional-writing` |
+| Viết VN/EN, LaTeX, citation | `professional-writing` |
+| **Đọc sâu nhiều paper**, trích tiêu chí/citation | **Claude:** subagent `literature-researcher` · **Codex:** `.codex/skills/literature-researcher/` |
 | Tính AHP, TOPSIS, sensitivity | `mcdm-toolkit` |
 | Phân tích khảo sát Likert | `likert-analysis` |
-| Thu thập/làm sạch dữ liệu laptop, benchmark | `data-pipeline` |
+| **Crawl/làm mới dữ liệu laptop** khối lượng lớn, benchmark | **Claude:** subagent `data-gatherer` · **Codex:** `.codex/skills/data-gatherer/` |
+| Thao tác nhanh dữ liệu (làm sạch lẻ) | `data-pipeline` |
 | Câu hỏi logistics/SCM chuyên sâu | `supply-chain-consultant` |
 | Dựng slide / Excel / trích PDF | `pptx` / `xlsx` / `pdf` |
 | Tạo/cải tiến/audit skill | **Claude:** subagent `skill-smith` (Agent tool) · **Codex:** đọc `.codex/skills/skill-smith/SKILL.md` |
 
 Điểm vào mặc định cho yêu cầu mơ hồ hoặc đa phase: **`task-processor`** (Định vị → Làm rõ → Task Brief → Điều phối).
 
-Vòng đời skill (tạo → viết chuẩn → audit) được gom vào lớp orchestrator **`skill-smith`**: Claude gọi subagent `.claude/agents/skill-smith.md`; Codex đọc `.codex/skills/skill-smith/SKILL.md`. Cả hai điều phối và trỏ về 3 skill gốc còn giữ làm kho tri thức/tooling: `.claude/skills/{skill-creator,writing-skills,audit-skills}`.
+**Subagents (`.claude/agents/`) — chạy phòng riêng, cô lập ngữ cảnh.** Dùng cho việc sinh nhiều output không cần giữ trong hội thoại chính; **subagent bọc skill** (frontmatter `skills:`), không thay thế skill — khi cần chạy nhanh trong chat thì gọi thẳng skill.
+
+| Subagent (Claude) | Bọc skill | Mirror Codex | Dùng khi |
+|---|---|---|---|
+| `skill-smith` | skill-creator, writing-skills, audit-skills | `.codex/skills/skill-smith/` | Tạo → viết chuẩn → audit một skill |
+| `literature-researcher` | pdf, professional-writing | `.codex/skills/literature-researcher/` | Đọc sâu hàng loạt paper, trích tiêu chí/citation (ngốn ngữ cảnh) |
+| `data-gatherer` | data-pipeline, xlsx | `.codex/skills/data-gatherer/` | Crawl/làm mới dữ liệu laptop khối lượng lớn |
+
+Codex không có subagent → đọc folder `.codex/skills/<tên>/SKILL.md` tương ứng khi làm loại việc đó.
 
 ---
 
