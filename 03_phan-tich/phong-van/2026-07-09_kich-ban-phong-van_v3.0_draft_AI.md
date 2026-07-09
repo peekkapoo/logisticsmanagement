@@ -2,7 +2,7 @@
 
 **Đề tài:** Bộ tiêu chí ra quyết định lựa chọn laptop cho nhân viên văn phòng tại Việt Nam
 **Đối tượng:** Chuyên gia thu mua B2B, tư vấn bán lẻ, kỹ thuật viên/IT Helpdesk, người dùng kỳ cựu
-**Thời lượng dự kiến:** 20-30 phút · **Số câu hỏi chính:** 13 (kèm câu thăm dò)
+**Thời lượng dự kiến:** 20-30 phút · **Số câu hỏi chính:** 14 (kèm câu thăm dò)
 **Vai trò trong nghiên cứu:** Vòng Delphi định tính (Round 1) nhằm xác thực và tinh chỉnh 14 tiêu chí trước khi lượng hóa bằng AHP
 **Cơ sở phương pháp luận:** Interview Protocol Refinement Framework (Castillo-Montoya, 2016); Delphi–AHP (Al Hazza và cộng sự, 2022); kỹ thuật thăm dò nhận thức (Willis, 2005)
 
@@ -60,12 +60,15 @@ Anh/chị có đồng ý tham gia và cho phép em bắt đầu không ạ?"
 **Câu 5.** Nghiên cứu quốc tế thường xếp thời lượng pin rất cao, nhưng văn phòng ở Việt Nam hầu như luôn có ổ cắm điện. Trong bối cảnh đó, anh/chị thấy khách hàng đặt nặng thời lượng pin hay trọng lượng máy hơn?
 - *Thăm dò:* Có tình huống cụ thể nào khiến anh/chị nghĩ như vậy không ạ?
 
+**Câu 6.** Đối chiếu với nhận định của Kang và cộng sự (2022) về tầm quan trọng của thiết kế thẩm mỹ (appearance design), anh/chị nhận thấy khách hàng văn phòng thường xử lý sự đánh đổi (trade-off) giữa một thiết kế mỏng nhẹ, tinh tế nhưng có thể hạn chế về độ bền vật lý, so với một thiết bị dày dặn, cứng cáp nhưng thiếu tính thẩm mỹ như thế nào?
+- *Thăm dò:* Yếu tố vật liệu vỏ máy (ví dụ: hợp kim nhôm so với nhựa) tác động ra sao đến tâm lý lựa chọn của họ trong môi trường công sở?
+
 **Nhóm III — Trải nghiệm và niềm tin** *(đọc Thẻ C)*
 
-**Câu 6.** Giả sử có hai máy cùng tầm tiền: máy A cấu hình mạnh hơn nhưng thương hiệu ít tên tuổi, máy B cấu hình nhỉnh kém hơn nhưng thuộc thương hiệu quen thuộc. Anh/chị quan sát khách hàng văn phòng thường nghiêng về máy nào?
+**Câu 7.** Giả sử có hai máy cùng tầm tiền: máy A cấu hình mạnh hơn nhưng thương hiệu ít tên tuổi, máy B cấu hình nhỉnh kém hơn nhưng thuộc thương hiệu quen thuộc. Anh/chị quan sát khách hàng văn phòng thường nghiêng về máy nào?
 - *Thăm dò:* Yếu tố bảo hành và hậu mãi tham gia vào quyết định đó ở mức nào?
 
-**Câu 7.** Dữ liệu phân tích bình luận cho thấy tiếng ồn quạt tản nhiệt và cục sạc cồng kềnh bị phàn nàn rất nhiều, nhưng lại ít ảnh hưởng đến quyết định mua cuối cùng. Điều này có khớp với những gì anh/chị chứng kiến không, và theo anh/chị vì sao lại có khoảng cách đó?
+**Câu 8.** Dữ liệu phân tích bình luận cho thấy tiếng ồn quạt tản nhiệt và cục sạc cồng kềnh bị phàn nàn rất nhiều, nhưng lại ít ảnh hưởng đến quyết định mua cuối cùng. Điều này có khớp với những gì anh/chị chứng kiến không, và theo anh/chị vì sao lại có khoảng cách đó?
 
 ---
 
@@ -73,10 +76,10 @@ Anh/chị có đồng ý tham gia và cho phép em bắt đầu không ạ?"
 
 *Mục đích: tìm các tiêu chí đặc thù địa phương mà nghiên cứu quốc tế có thể bỏ sót. Hỏi mở, không gợi ý trước.*
 
-**Câu 8.** Theo kinh nghiệm thực tế của anh/chị, có yếu tố nào đặc thù ở môi trường làm việc tại Việt Nam ảnh hưởng đến quyết định mua laptop mà các nghiên cứu quốc tế có thể chưa nhắc tới không?
+**Câu 9.** Theo kinh nghiệm thực tế của anh/chị, có yếu tố nào đặc thù ở môi trường làm việc tại Việt Nam ảnh hưởng đến quyết định mua laptop mà các nghiên cứu quốc tế có thể chưa nhắc tới không?
 - *Gợi ý dự phòng (chỉ dùng khi chuyên gia bí):* ví dụ thói quen di chuyển bằng xe máy, thời tiết nóng ẩm, hay hệ sinh thái phần mềm nơi công sở.
 
-**Câu 9.** Nhìn lại các nhóm tiêu chí ta vừa trao đổi, có tiêu chí nào anh/chị thấy nên bổ sung, hoặc nên loại khỏi danh sách khi đánh giá cho dân văn phòng không? Vì sao?
+**Câu 10.** Nhìn lại các nhóm tiêu chí ta vừa trao đổi, có tiêu chí nào anh/chị thấy nên bổ sung, hoặc nên loại khỏi danh sách khi đánh giá cho dân văn phòng không? Vì sao?
 
 ---
 
@@ -84,9 +87,9 @@ Anh/chị có đồng ý tham gia và cho phép em bắt đầu không ạ?"
 
 *Mục đích: kích hoạt tư duy so sánh thực tế, tạo dữ liệu mồi cho so sánh cặp trong AHP (Phase 4).*
 
-**Câu 10.** Em xin đưa ra một tình huống giả định. Có hai máy cùng phân khúc giá: máy A pin khoảng 10 tiếng nhưng nặng 1,8 kg và màn hình thường; máy B pin khoảng 6 tiếng, nhẹ 1,3 kg và màn hình đẹp hơn hẳn. Nếu một khách hàng văn phòng nhờ tư vấn, anh/chị nghiêng về máy nào, và lý do là gì?
+**Câu 11.** Em xin đưa ra một tình huống giả định. Có hai máy cùng phân khúc giá: máy A pin khoảng 10 tiếng nhưng nặng 1,8 kg và màn hình thường; máy B pin khoảng 6 tiếng, nhẹ 1,3 kg và màn hình đẹp hơn hẳn. Nếu một khách hàng văn phòng nhờ tư vấn, anh/chị nghiêng về máy nào, và lý do là gì?
 
-**Câu 11.** Nếu một khách hàng nói với anh/chị rằng họ chỉ cần bảo đảm ba tiêu chí quan trọng nhất, còn các tiêu chí khác có thể linh hoạt, thì theo anh/chị ba tiêu chí đáng ưu tiên nhất là gì?
+**Câu 12.** Nếu một khách hàng nói với anh/chị rằng họ chỉ cần bảo đảm ba tiêu chí quan trọng nhất, còn các tiêu chí khác có thể linh hoạt, thì theo anh/chị ba tiêu chí đáng ưu tiên nhất là gì?
 
 ---
 
@@ -94,9 +97,9 @@ Anh/chị có đồng ý tham gia và cho phép em bắt đầu không ạ?"
 
 *Mục đích: kiểm chứng lại thông tin với người tham gia (member-checking) và kết thúc.*
 
-**Câu 12.** Em xin phép tóm tắt lại ba ý chính em ghi nhận được từ anh/chị: [người phỏng vấn nêu 2-3 ý]. Anh/chị xem em hiểu như vậy đã đúng ý mình chưa ạ?
+**Câu 13.** Em xin phép tóm tắt lại ba ý chính em ghi nhận được từ anh/chị: [người phỏng vấn nêu 2-3 ý]. Anh/chị xem em hiểu như vậy đã đúng ý mình chưa ạ?
 
-**Câu 13.** Có điều gì liên quan đến việc chọn laptop văn phòng mà em chưa hỏi tới, nhưng anh/chị thấy quan trọng và muốn chia sẻ thêm không?
+**Câu 14.** Có điều gì liên quan đến việc chọn laptop văn phòng mà em chưa hỏi tới, nhưng anh/chị thấy quan trọng và muốn chia sẻ thêm không?
 
 "Một lần nữa em xin cảm ơn anh/chị đã dành thời gian và chia sẻ những góc nhìn rất thực tế. Dữ liệu từ buổi trao đổi sẽ được mã hóa, tổng hợp cùng các phỏng vấn khác và dùng để xây dựng mô hình đánh giá laptop trong giai đoạn tiếp theo. Chúc anh/chị một ngày làm việc thuận lợi."
 
@@ -109,11 +112,11 @@ Bộ câu hỏi nghiên cứu chính thức của báo cáo gồm ba câu: RQ1 v
 
 | Mục tiêu phỏng vấn (IO) | Câu phỏng vấn | Câu hỏi nghiên cứu |
 |---|---|---|
-| IO-A — Độ quan trọng tương đối của tiêu chí trong thực tế | Câu 1, 2, 11 | RQ1 (và mồi cho RQ2) |
-| IO-B — Chênh lệch giữa lý thuyết và thực tiễn Việt Nam | Câu 4, 5, 6, 7 | RQ1 |
-| IO-C — Tiêu chí đặc thù bối cảnh Việt Nam | Câu 3, 8, 9 | RQ1 |
-| IO-D — Hành vi đánh đổi giữa các tiêu chí | Câu 10 | RQ2 (mồi cho so sánh cặp AHP) |
-| Thủ tục kiểm chứng (member-checking) | Câu 12, 13 | Bảo đảm độ tin cậy dữ liệu |
+| IO-A — Độ quan trọng tương đối của tiêu chí trong thực tế | Câu 1, 2, 12 | RQ1 (và mồi cho RQ2) |
+| IO-B — Chênh lệch giữa lý thuyết và thực tiễn Việt Nam | Câu 4, 5, 6, 7, 8 | RQ1 |
+| IO-C — Tiêu chí đặc thù bối cảnh Việt Nam | Câu 3, 9, 10 | RQ1 |
+| IO-D — Hành vi đánh đổi giữa các tiêu chí | Câu 11 | RQ2 (mồi cho so sánh cặp AHP) |
+| Thủ tục kiểm chứng (member-checking) | Câu 13, 14 | Bảo đảm độ tin cậy dữ liệu |
 
 ---
 
@@ -123,7 +126,7 @@ Bộ câu hỏi nghiên cứu chính thức của báo cáo gồm ba câu: RQ1 v
 
 **Thẻ A — Phần cứng và hiệu năng.** Nghiên cứu của Maghsoudi và cộng sự (2026) trên thị trường laptop ghi nhận CPU và RAM là hai tiêu chí được chuyên gia đánh giá quan trọng nhất, với điểm trọng số 0,8333 cho mỗi tiêu chí, trong khi GPU đạt 0,6083 và xếp hạng thứ mười trong kết quả TOPSIS. Nhóm tác giả cũng nhận thấy người dùng chuyên nghiệp quan tâm nhiều đến màn hình và bàn phím, còn hiệu năng GPU chủ yếu thuộc mối quan tâm của người chơi game, nên GPU rời có xu hướng trở thành trang bị dư thừa đối với nhu cầu văn phòng.
 
-**Thẻ B — Di động và bền vững.** Nghiên cứu của Lam và cộng sự (2023) trên thiết bị di động xếp thời lượng pin là yếu tố quan trọng nhất trong nhóm thông số kỹ thuật, với trọng số 0,2841. Tuy vậy, khi xét toàn bộ các tiêu chí thì giá cả mới giữ vị trí đầu bảng và thời lượng pin đứng thứ hai. Phát hiện này gợi mở câu hỏi về tương quan giữa pin và trọng lượng trong bối cảnh làm việc cụ thể.
+**Thẻ B — Di động và bền vững.** Nghiên cứu của Lam và cộng sự (2023) trên thiết bị di động xếp thời lượng pin là yếu tố quan trọng nhất trong nhóm thông số kỹ thuật. Tuy nhiên, khi mở rộng góc nhìn, Kang và cộng sự (2022) cũng như Liao và Chuang (2022) lại nhấn mạnh vai trò của thiết kế thẩm mỹ (appearance design) và vật liệu vỏ máy (shell) đối với hành vi mua. Những phát hiện này đặt ra bài toán về sự đánh đổi vật lý: một thiết bị mỏng nhẹ, thẩm mỹ cao thường khó đi kèm với viên pin dung lượng lớn và độ bền cơ học tối ưu.
 
 **Thẻ C — Trải nghiệm và niềm tin.** Nghiên cứu của Sönmez Çakır và Pekkaya (2020) trên bài toán lựa chọn laptop xác định hình ảnh thương hiệu là tiêu chí quan trọng nhất, đồng thời hoạt động như một tiêu chí chuyển tiếp chi phối cả nhận thức của người mua về giá lẫn chất lượng. Về dịch vụ hậu mãi, Maghsoudi và cộng sự (2026) cho thấy bảo hành đạt điểm quan trọng 0,6667 nhưng chỉ xếp thứ tám trong kết quả TOPSIS. Cùng nghiên cứu này ghi nhận tiếng ồn quạt tản nhiệt nhận tới 85,1% phản hồi tiêu cực và cục sạc nhận 68,33% phản hồi tiêu cực, song mức ảnh hưởng của chúng đến quyết định mua chỉ ở 0,25; nhóm tác giả lý giải rằng một đặc điểm gây phản ứng cảm xúc mạnh chưa chắc đã dẫn dắt quyết định mua hàng.
 
@@ -135,24 +138,29 @@ Bộ câu hỏi nghiên cứu chính thức của báo cáo gồm ba câu: RQ1 v
 |---|---|---|---|
 | Câu 1 (khởi động) | | "..." | |
 | Câu 4 (GPU/CPU) | | "..." | |
-| Câu 7 (quạt/sạc) | | "..." | |
-| Câu 10 (đánh đổi) | | "..." | (ngập ngừng / quyết định nhanh) |
-| Câu 11 (ba tiêu chí) | | "..." | |
+| Câu 6 (thiết kế) | | "..." | |
+| Câu 8 (quạt/sạc) | | "..." | |
+| Câu 11 (đánh đổi) | | "..." | (ngập ngừng / quyết định nhanh) |
+| Câu 12 (ba tiêu chí) | | "..." | |
 | ... | | | |
 
 ---
 
 ## Tài liệu tham khảo
 
-Al Hazza, M. H., Abdelwahed, A., Ali, M. Y., & Sidek, A. B. A. (2022). An integrated approach for supplier evaluation and selection using the Delphi method and analytic hierarchy process. *International Journal of Technology, 13*(6), 1220–1230.
+Al Hazza, M. H., Abdelwahed, A., Ali, M. Y., & Sidek, A. B. A. (2022). An integrated approach for supplier evaluation and selection using the Delphi method and analytic hierarchy process. *International Journal of Technology, 13*(6), 1220–1230. https://doi.org/10.14716/ijtech.v13i1.4700
 
-Castillo-Montoya, M. (2016). Preparing for interview research: The Interview Protocol Refinement framework. *The Qualitative Report, 21*(5), 811–831.
+Castillo-Montoya, M. (2016). Preparing for interview research: The Interview Protocol Refinement framework. *The Qualitative Report, 21*(5), 811–831. https://doi.org/10.46743/2160-3715/2016.2337
 
-Lam, W. S., Lam, W. H., Liew, K. F., Bakar, M. A., & Lai, C. P. (2023). Evaluation and selection of mobile phones using integrated AHP-TOPSIS model. *Journal of Advanced Research in Applied Sciences and Engineering Technology, 33*(2), 25–39.
+Kang, M., Sun, B., Liang, T., & Mao, H.-Y. (2022). A study on the influence of online reviews of new products on consumers’ purchase decisions: An empirical study on JD.com. *Frontiers in Psychology, 13*, Article 983060. https://doi.org/10.3389/fpsyg.2022.983060
 
-Maghsoudi, M., Bakhtiari, M., & Bakhtiari, H. (2026). A hybrid framework for notebook market analysis integrating social media sentiment mining with expert knowledge for feature prioritization. *PLOS One, 21*(2), e0342067.
+Lam, W. S., Lam, W. H., Liew, K. F., Bakar, M. A., & Lai, C. P. (2023). Evaluation and selection of mobile phones using integrated AHP-TOPSIS model. *Journal of Advanced Research in Applied Sciences and Engineering Technology, 33*(2), 25–39. https://doi.org/10.37934/araset.33.2.2539
 
-Sönmez Çakır, F., & Pekkaya, M. (2020). Determination of interaction between criteria and the criteria priorities in laptop selection problem. *International Journal of Fuzzy Systems, 22*(4), 1177–1190.
+Liao, C.-S., & Chuang, H.-K. (2022). Determinants of innovative green electronics: An experimental study of eco-friendly laptop computers. *Technovation, 113*, Article 102424. https://doi.org/10.1016/j.technovation.2021.102424
+
+Maghsoudi, M., Bakhtiari, M., & Bakhtiari, H. (2026). A hybrid framework for notebook market analysis integrating social media sentiment mining with expert knowledge for feature prioritization. *PLOS One, 21*(2), e0342067. https://doi.org/10.1371/journal.pone.0342067
+
+Sönmez Çakır, F., & Pekkaya, M. (2020). Determination of interaction between criteria and the criteria priorities in laptop selection problem. *International Journal of Fuzzy Systems, 22*(4), 1177–1190. https://doi.org/10.1007/s40815-020-00857-2
 
 Willis, G. B. (2005). *Cognitive interviewing: A tool for improving questionnaire design*. Sage Publications.
 

@@ -100,9 +100,9 @@ Ghi chú nhanh:
 
 ....................................................................................................
 
-### 6.3 Pin, trọng lượng và độ bền
+### 6.3 Pin, trọng lượng, thiết kế và độ bền
 
-Thời lượng pin thường được xem là một tiêu chí đáng chú ý, nhưng trong môi trường văn phòng tại Việt Nam, ổ cắm điện tương đối phổ biến. Vì vậy, nhóm muốn trao đổi thêm về cách khách hàng cân nhắc giữa pin lâu hơn, máy nhẹ hơn và thiết bị bền hơn.
+Thời lượng pin thường được xem là một tiêu chí đáng chú ý, nhưng trong môi trường văn phòng tại Việt Nam, ổ cắm điện tương đối phổ biến. Vì vậy, nhóm muốn trao đổi thêm về cách khách hàng cân nhắc giữa pin lâu hơn, máy nhẹ hơn và thiết bị bền hơn. Ngoài ra, vai trò của thiết kế (mỏng nhẹ, sang trọng so với cứng cáp, thực dụng) tác động ra sao đến quyết định của người dùng môi trường công sở cũng là một điểm nhóm muốn làm rõ.
 
 Ghi chú nhanh:
 
@@ -146,6 +146,7 @@ Trong buổi phỏng vấn, nhóm có thể đưa ra một số tình huống gi
 |---|---|
 | Nếu phải chọn giữa một máy có GPU rời cơ bản và một máy cùng tầm tiền nhưng mạnh hơn về CPU hoặc RAM, anh/chị thường nghiêng về hướng nào cho người dùng văn phòng? | |
 | Nếu phải chọn giữa máy pin lâu hơn nhưng nặng hơn và máy nhẹ hơn nhưng pin ngắn hơn, anh/chị sẽ tư vấn theo hướng nào? | |
+| Về mặt thiết kế, khách hàng thường ưu tiên sự mỏng nhẹ, sang trọng hay sự cứng cáp, bền bỉ để dùng lâu dài? | |
 | Nếu máy A cấu hình mạnh hơn nhưng thương hiệu ít tên tuổi, còn máy B cấu hình thấp hơn một chút nhưng thương hiệu quen thuộc hơn, khách hàng văn phòng thường nghiêng về máy nào? | |
 | Nếu chỉ được ưu tiên ba tiêu chí quan trọng nhất cho người dùng văn phòng, anh/chị sẽ chọn ba tiêu chí nào? | |
 
