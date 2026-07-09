@@ -102,7 +102,12 @@ Skills nằm ở `.claude/skills/<tên>/SKILL.md`.
 
 Codex không có subagent → đọc folder `.codex/skills/<tên>/SKILL.md` tương ứng khi làm loại việc đó.
 
-**Upgrade-log (bắt buộc).** Mỗi khi nâng cấp một skill/subagent/luật, ghi lại vào `.claude/skills/project-switch/upgrade-log.md` (đã nâng gì · vì sao · bài học). File này đi kèm toolkit khi copy sang project mới, giúp project sau kế thừa lịch sử thay vì làm lại. Khi chuyển sang project mới, dùng skill `project-switch` để bối cảnh hoá lại toàn bộ.
+**Khi THÊM / BỚT / GỘP / ĐỔI TÊN một skill hoặc subagent — cập nhật đồng bộ 3 nơi (việc chưa xong nếu thiếu nơi nào):**
+1. **Bảng routing `task-processor`** (Bước 4 trong `.claude/skills/task-processor/SKILL.md`) — để nhạc trưởng điều phối đúng.
+2. **`AGENTS.md` mục 5** — bảng routing + bảng subagent ở trên.
+3. **`.claude/skills/project-switch/upgrade-log.md`** — ghi đã đổi gì · vì sao · bài học (file này đi kèm toolkit khi copy sang project mới).
+
+Khi chuyển sang project mới, dùng skill `project-switch` để bối cảnh hoá lại toàn bộ toolkit.
 
 ---
 

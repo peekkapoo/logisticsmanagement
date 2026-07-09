@@ -47,7 +47,7 @@ Trình bảng rõ ràng: cấu trúc thư mục đề xuất · danh sách skill
 - Viết lại `AGENTS.md` (nguồn luật) + `CLAUDE.md` (`@AGENTS.md` + phần Skill/Agent riêng) cho bối cảnh mới.
 - Dựng/điều chỉnh cây thư mục.
 - Prune skill/subagent không hợp; **tạo cái mới qua subagent `skill-smith`** (kèm mirror `.codex/skills/` nếu dùng Codex).
-- Đồng bộ routing trong `AGENTS.md` mục 5.
+- **Mỗi lần thêm/bớt skill/subagent, đồng bộ 3 nơi:** bảng routing `task-processor` (Bước 4), `AGENTS.md` mục 5, và `upgrade-log.md` (P5).
 
 ### P5 — Log (bắt buộc)
 Ghi một entry vào `.claude/skills/project-switch/upgrade-log.md` (định dạng ở đầu file đó): ngày, project/bối cảnh, đã Giữ/Bỏ/Sửa/Thêm gì, **vì sao**, và bài học rút ra cho project sau. Cập nhật bảng "Component registry" nếu version skill/agent đổi.

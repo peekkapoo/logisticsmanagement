@@ -46,4 +46,4 @@ Nguồn: **`.claude/skills/audit-skills/SKILL.md`** (static analysis bảo mật
 
 ## Kết thúc
 
-Báo cáo: skill đã tạo/sửa ở đâu (Claude `.claude/skills/` và/hoặc Codex `.codex/skills/`), kết quả validate + audit, và nhắc cập nhật routing trong `AGENTS.md` mục 5 nếu thêm skill mới vào dự án.
+Báo cáo: skill đã tạo/sửa ở đâu (Claude `.claude/skills/` và/hoặc Codex `.codex/skills/`), kết quả validate + audit. **Nếu thêm/bớt/đổi tên skill:** cập nhật đồng bộ 3 nơi — bảng routing `task-processor` (Bước 4), `AGENTS.md` mục 5, và `.claude/skills/project-switch/upgrade-log.md`. Chưa đủ 3 nơi thì việc chưa hoàn tất.

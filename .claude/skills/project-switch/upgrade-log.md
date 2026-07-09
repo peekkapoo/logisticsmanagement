@@ -34,6 +34,12 @@ Cột **Portable**: `generic` = mang sang project nào cũng dùng được · `
 
 ## Changelog
 
+## 2026-07-09 (b) — Đồng bộ task-processor + luật bảo trì routing
+**Sửa:** cập nhật bảng routing `task-processor` (Bước 4) cho đủ 3 subagent (`skill-smith`, `literature-researcher`, `data-gatherer`) + `project-switch`, tách rõ Skills vs Subagents. Thêm mục "Bảo trì routing".
+**Thêm (luật):** khi thêm/bớt/gộp/đổi tên skill hoặc subagent, PHẢI đồng bộ 3 nơi — bảng routing task-processor · `AGENTS.md` mục 5 · `upgrade-log.md`. Ghi vào AGENTS.md; `skill-smith` và `project-switch` nhắc/thực hiện ở phần kết.
+**Vì sao:** task-processor là nhạc trưởng mặc định; nếu bảng routing lệch danh sách skill/agent thực tế thì nó điều phối sai. Trước đó thêm 3 subagent mà quên cập nhật task-processor.
+**Bài học cho project sau:** coi task-processor routing là một "nơi phải cập nhật" bắt buộc mỗi lần đổi toolkit — đừng để nó lệch âm thầm.
+
 ## 2026-07-09 — MADM/MCDM Laptop Selection (project gốc của toolkit)
 Đây là project nơi bộ công cụ hình thành. Chuỗi nâng cấp trong ngày:
 
