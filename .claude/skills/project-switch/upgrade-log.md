@@ -34,6 +34,11 @@ Cột **Portable**: `generic` = mang sang project nào cũng dùng được · `
 
 ## Changelog
 
+## 2026-07-09 (c) — Chỉnh scope project: laptop văn phòng không khóa ngân sách
+**Sửa:** cập nhật scope trong `AGENTS.md`, `README.md`, artifact phỏng vấn v3.0 VN/EN, skeleton LaTeX/slide, `data-gatherer` và `data-pipeline`: dự án tập trung vào tiêu chí mua laptop cho nhân viên văn phòng, không khóa trước một mức giá cụ thể. Giá/ngân sách trở thành một tiêu chí đánh giá hoặc rule lọc dữ liệu sẽ chốt riêng nếu cần.
+**Vì sao:** người dùng chốt lại chủ đề rộng hơn — chỉ cần "tiêu chí mua laptop văn phòng", không cần cố định dải giá.
+**Bài học cho project sau:** đừng hard-code budget/range vào luật, skill hoặc câu hỏi phỏng vấn nếu đó chỉ là giả định tạm thời; để budget như một biến trong Task Brief hoặc tiêu chí đánh giá.
+
 ## 2026-07-09 (b) — Đồng bộ task-processor + luật bảo trì routing
 **Sửa:** cập nhật bảng routing `task-processor` (Bước 4) cho đủ 3 subagent (`skill-smith`, `literature-researcher`, `data-gatherer`) + `project-switch`, tách rõ Skills vs Subagents. Thêm mục "Bảo trì routing".
 **Thêm (luật):** khi thêm/bớt/gộp/đổi tên skill hoặc subagent, PHẢI đồng bộ 3 nơi — bảng routing task-processor · `AGENTS.md` mục 5 · `upgrade-log.md`. Ghi vào AGENTS.md; `skill-smith` và `project-switch` nhắc/thực hiện ở phần kết.

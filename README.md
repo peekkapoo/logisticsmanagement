@@ -6,7 +6,7 @@
 
 ## 1. Dự án này là gì
 
-Đây là đồ án nhóm môn Logistics Management. Nhóm xây dựng bộ tiêu chí ra quyết định mua laptop qua ba giai đoạn nghiên cứu, gồm tổng quan tài liệu khoa học, phỏng vấn chuyên gia và khảo sát diện rộng. Sau đó nhóm dùng phương pháp AHP để tính trọng số các tiêu chí, rồi dùng TOPSIS để xếp hạng các mẫu laptop thực tế trên thị trường trong tình huống giả định "nhân viên văn phòng cần mua laptop tầm giá 20-25 triệu".
+Đây là đồ án nhóm môn Logistics Management. Nhóm xây dựng bộ tiêu chí ra quyết định mua laptop qua ba giai đoạn nghiên cứu, gồm tổng quan tài liệu khoa học, phỏng vấn chuyên gia và khảo sát diện rộng. Sau đó nhóm dùng phương pháp AHP để tính trọng số các tiêu chí, rồi dùng TOPSIS để xếp hạng các mẫu laptop thực tế trên thị trường trong tình huống giả định "nhân viên văn phòng cần mua laptop phục vụ công việc". Dự án không khóa trước một mức giá cụ thể; giá cả/ngân sách được xem là một tiêu chí hoặc một rule lọc dữ liệu sẽ chốt riêng nếu cần.
 
 Sản phẩm nộp gồm hai thứ. Thứ nhất là báo cáo học thuật viết bằng tiếng Anh, soạn bằng LaTeX. Thứ hai là bộ slide thuyết trình tiếng Anh. Toàn bộ quá trình làm việc nội bộ của nhóm vẫn dùng tiếng Việt, chỉ hai sản phẩm cuối mới chuyển sang tiếng Anh, và bản tiếng Anh được viết lại độc lập chứ không dịch máy từng câu.
 
@@ -183,7 +183,7 @@ Phase này trả lời câu hỏi của tình huống giả định. Dữ liệu
 
 | Mã | Task | Kết quả lưu tại |
 |---|---|---|
-| T5.1 | Crawl danh sách laptop 20-25 triệu từ CellphoneS kèm thông số (AI hỗ trợ), ghi ngày crawl vào tên file | `02_du-lieu-tho\laptop-thi-truong\` |
+| T5.1 | Crawl danh sách laptop văn phòng từ CellphoneS kèm thông số (AI hỗ trợ), ghi ngày crawl và phạm vi lọc nếu có vào tên file | `02_du-lieu-tho\laptop-thi-truong\` |
 | T5.2 | Tra điểm benchmark cho CPU và GPU từ một nguồn duy nhất (PassMark), ghi ngày truy cập | `02_du-lieu-tho\laptop-thi-truong\` |
 | T5.3 | Xây rubric chấm điểm cho tiêu chí định tính (thương hiệu, ngoại hình) trước khi chấm, cả nhóm chấm độc lập rồi lấy trung bình | `03_phan-tich\du-lieu-sach\` |
 | T5.4 | Làm sạch dữ liệu, ghép benchmark, dựng ma trận quyết định hoàn chỉnh | `03_phan-tich\du-lieu-sach\` |

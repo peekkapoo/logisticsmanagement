@@ -1,6 +1,6 @@
 # Expert Interview Protocol (Semi-Structured) — v3.0
 
-**Topic:** Decision criteria for selecting laptops for office workers in Vietnam (price range 20–25 million VND)
+**Topic:** Decision criteria for selecting laptops for office workers in Vietnam
 **Participants:** B2B procurement specialists, retail sales advisors, IT support technicians and help-desk staff, and experienced users
 **Estimated duration:** 20–30 minutes · **Core questions:** 13 (with follow-up probes)
 **Role in the study:** A qualitative Delphi round (Round 1) that validates and refines the fourteen criteria before they are quantified through AHP
@@ -24,7 +24,7 @@
 
 *Note to the interviewer: read or paraphrase the passage below before starting.*
 
-"Hello, and thank you for taking the time to speak with me today. I am [name], a student at [institution]. Our team is conducting an academic study to build a set of decision criteria for choosing laptops for office workers in the 20–25 million VND range. We have compiled a list of criteria drawn from international research, and this conversation is meant to test and extend that list against your practical experience.
+"Hello, and thank you for taking the time to speak with me today. I am [name], a student at [institution]. Our team is conducting an academic study to build a set of decision criteria for choosing laptops for office workers in Vietnam. We have compiled a list of criteria drawn from international research, and this conversation is meant to test and extend that list against your practical experience.
 
 The interview should take about 20 to 30 minutes. Let me note a few points about research ethics so that you can speak freely. Any personally identifying information will be kept anonymous and used only for academic purposes. This conversation will not be audio-recorded; I will only take written notes of the main points. You may decline to answer any question, or stop the interview at any time, without giving a reason.
 
@@ -36,7 +36,7 @@ Do you agree to take part, and may I begin?"
 
 *Purpose: to build rapport and ground the expert's perspective in a concrete case rather than an abstract opinion, moving from the specific to the general as the IPR framework recommends.*
 
-**Question 1.** Please think back to the most recent time you advised on or selected a laptop for an office worker in this price range. What was the first thing you considered, or the first thing the customer asked about?
+**Question 1.** Please think back to the most recent time you advised on or selected a laptop for an office worker. What was the first thing you considered, or the first thing the customer asked about?
 - *Probe (recall):* Could you walk me through that specific case?
 
 **Question 2.** Compared with student or gaming customers, what particular difficulties or concerns do office workers bring that you notice most often?
@@ -52,7 +52,7 @@ Do you agree to take part, and may I begin?"
 
 **Group I — Hardware and Performance** *(read Card A)*
 
-**Question 4.** In the 20–25 million VND range, office customers often weigh a machine with a basic discrete GPU against one that puts the budget into a stronger CPU or more RAM. In your experience, which way do they lean, and why?
+**Question 4.** When choosing an office laptop, customers often weigh a machine with a basic discrete GPU against one that puts the budget into a stronger CPU or more RAM. In your experience, which way do they lean, and why?
 - *Probe (process):* What case or reasoning led you to that view?
 
 **Group II — Mobility and Durability** *(read Card B)*
@@ -84,7 +84,7 @@ Do you agree to take part, and may I begin?"
 
 *Purpose: to activate realistic comparative reasoning and generate seed data for the pairwise comparisons in AHP (Phase 4).*
 
-**Question 10.** Let me offer a hypothetical. Two machines cost the same 22 million VND: machine A has about ten hours of battery but weighs 1.8 kg with an ordinary display, while machine B has about six hours of battery, weighs 1.3 kg, and has a noticeably better display. If an office customer asked for advice, which would you lean toward, and why?
+**Question 10.** Let me offer a hypothetical. Two machines are in the same price segment: machine A has about ten hours of battery but weighs 1.8 kg with an ordinary display, while machine B has about six hours of battery, weighs 1.3 kg, and has a noticeably better display. If an office customer asked for advice, which would you lean toward, and why?
 
 **Question 11.** If a customer told you they only needed the three most important criteria secured, with the rest kept flexible, which three criteria would you treat as the priorities?
 
@@ -158,4 +158,4 @@ Willis, G. B. (2005). *Cognitive interviewing: A tool for improving questionnair
 
 ---
 
-> Internal note (not read to the expert): the context description in `04_bao-cao-latex/chapters/01-introduction.tex` currently uses a "graphic designer" persona, which does not match the "office worker" framing in the v5.0 criteria document and the Phase 2 plan. The team should reconcile the persona before finalizing the report. This protocol consistently uses "office worker."
+> Internal note (not read to the expert): the current project scope is the criteria for selecting laptops for office workers in Vietnam; no fixed price range is assumed in advance. If the market dataset needs a price filter, the team will define that rule separately in Phase 5.

@@ -11,7 +11,7 @@
 | 5 | Stage 1: Building criteria | 3 bước xây tiêu chí: literature → experts → survey | Funnel diagram (số tiêu chí giảm dần qua từng bước) | `03_phan-tich\tieu-chi\` |
 | 6 | Survey results | Bộ tiêu chí cuối + bằng chứng khảo sát | Bar chart mean từng tiêu chí, đường ngưỡng 3.5 | `likert-thu-thap-phan-tich.xlsx` |
 | 7 | Stage 2: AHP weighting | Trọng số tiêu chí + độ tin cậy (CR đạt) | Bảng trọng số hoặc pie/bar chart, badge "CR < 0.1" | `03_phan-tich\ahp\` |
-| 8 | Decision scenario | Persona: office worker, ngân sách 20-25 triệu | Ảnh persona + 3 gạch đầu dòng nhu cầu | Chương 4 báo cáo |
+| 8 | Decision scenario | Persona: office worker, nhu cầu công việc và tiêu chí giá/ngân sách | Ảnh persona + 3 gạch đầu dòng nhu cầu | Chương 4 báo cáo |
 | 9 | Data collection | Nguồn dữ liệu khách quan: CellphoneS + PassMark | Screenshot minh họa + bảng 3 dòng mẫu | `02_du-lieu-tho\laptop-thi-truong\` |
 | 10 | Why TOPSIS? | Luận giải chuyển phương pháp ở Stage 3 | Bảng so sánh AHP vs TOPSIS khi n alternatives lớn | Chương 5 mục 5.2 |
 | 11 | Ranking results | Top laptop được chọn + khoảng cách điểm | Horizontal bar chart điểm Ci, highlight top 1 | `03_phan-tich\topsis\` |

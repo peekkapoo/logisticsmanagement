@@ -1,6 +1,6 @@
 # Kịch bản phỏng vấn chuyên gia (bán cấu trúc) — v3.0
 
-**Đề tài:** Bộ tiêu chí ra quyết định lựa chọn laptop cho nhân viên văn phòng tại Việt Nam (tầm giá 20-25 triệu đồng)
+**Đề tài:** Bộ tiêu chí ra quyết định lựa chọn laptop cho nhân viên văn phòng tại Việt Nam
 **Đối tượng:** Chuyên gia thu mua B2B, tư vấn bán lẻ, kỹ thuật viên/IT Helpdesk, người dùng kỳ cựu
 **Thời lượng dự kiến:** 20-30 phút · **Số câu hỏi chính:** 13 (kèm câu thăm dò)
 **Vai trò trong nghiên cứu:** Vòng Delphi định tính (Round 1) nhằm xác thực và tinh chỉnh 14 tiêu chí trước khi lượng hóa bằng AHP
@@ -24,7 +24,7 @@
 
 *Ghi chú cho người phỏng vấn: đọc hoặc diễn đạt lại ý chính đoạn dưới trước khi bắt đầu.*
 
-"Em chào anh/chị, cảm ơn anh/chị đã dành thời gian cho buổi trao đổi hôm nay. Em là [tên], sinh viên [trường/lớp]. Nhóm em đang thực hiện một nghiên cứu học thuật nhằm xây dựng bộ tiêu chí ra quyết định mua laptop dành cho nhân viên văn phòng ở tầm giá 20-25 triệu đồng. Nhóm em đã tổng hợp một danh sách tiêu chí từ các nghiên cứu quốc tế, và buổi trao đổi này là để lắng nghe kinh nghiệm thực tế của anh/chị nhằm kiểm chứng cũng như bổ sung cho danh sách đó.
+"Em chào anh/chị, cảm ơn anh/chị đã dành thời gian cho buổi trao đổi hôm nay. Em là [tên], sinh viên [trường/lớp]. Nhóm em đang thực hiện một nghiên cứu học thuật nhằm xây dựng bộ tiêu chí ra quyết định mua laptop dành cho nhân viên văn phòng tại Việt Nam. Nhóm em đã tổng hợp một danh sách tiêu chí từ các nghiên cứu quốc tế, và buổi trao đổi này là để lắng nghe kinh nghiệm thực tế của anh/chị nhằm kiểm chứng cũng như bổ sung cho danh sách đó.
 
 Buổi phỏng vấn dự kiến kéo dài khoảng 20 đến 30 phút. Em xin nêu vài điểm về đạo đức nghiên cứu để anh/chị yên tâm chia sẻ. Mọi thông tin định danh cá nhân của anh/chị sẽ được giữ ẩn danh và chỉ phục vụ mục đích học thuật. Buổi trao đổi này không ghi âm; em chỉ ghi chú lại các ý chính bằng văn bản. Anh/chị có quyền từ chối trả lời bất kỳ câu hỏi nào, hoặc dừng buổi phỏng vấn bất cứ lúc nào mà không cần giải thích.
 
@@ -36,7 +36,7 @@ Anh/chị có đồng ý tham gia và cho phép em bắt đầu không ạ?"
 
 *Mục đích: tạo không khí trao đổi, bối cảnh hóa góc nhìn của chuyên gia từ kinh nghiệm cụ thể thay vì ý kiến trừu tượng (IPR Phase 2: đi từ cụ thể đến trừu tượng).*
 
-**Câu 1.** Anh/chị thử nhớ lại lần gần nhất tư vấn hoặc chọn giúp một laptop cho nhân viên văn phòng trong tầm giá này. Khi đó điều đầu tiên anh/chị cân nhắc, hoặc điều khách hàng hỏi tới đầu tiên, là gì?
+**Câu 1.** Anh/chị thử nhớ lại lần gần nhất tư vấn hoặc chọn giúp một laptop cho nhân viên văn phòng. Khi đó điều đầu tiên anh/chị cân nhắc, hoặc điều khách hàng hỏi tới đầu tiên, là gì?
 - *Thăm dò (recall probe):* Anh/chị kể lại cụ thể trường hợp đó được không ạ?
 
 **Câu 2.** So với nhóm khách hàng sinh viên hay người chơi game, nhân viên văn phòng có những khó khăn hay bận tâm nào riêng mà anh/chị hay gặp?
@@ -52,7 +52,7 @@ Anh/chị có đồng ý tham gia và cho phép em bắt đầu không ạ?"
 
 **Nhóm I — Phần cứng và hiệu năng** *(đọc Thẻ A)*
 
-**Câu 4.** Ở tầm giá 20-25 triệu, khách hàng văn phòng thường phải cân nhắc giữa một máy có GPU rời cơ bản và một máy dồn ngân sách cho CPU hoặc RAM lớn hơn. Theo kinh nghiệm của anh/chị, họ nghiêng về hướng nào, và vì sao?
+**Câu 4.** Khi chọn laptop văn phòng, khách hàng thường phải cân nhắc giữa một máy có GPU rời cơ bản và một máy dồn ngân sách cho CPU hoặc RAM lớn hơn. Theo kinh nghiệm của anh/chị, họ nghiêng về hướng nào, và vì sao?
 - *Thăm dò (process probe):* Anh/chị đi đến nhận định đó dựa trên trường hợp hay cơ sở nào?
 
 **Nhóm II — Di động và bền vững** *(đọc Thẻ B)*
@@ -84,7 +84,7 @@ Anh/chị có đồng ý tham gia và cho phép em bắt đầu không ạ?"
 
 *Mục đích: kích hoạt tư duy so sánh thực tế, tạo dữ liệu mồi cho so sánh cặp trong AHP (Phase 4).*
 
-**Câu 10.** Em xin đưa ra một tình huống giả định. Có hai máy cùng giá 22 triệu: máy A pin khoảng 10 tiếng nhưng nặng 1,8 kg và màn hình thường; máy B pin khoảng 6 tiếng, nhẹ 1,3 kg và màn hình đẹp hơn hẳn. Nếu một khách hàng văn phòng nhờ tư vấn, anh/chị nghiêng về máy nào, và lý do là gì?
+**Câu 10.** Em xin đưa ra một tình huống giả định. Có hai máy cùng phân khúc giá: máy A pin khoảng 10 tiếng nhưng nặng 1,8 kg và màn hình thường; máy B pin khoảng 6 tiếng, nhẹ 1,3 kg và màn hình đẹp hơn hẳn. Nếu một khách hàng văn phòng nhờ tư vấn, anh/chị nghiêng về máy nào, và lý do là gì?
 
 **Câu 11.** Nếu một khách hàng nói với anh/chị rằng họ chỉ cần bảo đảm ba tiêu chí quan trọng nhất, còn các tiêu chí khác có thể linh hoạt, thì theo anh/chị ba tiêu chí đáng ưu tiên nhất là gì?
 
@@ -158,4 +158,4 @@ Willis, G. B. (2005). *Cognitive interviewing: A tool for improving questionnair
 
 ---
 
-> Ghi chú nội bộ (không đọc cho chuyên gia): phần mô tả bối cảnh trong `04_bao-cao-latex/chapters/01-introduction.tex` hiện dùng persona "người thiết kế đồ họa", chưa khớp với "nhân viên văn phòng" ở tài liệu tiêu chí v5.0 và kế hoạch Phase 2. Nhóm nên thống nhất persona trước khi hoàn thiện báo cáo. Bản kịch bản này dùng nhất quán "nhân viên văn phòng".
+> Ghi chú nội bộ (không đọc cho chuyên gia): scope hiện hành của dự án là bộ tiêu chí mua laptop cho nhân viên văn phòng tại Việt Nam; không khóa trước một mức giá cụ thể. Nếu cần lọc dữ liệu thị trường theo giá, nhóm sẽ chốt rule lọc riêng ở Phase 5.

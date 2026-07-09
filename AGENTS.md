@@ -21,7 +21,7 @@
 
 Đồ án nhóm môn Logistics Management: xây bộ tiêu chí mua laptop qua ba giai đoạn (tổng quan tài liệu → phỏng vấn chuyên gia → khảo sát Likert), tính trọng số bằng **AHP**, xếp hạng laptop thực tế bằng **TOPSIS**.
 
-- **Persona chốt:** *nhân viên văn phòng*, tình huống mua laptop tầm giá **20–25 triệu**. (KHÔNG dùng "thiết kế đồ họa" — persona đó đã bị loại bỏ.)
+- **Persona chốt:** *nhân viên văn phòng*, tình huống mua laptop phục vụ công việc văn phòng. **Không khóa trước một mức giá cụ thể**; giá cả/ngân sách là một tiêu chí đánh giá hoặc một rule lọc dữ liệu sẽ chốt riêng nếu cần. (KHÔNG dùng "thiết kế đồ họa" — persona đó đã bị loại bỏ.)
 - **Ngôn ngữ:** làm việc nội bộ bằng **tiếng Việt**; chỉ **báo cáo LaTeX cuối + slide** là **tiếng Anh**, viết lại độc lập (không dịch máy từng câu).
 - **Sản phẩm nộp:** báo cáo học thuật LaTeX (EN) + slide thuyết trình (EN).
 

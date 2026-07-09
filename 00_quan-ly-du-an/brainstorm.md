@@ -34,7 +34,7 @@ Từ các tiêu chí đã được xây dựng ở Giai đoạn 1, ta sử dụn
 
 **Tình huống giả định:** 
 
-***Bạn là một nhân viên văn phòng, đang muốn mua một chiếc laptop tầm trung (20-25tr) phục vụ cho công việc, tuy nhiên không biết phải mua máy nào?***
+***Bạn là một nhân viên văn phòng, đang muốn mua một chiếc laptop phục vụ cho công việc, tuy nhiên không biết phải mua máy nào?***
 
 **Dự định dùng TOPSIS để ra quyết định, vì nếu dùng AHP sẽ rất tốn thời gian.** 
 

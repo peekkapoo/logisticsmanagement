@@ -1,6 +1,6 @@
 ---
 name: data-gatherer
-description: "Thu thập/làm mới dữ liệu laptop thị trường — crawl CellphoneS 20-25tr, map benchmark PassMark, làm sạch và dựng ma trận quyết định TOPSIS."
+description: "Thu thập/làm mới dữ liệu laptop văn phòng trên thị trường — crawl CellphoneS theo scope đã chốt, map benchmark PassMark, làm sạch và dựng ma trận quyết định TOPSIS."
 ---
 
 # data-gatherer (Codex) — Thu thập & làm sạch dữ liệu thị trường
