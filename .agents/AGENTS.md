@@ -30,7 +30,7 @@ Pipeline 7 phase (chi tiết task T#.# trong `README.md` mục 5): **P0** khởi
 
 ## 2. Ba luật vàng về file (không ngoại lệ)
 
-1. **`02_du-lieu-tho/` là vùng ĐÓNG BĂNG.** File vào rồi thì không sửa, không xóa. Muốn xử lý → copy sang `03_phan-tich/` rồi làm trên bản copy.
+1. **`02_du-lieu-tho/` là vùng ĐÓNG BĂNG.** File vào rồi thì không sửa, không xóa. Muốn xử lý → copy sang `03_phan-tich/` rồi làm trên bản copy. (`02_du-lieu-tho/parsed_papers/` đã bị xóa hẳn 2026-07-11 — pipeline Academic Parser/MinerU-API tạo ra nó đã nghỉ hưu, không dùng lại thư mục này. Paper parse thủ công qua app MinerU nay lưu trực tiếp ở `01_tai-lieu-tham-khao/bai-bao/<ten-bai>/`, xem mục 3.)
 2. **`06_nop-bai/` CHỈ chứa bản nộp cuối** đã được nhóm duyệt. Không bao giờ tự ghi vào đây, không có "ghi tạm".
 3. **Mọi file thành viên gửi đi qua `02_du-lieu-tho/inbox/`** trước, rồi mới đổi tên đúng quy ước và phân loại.
 
@@ -48,7 +48,7 @@ Ví dụ: 2026-07-10_kich-ban-phong-van_v2.1_draft_an.md
 - `vX.Y`: X tăng khi thay đổi lớn, Y tăng khi sửa nhỏ.
 - `<trangthai>`: `draft` → `review` → `final`. File `final` không sửa; muốn sửa tạo version mới.
 - Bản cũ chuyển vào thư mục con `_cu/` tại chỗ, không xóa.
-- PDF bài báo: `TacGia_Nam_TuKhoa.pdf`, khớp citekey trong `references.bib`.
+- Bài báo tại `01_tai-lieu-tham-khao/bai-bao/`: mỗi bài một folder `TacGia - Nam - TieuDe/` (parse thủ công bằng app MinerU) chứa `full.md` + `images/` — KHÔNG lưu PDF gốc/JSON nội bộ MinerU. Folder không cần trùng tuyệt đối citekey trong `references.bib`, nhưng phải cùng tác giả/năm để tra cứu chéo dễ dàng.
 - Dữ liệu thị trường (laptop, benchmark) **bắt buộc có ngày** trong tên file.
 
 ---
@@ -63,7 +63,6 @@ Mọi tính toán dùng script đã kiểm thử, **tuyệt đối không tự t
 | AHP tổng hợp nhiều chuyên gia | `python .agents/skills/mcdm-toolkit/scripts/ahp.py cg1.csv cg2.csv [--latex out.tex]` |
 | Xếp hạng TOPSIS | `python .agents/skills/mcdm-toolkit/scripts/topsis.py ma-tran-quyet-dinh.csv [--latex out.tex] [--sensitivity]` |
 | Phân tích Likert | `python .agents/skills/likert-analysis/scripts/likert.py survey.csv [--threshold 3.5] [--cols "C1,C2"] [--latex out.tex]` |
-| Parse PDF paper → Markdown | `python .agents/skills/professional-writing/scripts/academic_parser.py <file.pdf>` |
 
 Quy tắc: ma trận AHP nào **CR > 0.1** bị coi là hỏng → DỪNG, báo người dùng cặp so sánh mâu thuẫn, không tự nới ngưỡng. Bảng xuất `--latex` dùng booktabs (không kẻ dọc), lưu vào `04_bao-cao-latex/tables/`.
 

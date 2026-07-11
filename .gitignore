@@ -31,3 +31,6 @@ __pycache__/
 
 # Vùng nháp/thử nghiệm của agent (không commit)
 scratch/
+
+# Ảnh trích xuất từ MinerU (nặng, tái tạo lại được từ D:\miner_u) — chỉ giữ full.md
+01_tai-lieu-tham-khao/bai-bao/*/images/

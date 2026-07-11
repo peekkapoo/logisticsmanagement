@@ -189,30 +189,6 @@ TBT tra cứu `archive/pattern-catalog.md` khi phân tích request (Bước 2, c
 - Tra cứu archive/ trước khi bắt đầu
 - Để lead tự chọn staff và ước lượng độ dài
 - Gọi development/ sau bài phức tạp để rút kinh nghiệm
-- **Bắt buộc Ban Thu thập (research/):** Đọc sâu toàn văn (full-text) nguồn tài liệu PDF. ĐỂ TIẾT KIỆM TÀI NGUYÊN, Agent BẮT BUỘC phải gọi script `.agents/skills/professional-writing/scripts/academic_parser.py` để trích xuất nội dung PDF thành Markdown (chỉ lấy text thô). File Markdown này sẽ tự động được cache tại `02_du-lieu-tho/parsed_papers/`. Agent chỉ cần đọc file Markdown đã cache để lấy dữ liệu.
-- **Sciverse API — Tìm kiếm tài liệu bổ sung:** Khi cần tìm thêm bài báo ngoài kho `01_tai-lieu-tham-khao/`, BẮT BUỘC dùng Sciverse API qua 2 script sau:
-  - **`sciverse_client.py`** — Python module bọc 7 endpoints. Dùng trực tiếp khi cần gọi API trong code.
-  - **`lit_search_sciverse.py`** — CLI script cho Phase 1 Literature Review.
-
-  **Quy tắc sử dụng Sciverse:**
-  1. **Semantic search (evidence chunks):** Dùng `agentic_search()` khi cần tìm đoạn văn chứng minh cho một luận điểm cụ thể. Ví dụ: `client.agentic_search("AHP consistency ratio calculation method", top_k=10, filters={"lang": "en", "publication_published_year": {"gte": 2018}})`. Evidence chunk có `doc_id` + `offset` dùng để gọi `get_content()` đọc thêm ngữ cảnh xung quanh.
-  2. **Structured search (paper list):** Dùng `meta_search()` khi cần danh sách bài báo với field metadata đầy đủ. **LƯU Ý:** Không kết hợp `sort` + `freshness_boost`/`impact_boost` — hai cái này loại trừ nhau. Không dùng BM25 query rộng với `sort=citation_count` vì sẽ trả về bài có citation cao nhất ở mọi domain.
-  3. **Paper relations (citation graph):** Dùng `paper_relations(unique_id, relation="CITATIONS")` để mở rộng từ một bài có liên quan — tìm bài khác cite nó hoặc bài nó cite. **QUAN TRỌNG:** Dùng `unique_id` (dạng `paper:10.xxx`), không phải `doc_id`.
-  4. **Full text:** Sau khi tìm được `doc_id` từ search, dùng `get_full_text(doc_id)` để đọc toàn văn (auto-paginate). Kết quả là Markdown — trích dẫn trực tiếp từ đây.
-  5. **Output:** Lưu kết quả tìm kiếm vào `03_phan-tich/lit_search/` dưới dạng `.md` để tái sử dụng.
-
-  **CLI examples:**
-  ```bash
-  # Evidence-based search (agentic)
-  python .agents/skills/professional-writing/scripts/lit_search_sciverse.py "AHP TOPSIS laptop criteria" --year_min 2018 --top 15
-
-  # Structured search sorted by freshness
-  python .agents/skills/professional-writing/scripts/lit_search_sciverse.py --meta "MCDM consumer electronics" --freshness_boost STRONG --year_min 2020
-
-  # Find papers that cite a specific paper
-  python .agents/skills/professional-writing/scripts/lit_search_sciverse.py --expand "paper:10.1016/j.eswa.2022.xxx" --relation CITATIONS
-  ```
-
 
 ---
 
@@ -235,5 +211,5 @@ development/   Ban Phát triển   → lead.md quản lý: upgrade, style-audit,
 **Kiến trúc:** Tòa soạn báo (TBT → Lead → Staff)
 **Nguyên tắc mới:** 
 1. BẮT BUỘC kiểm tra trích dẫn (citation-check) và sự thật (fact-check) cho mọi định dạng bài viết. TBT phân tích + thiết kế quy trình GATE, Lead lập task chi tiết.
-2. BẮT BUỘC thu thập dữ liệu từ nguồn hoàn chỉnh (full-text) thông qua Academic Parser Tiered Pipeline, cache dữ liệu Markdown vào `02_du-lieu-tho/parsed_papers/` để tái sử dụng. Nghiêm cấm lọc từ khóa hời hợt từ metadata.
+2. BẮT BUỘC thu thập dữ liệu từ nguồn hoàn chỉnh (full-text), không chỉ lọc từ khóa hời hợt từ metadata. Từ 2026-07-11, paper được parse THỦ CÔNG bằng app MinerU (không còn script tự động) — bản parse (`full.md` + `images/`) nằm tại `01_tai-lieu-tham-khao/bai-bao/<ten-bai>/`, đọc trực tiếp file này, không tự tạo lại script parsing.
 3. BẮT BUỘC áp dụng nghiêm ngặt "Chuẩn Mực Academic Writing": Khử tính từ mạnh cảm xúc, citation liền mạch mạch lạc, KHÔNG dùng gạch đầu dòng, và bắt buộc phát triển luận điểm kèm ví dụ thực chứng. Đặc biệt tuân thủ "Case 4: Khử lối hành văn cường điệu (Văn AI)".
