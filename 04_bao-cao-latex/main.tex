@@ -26,17 +26,35 @@
 % caption chi la tieu de ngan; don vi, nguong, nguon dat o note duoi float.
 \newcommand{\floatnote}[1]{\par\vspace{4pt}\begin{minipage}{\linewidth}\footnotesize #1\end{minipage}}
 
+% Khung vien kep trang bia (dua tren current page, khong can remember picture
+% vi khong tham chieu node giua cac trang khac nhau).
+\newcommand{\ufmcoverframe}{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \draw[line width=1.4pt]
+      ([xshift=1.0cm,yshift=-1.0cm]current page.north west) rectangle
+      ([xshift=-1.0cm,yshift=1.0cm]current page.south east);
+    \draw[line width=0.6pt]
+      ([xshift=1.15cm,yshift=-1.15cm]current page.north west) rectangle
+      ([xshift=-1.15cm,yshift=1.15cm]current page.south east);
+  \end{tikzpicture}%
+}
+
 \usepackage[style=apa,backend=biber]{biblatex}
 \addbibresource{references.bib}
 
 \usepackage{hyperref}        % load gan cuoi
 \usepackage{cleveref}        % PHAI load SAU hyperref
 
-\title{A Hybrid AHP--TOPSIS Approach to Laptop Selection\\
+\title{A Hybrid Approach to Laptop Selection\\
        for Office Workers in Vietnam}
-\author{Group [X] --- Logistics Management\\
+\author{Group 5 --- Logistics Management\\
         University of Finance --- Marketing}
 \date{\today}
+
+\hypersetup{
+  pdftitle={A Hybrid Approach to Laptop Selection for Office Workers in Vietnam},
+  pdfauthor={Group 5, University of Finance -- Marketing},
+}
 
 \begin{document}
 
