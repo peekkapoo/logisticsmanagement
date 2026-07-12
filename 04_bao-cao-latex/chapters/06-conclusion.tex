@@ -6,23 +6,103 @@
 % ============================================================
 
 \section{Summary of Findings}\label{sec:summary}
-% TODO Phase 6: tom tat tra loi 3 research questions:
-%   RQ1 -> bo 14 tieu chi / 6 nhom (nhom nao quan trong nhat)
-%   RQ2 -> trong so AHP (tieu chi nao nang nhat)
-%   RQ3 -> laptop duoc khuyen nghi + diem C_i
-\textit{[Phase 6 — see \texttt{SUON-NOI-DUNG.md} \S6.1.]}
+
+This study set out to answer three research questions about how an office worker in
+Vietnam should select a laptop, and each stage of the three-stage design answers one of
+them. In answer to RQ1, the combination of literature synthesis, expert interviews, and a
+screening survey of 84 respondents produced a set of seven evaluation criteria: price,
+processor capability, memory, solid-state storage, brand, physical size and weight, and
+battery life. The path to this set is itself part of the finding, since the interviews
+removed the dedicated graphics card and added software compatibility before the survey
+screened the candidate list against a pre-committed threshold, leaving a criteria set
+calibrated to local working conditions rather than imported from the international
+literature.
+
+In answer to RQ2, the pairwise comparison of the seven criteria produced a consistent
+judgement matrix ($CR = 0.0483$, below the 0.10 acceptance threshold) whose priority
+vector is strongly concentrated at the top: price carries a weight of 0.3491 and the
+processor 0.2769, together accounting for approximately 62.6\% of the total priority,
+followed by storage (0.1592) and memory (0.1201), with brand (0.0430), size and weight
+(0.0258), and battery life (0.0258) forming a low-priority tier. The most instructive
+feature of this vector is the position of battery life, which recorded the highest mean
+in the screening survey yet the smallest pairwise weight, a reversal that
+\Cref{ch:discussion} attributes to its status as a threshold requirement that most office
+laptops already satisfy.
+
+In answer to RQ3, applying TOPSIS with these weights to twelve candidate laptops drawn
+from seven professional review outlets and priced from Amazon.com ranked the Lenovo
+ThinkPad T14 Gen 6 (AMD) first with a closeness coefficient of 0.6152, ahead of the Dell
+14 Premium (0.6046) and the Apple MacBook Air M5 (0.6039). The recommended machine leads
+on no single criterion but combines a below-median price, a mid-field processor, and the
+largest brand market share into the most balanced profile in the set, while the cheapest
+and the most expensive candidates finish seventh and last respectively, confirming that
+under the derived weights the office-laptop decision rewards balance rather than
+dominance on any one attribute.
 
 \section{Contributions}\label{sec:contributions}
-% TODO Phase 6: nhac lai twofold contribution (bo tieu chi hieu chinh boi canh VN +
-% mo hinh AHP-TOPSIS van hanh tren du lieu thi truong thuc te).
-\textit{[Phase 6 — see \texttt{SUON-NOI-DUNG.md} \S6.2.]}
+
+The contribution of the study is the twofold one stated in \Cref{sec:gap-contrib}, now
+delivered rather than promised. First, the study constructs a criteria set for office
+laptops that is explicitly calibrated to Vietnamese working conditions, and documents
+where that calibration departs from priorities reported in the international literature:
+battery life recedes from the top-weighted position it holds in prior device-selection
+studies once mains power can be assumed, device weight is salient for motorbike commuting
+yet varies too little across the modern office segment to differentiate candidates, and
+software compatibility emerges as an eligibility condition created by a Windows lock-in
+effect that international criteria frameworks rarely make explicit. Second, the study
+operationalises a complete AHP--TOPSIS pipeline on real market data, from elicited
+pairwise judgements through a consistency-checked weight vector to a ranking of twelve
+actual laptop models, with every computational step reported in the appendices in
+reproducible form. Beyond these two, the two-instrument design of Stage~1 carries a
+methodological point worth stating separately: by screening criteria with end users after
+eliciting them from experts, the study makes the divergence between professional and
+end-user perspectives observable, and \Cref{ch:discussion} shows that this divergence is
+informative rather than noise.
 
 \section{Limitations}\label{sec:limitations}
-% TODO Phase 6: gioi han (co mau khao sat, du lieu 1 nha ban le CellphoneS, cham tay
-% tieu chi dinh tinh, thoi diem thu thap).
-\textit{[Phase 6 — see \texttt{SUON-NOI-DUNG.md} \S6.3.]}
+
+Four limitations bound the claims made above. First, the pairwise comparison matrix was
+elicited from a single representative expert, as described in \Cref{sec:stage2}; although
+the matrix passes the consistency check and the geometric-mean recomputation preserves
+the same criteria ordering, a weight vector aggregated over several independent experts
+would carry more evidential force, and the screening survey's divergence between expert
+and end-user priorities suggests the choice of judge is not neutral. Second, the
+screening sample of 84 respondents was recruited by convenience rather than probability
+sampling, so the retained criteria set reflects the office-worker population only to the
+extent that the sample does. Third, the market data are a snapshot: prices and
+configurations were collected from a single retail platform on a recorded date
+(\Cref{sec:scenario}), and laptop prices in particular move quickly enough that the
+specific ranking, though not the method, has a short shelf life. Fourth, two criteria are
+measured through proxies, the processor through its PassMark benchmark score and brand
+through global market share, and while \Cref{subsec:operationalisation} argues these are
+the most defensible quantitative stand-ins available, neither captures its criterion
+completely; market share in particular measures prevalence rather than the service
+quality that motivated the brand criterion in the interviews. In addition, the stability
+of the ranking under perturbations of the weight vector was not examined, which matters
+because the top three closeness coefficients lie within 0.011 of one another
+(\Cref{sec:ranking}); the ranking should accordingly be read as a short list rather than
+a strict ordering.
 
 \section{Future Work}\label{sec:future}
-% TODO Phase 6: huong mo rong (fuzzy AHP, them nha ban le, doi tuong nguoi dung khac,
-% cap nhat du lieu theo thoi gian).
-\textit{[Phase 6 — see \texttt{SUON-NOI-DUNG.md} \S6.4.]}
+
+The limitations point directly to the extensions worth pursuing. The most immediate is a
+group-decision version of Stage~2, eliciting pairwise matrices from several experts and
+aggregating them, which would both strengthen the weight vector and permit an analysis of
+inter-expert disagreement that the present single-judge design cannot support. A second
+extension is a formal sensitivity analysis of the ranking with respect to the weights,
+which the narrow margins at the top of the present ranking make particularly relevant.
+On the measurement side, fuzzy extensions of AHP and TOPSIS, of the kind reviewed in
+\Cref{sec:ahp-theory,sec:topsis-theory}, would let the model represent the imprecision of
+judgements such as brand trust directly instead of forcing them through crisp proxies.
+On the data side, the pipeline should be re-run as the Vietnamese retail catalogue
+catches up with the international models considered here, both to replace the Amazon.com
+price base with domestic prices that include local warranty terms and to test whether the
+ranking survives the change of market; repeating the collection at intervals would also
+show how quickly rankings decay as catalogues turn over. Finally, the interpretive caveat
+raised in \Cref{sec:interp-weights} about criterion granularity deserves a direct test: a
+replication that decomposes the removed Display criterion into visual quality and screen
+size, following the decomposition used by \textcite{sonmez_cakir_determination_2020},
+would establish whether office users' apparent indifference to displays is genuine or an
+artefact of the composite item, and the same design could extend the model to user
+segments beyond office work, where the calibration developed here is not expected to
+hold.

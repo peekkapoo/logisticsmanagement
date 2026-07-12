@@ -13,7 +13,6 @@
 
 \usepackage[margin=2.5cm]{geometry}
 \usepackage{booktabs}        % bang dep: \toprule \midrule \bottomrule, khong ke doc
-\usepackage{rotating}        % sidewaystable cho bang rong (Table 2.1, Table 4.4)
 \usepackage{graphicx}
 \graphicspath{{figures/}}
 \usepackage{amsmath,amssymb,mathtools}
@@ -22,6 +21,10 @@
 \usepackage{microtype}
 \usepackage{setspace}
 \onehalfspacing
+
+% Ghi chu duoi bang/hinh (Note/Source) theo chuan bai bao khoa hoc:
+% caption chi la tieu de ngan; don vi, nguong, nguon dat o note duoi float.
+\newcommand{\floatnote}[1]{\par\vspace{4pt}\begin{minipage}{\linewidth}\footnotesize #1\end{minipage}}
 
 \usepackage[style=apa,backend=biber]{biblatex}
 \addbibresource{references.bib}

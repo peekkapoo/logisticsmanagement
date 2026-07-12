@@ -7,13 +7,61 @@
 % ============================================================
 
 \section{Interpretation of the Criteria Weights}\label{sec:interp-weights}
-% TODO Phase 6: dien giai trong so AHP con lai. TRONG TAM — su khac biet ly thuyet
-% quoc te vs thuc tien VN: pin (ly thuyet trong so cao nhat -> VN chi can 4-7h),
-% trong luong (nhan manh do di chuyen xe may), loai bo GPU roi,
-% bo sung tuong thich phan mem (Windows lock-in).
-% Nguon luan diem: 03_phan-tich/tieu-chi/...v2.0.
-\textit{[Phase 6 — see \texttt{SUON-NOI-DUNG.md} \S5.1 for the remaining weight
-interpretation.]}
+
+The weight structure reported in \Cref{sec:weights} concentrates 62.6\% of the total
+priority in price (0.3491) and processor capability (0.2769), and this concentration is
+readable directly from the decision context the criteria were calibrated against. In the
+expert interviews, the purchase budget for an office machine is not a preference to be
+optimised but a policy set in advance by management or the IT department, so price operates
+as the framing variable within which every subsequent hardware trade-off is made. The
+dominant position of price is consistent with the wider consumer-behaviour evidence:
+\textcite{liao_determinants_2022} find price the single most influential attribute in their
+conjoint analysis of laptop choice, and \textcite{sostar_assessment_2023} identify personal
+budget as the strongest driver among the cultural, social, personal, and psychological
+factors they weigh. The weight of the processor, in turn, reflects the interviews'
+consistent redirection of scarce budget towards computing capability: the experts' argument
+for removing the dedicated graphics card (\Cref{subsec:interview-outcomes}) was precisely
+that the money it consumes buys more useful performance when spent on a newer-generation
+CPU, more memory, or faster storage.
+
+The more interesting feature of the weight vector, however, is its bottom tier, because
+this is where the local calibration departs most visibly from the international
+literature. Battery life records the highest mean in the screening survey (4.02,
+\Cref{sec:screening}) yet receives the joint-smallest AHP weight (0.0258,
+\Cref{sec:weights}), and \textcite{weng_siew_lam_evaluation_2023} report battery life as
+the most heavily weighted criterion in their integrated AHP--TOPSIS model. The apparent
+contradiction dissolves once the two instruments are read as measuring different things.
+The Likert screening asks whether a criterion matters at all, and battery life clearly
+does: a machine that cannot hold a charge through a meeting is unusable. The pairwise
+comparison instead asks how much of a decisive difference the criterion makes between
+candidate machines, and here the expert judgement recorded in the interviews applies:
+mains power is readily available in Vietnamese offices, a runtime of four to seven hours
+already covers meetings and short mobile work, and most current office laptops meet that
+bar. Battery life therefore behaves as a threshold requirement, broadly satisfied across
+the candidate set, rather than as a differentiator, and a rational pairwise comparison
+assigns differentiating weight elsewhere. The same logic extends to physical size and
+weight, which the survey ranks joint-second in importance (3.96) but the AHP places in the
+same low tier (0.0258): the interviews emphasised weight because motorbike commuting makes
+a heavy machine a daily burden, yet the office segment has converged on 14-inch machines
+weighing roughly 1.3 to 1.6 kilograms, so the attribute varies too little across realistic
+candidates to move a pairwise judgement. What the survey measures as salience, the AHP
+re-expresses as marginal decision value, and criteria whose requirements the market
+already meets lose weight in the second instrument without losing importance in the first.
+
+A related divergence between the expert and end-user perspectives concerns the criteria
+that the screening survey removed. Software compatibility was added to the candidate set
+on the strength of the interviews, in which office workers described a Windows lock-in
+effect created by accounting packages, internal ERP systems, and the government's customs
+declaration software (\Cref{subsec:interview-outcomes}), yet the wider respondent pool
+screened it out, together with durability and after-sales support
+(\Cref{sec:screening}). The likely mechanism is that end users experience compatibility as
+a background condition rather than a choice variable: almost every machine they encounter
+in a Vietnamese office already runs Windows, so the criterion only becomes visible at the
+moment a non-Windows device enters consideration, which is exactly the procurement-risk
+scenario the experts are paid to anticipate. The two-step design of Stage~1 makes this
+divergence observable instead of averaging it away, and the practical reading is that the
+screened-out criteria function as eligibility conditions applied before the weighted
+comparison, not as attributes the weighted comparison should ignore.
 
 One divergence worth flagging concerns the granularity of the Display criterion, which the
 screening survey of \Cref{sec:screening} removed for falling just below the retention
@@ -41,16 +89,117 @@ criterion granularity, not only criterion choice, as a methodological lever meri
 attention in future replications of this instrument.
 
 \section{Interpretation of the Ranking}\label{sec:interp-ranking}
-% TODO Phase 6: vi sao laptop dung dau (tieu chi nao quyet dinh), ket qua co khop ky vong
-% tu khao sat/phong van khong.
-\textit{[Phase 6 — see \texttt{SUON-NOI-DUNG.md} \S5.2.]}
+
+The identity of the top-ranked alternative is itself informative about what the calibrated
+model rewards. The Lenovo ThinkPad T14 Gen 6 (AMD) leads the ranking
+(\Cref{sec:ranking}) without holding the best value on any single criterion: its price is
+the second lowest in the set, its processor sits in the middle of the field, and its
+16\,GB of memory is the smallest configuration among the eleven non-Acer candidates. Its
+closeness coefficient of 0.6152 is instead the product of a profile with no severe
+weakness, anchored by a below-median price and supported by the largest brand market
+share in the set. This is precisely the machine the expert interviews described before
+any market data had been collected: a current-generation mid-tier processor was judged
+sufficient for administrative workloads, and the budget saved by not chasing peak
+specifications was to be preserved rather than redirected into features the office
+segment does not use. That the data-driven ranking independently converges on this
+profile is a meaningful internal consistency check between Stage~1's qualitative
+calibration and Stage~3's quantitative outcome.
+
+The two extremes of the ranking reinforce the same reading from opposite directions. The
+Acer Aspire 5, the cheapest candidate at \$395, finishes seventh rather than first despite
+price carrying the single largest weight, because its deficits on processor, memory,
+storage, and brand share accumulate faster than its price advantage compensates. At the
+other end, the ThinkPad X1 Carbon Gen 14 Aura Edition finishes last at \$3{,}499 despite
+the second-highest processor score in the set, an outcome that echoes the
+over-specification argument of \textcite{rau_optimal_2018}: paying a premium for capability
+beyond the requirements of the use case destroys rather than creates value once price
+enters the comparison with its full weight. Between these extremes, the top three
+alternatives are separated by less than 0.011 in closeness coefficient, so the ranking is
+better read as producing a short list of near-equivalent recommendations, the T14 Gen 6,
+the Dell 14 Premium, and the MacBook Air M5, than as declaring a single decisive winner;
+the Dell and the Apple machine reach their positions through the complementary route of
+field-leading processor scores that offset above-median prices. Within that short list,
+the practical tie-breakers are exactly the eligibility conditions identified in
+\Cref{sec:interp-weights}: the MacBook's macOS platform, for instance, would be filtered
+out by the Windows lock-in constraint in offices where that constraint binds, even though
+the weighted comparison itself ranks it third.
 
 \section{Practical and Managerial Implications}\label{sec:implications}
-% TODO Phase 6: ham y cho nguoi mua ca nhan / bo phan thu mua doanh nghiep / nha ban le
-% / hang san xuat. (Muc rieng kieu Saputro 5.4.)
-\textit{[Phase 6 — see \texttt{SUON-NOI-DUNG.md} \S5.3.]}
+
+For an individual office worker buying with personal funds, the model's main practical
+export is not the specific ranking, which is tied to a catalogue snapshot, but the
+structure of the weights: roughly 63\% of the decision is a price--processor trade-off,
+storage and memory form a middle tier worth attending to, and battery life, weight, and
+brand deserve verification against a threshold rather than optimisation. Concretely, the
+buyer should fix the budget first, secure a current-generation mid-tier processor and
+16\,GB of memory within it, confirm that battery life and weight fall in the acceptable
+band for their commuting pattern, and resist paying premiums for capability at the top of
+the range, which the ranking shows to be counterproductive under office-work weights.
+
+For corporate procurement, the value of the model lies in making an implicit decision
+auditable. The interviews indicated that purchase budgets are set by policy and that IT
+managers already think in terms of total cost of ownership; the AHP--TOPSIS pipeline
+turns those practices into an explicit weight vector and a reproducible ranking that can
+be attached to a purchase justification, revisited when the catalogue changes, and
+recalculated by replacing a single input matrix. Because the weights and the alternatives
+are decoupled, a procurement office can hold the weight vector stable across purchasing
+rounds while refreshing the decision matrix, which converts a one-off analysis into a
+reusable procedure. The screened-out criteria retain a role here as eligibility gates:
+software compatibility and after-sales coverage are best enforced as pass-or-fail
+conditions before the weighted comparison, mirroring how the experts described actual
+procurement practice.
+
+The results also carry signals for the supply side. For retailers advising office
+customers, the ranking suggests that the persuasive assortment is not the cheapest machine
+or the most powerful one but the balanced mid-tier configuration, and that advice framed
+as ``sufficient processor within budget'' matches how this segment actually weighs the
+purchase. For manufacturers, the weight structure implies that marginal engineering
+investment aimed at this segment earns more return in price positioning and
+processor-generation currency than in pushing battery life or thinness beyond the
+threshold the segment already considers satisfied; a battery lasting beyond the four-to-seven-hour
+working band, in particular, adds cost against a criterion holding under 3\% of
+the decision weight.
 
 \section{Comparison with Prior Studies}\label{sec:comparison}
-% TODO Phase 6: doi chieu trong so/thu hang voi cac nghien cuu truoc
-% (Sonmez 2020, Gaur 2023, Lam 2023, Maghsoudi 2026) — diem tuong dong/khac biet.
-\textit{[Phase 6 — see \texttt{SUON-NOI-DUNG.md} \S5.4.]}
+
+Set against the prior studies reviewed in \Cref{sec:prior-studies}, the present results
+agree on the centre of the priority structure and diverge at its edges, and the
+divergences are traceable to context rather than method. The dominance of price is the
+most stable point of agreement: it matches the conjoint evidence of
+\textcite{liao_determinants_2022}, the budget-driven consumer behaviour reported by
+\textcite{sostar_assessment_2023}, and the price-sensitive student segment of
+\textcite{elnatan_alternatif_nodate}, in which price, processor, and memory jointly lead
+the weights, a composition strikingly close to the top of the present vector.
+
+The clearest divergence concerns brand. \textcite{sonmez_cakir_determination_2020} find
+brand image the highest-weighted criterion among their six, whereas the present model
+assigns brand only 0.0430. The difference is explicable through the signalling mechanism
+that motivates brand weight in the first place: brand compensates for information
+asymmetry when buyers cannot evaluate technical quality directly, and that asymmetry is
+largest for general consumers choosing alone. In the office-procurement context studied
+here, IT managers and standardised specifications absorb much of that uncertainty, so the
+signalling value of brand shrinks even while brand retains a residual role, visible in the
+ranking, where Lenovo's market share contributes to the winning profile. The second
+divergence, the position of battery life relative to
+\textcite{weng_siew_lam_evaluation_2023}, was examined in \Cref{sec:interp-weights} and
+reflects both the device category, since a phone cannot assume mains power, and the
+office setting that can.
+
+At the level of ranked outcomes, comparison is necessarily looser because candidate sets
+differ, but two observations hold. \textcite{gaur_application_2023}, ranking laptop brands
+during the pandemic with a comparable AHP--TOPSIS apparatus, identify Dell as the leading
+alternative; the present ranking, built on model-level rather than brand-level
+alternatives, places a Dell machine second, suggesting that the earlier result survives
+translation to a finer-grained alternative space. \textcite{maghsoudi_hybrid_2026},
+weighting notebook features by mined sentiment, place the graphics card last among
+sixteen features and price near the top, which independently corroborates both the
+experts' removal of the GPU from the candidate set and the weight the present model gives
+to price; their finding that display quality ranks third, against its removal by the
+present screening survey, is the one substantive disagreement, and
+\Cref{sec:interp-weights} argues it is most plausibly an artefact of criterion
+granularity rather than a genuine difference in what office users value. Taken together,
+the comparisons support the position claimed in \Cref{sec:gap}: the international
+literature travels well at the core of the priority structure, price and processing
+capability, and requires local recalibration precisely at the criteria, battery, weight,
+brand, and software ecosystem, whose value depends on infrastructure and working
+conditions.

@@ -16,7 +16,7 @@ then reports the full converted decision matrix that is submitted to TOPSIS.
 
 \begin{table}[htbp]
   \centering
-  \caption{CPU-to-PassMark conversion key for the nine distinct processors in the dataset.}
+  \caption{CPU-to-benchmark conversion key.}
   \label{tab:cpu-passmark}
   \begin{tabular}{@{}p{7.5cm}r@{}}
     \toprule
@@ -33,11 +33,13 @@ then reports the full converted decision matrix that is submitted to TOPSIS.
     Intel Core Ultra 7 165U (vPro) & 16{,}676 \\
     \bottomrule
   \end{tabular}
+  \floatnote{\emph{Note:} one entry per distinct processor in the candidate set.
+  \emph{Source:} \textcite{passmark_2026}.}
 \end{table}
 
 \begin{table}[htbp]
   \centering
-  \caption{Brand-to-market-share conversion key, Q1 2026 worldwide PC shipments \parencite{gartner_2026}.}
+  \caption{Brand-to-market-share conversion key.}
   \label{tab:brand-share}
   \begin{tabular}{@{}lr@{}}
     \toprule
@@ -51,31 +53,37 @@ then reports the full converted decision matrix that is submitted to TOPSIS.
     Acer   & 6.4 \\
     \bottomrule
   \end{tabular}
+  \floatnote{\emph{Note:} worldwide PC shipment market share, first quarter of 2026.
+  \emph{Source:} \textcite{gartner_2026}.}
 \end{table}
 
-\begin{sidewaystable}[htbp]
+\begin{table}[htbp]
 \centering
-\caption{Converted decision matrix submitted to TOPSIS (CPU as PassMark CPU Mark, Brand as market share \%).}
+\caption{Converted decision matrix submitted to TOPSIS.}
 \label{tab:decision-matrix-converted}
-\begin{tabular}{@{}p{4.5cm}rrrrrrr@{}}
+\begin{tabular}{@{}lrrrrrrr@{}}
 \toprule
-Model & Price (\$) & CPU (PassMark) & RAM (GB) & SSD (GB) & Brand (\%) & Weight (kg) & Battery (Wh) \\
+Candidate & Price & CPU & RAM & SSD & Brand & Weight & Battery \\
 \midrule
-Lenovo ThinkPad X1 Carbon Gen 13 Aura Edition & 2289 & 18898 & 32 & 2048 & 26.5 & 1.09 & 57 \\
-Lenovo ThinkPad X1 Carbon Gen 14 Aura Edition & 3499 & 20946 & 32 & 2048 & 26.5 & 1.00 & 58 \\
-Apple MacBook Air M4 & 1494 & 23622 & 24 & 512 & 10.6 & 1.24 & 53.8 \\
-Apple MacBook Air M5 & 1749 & 26831 & 24 & 1024 & 10.6 & 1.23 & 53.8 \\
-Asus ExpertBook P5 & 1675 & 18898 & 32 & 1024 & 6.7 & 1.29 & 63 \\
-HP EliteBook Ultra G1i & 1539 & 18898 & 32 & 1024 & 19.3 & 1.36 & 56 \\
-Lenovo ThinkPad X9 15 Aura Edition (2025) & 1799 & 18898 & 32 & 1024 & 26.5 & 1.40 & 80 \\
-Dell 14 Premium (XPS 14 2026) & 1890 & 30684 & 32 & 1024 & 16.5 & 1.72 & 69.5 \\
-Lenovo ThinkPad T14 Gen 6 (AMD) & 1100 & 19546 & 16 & 512 & 26.5 & 1.41 & 57 \\
-Lenovo ThinkPad T14 Gen 7 & 2357 & 20452 & 32 & 512 & 26.5 & 2.22 & 60 \\
-Acer Aspire 5 & 395 & 5811 & 8 & 128 & 6.4 & 1.63 & 48 \\
-Lenovo ThinkPad X1 Carbon Gen 12 & 1685 & 16676 & 32 & 1024 & 26.5 & 1.08 & 57 \\
+Can1  & 2289 & 18898 & 32 & 2048 & 26.5 & 1.09 & 57 \\
+Can2  & 3499 & 20946 & 32 & 2048 & 26.5 & 1.00 & 58 \\
+Can3  & 1494 & 23622 & 24 & 512 & 10.6 & 1.24 & 53.8 \\
+Can4  & 1749 & 26831 & 24 & 1024 & 10.6 & 1.23 & 53.8 \\
+Can5  & 1675 & 18898 & 32 & 1024 & 6.7 & 1.29 & 63 \\
+Can6  & 1539 & 18898 & 32 & 1024 & 19.3 & 1.36 & 56 \\
+Can7  & 1799 & 18898 & 32 & 1024 & 26.5 & 1.40 & 80 \\
+Can8  & 1890 & 30684 & 32 & 1024 & 16.5 & 1.72 & 69.5 \\
+Can9  & 1100 & 19546 & 16 & 512 & 26.5 & 1.41 & 57 \\
+Can10 & 2357 & 20452 & 32 & 512 & 26.5 & 2.22 & 60 \\
+Can11 & 395  & 5811 & 8 & 128 & 6.4 & 1.63 & 48 \\
+Can12 & 1685 & 16676 & 32 & 1024 & 26.5 & 1.08 & 57 \\
 \bottomrule
 \end{tabular}
-\end{sidewaystable}
+\floatnote{\emph{Note:} CPU as PassMark CPU Mark score (\Cref{tab:cpu-passmark}); Brand as
+market share in \% (\Cref{tab:brand-share}); price in USD; RAM and SSD in GB; weight in kg;
+battery capacity in Wh; candidate identifiers as assigned in \Cref{tab:candidate-ids}.
+\emph{Source:} authors' own computation.}
+\end{table}
 
 \section{TOPSIS Step-by-Step Calculation}\label{app:laptop-data-topsis}
 
@@ -91,7 +99,7 @@ normalised matrix $r_{ij}$.
 
 \begin{table}[htbp]
   \centering
-  \caption{Euclidean norm of each criterion column, $\sqrt{\sum_i x_{ij}^2}$.}
+  \caption{Euclidean norms of the criterion columns.}
   \label{tab:topsis-norms}
   \begin{tabular}{@{}lccccccc@{}}
     \toprule
@@ -100,60 +108,64 @@ normalised matrix $r_{ij}$.
     Norm & 6672.10 & 72103.18 & 98.31 & 3934.83 & 71.89 & 4.94 & 207.70 \\
     \bottomrule
   \end{tabular}
+  \floatnote{\emph{Note:} each norm is $\sqrt{\sum_i x_{ij}^2}$ taken over the twelve
+  candidates. \emph{Source:} authors' own computation.}
 \end{table}
 
-\begin{sidewaystable}[htbp]
+\begin{table}[htbp]
 \centering
 \caption{Normalised decision matrix $r_{ij}$.}
 \label{tab:topsis-normalised}
-\begin{tabular}{@{}p{4.5cm}ccccccc@{}}
+\begin{tabular}{@{}lccccccc@{}}
 \toprule
-Model & Price & CPU & RAM & SSD & Brand & Weight & Battery \\
+Candidate & Price & CPU & RAM & SSD & Brand & Weight & Battery \\
 \midrule
-Lenovo ThinkPad X1 Carbon Gen 13 Aura Edition & 0.3431 & 0.2621 & 0.3255 & 0.5205 & 0.3686 & 0.2206 & 0.2744 \\
-Lenovo ThinkPad X1 Carbon Gen 14 Aura Edition & 0.5244 & 0.2905 & 0.3255 & 0.5205 & 0.3686 & 0.2024 & 0.2792 \\
-Apple MacBook Air M4 & 0.2239 & 0.3276 & 0.2441 & 0.1301 & 0.1474 & 0.2510 & 0.2590 \\
-Apple MacBook Air M5 & 0.2621 & 0.3721 & 0.2441 & 0.2602 & 0.1474 & 0.2490 & 0.2590 \\
-Asus ExpertBook P5 & 0.2510 & 0.2621 & 0.3255 & 0.2602 & 0.0932 & 0.2611 & 0.3033 \\
-HP EliteBook Ultra G1i & 0.2307 & 0.2621 & 0.3255 & 0.2602 & 0.2684 & 0.2753 & 0.2696 \\
-Lenovo ThinkPad X9 15 Aura Edition (2025) & 0.2696 & 0.2621 & 0.3255 & 0.2602 & 0.3686 & 0.2834 & 0.3852 \\
-Dell 14 Premium (XPS 14 2026) & 0.2833 & 0.4256 & 0.3255 & 0.2602 & 0.2295 & 0.3481 & 0.3346 \\
-Lenovo ThinkPad T14 Gen 6 (AMD) & 0.1649 & 0.2711 & 0.1628 & 0.1301 & 0.3686 & 0.2854 & 0.2744 \\
-Lenovo ThinkPad T14 Gen 7 & 0.3533 & 0.2836 & 0.3255 & 0.1301 & 0.3686 & 0.4493 & 0.2889 \\
-Acer Aspire 5 & 0.0592 & 0.0806 & 0.0814 & 0.0325 & 0.0890 & 0.3299 & 0.2311 \\
-Lenovo ThinkPad X1 Carbon Gen 12 & 0.2525 & 0.2313 & 0.3255 & 0.2602 & 0.3686 & 0.2186 & 0.2744 \\
+Can1  & 0.3431 & 0.2621 & 0.3255 & 0.5205 & 0.3686 & 0.2206 & 0.2744 \\
+Can2  & 0.5244 & 0.2905 & 0.3255 & 0.5205 & 0.3686 & 0.2024 & 0.2792 \\
+Can3  & 0.2239 & 0.3276 & 0.2441 & 0.1301 & 0.1474 & 0.2510 & 0.2590 \\
+Can4  & 0.2621 & 0.3721 & 0.2441 & 0.2602 & 0.1474 & 0.2490 & 0.2590 \\
+Can5  & 0.2510 & 0.2621 & 0.3255 & 0.2602 & 0.0932 & 0.2611 & 0.3033 \\
+Can6  & 0.2307 & 0.2621 & 0.3255 & 0.2602 & 0.2684 & 0.2753 & 0.2696 \\
+Can7  & 0.2696 & 0.2621 & 0.3255 & 0.2602 & 0.3686 & 0.2834 & 0.3852 \\
+Can8  & 0.2833 & 0.4256 & 0.3255 & 0.2602 & 0.2295 & 0.3481 & 0.3346 \\
+Can9  & 0.1649 & 0.2711 & 0.1628 & 0.1301 & 0.3686 & 0.2854 & 0.2744 \\
+Can10 & 0.3533 & 0.2836 & 0.3255 & 0.1301 & 0.3686 & 0.4493 & 0.2889 \\
+Can11 & 0.0592 & 0.0806 & 0.0814 & 0.0325 & 0.0890 & 0.3299 & 0.2311 \\
+Can12 & 0.2525 & 0.2313 & 0.3255 & 0.2602 & 0.3686 & 0.2186 & 0.2744 \\
 \bottomrule
 \end{tabular}
-\end{sidewaystable}
+\floatnote{\emph{Source:} authors' own computation.}
+\end{table}
 
 \paragraph{Step 3 --- Weighted normalised matrix.}
 Following \Cref{eq:weighted}, each column of \Cref{tab:topsis-normalised} is multiplied by
 the corresponding AHP weight from \Cref{tab:ahp-weights}, giving the weighted matrix
 $v_{ij}$ in \Cref{tab:topsis-weighted}.
 
-\begin{sidewaystable}[htbp]
+\begin{table}[htbp]
 \centering
 \caption{Weighted normalised decision matrix $v_{ij}$.}
 \label{tab:topsis-weighted}
-\begin{tabular}{@{}p{4.5cm}ccccccc@{}}
+\begin{tabular}{@{}lccccccc@{}}
 \toprule
-Model & Price & CPU & RAM & SSD & Brand & Weight & Battery \\
+Candidate & Price & CPU & RAM & SSD & Brand & Weight & Battery \\
 \midrule
-Lenovo ThinkPad X1 Carbon Gen 13 Aura Edition & 0.11978 & 0.07258 & 0.03910 & 0.08287 & 0.01585 & 0.00569 & 0.00708 \\
-Lenovo ThinkPad X1 Carbon Gen 14 Aura Edition & 0.18309 & 0.08045 & 0.03910 & 0.08287 & 0.01585 & 0.00522 & 0.00721 \\
-Apple MacBook Air M4 & 0.07818 & 0.09073 & 0.02932 & 0.02072 & 0.00634 & 0.00648 & 0.00668 \\
-Apple MacBook Air M5 & 0.09152 & 0.10305 & 0.02932 & 0.04143 & 0.00634 & 0.00642 & 0.00668 \\
-Asus ExpertBook P5 & 0.08765 & 0.07258 & 0.03910 & 0.04143 & 0.00401 & 0.00674 & 0.00783 \\
-HP EliteBook Ultra G1i & 0.08053 & 0.07258 & 0.03910 & 0.04143 & 0.01154 & 0.00710 & 0.00696 \\
-Lenovo ThinkPad X9 15 Aura Edition (2025) & 0.09414 & 0.07258 & 0.03910 & 0.04143 & 0.01585 & 0.00731 & 0.00994 \\
-Dell 14 Premium (XPS 14 2026) & 0.09890 & 0.11785 & 0.03910 & 0.04143 & 0.00987 & 0.00898 & 0.00863 \\
-Lenovo ThinkPad T14 Gen 6 (AMD) & 0.05756 & 0.07507 & 0.01955 & 0.02072 & 0.01585 & 0.00736 & 0.00708 \\
-Lenovo ThinkPad T14 Gen 7 & 0.12334 & 0.07855 & 0.03910 & 0.02072 & 0.01585 & 0.01159 & 0.00745 \\
-Acer Aspire 5 & 0.02067 & 0.02232 & 0.00977 & 0.00518 & 0.00383 & 0.00851 & 0.00596 \\
-Lenovo ThinkPad X1 Carbon Gen 12 & 0.08817 & 0.06405 & 0.03910 & 0.04143 & 0.01585 & 0.00564 & 0.00708 \\
+Can1  & 0.11978 & 0.07258 & 0.03910 & 0.08287 & 0.01585 & 0.00569 & 0.00708 \\
+Can2  & 0.18309 & 0.08045 & 0.03910 & 0.08287 & 0.01585 & 0.00522 & 0.00721 \\
+Can3  & 0.07818 & 0.09073 & 0.02932 & 0.02072 & 0.00634 & 0.00648 & 0.00668 \\
+Can4  & 0.09152 & 0.10305 & 0.02932 & 0.04143 & 0.00634 & 0.00642 & 0.00668 \\
+Can5  & 0.08765 & 0.07258 & 0.03910 & 0.04143 & 0.00401 & 0.00674 & 0.00783 \\
+Can6  & 0.08053 & 0.07258 & 0.03910 & 0.04143 & 0.01154 & 0.00710 & 0.00696 \\
+Can7  & 0.09414 & 0.07258 & 0.03910 & 0.04143 & 0.01585 & 0.00731 & 0.00994 \\
+Can8  & 0.09890 & 0.11785 & 0.03910 & 0.04143 & 0.00987 & 0.00898 & 0.00863 \\
+Can9  & 0.05756 & 0.07507 & 0.01955 & 0.02072 & 0.01585 & 0.00736 & 0.00708 \\
+Can10 & 0.12334 & 0.07855 & 0.03910 & 0.02072 & 0.01585 & 0.01159 & 0.00745 \\
+Can11 & 0.02067 & 0.02232 & 0.00977 & 0.00518 & 0.00383 & 0.00851 & 0.00596 \\
+Can12 & 0.08817 & 0.06405 & 0.03910 & 0.04143 & 0.01585 & 0.00564 & 0.00708 \\
 \bottomrule
 \end{tabular}
-\end{sidewaystable}
+\floatnote{\emph{Source:} authors' own computation.}
+\end{table}
 
 \paragraph{Step 4 --- Ideal solutions.}
 Following \Cref{eq:pis-nis}, for each of the seven columns of \Cref{tab:topsis-weighted},
@@ -173,6 +185,7 @@ takes the opposite extreme in each case. \Cref{tab:topsis-ideal} reports both ve
     $A^{-}$ & 0.18309 & 0.02232 & 0.00977 & 0.00518 & 0.00383 & 0.01159 & 0.00596 \\
     \bottomrule
   \end{tabular}
+  \floatnote{\emph{Source:} authors' own computation.}
 \end{table}
 
 \paragraph{Steps 5--7 --- Separation measures, closeness coefficient, and ranking.}
@@ -187,22 +200,24 @@ each candidate; the resulting values and final ranking are reported in
   \centering
   \caption{Separation measures $S_i^{+}$ and $S_i^{-}$ for each candidate.}
   \label{tab:topsis-separation}
-  \begin{tabular}{@{}p{6.8cm}cc@{}}
+  \begin{tabular}{@{}lcc@{}}
     \toprule
-    Model & $S_i^{+}$ & $S_i^{-}$ \\
+    Candidate & $S_i^{+}$ & $S_i^{-}$ \\
     \midrule
-    Lenovo ThinkPad X1 Carbon Gen 13 Aura Edition & 0.10900 & 0.11667 \\
-    Lenovo ThinkPad X1 Carbon Gen 14 Aura Edition & 0.16670 & 0.10228 \\
-    Apple MacBook Air M4 & 0.09002 & 0.12784 \\
-    Apple MacBook Air M5 & 0.08458 & 0.12897 \\
-    Asus ExpertBook P5 & 0.09165 & 0.11763 \\
-    HP EliteBook Ultra G1i & 0.08591 & 0.12369 \\
-    Lenovo ThinkPad X9 15 Aura Edition (2025) & 0.09575 & 0.11311 \\
-    Dell 14 Premium (XPS 14 2026) & 0.08882 & 0.13579 \\
-    Lenovo ThinkPad T14 Gen 6 (AMD) & 0.08631 & 0.13799 \\
-    Lenovo ThinkPad T14 Gen 7 & 0.12647 & 0.08934 \\
-    Acer Aspire 5 & 0.12725 & 0.16245 \\
-    Lenovo ThinkPad X1 Carbon Gen 12 & 0.09579 & 0.11449 \\
+    Can1  & 0.10900 & 0.11667 \\
+    Can2  & 0.16670 & 0.10228 \\
+    Can3  & 0.09002 & 0.12784 \\
+    Can4  & 0.08458 & 0.12897 \\
+    Can5  & 0.09165 & 0.11763 \\
+    Can6  & 0.08591 & 0.12369 \\
+    Can7  & 0.09575 & 0.11311 \\
+    Can8  & 0.08882 & 0.13579 \\
+    Can9  & 0.08631 & 0.13799 \\
+    Can10 & 0.12647 & 0.08934 \\
+    Can11 & 0.12725 & 0.16245 \\
+    Can12 & 0.09579 & 0.11449 \\
     \bottomrule
   \end{tabular}
+  \floatnote{\emph{Note:} candidate identifiers as assigned in \Cref{tab:candidate-ids}.
+  \emph{Source:} authors' own computation.}
 \end{table}

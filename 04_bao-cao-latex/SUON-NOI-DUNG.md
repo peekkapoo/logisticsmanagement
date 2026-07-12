@@ -42,16 +42,16 @@ Abstract ~250 từ, khuôn **gap → method → result → implication** (mẫu 
 - **§4.5 TOPSIS ranking** ✅ (2026-07-12) — chạy `topsis.py --latex tables/topsis-ranking.tex` thật trên `03_phan-tich/du-lieu-sach/2026-07-12_topsis-decision-matrix_v1.0_final_user.csv`; hạng 1 Lenovo ThinkPad T14 Gen 6 (AMD) Ci=0.6152, hạng 2 Dell 14 Premium 0.6046, hạng 3 Apple MacBook Air M5 0.6039. Section cuối cùng của Ch4 (không còn §4.6 sau khi bỏ sensitivity analysis).
 
 ### Chapter 5 — Discussion
-- **§5.1 Interpretation of weights** 🟢 (nguồn có sẵn) — **TRỌNG TÂM/điểm bán**: lý thuyết quốc tế vs thực tiễn VN (pin 4-7h thay vì tối đa; trọng lượng do xe máy; loại GPU; tương thích phần mềm Windows). Nguồn: `...v2.0`.
-- **§5.2 Interpretation of ranking** 🟡 — tiêu chí nào quyết định top; khớp kỳ vọng khảo sát/phỏng vấn.
-- **§5.3 Practical/managerial implications** 🟢 — hàm ý cho người mua cá nhân / bộ phận thu mua / nhà bán lẻ / hãng SX (mục riêng kiểu Saputro 5.4).
-- **§5.4 Comparison with prior studies** 🟡 — đối chiếu trọng số/thứ hạng với Sönmez 2020, Gaur 2023, Lam 2023, Maghsoudi 2026.
+- **§5.1 Interpretation of weights** ✅ (2026-07-12) — **TRỌNG TÂM/điểm bán**: nghịch lý pin/trọng lượng (screening cao nhất nhưng AHP thấp nhất — salience vs marginal decision value), loại GPU → dồn ngân sách CPU, tương thích phần mềm Windows lock-in bị survey loại (expert vs end-user divergence, đọc là eligibility condition), caveat Display granularity (đã có từ trước). Nguồn: `03_phan-tich/tieu-chi/...v2.0` + Ch4 số liệu thật.
+- **§5.2 Interpretation of ranking** ✅ (2026-07-12) — T14 Gen 6 thắng nhờ cân bằng không nhờ trội đơn tiêu chí, khớp kỳ vọng phỏng vấn (mid-tier CPU đủ); 2 cực Acer rẻ nhất hạng 7 / X1 Carbon đắt nhất chót (over-specification, Rau & Fang 2018); top-3 cách <0.011 → đọc là short list, tie-breaker là eligibility conditions (macOS vs Windows lock-in).
+- **§5.3 Practical/managerial implications** ✅ (2026-07-12) — 4 nhóm kiểu Saputro: người mua cá nhân (cấu trúc trọng số làm checklist), thu mua doanh nghiệp (auditable, tái dùng — giữ weight vector, thay decision matrix), nhà bán lẻ (assortment mid-tier cân bằng), hãng SX (đầu tư biên vào giá + thế hệ CPU, không phải pin/mỏng vượt ngưỡng).
+- **§5.4 Comparison with prior studies** ✅ (2026-07-12) — đồng thuận: price dominance (Liao 2022, Šostar 2023, Elnatan); khác biệt: brand (Sönmez 2020 cao nhất vs 0.0430 ở đây — signaling/information asymmetry), battery (Lam 2023); Gaur 2023 Dell top ↔ Dell hạng 2 ở đây; Maghsoudi 2026 GPU chót + price top (corroborate), display hạng 3 là disagreement duy nhất → về caveat granularity §5.1.
 
 ### Chapter 6 — Conclusion
-- **§6.1 Summary of findings** 🟡 — trả lời RQ1 (14 tiêu chí/nhóm quan trọng nhất), RQ2 (trọng số nặng nhất), RQ3 (laptop khuyến nghị + `C_i`).
-- **§6.2 Contributions** 🟢 — nhắc lại twofold contribution.
-- **§6.3 Limitations** 🟢 — cỡ mẫu, dữ liệu 1 nhà bán lẻ, chấm tay tiêu chí định tính, thời điểm thu thập.
-- **§6.4 Future work** 🟢 — fuzzy AHP, thêm nhà bán lẻ, đối tượng người dùng khác.
+- **§6.1 Summary of findings** ✅ (2026-07-12) — RQ1 (7 tiêu chí sau screening, quá trình -GPU/+software là một phần finding), RQ2 (Price .3491 + CPU .2769 = 62.6%, CR=0.0483, battery reversal), RQ3 (T14 Gen 6 AMD Ci=0.6152, top-3 short list, balance > dominance).
+- **§6.2 Contributions** ✅ (2026-07-12) — twofold từ §1.3 + điểm methodological: 2-instrument design làm expert-vs-crowd divergence quan sát được.
+- **§6.3 Limitations** ✅ (2026-07-12) — 4 hạn chế: 1 chuyên gia AHP, mẫu 84 convenience, snapshot Amazon.com 1 ngày, proxy PassMark/market-share; thêm ghi chú không có sensitivity analysis → ranking đọc là short list.
+- **§6.4 Future work** ✅ (2026-07-12) — group AHP, sensitivity analysis (đã bỏ khỏi report → thành future work), fuzzy AHP-TOPSIS, re-run với catalogue VN + giá nội địa, tách Display sub-criteria (test caveat §5.1), segment khác.
 
 ### Appendices
 Thứ tự đã sắp lại 2026-07-12 theo đúng flow Stage 1→2→3 của Ch3 (trước đó A-D xếp không theo trình tự pipeline — interview protocol ở D dù thuộc bước sớm hơn AHP/khảo sát):

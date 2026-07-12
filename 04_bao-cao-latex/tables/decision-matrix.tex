@@ -1,10 +1,12 @@
-\begin{sidewaystable}[htbp]
+\begin{table}[htbp]
 \centering
-\caption{Candidate laptops and raw attribute values, as listed on Amazon.com (collected 2026-07-12).}
+\caption{Candidate laptops and their raw attribute values.}
 \label{tab:decision-matrix}
-\begin{tabular}{@{}p{4.5cm}rp{5.5cm}rrlrr@{}}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}p{3.7cm}rp{3.2cm}rrlrr@{}}
 \toprule
-Model & Price (\$) & CPU & RAM (GB) & SSD (GB) & Brand & Weight (kg) & Battery (Wh) \\
+Model & Price & CPU & RAM & SSD & Brand & Weight & Battery \\
 \midrule
 Lenovo ThinkPad X1 Carbon Gen 13 Aura Edition & 2289 & Intel Core Ultra 7 258V & 32 & 2048 & Lenovo & 1.09 & 57 \\
 Lenovo ThinkPad X1 Carbon Gen 14 Aura Edition & 3499 & Intel Core Ultra 7 365 vPro & 32 & 2048 & Lenovo & 1.00 & 58 \\
@@ -20,4 +22,7 @@ Acer Aspire 5 & 395 & Intel Core i3-1115G4 & 8 & 128 & Acer & 1.63 & 48 \\
 Lenovo ThinkPad X1 Carbon Gen 12 & 1685 & Intel Core Ultra 165U vPro & 32 & 1024 & Lenovo & 1.08 & 57 \\
 \bottomrule
 \end{tabular}
-\end{sidewaystable}
+\floatnote{\emph{Note:} price in USD, RAM and SSD in GB, weight in kg, battery capacity
+in Wh; attribute values as listed at the point of sale.
+\emph{Source:} Amazon.com product listings, collected 12 July 2026.}
+\end{table}
