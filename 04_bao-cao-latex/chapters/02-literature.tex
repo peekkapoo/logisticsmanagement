@@ -1,21 +1,217 @@
 \chapter{Literature Review}\label{ch:literature}
 
-\section{Overview of MCDM/MADM methods}\label{sec:mcdm-overview}
-% TODO Phase 6: tong quan MCDM/MADM, phan loai phuong phap.
-% Trich dan kinh dien co san trong references.bib: \textcite{Saaty1980}, \textcite{HwangYoon1981}
+\section{Laptop Selection as a Multi-Criteria Decision Problem}\label{sec:mcdm-problem}
+
+Choosing a laptop requires weighing attributes that cannot be reduced to a single scale.
+Processing performance, battery life, durability, portability, and price move in different
+directions and often trade off against one another: a lighter chassis tends to shrink battery
+capacity, and a lower price tends to constrain processing power. \textcite{sonmez_cakir_determination_2020}
+frame this directly, noting that new features are added to laptops every year and that the
+resulting variety of brands, models, and configurations forces buyers into a comparison problem
+that intuition alone cannot resolve consistently. \textcite{gaur_application_2023} reach a similar
+conclusion from the demand side: as shipments grew sharply during the pandemic, the number of
+criteria buyers had to reconcile, from brand and price to processor and screen size, grew with it.
+A decision problem of this kind, where several conflicting criteria must be evaluated jointly
+against a set of alternatives, falls within the scope of Multi-Criteria Decision-Making (MCDM),
+the methodological family this chapter now turns to.
+
+\section{An Overview of MCDM Methods}\label{sec:mcdm-overview}
+
+MCDM research has grown into an established branch of operations research. Based on a Scopus
+bibliometric analysis, \textcite{zyoud_bibliometric-based_2017} report 10{,}188 documents on AHP
+and 2{,}412 documents on TOPSIS through 2015, with China producing the largest national share of
+each (34.5\% and 35.1\%, respectively) and \emph{Expert Systems with Applications} standing out as
+the most productive outlet for both techniques. This scale of activity reflects a broad family of
+methods rather than a single dominant technique.
+
+\textcite{villalba_review_2024} organise this family into five groups according to the mechanism
+each uses to arrive at a preference. Direct scoring methods, such as the Simple Additive Weighting
+technique and its extension COPRAS, aggregate weighted performance scores directly. Distance-based
+methods, principally TOPSIS and VIKOR, rank alternatives by their geometric distance to an ideal
+solution. Pairwise comparison methods, led by AHP together with the Analytic Network Process and
+MACBETH, derive priorities from relative judgements between pairs of criteria or alternatives.
+Outranking methods, such as PROMETHEE and ELECTRE, build a preference relation from the degree to
+which one alternative outranks another rather than from a single aggregated score. Utility and
+value methods, including MAUT, MAVT, and MIVES, construct explicit utility functions over each
+criterion. This taxonomy is useful because it shows that AHP and TOPSIS belong to different
+groups, pairwise comparison and distance-based respectively, so that combining them addresses two
+distinct parts of the decision problem, weighting and ranking, rather than duplicating the same
+mechanism twice.
+
+The prevalence of these two techniques is confirmed by counts of published applications.
+\textcite{basilio_systematic_2022}, reviewing 23{,}494 documents published between 1977 and 2022,
+record 6{,}835 applications of AHP and 4{,}907 of TOPSIS, ahead of VIKOR (1{,}475), PROMETHEE
+(1{,}382), ANP (1{,}262), ELECTRE (1{,}005), and DEMATEL (888). Within their own domain,
+\textcite{villalba_review_2024} report a comparable pattern within their own domain: the
+distance-based and pairwise comparison groups identified above are the two most frequently
+applied, AHP alone accounts for 35\% of the reviewed articles and its combination with TOPSIS for a
+further 31\%, ahead of the next most common technique, Simple Additive Weighting, at 11\%, and AHP
+overall, whether used alone or hybridised with another technique, appears in 71\% of the sample.
+Hybridisation with another MCDM method occurs in 55 of the reviewed articles, while only 5 propose
+a modification to an existing method rather than applying it as originally formulated, indicating
+that researchers in this domain favour combining established techniques over developing new ones.
+\textcite{tighnavard_balasbaneh_systematic_2025} likewise observe that combining AHP and TOPSIS is
+used more often than other method pairings, although they caution that no single combination has
+emerged as a settled consensus across application domains. Taken together, these figures indicate
+that AHP and TOPSIS are not only individually common but are also the pairing most frequently
+chosen when a study needs both criteria weights and an alternative ranking, which motivates a
+closer look at each method in turn.
 
 \section{The Analytic Hierarchy Process}\label{sec:ahp-theory}
-% TODO Phase 6: ly thuyet AHP - thang Saaty 1-9, eigenvector,
-% consistency ratio; cac ung dung tieu bieu.
 
-\section{TOPSIS}\label{sec:topsis-theory}
-% TODO Phase 6: ly thuyet TOPSIS - chuan hoa vector, giai phap ly tuong
-% duong/am, he so gan gui Ci; cac ung dung tieu bieu.
+The Analytic Hierarchy Process was introduced by \textcite{saaty_analytic_1987} as a method of
+measurement built on ratio scales derived from pairwise comparison. According to \textcite{zyoud_bibliometric-based_2017},
+AHP rests on three principles: decomposition, which structures a decision into a hierarchy of a
+goal, criteria, and alternatives; comparative judgement, which elicits the relative importance of
+elements at the same hierarchical level through pairwise comparison; and synthesis of priorities,
+which aggregates these judgements into an overall priority vector. Comparisons are expressed on a
+nine-point ratio scale (\Cref{tab:saaty}), which allows both quantitative and qualitative criteria
+to be evaluated within the same framework, a property that makes AHP well suited to decisions such
+as laptop selection in which some attributes, for instance processor performance, are naturally
+numeric while others, such as brand perception, are not.
 
-\section{Prior studies on laptop selection criteria}\label{sec:prior-studies}
-% TODO Phase 6: tong hop cac nghien cuu truoc ve tieu chi chon laptop.
-% Nguon: 01_tai-lieu-tham-khao\tong-hop-tieu-chi.md (Bang 1 + Bang 2)
+Because the judgements underlying a pairwise comparison matrix are elicited from a human
+respondent rather than measured directly, AHP incorporates an explicit check on their internal
+coherence. The consistency ratio, obtained from the principal eigenvalue of the comparison matrix
+as detailed in \Cref{sec:stage2} (\Cref{eq:cr}) and formalised by \textcite{Saaty2008DECISIONMW},
+flags matrices in which the respondent's judgements
+contradict one another, for example by rating criterion A more important than B, B more important
+than C, yet C more important than A. This consistency check is one of the reasons AHP remains
+attractive for eliciting subjective expert weights: unlike a simple ranking or scoring exercise, it
+provides a quantitative signal for when a judgement set should be revisited. The method is not
+without limitations, however. \textcite{zyoud_bibliometric-based_2017} note that AHP is susceptible
+to rank reversal, whereby the relative ranking of two existing alternatives can change when a new,
+unrelated alternative is added to the comparison, and that the pairwise comparison procedure
+assumes criteria are independent of one another, an assumption that does not always hold in
+practice.
 
-\section{Research gap and justification of the hybrid AHP--TOPSIS approach}\label{sec:gap}
-% TODO Phase 6: khoang trong nghien cuu (boi canh VN, phan khuc gia cu the,
-% doi tuong office worker) + vi sao ket hop AHP (trong so) voi TOPSIS (xep hang).
+Where expert judgements are too imprecise to be expressed as single crisp numbers, several studies
+extend AHP into a fuzzy environment. \textcite{liu_review_2020} organise this literature around
+four technical choices that a fuzzy AHP model must make: how the relative importance of a
+comparison is represented, typically as a fuzzy number rather than a crisp value; how judgements
+from multiple experts or multiple criteria are aggregated; how the resulting fuzzy priorities are
+defuzzified back into crisp weights for practical use; and how consistency is measured once
+judgements are no longer single numbers. This layer of fuzzification is warranted when experts
+cannot commit to a precise value, for instance under significant uncertainty about future
+conditions. In the present study, criteria weights are elicited from an expert with direct,
+first-hand purchasing experience, whose pairwise judgements can be expressed as ordinary Saaty-scale
+values without this additional imprecision; the method therefore proceeds with the crisp form of
+AHP described in \Cref{sec:stage2}, while the consistency safeguard that AHP provides remains in
+place.
+
+\section{The TOPSIS Method}\label{sec:topsis-theory}
+
+The Technique for Order of Preference by Similarity to Ideal Solution was proposed by
+\textcite{Hwang1981MultipleAD} on the principle that the best alternative should lie
+simultaneously closest to a positive ideal solution and farthest from a negative ideal solution,
+where the positive ideal solution combines the best attainable value on every criterion and the
+negative ideal solution combines the worst. \textcite{behzadian_state--art_2012} note that this
+requires attribute values that are numeric, monotonically increasing or decreasing in desirability,
+and measured on commensurable scales, conditions that a laptop dataset of prices, benchmark scores,
+and physical measurements satisfies directly.
+
+Reviewing 266 applications of TOPSIS published across 103 journals since 2000,
+\textcite{behzadian_state--art_2012} find the method concentrated in supply chain management and
+logistics (27.5\% of the sample) and in design, engineering, and manufacturing systems (23\%),
+together accounting for more than half of the applications surveyed. The same review attributes
+this spread to several practical advantages: TOPSIS makes full use of the available attribute
+information rather than discarding it at an intermediate step, produces a cardinal ranking of every
+alternative rather than a partial order, does not require the criteria to be preferentially
+independent, and remains conceptually and computationally simple regardless of how many criteria
+or alternatives are involved. \textcite{zyoud_bibliometric-based_2017} similarly place TOPSIS as
+the second most frequently used MCDM technique after AHP, consistent with the frequency counts
+reported in \Cref{sec:mcdm-overview}.
+
+As with AHP, a fuzzy extension exists for settings in which attribute values themselves are
+imprecise rather than directly measurable. \textcite{chen_extensions_2000} extend TOPSIS to a fuzzy
+environment by representing ratings and weights as triangular fuzzy numbers, computing distances to
+a fuzzy positive and negative ideal solution through the vertex method, and deriving a closeness
+coefficient from these distances. This extension is most useful when performance data are
+themselves elicited as linguistic judgements. The laptop dataset used in this study, in contrast,
+is built from directly observable specifications and market prices, so the crisp TOPSIS procedure
+described in \Cref{sec:stage3} is applied without a fuzzy layer.
+
+\section{Prior Studies on Laptop and Electronics Selection}\label{sec:prior-studies}
+
+Applying MCDM to laptop and related electronics choices is an established but fragmented line of
+research, summarised in \Cref{tab:prior-studies}.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Prior studies on laptop and electronics selection using MCDM.}
+  \label{tab:prior-studies}
+  \begin{tabular}{@{}p{3.0cm}p{2.4cm}p{4.6cm}p{2.6cm}@{}}
+    \toprule
+    \textbf{Source} & \textbf{Product / Area} & \textbf{Criteria (illustrative)} & \textbf{Method} \\
+    \midrule
+    Sönmez Çakır \& Pekkaya (2020) & Laptop & Price, speed, storage, monitor, peripherals, brand & DEMATEL + Fuzzy AHP \\
+    Gaur (2023) & Laptop (COVID-19) & Brand, price, storage, RAM, processor, weight, screen & AHP + BWM + TOPSIS \\
+    Elnatan \& Tannady & Laptop (students) & Brand, processor, VGA, RAM, storage, price & AHP \\
+    Lam et al. (2023) & Mobile phone & Technical spec, physical properties, user-related features & AHP + TOPSIS \\
+    Maghsoudi et al. (2026) & Notebook & Price, design, display, CPU, RAM, battery & Sentiment mining + Fuzzy + TOPSIS \\
+    Rau \& Fang (2018) & Notebook (purchase timing) & Functional value, brand value, cost, eco-efficiency & TOPSIS \\
+    Liao \& Chuang (2022) & Eco-friendly laptop & Price, battery, shell material, CPU, monitor & Conjoint analysis \\
+    Kang et al. (2022) & Laptop (online reviews) & Appearance, configuration, logistics, after-sales & Empirical review mining \\
+    Guan \& Yuen (2022) & Laptop recommendation & Product attributes vs.\ user preference & Pairwise rating + clustering \\
+    Pramanik et al. (2021) & Mobile device selection & Computing resource parameters & Multi-method MCDM comparison \\
+    Šostar \& Ristanović (2023) & Consumer behaviour & Cultural, social, personal, psychological factors & AHP \\
+    Jiménez-Parra et al. (2014) & Remanufactured laptop & Attitude, subjective norm, motivation & Consumer-behaviour model \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Three studies apply MCDM directly to laptop selection. \textcite{sonmez_cakir_determination_2020}
+combine DEMATEL, used to map how criteria influence one another, with fuzzy AHP, used to derive
+their priorities, and find that brand image carries the highest weight among six main criteria,
+together with price and peripheral properties accounting for roughly two-thirds of the total
+priority. \textcite{gaur_application_2023} weight nine criteria with a joint AHP and Best-Worst
+Method procedure and rank nine laptop brands with TOPSIS, identifying Dell as the top-ranked
+alternative during the pandemic period they study. Working with a smaller, price-sensitive segment,
+\textcite{elnatan_alternatif_nodate} apply AHP to laptop choice among university students in North
+Jakarta and find that price, processor, and RAM together account for the largest share of the
+priority weight, ahead of graphics capability, storage, and brand.
+
+Two further studies apply MCDM to closely related device-selection problems. \textcite{guan_cognitive_2022}
+propose a cognitive comparison rating combined with hierarchical clustering for personalised laptop
+recommendation, and benchmark it explicitly against AHP-style pairwise rating.
+\textcite{pramanik_comparative_2021} compare several MCDM techniques, including TOPSIS, for
+selecting computing resources in a mobile crowd-computing setting, with attention to how stable the
+resulting rankings remain across methods.
+
+A separate body of consumer-behaviour research does not apply MCDM but supplies evidence on which
+criteria matter and how they are weighted in practice, complementing the criteria identified
+through the expert interviews in \Cref{subsec:expert-interviews}. Using conjoint analysis,
+\textcite{liao_determinants_2022} find that price is the single most influential attribute in
+eco-friendly laptop choice, ahead of battery life, shell material, and processor. Mining online
+reviews on a large Chinese retail platform, \textcite{kang_study_2022} show that purchase decisions
+are also shaped by service-related factors, appearance design, logistics service, and after-sales
+support, that fall outside the hardware specifications most MCDM studies emphasise.
+\textcite{rau_optimal_2018} apply TOPSIS to identify the optimal time to purchase a notebook once
+functional value, brand value, cost, and eco-efficiency are weighed jointly, while
+\textcite{sostar_assessment_2023} use AHP on a broader consumer-behaviour sample and find personal
+budget the most influential factor among cultural, social, personal, and psychological drivers of
+purchase, a result consistent with the central role assigned to price throughout this literature.
+
+These studies collectively establish that laptop and electronics selection is a recurring MCDM
+application and that price, processing capability, and, increasingly, service-related criteria
+dominate the resulting priority structures. None of them, however, combines a full AHP--TOPSIS
+pipeline with laptop-specific market data collected in Vietnam, and none tests whether the priority
+structures they report, largely derived from markets outside Southeast Asia, hold under local
+working conditions.
+
+\section{Research Gap and Positioning}\label{sec:gap}
+
+Two gaps follow from this review, giving fuller evidential grounding to the limitations
+anticipated in \Cref{sec:gap-contrib}. First, among the studies that address laptop selection directly,
+those relying on AHP alone or on fuzzy variants stop at criteria weighting without ranking concrete
+alternatives \parencite{sonmez_cakir_determination_2020}, while the integrated AHP--TOPSIS pipeline
+has been validated mainly on other product categories, such as mobile phones
+\parencite{weng_siew_lam_evaluation_2023}; its application to real laptop market data remains
+comparatively rare. Second, the priority structures reported in this literature, for instance the
+dominance of brand image \parencite{sonmez_cakir_determination_2020} or of price
+\parencite{liao_determinants_2022}, are derived from markets and user populations outside Vietnam,
+leaving open whether they transfer to the working conditions of Vietnamese office employees. This
+positions the present study within the pairing that \Cref{sec:mcdm-overview} identifies as the most
+frequently applied, AHP for criteria weighting and TOPSIS for ranking
+\parencite{tighnavard_balasbaneh_systematic_2025}, while directing it at the specific combination of
+product, market, and user population that the reviewed literature has not yet covered.

@@ -16,6 +16,8 @@
 \usepackage{graphicx}
 \graphicspath{{figures/}}
 \usepackage{amsmath,amssymb,mathtools}
+\usepackage{tikz}            % so do framework Ch.3
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric}
 \usepackage{microtype}
 \usepackage{setspace}
 \onehalfspacing
@@ -45,9 +47,10 @@
 \printbibliography[heading=bibintoc]
 
 \appendix
-% TODO Phase 6: them cac phu luc
-% \input{appendices/A-survey-questionnaire}   % bang hoi khao sat Likert
-% \input{appendices/B-ahp-matrices}           % ma tran so sanh cap day du
-% \input{appendices/C-laptop-data}            % du lieu laptop + benchmark
+\input{appendices/A-criteria-theory} % ly luan hoc thuat cho tung tieu chi (theo flow Stage 1)
+\input{appendices/B-interview}       % kich ban + tom tat phong van
+\input{appendices/C-survey}          % bang hoi khao sat Likert
+\input{appendices/D-ahp-matrices}    % ma tran so sanh cap + tinh tung buoc
+\input{appendices/E-laptop-data}     % du lieu laptop + benchmark + TOPSIS tinh tung buoc
 
 \end{document}

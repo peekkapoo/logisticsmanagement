@@ -1,20 +1,154 @@
 \chapter{Results}\label{ch:results}
 
-\section{Final criteria set}\label{sec:final-criteria}
-% TODO Phase 6: bang bo tieu chi cuoi (ma C1..Cn, ten, nhom, huong toi uu
-% benefit/cost). Bang xuat tu skill mcdm-toolkit, luu tables/final-criteria.tex:
-% \input{tables/final-criteria}
+% ============================================================
+% Nguyen tac: Results PHAN CHIEU 1-1 voi Methodology (mau Maghsoudi 2026, muc 4.x <-> 3.x).
+% 4.1 (criteria dev outcomes) + 4.2 (screening) + 4.3 (AHP weights) DA VIET tu so lieu
+% script chinh thuc:
+%   03_phan-tich/tieu-chi/2026-07-11_likert-ket-qua_v1.0_final_user.txt
+%   03_phan-tich/ahp/2026-07-11_ahp-ket-qua_v1.0_final_user.txt
+% 4.4-4.6 cho Phase 5 (TOPSIS).
+% 2026-07-12: tach §4.1 khoi Ch3 theo yeu cau user — Methodology (Ch3) chi mo ta
+% PHUONG PHAP/quy trinh, khong nen ket qua ap dung phuong phap (IMRaD chuan).
+% ============================================================
 
-\section{Criteria weights and consistency check}\label{sec:weights}
-% TODO Phase 6: bang trong so AHP + lambda_max, CI, CR tung ma tran.
-% Nguon: 03_phan-tich\ahp\ -> tables/ahp-weights.tex
+\section{Criteria Development Outcomes}\label{sec:criteria-outcome}
 
-\section{Decision scenario and alternatives}\label{sec:scenario}
-% TODO Phase 6: mo ta tinh huong (office worker, nhu cau cong viec),
-% danh sach laptop ung vien + nguon du lieu (CellphoneS, PassMark, ngay thu thap).
+\subsection{The Candidate Criteria Set}\label{subsec:criteria-set}
 
-\section{TOPSIS ranking results}\label{sec:ranking}
-% TODO Phase 6: bang xep hang Ci day du + chart. Nguon: 03_phan-tich\topsis\
+Applying the literature-synthesis procedure of \Cref{subsec:lit-synthesis} to the studies
+reviewed in \Cref{sec:prior-studies} produced fourteen candidate criteria. These were
+organised into six groups reflecting the aspects of the purchase decision they describe:
+economic cost, core hardware capability, design and interaction experience, portability
+and durability, ecosystem utility, and trust and after-sales value. \Cref{tab:criteria}
+lists the resulting set together with each criterion's group and its direction of
+preference. Most criteria are benefit criteria, for which a larger value is preferred;
+price and physical size or weight are cost criteria, for which a smaller value is
+preferred. The distinction matters at two later points: it determines the direction of the
+ideal solutions in TOPSIS (\Cref{sec:stage3}), and it guards against the error of treating
+a heavier or more expensive machine as better simply because its raw attribute value is
+larger.
 
-\section{Sensitivity analysis}\label{sec:sensitivity}
-% TODO Phase 6: ket qua thay doi trong so theo kich ban, thu hang co doi khong.
+\begin{table}[htbp]
+  \centering
+  \caption{The fourteen candidate evaluation criteria in six groups.}
+  \label{tab:criteria}
+  \begin{tabular}{@{}clcp{4.5cm}@{}}
+    \toprule
+    \textbf{ID} & \textbf{Criterion} & \textbf{Type} & \textbf{Group} \\
+    \midrule
+    C1  & Price                   & Cost    & Economic \\
+    C2  & CPU                     & Benefit & Core hardware \\
+    C3  & RAM                     & Benefit & Core hardware \\
+    C4  & Storage (SSD)           & Benefit & Core hardware \\
+    C5  & Display                 & Benefit & Design \& interaction \\
+    C6  & Keyboard                & Benefit & Design \& interaction \\
+    C7  & Design \& shell material & Benefit & Design \& interaction \\
+    C8  & Size / weight           & Cost    & Portability \& durability \\
+    C9  & Durability              & Benefit & Portability \& durability \\
+    C10 & Battery life            & Benefit & Portability \& durability \\
+    C11 & Connectivity ports      & Benefit & Ecosystem utility \\
+    C12 & Software compatibility  & Benefit & Ecosystem utility \\
+    C13 & Brand                   & Benefit & Trust \& after-sales \\
+    C14 & After-sales / warranty  & Benefit & Trust \& after-sales \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Interview-Driven Refinement}\label{subsec:interview-outcomes}
+
+Following the revision rule described in \Cref{subsec:expert-interviews}, the interviews
+changed the candidate set in two ways. First, the dedicated graphics card was removed.
+Four of the five experts converged independently on the argument that a discrete GPU is a
+cost without a corresponding benefit for office work: it raises the purchase price,
+weight, and thermal load while shortening battery life, and the budget it consumes is
+better redirected towards a newer-generation processor, more memory, or faster storage.
+This judgement is consistent with the finding of \textcite{maghsoudi_hybrid_2026} that the
+graphics card ranked last among ten notebook attributes in their expert-weighted model.
+Second, software compatibility was added. The experts who work inside Vietnamese offices
+(CG-01, CG-03) described a lock-in effect that the international literature rarely makes
+explicit: accounting packages, internal ERP systems, and the government's customs
+declaration software are written for Windows, so a device that cannot run them is excluded
+from consideration regardless of its other merits. The interviews also sharpened the
+definitions of two retained criteria, restricting the storage criterion to solid-state
+drives and extending the design criterion to cover shell material, and recalibrated the
+expectation for battery life: because mains power is readily available in offices, a
+runtime of four to seven hours was considered sufficient, a markedly lower bar than the
+top-priority status that battery life receives in \textcite{weng_siew_lam_evaluation_2023}.
+The revised set therefore still contains fourteen criteria, but with GPU replaced by
+software compatibility and with definitions anchored to local working conditions; this is
+the candidate set reported in \Cref{tab:criteria} above and carried into the screening
+survey of \Cref{subsec:screening}.
+
+\section{Criteria Screening Results}\label{sec:screening}
+
+The screening survey described in \Cref{subsec:screening} collected 84 responses, all of
+which were complete: no respondent left more than 20\% of the items unanswered, and no
+straight-lined response was detected, so every questionnaire entered the analysis.
+\Cref{tab:survey-results} reports the descriptive statistics for the fourteen candidate
+criteria together with the retention decision under the pre-committed threshold of a mean
+of at least 3.0.
+
+\input{tables/survey-results}
+
+Seven criteria pass the threshold: battery life records the highest mean (4.02), followed
+by memory and physical size or weight (both 3.96), storage (3.89), processor (3.86), and
+price and brand (both 3.79). The seven removed criteria all fall clearly below the
+midpoint, from keyboard experience (2.88) down to durability (2.36). The gap between the
+lowest retained mean (3.79) and the highest removed mean (2.88) spans almost a full scale
+point, so the composition of the retained set is not sensitive to small movements of the
+threshold around the midpoint. These seven criteria constitute the answer to RQ1 and
+define the dimension of the pairwise comparison in Stage~2. It is worth recording, ahead
+of the fuller treatment in \Cref{ch:discussion}, that several criteria emphasised in the
+expert interviews, notably software compatibility, durability, and after-sales support,
+were screened out by the wider respondent pool, a divergence between professional and
+end-user perspectives that the two-step design of Stage~1 makes visible rather than
+concealing.
+
+\section{Criteria Weights and Consistency Check}\label{sec:weights}
+
+The retained criteria were compared pairwise by the representative expert as described in
+\Cref{sec:stage2}, producing a $7 \times 7$ reciprocal matrix from 21 elicited judgements.
+Before the weights were interpreted, the matrix was submitted to the consistency check of
+\Cref{eq:cr}: the principal eigenvalue is $\lambda_{\max} = 7.3823$, giving a consistency
+index of $CI = 0.0637$ and, with the random index $RI = 1.32$ for $n = 7$, a consistency
+ratio of $CR = 0.0483$. As this value lies below the acceptance threshold of 0.10
+\parencite{Saaty2008DECISIONMW}, the judgement set is internally coherent and the derived
+weights are usable without re-elicitation. \Cref{tab:ahp-weights} presents the resulting
+priority vector.
+
+\input{tables/ahp-weights}
+
+The weight structure is strongly concentrated at the top. Price carries the largest weight
+(0.3491) and the processor the second largest (0.2769); together these two criteria
+account for approximately 62.6\% of the total priority, so the model characterises the
+office-laptop decision primarily as a trade-off between budget and computing capability.
+A middle tier follows, comprising storage (0.1592) and memory (0.1201), while brand
+(0.0430), size or weight (0.0258), and battery life (0.0258) form a low-priority tier that
+collectively holds less than 10\% of the weight. The position of battery life is notable:
+although it recorded the highest mean in the screening survey, it receives the smallest
+AHP weight, and the same reversal separates this result from
+\textcite{weng_siew_lam_evaluation_2023}, who report battery life as the most heavily
+weighted criterion in their mobile-phone model. This pattern is consistent with the
+recalibration that emerged from the expert interviews, in which battery life is a
+requirement that most office laptops already satisfy rather than a differentiator; its
+interpretation is developed in \Cref{ch:discussion}. As a robustness check, the weights
+were recomputed by the geometric-mean method described in \Cref{sec:stage2}; the resulting
+vector preserves the same ordering of all seven criteria, indicating that the priority
+structure does not depend on the derivation method. These weights answer RQ2 and enter
+Stage~3 as the weighting vector for TOPSIS.
+
+\section{Decision Scenario and Alternatives}\label{sec:scenario}
+% TODO Phase 5: mo ta tinh huong office worker + danh sach laptop ung vien va nguon
+% du lieu (CellphoneS, benchmark PassMark, ngay thu thap) + ma tran quyet dinh.
+% \input{tables/decision-matrix}
+\textit{[Phase 5 output — see \texttt{SUON-NOI-DUNG.md} \S4.2.]}
+
+\section{TOPSIS Ranking Results}\label{sec:ranking}
+% TODO Phase 5: bang xep hang closeness coefficient C_i + S+ , S- + Rank (kieu Lam Table 8).
+% \input{tables/topsis-ranking}
+\textit{[Phase 5 output — see \texttt{SUON-NOI-DUNG.md} \S4.3.]}
+
+\section{Sensitivity Analysis}\label{sec:sensitivity}
+% TODO Phase 5: ket qua thay doi trong so theo kich ban, thu hang co on dinh khong
+% (kieu Calik 2021 Table 11). Kem hinh bien thien rank.
+\textit{[Phase 5 output — see \texttt{SUON-NOI-DUNG.md} \S4.4.]}

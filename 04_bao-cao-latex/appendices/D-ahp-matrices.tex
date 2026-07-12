@@ -1,0 +1,145 @@
+\chapter{AHP Pairwise Comparison Matrix and Step-by-Step Calculation}\label{app:ahp-matrices}
+% Nguon: 03_phan-tich/ahp/2026-07-11_ahp-matran-final_v1.0_final_user.csv
+% Mot ma tran duy nhat (1 chuyen gia dai dien) — khong co tong hop nhieu chuyen gia.
+% Tat ca cac buoc duoi day tai lap chinh xac thuat toan power-iteration cua
+% .claude/skills/mcdm-toolkit/scripts/ahp.py (eigen_weights + consistency), khong tinh tay.
+
+\Cref{tab:pcm-full} reproduces the full $7 \times 7$ pairwise comparison matrix elicited
+from the representative expert as described in \Cref{sec:stage2}. Entries above the
+diagonal are the 21 elicited judgements on the Saaty scale; entries below the diagonal
+follow from reciprocity.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Pairwise comparison matrix of the seven retained criteria.}
+  \label{tab:pcm-full}
+  \begin{tabular}{@{}lccccccc@{}}
+    \toprule
+     & \textbf{Price} & \textbf{CPU} & \textbf{RAM} & \textbf{SSD} & \textbf{Brand} & \textbf{Size/weight} & \textbf{Battery} \\
+    \midrule
+    \textbf{Price}       & 1    & 1    & 5    & 4    & 7    & 8    & 8 \\
+    \textbf{CPU}         & 1    & 1    & 3    & 2    & 7    & 9    & 8 \\
+    \textbf{RAM}         & 1/5  & 1/3  & 1    & 1/2  & 5    & 6    & 6 \\
+    \textbf{SSD}         & 1/4  & 1/2  & 2    & 1    & 5    & 7    & 6 \\
+    \textbf{Brand}       & 1/7  & 1/7  & 1/5  & 1/5  & 1    & 2    & 3 \\
+    \textbf{Size/weight} & 1/8  & 1/9  & 1/6  & 1/7  & 1/2  & 1    & 1 \\
+    \textbf{Battery}     & 1/8  & 1/8  & 1/6  & 1/6  & 1/3  & 1    & 1 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Step 1 --- Column Sums}\label{app:ahp-step1}
+
+Each column of the matrix $A$ in \Cref{tab:pcm-full} is summed to obtain the normalising
+constant used in the following step. \Cref{tab:ahp-colsum} reports the seven column
+totals.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Column sums of the pairwise comparison matrix.}
+  \label{tab:ahp-colsum}
+  \begin{tabular}{@{}lccccccc@{}}
+    \toprule
+     & \textbf{Price} & \textbf{CPU} & \textbf{RAM} & \textbf{SSD} & \textbf{Brand} & \textbf{Size/weight} & \textbf{Battery} \\
+    \midrule
+    Column sum & 2.8429 & 3.2123 & 11.5333 & 8.0095 & 25.8333 & 34.0000 & 33.0000 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Step 2 --- Weight Vector by Power Iteration (Eigenvector Method)}\label{app:ahp-step2}
+
+Following the justification given in \Cref{sec:stage2} for using the principal eigenvector
+rather than the normalised column-average approximation
+\parencite{saaty_decisionmaking_2003,ishizaka_how_2006}, the weight vector $\mathbf{w}$ is
+obtained by power iteration: starting from the uniform vector
+$\mathbf{w}^{(0)} = (1/7, \dots, 1/7)$, each iteration computes
+$\mathbf{w}^{(k+1)} = A\mathbf{w}^{(k)} / \left\lVert A\mathbf{w}^{(k)} \right\rVert_1$
+until the vector stabilises. \Cref{tab:ahp-iterations} traces the first six iterations;
+the vector has already converged to four decimal places by the sixth iteration, which is
+taken as the final weight vector.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Convergence of the power-iteration weight vector across six iterations.}
+  \label{tab:ahp-iterations}
+  \begin{tabular}{@{}lccccccc@{}}
+    \toprule
+    \textbf{Iteration} & \textbf{Price} & \textbf{CPU} & \textbf{RAM} & \textbf{SSD} & \textbf{Brand} & \textbf{Size/weight} & \textbf{Battery} \\
+    \midrule
+    $k=1$ & 0.2871 & 0.2618 & 0.1607 & 0.1837 & 0.0565 & 0.0257 & 0.0246 \\
+    $k=2$ & 0.3550 & 0.2734 & 0.1208 & 0.1621 & 0.0405 & 0.0242 & 0.0240 \\
+    $k=3$ & 0.3522 & 0.2774 & 0.1182 & 0.1581 & 0.0424 & 0.0258 & 0.0259 \\
+    $k=4$ & 0.3488 & 0.2771 & 0.1201 & 0.1591 & 0.0431 & 0.0259 & 0.0259 \\
+    $k=5$ & 0.3490 & 0.2769 & 0.1202 & 0.1593 & 0.0430 & 0.0258 & 0.0258 \\
+    $k=6$ & 0.3491 & 0.2769 & 0.1201 & 0.1593 & 0.0430 & 0.0258 & 0.0258 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+The converged weight vector is therefore
+$\mathbf{w} = (0.3491,\ 0.2769,\ 0.1201,\ 0.1592,\ 0.0430,\ 0.0258,\ 0.0258)$, matching the
+values reported in \Cref{tab:ahp-weights} of \Cref{sec:weights}.
+
+\section{Step 3 --- Consistency Check}\label{app:ahp-step3}
+
+The converged weight vector is substituted back into $A\mathbf{w}$, and each component is
+divided by the corresponding weight to obtain seven estimates of the principal eigenvalue,
+as shown in \Cref{tab:ahp-consistency}. Because $A$ satisfies exact reciprocity and the
+power iteration has converged, all seven ratios agree, giving
+$\lambda_{\max} = 7.3823$ directly rather than as an average over inconsistent estimates.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Consistency check: $A\mathbf{w}$ and the ratio $(A\mathbf{w})_i / w_i$.}
+  \label{tab:ahp-consistency}
+  \begin{tabular}{@{}lccccccc@{}}
+    \toprule
+     & \textbf{Price} & \textbf{CPU} & \textbf{RAM} & \textbf{SSD} & \textbf{Brand} & \textbf{Size/weight} & \textbf{Battery} \\
+    \midrule
+    $(A\mathbf{w})_i$        & 2.5773 & 2.0444 & 0.8865 & 1.1756 & 0.3174 & 0.1903 & 0.1908 \\
+    $(A\mathbf{w})_i / w_i$  & 7.3823 & 7.3823 & 7.3823 & 7.3823 & 7.3823 & 7.3823 & 7.3823 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+With $\lambda_{\max} = 7.3823$ and $n = 7$, the consistency index from \Cref{eq:cr} is
+
+\[
+  CI = \frac{\lambda_{\max} - n}{n - 1} = \frac{7.3823 - 7}{6} = 0.0637 .
+\]
+
+Using the random index $RI = 1.32$ tabulated in \Cref{tab:ri} for $n = 7$, the consistency
+ratio is
+
+\[
+  CR = \frac{CI}{RI} = \frac{0.0637}{1.32} = 0.0483 ,
+\]
+
+which is below the acceptance threshold of $0.10$ \parencite{Saaty2008DECISIONMW}, so the
+judgement matrix is accepted without re-elicitation, as reported in \Cref{sec:weights}.
+
+\section{Robustness Check --- Geometric-Mean Weights}\label{app:ahp-step4}
+
+As a cross-check against the derivation method rather than against the judgement data
+itself, the same matrix $A$ is also solved by the geometric-mean-of-rows method: for each
+row $i$, $\tilde{w}_i = \left(\prod_{j=1}^{n} a_{ij}\right)^{1/n}$, and the seven values are
+then normalised to sum to one. \Cref{tab:ahp-geomean} compares the two methods.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Eigenvector weights versus geometric-mean weights.}
+  \label{tab:ahp-geomean}
+  \begin{tabular}{@{}lccccccc@{}}
+    \toprule
+     & \textbf{Price} & \textbf{CPU} & \textbf{RAM} & \textbf{SSD} & \textbf{Brand} & \textbf{Size/weight} & \textbf{Battery} \\
+    \midrule
+    Eigenvector (adopted)  & 0.3491 & 0.2769 & 0.1201 & 0.1592 & 0.0430 & 0.0258 & 0.0258 \\
+    Geometric mean         & 0.3366 & 0.2882 & 0.1185 & 0.1615 & 0.0429 & 0.0264 & 0.0259 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+The two methods rank all seven criteria identically and differ from one another by at most
+0.013 in absolute weight, confirming that the priority structure reported in
+\Cref{sec:weights} does not depend on which of the two derivation methods is used.

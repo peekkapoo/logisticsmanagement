@@ -1,0 +1,165 @@
+\chapter{Expert Interview Protocol and Summary}\label{app:interview}
+% Nguon: 03_phan-tich/phong-van/2026-07-09_interview-protocol_v3.0_draft_AI_EN.md (protocol)
+%        03_phan-tich/phong-van/2026-07-10_phan-tich-phong-van_v1.0_draft_AI.md (CG-01, CG-02)
+%        03_phan-tich/phong-van/expert_result_03.md, expert_result_04.md, expert_result_05.md
+
+\section{Interview Protocol}\label{app:interview-protocol}
+
+The semi-structured interview protocol used with all five experts was constructed
+following the Interview Protocol Refinement (IPR) framework
+\parencite{castillo-montoya_preparing_2016}, as summarised in
+\Cref{subsec:expert-interviews}. The protocol comprised thirteen core questions organised
+into the five parts listed in \Cref{tab:protocol-structure}, preceded by an informed-consent
+script explaining the academic purpose of the study, the anonymisation of personal
+information, and the participant's right to decline any question or withdraw at any time.
+Each session was expected to last twenty to thirty minutes and was recorded through written
+notes only, without audio recording.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Structure of the five-part interview protocol.}
+  \label{tab:protocol-structure}
+  \begin{tabular}{@{}p{2.6cm}p{5.2cm}p{6cm}@{}}
+    \toprule
+    \textbf{Part} & \textbf{Content} & \textbf{Purpose} \\
+    \midrule
+    0 & Greeting and informed consent & Establish ethical basis and obtain verbal consent \\
+    1 --- Warm-up (Q1--Q3) & Recent, concrete laptop-selection episode & Ground the respondent's perspective in a specific case rather than an abstract opinion \\
+    2 --- Stimulus-based critique (Q4--Q7) & A literature finding for each criterion group is read aloud immediately before the matching question & Anchor agreement or disagreement to a stated academic claim \\
+    3 --- Vietnamese context (Q8--Q9) & Open questions on locally specific factors & Surface criteria the literature synthesis could not have anticipated \\
+    4 --- Trade-off scenario (Q10--Q11) & Hypothetical comparisons between conflicting criteria & Generate qualitative seed data for the AHP pairwise comparisons of \Cref{sec:stage2} \\
+    5 --- Closing (Q12--Q13) & Member-checking and open addition & Confirm the interviewer's understanding and capture unprompted remarks \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Part 2 read a short stimulus card to the expert before each question, presenting an
+academic finding as material for critique rather than as a leading prompt: a card on
+hardware and performance reported that CPU and RAM were the two criteria rated most
+important by Maghsoudi et al.\ (2026), with GPU ranking tenth; a card on mobility and
+durability reported that Lam et al.\ (2023) ranked battery life as the most important
+technical-specification criterion for mobile devices; and a card on experience and trust
+reported that Sönmez Çakır and Pekkaya (2020) identified brand image as the most important
+criterion overall, alongside the finding of Maghsoudi et al.\ (2026) that fan noise and
+charger bulk drew frequent complaints yet had little influence on the final purchase
+decision. Most substantive questions carried a follow-up probe asking the respondent to
+recall the specific case behind an answer or to explain the reasoning process that produced
+it, a technique adapted from cognitive interviewing \parencite{willis_cognitive_2005}.
+
+\section{Expert Profiles}\label{app:interview-profiles}
+
+Five experts were selected purposively so that each occupies a different position in the
+laptop procurement process, as summarised in \Cref{tab:expert-profiles}.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Profiles of the five interviewed experts.}
+  \label{tab:expert-profiles}
+  \begin{tabular}{@{}lp{4.2cm}cp{3.6cm}c@{}}
+    \toprule
+    \textbf{Code} & \textbf{Role} & \textbf{Experience} & \textbf{Position in procurement process} & \textbf{Date} \\
+    \midrule
+    CG-01 & Deputy head, international relations office & 7 years & End-user with direct purchasing experience & 2026-07-05 \\
+    CG-02 & IT administrator & 3 years & Specifies and maintains office device fleets & 2026-07-09 \\
+    CG-03 & Import--export documentation officer & 3.5 years & End-user representing the target persona & 2026-07-10 \\
+    CG-04 & Head of product development & 10 years & Manager with organisational purchasing authority & 2026-07-08 \\
+    CG-05 & Retail sales and technical-support consultant & 3 years & Advises laptop buyers daily at point of sale & 2026-07-10 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Thematic Summary of Findings}\label{app:interview-summary}
+
+Interview notes were analysed thematically, cross-referencing each recurring position
+against the two or more experts who independently raised it, consistent with the majority
+corroboration rule described in \Cref{subsec:expert-interviews}.
+
+\subsection{Hardware Priorities and the GPU Question}
+
+Four of the five experts converged independently on removing the dedicated graphics card
+from the criteria set. CG-02 characterised a discrete GPU as over-specification for office
+work that adds cost, weight, heat, and battery drain without a matching benefit, a position
+consistent with the tenth-place GPU ranking reported by \textcite{maghsoudi_hybrid_2026}
+and read to the experts as Card A. CG-03, CG-04, and CG-05 reached the same conclusion from
+their respective vantage points as a documentation officer, a product-development manager,
+and a retail consultant, each reporting that office customers who ask about GPU capability
+are rare and that the budget it would consume is better redirected to the CPU, RAM, or SSD.
+CG-05 qualified the point by noting that a discrete GPU remains justified only when the
+organisation has an occasional design or video-editing need, a caveat also raised by CG-02.
+CG-01 was the sole dissenting voice: in the direct question on GPU priority, CG-01 described
+integrated graphics as adequate for most office machines but characterised a discrete GPU as
+``nice to have, no harm in not having it,'' and in the Part~4 trade-off scenario explicitly
+chose the GPU-equipped option, reasoning that no buyer can be certain in advance that a
+device will never be used for design or gaming work, so a more versatile machine is the
+safer choice. This single dissent is the reason the criteria revision rule in
+\Cref{subsec:expert-interviews} requires majority rather than unanimous corroboration before
+a candidate criterion is changed. On RAM, all five experts converged on 16\,GB as the new
+practical minimum, citing browser multitasking and simultaneous use of communication
+platforms such as Microsoft Teams and Zalo (CG-02, CG-03) as the drivers of memory pressure
+that an 8\,GB configuration can no longer absorb.
+
+\subsection{Battery, Weight, and Design Trade-offs}
+
+Four of the five experts (CG-02 through CG-05) explicitly attributed a lower priority on
+maximum battery capacity to the ready availability of mains power in Vietnamese offices,
+qualifying the emphasis placed on battery life by \textcite{weng_siew_lam_evaluation_2023},
+read to the experts as Card B; CG-01 reached the same ranking of priorities without citing
+mains-power access as the reason. CG-01,
+CG-03, and CG-05 stated that a runtime of roughly half a working day, sufficient to cover a
+meeting or a short period away from a desk, is adequate, while CG-04 set a more concrete
+range of four to seven hours. In its place, physical weight emerged as the more decisive
+mobility criterion: CG-01, CG-03, CG-04, and CG-05 all linked this preference to motorbike
+commuting and daily carrying, converging on a practical range of roughly 1.3 to 1.6\,kg for
+a 14-inch machine. On design, CG-01, CG-03, and CG-05 associated a slim, neutral-coloured
+form factor with a professional impression in client-facing work, but CG-02 and CG-04
+cautioned that this aesthetic preference is bounded by durability requirements, specifically
+hinge rigidity, thermal headroom, and resistance to chassis flex, so that appearance is
+treated as a secondary criterion once a minimum durability bar is met.
+
+\subsection{Brand, After-Sales, and Divergent Views on Trust}
+
+Interview responses on brand and after-sales service were the least uniform of the five
+themes. CG-01 argued that the growing accessibility of AI-assisted comparison tools is
+reducing buyers' reliance on brand reputation as a proxy for quality, a view echoed by
+CG-03's observation that end-users increasingly research specifications independently.
+CG-02, CG-04, and CG-05, however, each reported from a business-procurement or retail
+vantage point that brand and after-sales reliability remain decisive when device downtime
+carries an organisational cost: CG-02 emphasised that a business buyer facing two
+comparably priced machines will choose the more established brand unless an internal IT
+team can independently verify and service an unfamiliar one, while CG-04 and CG-05 both
+noted that buyers who cannot evaluate technical specifications in depth default to two or
+three familiar brands as a risk-management heuristic. CG-05 added that proximity of an
+authorised service centre to the workplace is frequently a deciding factor for
+organisational buyers, a point later adopted as the operational rationale for measuring
+Brand through a service-centre-count proxy in \Cref{subsec:operationalisation}.
+
+\subsection{Locally Specific Factors}
+
+All five experts identified factors specific to the Vietnamese working environment that the
+international literature reviewed in \Cref{sec:prior-studies} does not address directly.
+The hot and humid climate was raised by CG-02 and CG-04 as a driver of thermal-management
+and build-quality requirements beyond what temperate-climate studies typically consider.
+Motorbike commuting was raised independently by CG-01, CG-03, CG-04, and CG-05 as the
+mechanism linking weight and durability to daily use rather than occasional travel. CG-01
+and CG-03 both described a software lock-in effect arising from Windows-only accounting,
+customs-declaration, and internal enterprise-resource-planning software, which excludes
+non-Windows devices from consideration regardless of hardware merit; this observation
+directly motivated the addition of software compatibility as a replacement criterion for
+GPU, as reported in \Cref{subsec:interview-outcomes}. CG-02 and CG-05 further noted that
+the residual prevalence of HDMI projectors and USB Type-A peripherals in Vietnamese offices
+keeps traditional ports relevant even as ultraportable designs move toward USB-C only.
+
+\subsection{Trade-off Scenario Responses}
+
+When asked in Part 4 to name the three criteria they would prioritise if all others were
+kept flexible, core hardware performance (CPU, RAM, SSD, or a combination) appeared in every
+one of the five answers, making it the only criterion named by all experts. Brand or
+after-sales support was named by four of the five (CG-02 through CG-05), and durability was
+named separately by three (CG-02, CG-03, CG-04). Price, although established earlier in the
+interview as the first screening criterion applied by all five experts, recurred explicitly
+in only two of the five top-three answers (CG-01, CG-05), suggesting that once a price
+bracket has already narrowed the option set, experts treat it as a pre-filter rather than a
+continuing point of comparison. This pattern of convergence on hardware performance as the
+dominant criterion, together with the comparatively low priority assigned to battery life
+and to size or weight once the office context was made explicit, foreshadows the weight
+concentration later confirmed quantitatively by the AHP results in \Cref{sec:weights}.

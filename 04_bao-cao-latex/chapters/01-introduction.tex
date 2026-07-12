@@ -1,21 +1,35 @@
 \chapter{Introduction}\label{ch:introduction}
 
-\section{Background and motivation}\label{sec:background}
-% TODO Phase 6: boi canh thi truong laptop VN, kho khan khi chon mua
-% (qua nhieu lua chon, thong so ky thuat kho so sanh), vi sao can MCDM.
-% Nguon so lieu: 02_du-lieu-tho\laptop-thi-truong\
+\section{Background and Motivation}\label{sec:background}
 
-\section{Problem statement}\label{sec:problem}
-% TODO Phase 6: phat bieu bai toan - nhan vien van phong can chon laptop
-% phuc vu cong viec, trong do gia/ngan sach la mot tieu chi xung dot voi
-% hieu nang, do ben, tinh di dong va trai nghiem su dung.
+The laptop computer has become a basic working tool across most occupations, and its consumption has expanded steadily at the global scale. Statistics compiled by \textcite{sonmez_cakir_determination_2020} indicate that 161.6 million laptops were sold in 2017, roughly 65\% more than desktop personal computers. This trajectory was reinforced during the pandemic, when \textcite{gaur_application_2023} reported that worldwide shipments rose to 218 million units in 2020, a 26\% increase, and reached 225 million units in 2021. Sustained demand coincides with a relatively short product life cycle, commonly estimated at around five years \parencite{sonmez_cakir_determination_2020}, which turns device selection into a recurring decision for individuals and organisations alike.
 
-\section{Objectives and research questions}\label{sec:objectives}
-% TODO Phase 6: 3 muc tieu tuong ung 3 giai doan:
-%   RQ1: Nhung tieu chi nao phu hop de danh gia laptop cho office worker o VN?
-%   RQ2: Trong so cua cac tieu chi do la bao nhieu?
-%   RQ3: Laptop nao la lua chon toi uu cho nhan vien van phong theo bo tieu chi da chot?
+Accompanying this market growth is a rapid fragmentation of the product catalogue. Each generation introduces new configurations and features, increasing the number of brands, models, and variants that a buyer must weigh \parencite{sonmez_cakir_determination_2020}. Prospective buyers therefore have to compare several technical attributes that are expressed on different scales and that frequently conflict with one another, for instance between processing performance and battery life, or between durability and weight. Under these conditions, relying solely on experience or intuitive comparison offers little guarantee of consistency, because the attributes cannot be reduced directly to a common unit against which trade-offs are made.
 
-\section{Scope and structure of the report}\label{sec:scope}
-% TODO Phase 6: pham vi (thi truong VN, CellphoneS, thoi diem thu thap du lieu)
-% va tom tat cau truc cac chuong.
+A selection problem involving several conflicting attributes falls within the scope of Multi-Criteria Decision-Making (MCDM). The systematic review by \textcite{basilio_systematic_2022} shows that this family of methods is applied widely across domains, with the Analytic Hierarchy Process (AHP) and the Technique for Order of Preference by Similarity to Ideal Solution (TOPSIS) among the most frequently used techniques, a pattern also documented through the bibliometric analysis of \textcite{zyoud_bibliometric-based_2017}. Combining AHP to derive criteria weights with TOPSIS to rank alternatives is a pairing that recurs in applied research \parencite{tighnavard_balasbaneh_systematic_2025}, as it separates the estimation of criteria importance from the evaluation of specific alternatives.
+
+\section{Problem Statement}\label{sec:problem}
+
+This study focuses on the situation in which an office worker in Vietnam needs to select a laptop for work. In this setting, price is not fixed in advance but enters as a framing criterion: procurement budgets for office use typically range from 8 to 15 million Vietnamese dong, which bounds the option space before the buyer weighs the remaining hardware specifications. This cost constraint places price in a persistent trade-off with performance, durability, portability, and user experience, so that the final decision depends on how the groups of criteria are balanced rather than on optimising any single indicator.
+
+Although laptop selection has been studied with MCDM tools, the existing body of work reveals two gaps that are relevant to the Vietnamese context. First, most studies on laptop selection rely on AHP or single fuzzy variants to rank criteria \parencite{sonmez_cakir_determination_2020,elnatan_alternatif_nodate}, whereas the integrated AHP--TOPSIS model has been validated mainly on mobile phones \parencite{weng_siew_lam_evaluation_2023}; the application of this pairing to real laptop data from the Vietnamese market remains limited. Second, the criteria priorities obtained in international studies do not transfer fully to local conditions. Battery life, for example, is often identified as the highest-weighted criterion in foreign literature \parencite{weng_siew_lam_evaluation_2023}, yet expert interviews conducted domestically suggest that a range of four to seven hours already meets typical needs given the ready availability of mains power in offices, while device weight receives greater emphasis because of the prevalence of motorbike commuting.
+
+\section{Research Gap and Contributions}\label{sec:gap-contrib}
+
+The two limitations outlined above define the space this study occupies. Prior laptop-selection studies have either stopped at criteria weighting without ranking concrete alternatives \parencite{sonmez_cakir_determination_2020}, or applied the integrated AHP--TOPSIS pairing to product categories other than laptops \parencite{weng_siew_lam_evaluation_2023}; moreover, none has calibrated the criteria set and their priorities to the working conditions of Vietnamese office workers. To address these gaps, this study makes a twofold contribution. First, it constructs a context-specific criteria set for office laptops in Vietnam by combining a literature review with expert interviews, making explicit where local practice diverges from priorities reported in the international literature. Second, it operationalises a complete AHP--TOPSIS decision model on real market data, using AHP to derive criteria weights and TOPSIS to rank actual laptop models, thereby turning the calibrated criteria into an applicable ranking procedure.
+
+\section{Objectives and Research Questions}\label{sec:objectives}
+
+The problem outlined above gives rise to three objectives that correspond to three stages of the study. The first stage establishes a set of evaluation criteria suited to Vietnamese office workers, drawing on a literature review combined with expert interviews. The second stage quantifies the relative importance of these criteria using AHP, based on pairwise comparison data elicited from experts. The third stage applies TOPSIS to rank laptop models available on the market according to the derived weights. These objectives are expressed through the following research questions:
+
+\begin{enumerate}
+  \item \textbf{RQ1:} Which criteria are appropriate for evaluating laptops for office workers in Vietnam?
+  \item \textbf{RQ2:} What weights do these criteria carry when determined through AHP?
+  \item \textbf{RQ3:} Under a simulated purchase scenario, which laptop model is the most suitable choice under the established criteria and weights when ranked with TOPSIS?
+\end{enumerate}
+
+\section{Scope and Structure of the Report}\label{sec:scope}
+
+The study is limited to the office laptop segment of the Vietnamese market, with product data drawn from the retailer CellphoneS at a recorded collection date. The intended beneficiaries of the model are office workers, as distinct from user groups with specialised needs such as graphic design or gaming. The criteria development starts from fourteen candidate criteria grouped into six categories, reflecting economic considerations, core hardware capability, design and interaction experience, portability and durability, ecosystem utility, and trust and after-sales value; a screening survey then narrows this set to the criteria that office workers themselves confirm as important. The study does not seek to generalise across every user segment or distribution channel, but concentrates on the decision situation defined above.
+
+The remainder of the report is organised into five chapters. \Cref{ch:literature} reviews the theoretical foundations of MCDM together with the AHP and TOPSIS methods, and surveys prior studies on laptop selection in order to locate the research gap. \Cref{ch:methodology} presents the research methodology, including the criteria construction process, data collection, and the computational steps. \Cref{ch:results} reports the results on criteria weights and the ranking of alternatives. \Cref{ch:discussion} discusses the implications of these results in relation to the existing literature, and \Cref{ch:conclusion} summarises the contributions and limitations of the study.

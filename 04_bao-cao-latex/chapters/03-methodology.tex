@@ -1,41 +1,390 @@
 \chapter{Methodology}\label{ch:methodology}
 
-\section{Research framework}\label{sec:framework}
-% TODO Phase 6: so do 3 giai doan (hinh chu dao cua ca bao cao):
-%   Stage 1 Criteria development -> Stage 2 AHP weighting -> Stage 3 TOPSIS ranking
-% Ve hinh luu vao figures/framework.pdf roi:
-% \begin{figure}[htbp]\centering
-%   \includegraphics[width=.9\textwidth]{framework}
-%   \caption{Research framework}\label{fig:framework}
-% \end{figure}
+% ============================================================
+% Cau truc hoc tu paper Q1/Q2:
+%  - Method viet theo khoi "Step 1 ... Step k": Lam et al. (2023) muc 2.2-2.3; Saputro (2023)
+%  - AHP crisp PHAI co bang Random Index + CR check: theo Lam & Gaur
+%  - So lieu Likert/AHP: 03_phan-tich/tieu-chi/ va 03_phan-tich/ahp/ (sinh boi script)
+% ============================================================
 
-\section{Stage 1 -- Criteria development}\label{sec:stage1}
+\section{The Proposed Research Model}\label{sec:framework}
 
-\subsection{Literature synthesis}\label{subsec:lit-synthesis}
-% TODO Phase 6: quy trinh tim kiem (search string, nguon CSDL, tieu chi loc),
-% ket qua so bai va so tieu chi so bo. Nguon: tong-hop-tieu-chi.md
+The study is organised into three sequential stages, each of which answers one of the
+research questions stated in \Cref{sec:objectives}. The first stage develops the set of
+evaluation criteria: candidate criteria are synthesised from the literature reviewed in
+\Cref{ch:literature}, refined through expert interviews, and then screened through a
+large-scale survey, so that only criteria whose importance is confirmed by actual office
+workers enter the quantitative model. The second stage quantifies the relative importance
+of the retained criteria with AHP, including an explicit consistency check before the
+weights are accepted. The third stage applies the model to a concrete purchase scenario:
+candidate laptops are identified from the recommendation lists of professional review
+outlets, their attribute data are collected from the Vietnamese retailer CellphoneS and
+operationalised into a decision matrix, and TOPSIS ranks them using the weights obtained
+in the second stage. The stages are
+strictly ordered: the pairwise comparison in Stage~2 cannot be designed until the criteria
+set is fixed, and the ranking in Stage~3 is meaningful only after the weights have passed
+the consistency check. \Cref{fig:framework} summarises this pipeline.
 
-\subsection{Expert interviews}\label{subsec:expert-interviews}
-% TODO Phase 6: phuong phap chon mau maximum variation (3-5 chuyen gia),
-% kich ban ban cau truc, cach dieu chinh bo tieu chi theo boi canh VN.
-% Nguon: 02_du-lieu-tho\phong-van\
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[
+      node distance=7mm and 9mm,
+      stage/.style={draw, rounded corners=2pt, align=center, minimum width=34mm,
+                    minimum height=11mm, font=\small},
+      substep/.style={draw, align=center, minimum width=30mm, minimum height=8mm,
+                      font=\footnotesize},
+      lbl/.style={font=\footnotesize\itshape},
+      arr/.style={-{Stealth[length=2.5mm]}, thick}
+    ]
+    % Stage 1 column
+    \node[substep] (lit) {Literature synthesis};
+    \node[substep, below=of lit] (int) {Expert interviews\\ (purposive, $n=5$)};
+    \node[substep, below=of int] (sur) {Likert survey screening\\ (retain if mean $\geq 3.0$)};
+    \node[stage, below=of sur] (s1out) {Retained criteria};
+    % Stage 2
+    \node[stage, right=14mm of s1out] (s2) {Stage 2: AHP\\ weighting + CR check};
+    % Stage 3
+    \node[stage, right=14mm of s2] (s3) {Stage 3: Scenario\\ application + TOPSIS};
+    % labels
+    \node[lbl, above=2mm of lit] {Stage 1: Criteria development};
+    \node[lbl, below=1mm of s2] {answers RQ2};
+    \node[lbl, below=1mm of s3] {answers RQ3};
+    \node[lbl, below=1mm of s1out] {answers RQ1};
+    % arrows
+    \draw[arr] (lit) -- (int);
+    \draw[arr] (int) -- (sur);
+    \draw[arr] (sur) -- (s1out);
+    \draw[arr] (s1out) -- node[above, font=\footnotesize] {weights} (s2);
+    \draw[arr] (s2) -- node[above, font=\footnotesize] {ranking} (s3);
+  \end{tikzpicture}
+  \caption{The proposed research model.}
+  \label{fig:framework}
+\end{figure}
 
-\subsection{Likert survey and screening threshold}\label{subsec:survey}
-% TODO Phase 6: thiet ke Google Form Likert 5 diem, co mau, kenh phat,
-% nguong giu tieu chi (mean > 3.5, TRICH NGUON cho nguong), ket qua sang loc.
-% Nguon: 03_phan-tich\tieu-chi\likert-thu-thap-phan-tich.xlsx
+\section{Stage 1 --- Criteria Development}\label{sec:stage1}
 
-\section{Stage 2 -- AHP weighting}\label{sec:stage2}
-% TODO Phase 6: thiet ke bang so sanh cap (thang Saaty), cach tinh trong so
-% (eigenvector / geometric mean of rows), kiem tra CR <= 0.1 va quy trinh
-% xu ly khi vuot, tong hop nhieu chuyen gia bang geometric mean.
-% Cong thuc mau:
-% \begin{equation}
-%   CR = \frac{CI}{RI}, \qquad CI = \frac{\lambda_{\max} - n}{n - 1}
-% \end{equation}
+\subsection{Literature Synthesis}\label{subsec:lit-synthesis}
 
-\section{Stage 3 -- TOPSIS ranking}\label{sec:stage3}
-% TODO Phase 6: thu thap du lieu tu CellphoneS (pham vi gia, ngay thu thap),
-% map benchmark PassMark cho CPU/GPU, rubric cham tieu chi dinh tinh,
-% cac buoc TOPSIS: chuan hoa vector -> nhan trong so -> A+ / A- ->
-% khoang cach Euclid -> he so Ci -> xep hang.
+The starting point of the criteria set is the body of laptop-selection and
+consumer-behaviour studies reviewed in \Cref{sec:prior-studies}. From these sources,
+every attribute that at least one prior study used to evaluate laptops or closely related
+devices was extracted and consolidated: price appears in nearly all of them
+\parencite{sonmez_cakir_determination_2020,weng_siew_lam_evaluation_2023,liao_determinants_2022,rau_optimal_2018},
+core hardware attributes such as processor, memory, and storage recur across the MCDM
+applications \parencite{gaur_application_2023,maghsoudi_hybrid_2026}, and service-related
+attributes such as brand and after-sales support are emphasised in the review-mining and
+consumer-behaviour literature \parencite{kang_study_2022,sostar_assessment_2023}.
+Attributes that overlap in meaning were merged into a single criterion, and attributes tied
+to specialised use cases outside the office-worker persona, such as colour-accurate
+displays for design work, were excluded at this stage. The remaining attributes were then
+organised into thematic groups reflecting different aspects of the purchase decision, such
+as core hardware capability or trust and after-sales value, so that the pairwise
+comparisons of \Cref{sec:stage2} could later be structured hierarchically rather than as a
+single flat list. The resulting set of candidate criteria is reported in
+\Cref{subsec:criteria-set}.
+
+\subsection{Expert Interviews}\label{subsec:expert-interviews}
+
+Because the candidate criteria from \Cref{subsec:lit-synthesis} were derived from studies
+conducted outside Vietnam, they were validated against local practice before being
+quantified. Five experts
+were selected purposively so that each occupies a different position in the laptop
+procurement process: a deputy head of an international relations office with seven years
+of end-user experience (CG-01), an IT administrator who specifies and maintains office
+fleets (CG-02), an import--export documentation officer representing the target persona
+(CG-03), a head of product development with ten years of managerial purchasing experience
+(CG-04), and a retail sales consultant who advises laptop buyers daily (CG-05).
+
+The interview protocol itself, rather than being improvised, was constructed following the
+Interview Protocol Refinement (IPR) framework, whose four phases require that every
+question be traceable to a research objective, that the questions be sequenced as an
+inquiry-based conversation rather than a checklist, that the draft be reviewed before
+fieldwork, and that it be piloted \parencite{castillo-montoya_preparing_2016}. Applying
+this framework produced a five-part funnel that moves from the concrete to the general: a
+warm-up section grounding each respondent in a recent, specific laptop-selection episode; a
+stimulus-based section in which a literature finding for each criterion group is read
+aloud immediately before the matching question, so that agreement or disagreement is
+anchored to a stated claim rather than solicited as an abstract opinion; an open section
+probing for criteria specific to the Vietnamese context that the literature synthesis
+could not have anticipated; a trade-off scenario that generates qualitative seed data for
+the pairwise comparisons of \Cref{sec:stage2}; and a closing section built around
+member-checking, in which the interviewer restates the respondent's positions for
+confirmation. Most substantive questions in this structure carry a follow-up probe that
+asks the respondent to recall the specific case behind an answer or to explain the
+reasoning process that produced it, a technique adapted from cognitive interviewing that
+keeps a response anchored in the respondent's actual experience rather than a general
+impression formed on the spot \parencite{willis_cognitive_2005}. This funnel structure and
+probing technique operate inside a semi-structured session that functions as the
+qualitative first round of a Delphi-style refinement preceding AHP, an arrangement applied
+in prior criteria-development work \parencite{al_hazza_integrated_2022,mcmillan_how_2016}.
+Each session lasted twenty to thirty minutes; all five respondents gave informed consent,
+no audio was recorded, and only written notes were retained.
+
+Interview notes were reviewed for proposals to add, remove, or redefine a criterion. To
+keep the revision process auditable rather than ad hoc, a proposal was adopted only when it
+was corroborated independently by a majority of the five experts, and any resulting change
+to the candidate set was cross-checked against the literature reviewed in
+\Cref{sec:prior-studies} before being finalised. The outcome of this revision process is
+reported together with the resulting criteria set in \Cref{subsec:criteria-set}.
+
+\subsection{Survey-Based Screening}\label{subsec:screening}
+
+Expert validation establishes that a criterion is defensible, but not that the target
+population actually weighs it when buying. The candidate criteria from
+\Cref{subsec:expert-interviews} were therefore submitted to a wider screening survey
+before any pairwise comparison was designed. A questionnaire was distributed through
+Google Forms in which respondents rated the importance of each criterion when choosing a
+laptop for office work on a five-point Likert scale, from 1 (not important) to 5 (very
+important). The instrument deliberately contained one rating item per candidate criterion
+and no other items, keeping completion time short and avoiding demographic questions that
+the screening decision does not use.
+
+The retention rule was fixed before data collection: a criterion is retained if its sample
+mean is at least 3.0, the midpoint of the scale, and removed otherwise. On a five-point
+scale the midpoint separates responses that lean towards importance from those that lean
+away from it, so a mean below 3.0 indicates that respondents on balance do not regard the
+criterion as important \parencite{chyung_evidencebased_2017}. Committing to the threshold
+in advance prevents the rule from being adjusted after the results are known. Responses
+missing more than 20\% of the items were to be discarded, and straight-lined responses,
+in which a respondent gives the same rating to every item, were to be flagged for a group
+decision rather than silently removed. The screening outcome, which reduces the candidate
+set to the criteria carried into Stage~2, is reported in \Cref{sec:screening}.
+
+\section{Stage 2 --- AHP for Criteria Weighting}\label{sec:stage2}
+
+The relative importance of the criteria retained after screening is derived through the
+Analytic Hierarchy Process, whose theoretical basis is reviewed in \Cref{sec:ahp-theory}.
+The procedure follows five steps.
+
+\paragraph{Step 1 --- Hierarchy construction.}
+The decision problem is structured into three levels: the goal of selecting the most
+suitable laptop for a Vietnamese office worker at the top, the criteria retained from
+Stage~1 at the intermediate level, and the candidate laptop models at the bottom. Only
+the upper two levels are involved in this stage; the alternatives enter the model in
+Stage~3, where they are evaluated on directly measurable data rather than on pairwise
+judgements.
+
+\paragraph{Step 2 --- Pairwise comparison.}
+The pairwise judgements were elicited from one representative expert drawn from the
+interview panel of \Cref{subsec:expert-interviews}, selected for direct, first-hand
+experience of office laptop procurement. For $n$ retained criteria the expert completes
+$n(n-1)/2$ comparisons, each expressing how much more important one criterion is than
+another on the nine-point ratio scale of \Cref{tab:saaty}. Relying on a single judgement
+set concentrates the weighting in one perspective, which is why the consistency check in
+Step~5 is applied strictly: an inconsistent matrix is returned to the expert for
+re-evaluation rather than accepted or averaged away.
+
+\begin{table}[htbp]
+  \centering
+  \caption{The Saaty fundamental scale of pairwise comparison.}
+  \label{tab:saaty}
+  \begin{tabular}{@{}cl@{}}
+    \toprule
+    \textbf{Intensity} & \textbf{Definition} \\
+    \midrule
+    1 & Equal importance \\
+    3 & Moderate importance \\
+    5 & Strong importance \\
+    7 & Very strong importance \\
+    9 & Extreme importance \\
+    2, 4, 6, 8 & Intermediate values \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\paragraph{Step 3 --- Comparison matrix.}
+For $n$ criteria, the pairwise judgements form a reciprocal matrix
+$A = [a_{ij}]$ with $a_{ij} = 1/a_{ji}$ and $a_{ii} = 1$:
+\begin{equation}\label{eq:pcm}
+  A = \begin{bmatrix}
+    1 & a_{12} & \cdots & a_{1n} \\
+    1/a_{12} & 1 & \cdots & a_{2n} \\
+    \vdots & \vdots & \ddots & \vdots \\
+    1/a_{1n} & 1/a_{2n} & \cdots & 1
+  \end{bmatrix}.
+\end{equation}
+Only the $n(n-1)/2$ entries above the diagonal are elicited; the remaining entries follow
+from reciprocity, so the expert is never asked the same comparison twice.
+
+\paragraph{Step 4 --- Priority (weight) vector.}
+The criteria weights are taken as the principal right eigenvector of $A$, that is, the
+vector $\mathbf{w}$ satisfying
+\begin{equation}\label{eq:weight}
+  A\mathbf{w} = \lambda_{\max}\mathbf{w}, \qquad \sum_{i=1}^{n} w_i = 1,
+\end{equation}
+where $\lambda_{\max}$ is the largest eigenvalue of $A$. Several simpler approximations
+circulate in applied work, including the normalised column average used by
+\textcite{weng_siew_lam_evaluation_2023}; the eigenvector is preferred here because
+\textcite{saaty_decisionmaking_2003} shows it to be the theoretically required solution
+whenever the judgement matrix is a small perturbation of a fully consistent one, which the
+consistency check in Step~5 verifies, and because the comparative simulations of
+\textcite{ishizaka_how_2006} find that approximation methods diverge from the eigenvector
+increasingly as matrices grow larger or less consistent. In computation the eigenvector is
+obtained by power iteration, repeatedly multiplying a normalised weight vector by $A$
+until convergence. As a cross-check, the weights are also computed by the geometric mean
+of each row; agreement between the two vectors in the ordering of criteria is treated as
+evidence that the result does not depend on the derivation method.
+
+\paragraph{Step 5 --- Consistency check.}
+Because the judgements are elicited from a human respondent, they may contradict one
+another, and the eigenvector of a heavily contradictory matrix is not a meaningful weight
+vector. The internal coherence of the judgements is therefore verified through the
+consistency ratio $CR = CI/RI$, where the consistency index is
+\begin{equation}\label{eq:cr}
+  CI = \frac{\lambda_{\max} - n}{\,n - 1\,},
+\end{equation}
+$\lambda_{\max}$ is the principal eigenvalue from \Cref{eq:weight}, and $RI$ is the random
+index, the mean consistency index of randomly generated reciprocal matrices of the same
+order (\Cref{tab:ri}). A matrix is accepted when $CR \le 0.10$
+\parencite{Saaty2008DECISIONMW}. If the threshold is exceeded, the weights are not used:
+the three pairwise entries that deviate most from the values a consistent matrix would
+imply are identified and returned to the expert for re-evaluation, and the matrix is
+recomputed. The threshold is never relaxed to accommodate a marginally failing matrix.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Random Index (RI) values by matrix order $n$.}
+  \label{tab:ri}
+  \begin{tabular}{@{}lccccccccc@{}}
+    \toprule
+    $n$ & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+    \midrule
+    RI & 0.58 & 0.90 & 1.12 & 1.24 & 1.32 & 1.41 & 1.45 & 1.49 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Stage 3 --- Scenario-Based Application with TOPSIS}\label{sec:stage3}
+
+\subsection{Decision Scenario}\label{subsec:scenario-design}
+
+The third stage applies the weighted criteria to a concrete decision situation. The
+scenario mirrors the problem statement of \Cref{sec:problem}: an office worker in Vietnam
+needs a laptop for work, has browsed review websites and the catalogues of established
+retailers, and still cannot decide, because the information available compares products
+one attribute at a time while the actual decision requires weighing all attributes at
+once. Framing Stage~3 as a scenario serves two purposes. It keeps the demonstration
+honest, since every modelling choice, from which laptops enter the comparison to how each
+criterion is measured, must be one this buyer could reproduce from publicly available
+information; and it makes the output directly interpretable, since the resulting ranking
+answers the question the buyer actually asks. The stage proceeds in three steps that
+parallel a standard data workflow: identifying the alternatives, collecting and
+operationalising their attribute data, and analysing the resulting decision matrix with
+TOPSIS.
+
+\subsection{Alternative Identification}\label{subsec:alternatives}
+
+The candidate laptops are not chosen by the researchers' own judgement, which would risk
+pre-selecting the winner, but harvested from published recommendation lists of
+professional review outlets and then filtered for local availability. An outlet is
+included in the source pool if it satisfies three conditions: it maintains a documented,
+standardised laboratory testing protocol rather than opinion-only reviews; it actively
+covers laptops as a product category; and its editorial operation is stable enough that
+its current recommendations reflect that protocol. Seven outlets meet these conditions,
+summarised in \Cref{tab:review-sources}. One widely known outlet, Engadget, was
+considered and excluded: it reduced its editorial staff by roughly one third in 2024,
+reoriented its output towards search-driven affiliate content, and changed ownership in
+early 2026, so the stability condition is not met. CNET is retained with a caveat: the
+outlet published AI-generated articles without clear disclosure in 2023, but it operates
+its own testing laboratory and tightened human editorial review after the incident, and
+its current laptop recommendations are lab-based.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Review outlets used as sources for alternative identification.}
+  \label{tab:review-sources}
+  \begin{tabular}{@{}lp{3.6cm}p{5.8cm}@{}}
+    \toprule
+    \textbf{Outlet} & \textbf{Operator} & \textbf{Testing approach} \\
+    \midrule
+    PCMag        & Ziff Davis          & Standardised lab benchmarks since 1982; Editors' Choice programme \\
+    Tom's Guide  & Future plc          & Comparative product testing; seasonal category rankings \\
+    TechRadar    & Future plc          & Global review team; per-segment rankings (business, budget) \\
+    Laptop Mag   & Future plc          & Laptop-only coverage; in-house battery and performance benchmarks \\
+    CNET         & Ziff Davis          & In-house lab for performance, battery, and display testing \\
+    Wirecutter   & The New York Times  & Hands-on testing; no sponsored review placements \\
+    RTINGS       & Independent         & Instrumented measurement (display, thermals, input latency) \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+From each outlet in the pool, the current recommendation list for business or office
+laptops is collected, and the union of these lists forms the raw candidate set. Because
+the same model frequently appears on several lists, the set is deduplicated by
+manufacturer and model designation, treating configuration variants of the same model as
+a single candidate at this step. The deduplicated list is then filtered for availability
+at CellphoneS, the Vietnamese retailer from which price and configuration data are
+drawn: a model that cannot actually be purchased through this channel is outside the
+buyer's option space regardless of its international standing. The date of collection is
+recorded with the data, since both the recommendation lists and the retail catalogue
+change over time.
+
+\subsection{Data Collection and Operationalisation}\label{subsec:operationalisation}
+
+Each remaining alternative is scored on the retained criteria, and the way each
+criterion is measured is fixed before the data are collected. Five criteria are directly
+quantitative and are taken as listed by the retailer: the price in Vietnamese dong, the
+memory capacity in gigabytes, the storage capacity in gigabytes, the device weight in
+kilograms, and the battery capacity as specified by the manufacturer. The processor
+cannot be treated this way: chipset designations such as product names and generation
+labels are neither numeric nor directly comparable across manufacturers. The criterion is
+therefore operationalised through a standardised benchmark score, using the PassMark CPU
+database, which converts heterogeneous processor names into a single performance scale.
+This step matters for the validity of the analysis, because TOPSIS requires attribute
+values that are numeric, monotonic in desirability, and commensurable
+\parencite{behzadian_state--art_2012}; a benchmark score satisfies all three conditions
+where a chipset name satisfies none. Brand, the one qualitative criterion, is likewise
+converted into an observable quantity rather than scored by hand: it is operationalised
+as the number of authorised service centres each manufacturer maintains in Vietnam, a
+figure published by the manufacturers themselves. This proxy is chosen because the brand
+criterion belongs to the trust and after-sales group of \Cref{tab:criteria}, and a
+service network is the concrete, verifiable expression of that trust, whereas a
+hand-assigned brand score would reintroduce exactly the subjectivity that the screening
+and weighting stages were designed to control.
+
+\subsection{The TOPSIS Procedure}\label{subsec:topsis-procedure}
+
+Given the criteria weights from Stage~2 and the decision matrix assembled above, the
+candidate laptops are ranked with TOPSIS over seven steps.
+
+\paragraph{Step 1 --- Decision matrix.}
+For $m$ alternatives and $n$ criteria, $X = [x_{ij}]$ collects the performance of
+alternative $i$ on criterion $j$.
+
+\paragraph{Step 2 --- Vector normalisation.}
+\begin{equation}\label{eq:norm}
+  r_{ij} = \frac{x_{ij}}{\sqrt{\sum_{i=1}^{m} x_{ij}^{2}}}.
+\end{equation}
+
+\paragraph{Step 3 --- Weighted normalised matrix.}
+\begin{equation}\label{eq:weighted}
+  v_{ij} = w_j \, r_{ij}.
+\end{equation}
+
+\paragraph{Step 4 --- Ideal solutions.}
+The positive ideal solution $A^{+}$ and negative ideal solution $A^{-}$ are formed from
+the best and worst weighted scores of each criterion, respecting its benefit or cost direction:
+\begin{equation}\label{eq:pis-nis}
+  A^{+} = \{v_1^{+},\dots,v_n^{+}\}, \qquad
+  A^{-} = \{v_1^{-},\dots,v_n^{-}\}.
+\end{equation}
+
+\paragraph{Step 5 --- Separation measures.}
+\begin{equation}\label{eq:sep}
+  S_i^{+} = \sqrt{\sum_{j=1}^{n}\left(v_{ij}-v_j^{+}\right)^{2}}, \qquad
+  S_i^{-} = \sqrt{\sum_{j=1}^{n}\left(v_{ij}-v_j^{-}\right)^{2}}.
+\end{equation}
+
+\paragraph{Step 6 --- Closeness coefficient.}
+\begin{equation}\label{eq:closeness}
+  C_i = \frac{S_i^{-}}{\,S_i^{+} + S_i^{-}\,}, \qquad 0 \le C_i \le 1.
+\end{equation}
+
+\paragraph{Step 7 --- Ranking.}
+The alternatives are ranked in descending order of $C_i$; the laptop with the highest
+$C_i$ is the recommended choice.
+
+\section{Sensitivity Analysis Design}\label{sec:sensitivity-design}
+% TODO: thiet ke phan tich do nhay — thay doi trong so theo kich ban, kiem tra thu hang
+% co on dinh khong (mau Calik 2021 Table 11 / Sonmez 2020 da kich ban).
+\textit{[Phase 6 — see \texttt{SUON-NOI-DUNG.md} \S3.6.]}

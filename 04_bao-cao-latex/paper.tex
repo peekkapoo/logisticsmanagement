@@ -1,0 +1,115 @@
+% ============================================================
+% SCIENTIFIC PAPER (ban co dong) - Laptop Selection using AHP-TOPSIS
+% Bien dich: xelatex paper.tex -> biber paper -> xelatex paper x2
+% Dung chung references.bib + figures/ voi Report (main.tex).
+% Single-column journal style (article), APA narrative citation.
+% ============================================================
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage{english}
+\setmainfont{Times New Roman}
+
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{microtype}
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage[style=apa,backend=biber]{biblatex}
+\addbibresource{references.bib}
+
+\usepackage{hyperref}
+\usepackage{cleveref}
+
+\title{A Hybrid AHP--TOPSIS Approach to Laptop Selection\\for Office Workers in Vietnam}
+\author{Group [X] --- Logistics Management\\University of Finance --- Marketing}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+% TODO Phase 6: Abstract ~200-250 tu, khuon gap -> method -> result -> implication (mau Maghsoudi 2026).
+\noindent\textit{[Abstract to be written in Phase 6 --- gap $\rightarrow$ method (AHP--TOPSIS, three stages) $\rightarrow$ results (weights, ranking) $\rightarrow$ implication.]}
+
+\vspace{0.5em}
+\noindent\textbf{Keywords:} Multi-Criteria Decision-Making; AHP; TOPSIS; laptop selection; office workers; Vietnam.
+\end{abstract}
+
+% ============================================================
+\section{Introduction}\label{sec:p-intro}
+% Ban co dong cua Chapter 1 (Report). Giu citation that; nen ~2-3 doan.
+
+The laptop has become a basic working tool across most occupations, and its consumption has
+expanded steadily. \textcite{sonmez_cakir_determination_2020} report that 161.6 million laptops
+were sold in 2017, and \textcite{gaur_application_2023} record a rise to 218 million units in
+2020 and 225 million in 2021. As the catalogue fragments into many brands, models, and
+configurations, buyers must compare technical attributes expressed on different scales that
+frequently conflict, which places the choice within the scope of Multi-Criteria Decision-Making
+(MCDM). Among MCDM techniques, the Analytic Hierarchy Process (AHP) and the Technique for Order
+of Preference by Similarity to Ideal Solution (TOPSIS) are among the most widely used
+\parencite{basilio_systematic_2022,zyoud_bibliometric-based_2017}, and their combination recurs
+in applied research \parencite{tighnavard_balasbaneh_systematic_2025}.
+
+% TODO Phase 6: doan 2 — problem statement + gap + twofold contribution (nen tu Ch.1 muc 1.2-1.3).
+% TODO Phase 6: doan cuoi — 3 RQ + cau "The remainder of this paper is organised as follows".
+\textit{[Phase 6 — condense problem statement, gap, contributions, and research questions; see \texttt{SUON-NOI-DUNG.md} \S P1.]}
+
+% ============================================================
+\section{Literature Review}\label{sec:p-lit}
+% TODO Phase 6: nen ~1-1.5 trang — tong quan MCDM (phan loai 5 nhom Villalba) + dinh vi
+% AHP-TOPSIS + gap. Co the giu bang tong hop rut gon (Source | Product | Criteria | Method).
+\textit{[Phase 6 — see \texttt{SUON-NOI-DUNG.md} \S P2.]}
+
+% ============================================================
+\section{Methodology}\label{sec:p-method}
+% Method da chot (khong phu thuoc Phase 4-5) — co the giu day du. Nen 3 tieu muc.
+
+\subsection{Research Framework and Criteria}\label{sec:p-framework}
+% TODO Phase 6: so do 3 giai doan + bang 14 tieu chi/6 nhom (rut gon tu Report Table).
+\textit{[Phase 6 — three-stage framework and the fourteen-criteria table; see \texttt{SUON-NOI-DUNG.md} \S P3.]}
+
+\subsection{AHP for Criteria Weighting}\label{sec:p-ahp}
+Criteria weights are derived through AHP. Expert pairwise judgements on the Saaty $1$--$9$ scale
+form a reciprocal matrix $A=[a_{ij}]$; the weight of each criterion is the normalised row average
+\begin{equation}\label{eq:p-weight}
+  w_i = \frac{1}{n}\sum_{j=1}^{n}\frac{a_{ij}}{\sum_{k=1}^{n}a_{kj}},
+\end{equation}
+and consistency is verified through $CR = CI/RI$ with
+\begin{equation}\label{eq:p-cr}
+  CI = \frac{\lambda_{\max}-n}{\,n-1\,}, \qquad CR \le 0.10.
+\end{equation}
+
+\subsection{TOPSIS for Ranking}\label{sec:p-topsis}
+Given the weights, the candidate laptops are ranked with TOPSIS. The decision matrix is
+vector-normalised, $r_{ij}=x_{ij}/\sqrt{\sum_i x_{ij}^2}$, and weighted, $v_{ij}=w_j r_{ij}$.
+After forming the positive and negative ideal solutions $A^{+}$ and $A^{-}$, the separation
+measures $S_i^{+}$ and $S_i^{-}$ yield the closeness coefficient
+\begin{equation}\label{eq:p-closeness}
+  C_i = \frac{S_i^{-}}{\,S_i^{+}+S_i^{-}\,},
+\end{equation}
+and alternatives are ranked in descending order of $C_i$.
+
+% ============================================================
+\section{Results}\label{sec:p-results}
+% TODO Phase 4-5: bang trong so + CR; ma tran quyet dinh; bang xep hang C_i; hinh do nhay.
+\textit{[Phase 4-5 output — see \texttt{SUON-NOI-DUNG.md} \S P4.]}
+
+% ============================================================
+\section{Discussion}\label{sec:p-discussion}
+% TODO Phase 6: phat hien ly thuyet quoc te vs thuc tien VN; ham y; doi chieu nghien cuu truoc.
+\textit{[Phase 6 — see \texttt{SUON-NOI-DUNG.md} \S P5.]}
+
+% ============================================================
+\section{Conclusion}\label{sec:p-conclusion}
+% TODO Phase 6: tra loi 3 RQ + dong gop + han che + huong phat trien (gop gon).
+\textit{[Phase 6 — see \texttt{SUON-NOI-DUNG.md} \S P6.]}
+
+\printbibliography
+
+\end{document}
