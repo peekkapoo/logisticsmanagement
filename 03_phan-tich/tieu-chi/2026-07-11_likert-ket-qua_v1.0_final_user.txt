@@ -1,0 +1,20 @@
+Phan hoi: 84 thu ve | 84 hop le | 0 loai (thieu >20%) | 0 straight-lining (bao de nhom quyet)
+Nguong giu: mean >= 3.0 (nguong phai co trich dan trong bao cao)
+
+Cot                     N    Mean     SD     1   2   3   4   5  KetLuan
+Price                  84    3.79   1.27     6   9  15  21  33  GIU
+CPU                    84    3.86   1.13     3   9  15  27  30  GIU
+RAM                    84    3.96   1.02     0  12   9  33  30  GIU
+SSD                    84    3.89   1.12     0  15  12  24  33  GIU
+Display                84    2.80   1.32    20  15  18  24   7  LOAI
+Keyboard               84    2.88   1.07    10  18  33  18   5  LOAI
+Design_Shell           84    2.83   1.16    17   9  33  21   4  LOAI
+Portability_Weight     84    3.96   1.02     0  12   9  33  30  GIU
+Durability             84    2.36   1.42    38   5  23   9   9  LOAI
+Battery                84    4.02   0.97     0   9  11  33  31  GIU
+Ports                  84    2.67   1.43    28  12  12  24   8  LOAI
+Software_Compat        84    2.54   1.43    30  15  12  18   9  LOAI
+Brand                  84    3.79   1.02     3   9   9  45  18  GIU
+Aftersales             84    2.37   1.34    35   9  18  18   4  LOAI
+
+LaTeX table written: 04_bao-cao-latex/tables/survey-results.tex

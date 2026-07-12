@@ -1,0 +1,6 @@
+
+=== 03_phan-tich/ahp/2026-07-11_ahp-matran-final_v1.0_final_user.csv (n=7) ===
+weights (geometric mean): [0.3366, 0.2882, 0.1185, 0.1615, 0.0429, 0.0264, 0.0259]
+weights (eigenvector)   : [0.3491, 0.2769, 0.1201, 0.1592, 0.043, 0.0258, 0.0258]
+lambda_max=7.3823  CI=0.0637  CR=0.0483  -> DAT
+LaTeX table written: 04_bao-cao-latex/tables/ahp-weights.tex
