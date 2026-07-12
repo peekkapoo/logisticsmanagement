@@ -138,17 +138,65 @@ structure does not depend on the derivation method. These weights answer RQ2 and
 Stage~3 as the weighting vector for TOPSIS.
 
 \section{Decision Scenario and Alternatives}\label{sec:scenario}
-% TODO Phase 5: mo ta tinh huong office worker + danh sach laptop ung vien va nguon
-% du lieu (CellphoneS, benchmark PassMark, ngay thu thap) + ma tran quyet dinh.
-% \input{tables/decision-matrix}
-\textit{[Phase 5 output — see \texttt{SUON-NOI-DUNG.md} \S4.2.]}
+
+Applying the outlet pool and deduplication procedure of \Cref{subsec:alternatives} to the
+seven review outlets of \Cref{tab:review-sources} produced twelve distinct candidate
+laptops after configuration variants of the same model were collapsed into a single entry.
+Price and configuration data for all twelve candidates were collected from Amazon.com on
+2026-07-12, following the sourcing rationale of \Cref{subsec:alternatives}.
+\Cref{tab:decision-matrix} reports the resulting attribute values in the form in which they
+were collected, that is, before the CPU and Brand values are converted into the PassMark
+benchmark score and the Gartner market-share figure described in
+\Cref{subsec:operationalisation}; that converted matrix is the input actually used by the
+TOPSIS procedure of \Cref{sec:ranking}.
+
+\input{tables/decision-matrix}
+
+The twelve candidates span an order-of-magnitude price range, from \$395 for the
+entry-level Acer Aspire 5 to \$3{,}499 for the top-specification ThinkPad X1 Carbon Gen 14
+Aura Edition, and are drawn from six brands, with Lenovo contributing six of the twelve
+listings. Every candidate except the Acer Aspire 5 carries 32\,GB of RAM or the 24\,GB
+unified-memory configuration used by Apple's M-series chips, so the RAM criterion mainly
+distinguishes the Aspire 5 and the 16\,GB ThinkPad T14 Gen 6 from the rest of the field
+rather than separating the remaining ten candidates from one another. The benchmark and
+market-share conversion applied to the CPU and Brand columns, together with the full
+step-by-step TOPSIS calculation, is reported in \Cref{app:laptop-data}.
 
 \section{TOPSIS Ranking Results}\label{sec:ranking}
-% TODO Phase 5: bang xep hang closeness coefficient C_i + S+ , S- + Rank (kieu Lam Table 8).
-% \input{tables/topsis-ranking}
-\textit{[Phase 5 output — see \texttt{SUON-NOI-DUNG.md} \S4.3.]}
 
-\section{Sensitivity Analysis}\label{sec:sensitivity}
-% TODO Phase 5: ket qua thay doi trong so theo kich ban, thu hang co on dinh khong
-% (kieu Calik 2021 Table 11). Kem hinh bien thien rank.
-\textit{[Phase 5 output — see \texttt{SUON-NOI-DUNG.md} \S4.4.]}
+Applying the seven-step TOPSIS procedure of \Cref{subsec:topsis-procedure} to the converted
+decision matrix of \Cref{app:laptop-data-conversion}, using the AHP weights of
+\Cref{tab:ahp-weights}, produces the closeness coefficients and ranking reported in
+\Cref{tab:topsis-ranking}. The full normalisation, weighting, and ideal-solution
+calculations underlying this table are reported step by step in \Cref{app:laptop-data-topsis}.
+
+\input{tables/topsis-ranking}
+
+The Lenovo ThinkPad T14 Gen 6 (AMD) obtains the highest closeness coefficient
+($C_i = 0.6152$), ahead of the Dell 14 Premium ($C_i = 0.6046$) and the Apple MacBook Air M5
+($C_i = 0.6039$). The three leading alternatives are separated by no more than 0.011 in
+closeness coefficient, a narrow margin that leaves the top of the ranking sensitive to small
+changes in the underlying scores. The top-ranked model reaches this position without leading on any single
+criterion: its price of \$1{,}100 is the second lowest in the set, its processor score
+(19{,}546) is in the middle of the field, and its 16\,GB of RAM is the smallest
+configuration among the eleven non-Acer candidates, but it combines a below-median price
+with Lenovo's market-share advantage on the Brand criterion, and no single weakness is
+severe enough to offset that combination. The Dell 14 Premium and the MacBook Air M5 reach
+second and third place from a different combination: both carry the highest or
+near-highest processor scores in the field (30{,}684 and 26{,}831 respectively), which
+compensates for a price above the sample median.
+
+The lowest-ranked alternative is the Lenovo ThinkPad X1 Carbon Gen 14 Aura Edition
+($C_i = 0.3803$), the most expensive candidate at \$3{,}499, despite carrying the
+second-highest processor score in the set; because Price and CPU together account for
+62.6\% of the total criteria weight (\Cref{sec:weights}), a high score on one of these two
+criteria does not compensate for an extreme value on the other. The Acer Aspire 5, the
+cheapest candidate at \$395, ranks seventh of twelve ($C_i = 0.5608$) rather than first,
+even though Price carries the single largest weight in the model: its processor, memory,
+storage, and brand-share values are the lowest or near-lowest on every one of those
+criteria, and the combined deficit outweighs its price advantage. Taken together, the two
+extremes illustrate that no criterion, however heavily weighted, guarantees a favourable
+rank on its own; TOPSIS rewards a candidate's overall balance across the weighted profile
+rather than dominance on a single attribute. The practical implication of this result,
+together with its bearing on the recommended alternative, is developed further in
+\Cref{ch:discussion}.

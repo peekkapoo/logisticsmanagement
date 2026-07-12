@@ -1,0 +1,13 @@
+Model,Price (USD),CPU,RAM (GB),SSD (GB),Brand,Weight (kg),Weight (lbs, original),Battery (Wh)
+Lenovo ThinkPad X1 Carbon Gen 13 Aura Edition,2289,Intel Ultra 7 258V (Beats U7 165),32,2048,Lenovo,1.09,2.4,57
+Lenovo ThinkPad X1 Carbon Gen 14 Aura Edition,3499,Intel Core Ultra 7 365 vPro Processor,32,2048,Lenovo,1.00,2.2,58
+Apple MacBook Air M4,1494,Apple M4 (10-core),24,512,Apple,1.24,2.73,53.8
+Apple MacBook Air M5,1749,Apple M5 (10-core),24,1024,Apple,1.23,2.71,53.8
+Asus ExpertBook P5,1675,Ultra 7 258V,32,1024,ASUS,1.29,2.84,63
+HP EliteBook Ultra G1i,1539,Intel Core Ultra 7 258V,32,1024,HP,1.36,3.0,56
+Lenovo ThinkPad X9 15 Aura Edition (2025),1799,Intel Core Ultra 7 258V,32,1024,Lenovo,1.40,3.08,80
+Dell 14 Premium (XPS 14 2026),1890,Intel Core Ultra 7 255H,32,1024,Dell,1.72,3.8,69.5
+Lenovo ThinkPad T14 Gen 6 (AMD),1100,AMD Ryzen AI 5 340,16,512,Lenovo,1.41,3.1,57
+Lenovo ThinkPad T14 Gen 7,2357,Intel Core Ultra 7 Series 3 355,32,512,Lenovo,2.22,4.9,60
+Acer Aspire 5,395,Intel i3-1115G4 Dual Core Processor,8,128,Acer,1.63,3.6,48
+Lenovo ThinkPad X1 Carbon Gen 12,1685,Intel Ultra 165U vPro Processor,32,1024,Lenovo,1.08,2.37,57

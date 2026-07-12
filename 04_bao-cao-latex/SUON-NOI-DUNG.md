@@ -31,20 +31,19 @@ Abstract ~250 từ, khuôn **gap → method → result → implication** (mẫu 
 - **§3.2.2 Expert interviews** ✅ — purposive n=5 (CG-01..05), IPR framework (Castillo-Montoya 2016) + cognitive probing (Willis 2005) + Delphi round-1 (Al Hazza 2022, McMillan 2016); CHỈ nêu QUY TẮC quyết định đổi tiêu chí (đồng thuận đa số 5 chuyên gia) — KHÔNG kể GPU bị loại/software được thêm nữa (đã chuyển sang Ch4 §4.1.2).
 - **§3.2.3 Survey-based screening** ✅ (renumber từ 3.2.4 sau khi bỏ subsection "Candidate Criteria Set" khỏi Ch3) — thiết kế Likert, ngưỡng midpoint 3.0 (Chyung 2017), chốt trước khi thu.
 - **§3.3 AHP (Step 1-5)** ✅ — Step 2: 1 chuyên gia đại diện (KHÔNG tổng hợp nhiều chuyên gia); Step 4: EIGENVECTOR `eq:weight` (Saaty 2003, Ishizaka & Lusti 2006), GM làm cross-check; Step 5: CR + quy trình xử lý CR>0.1.
-- **§3.4 Stage 3 scenario-based** ✅ — 3.4.1 Decision scenario · 3.4.2 Alternative identification (7 trang review `tab:review-sources`, loại Engadget, dedup, lọc CellphoneS — GIỮ NGUYÊN trong Ch3 vì đây là mô tả nguồn dữ liệu/data provenance, tương đương PRISMA search strategy, không phải "finding" về đối tượng nghiên cứu) · 3.4.3 Operationalisation (PassMark cho CPU, service-centre proxy cho Brand) · 3.4.4 TOPSIS Step 1-7.
-- **§3.5 Sensitivity analysis design** 🟡 — chờ Phase 5 (mẫu Çalık Table 11).
+- **§3.4 Stage 3 scenario-based** ✅ — 3.4.1 Decision scenario · 3.4.2 Alternative identification (7 trang review `tab:review-sources`, loại Engadget, dedup, **nguồn giá/thông số ĐỔI sang Amazon.com 2026-07-12** — GIỮ NGUYÊN trong Ch3 vì đây là mô tả nguồn dữ liệu/data provenance, tương đương PRISMA search strategy, không phải "finding" về đối tượng nghiên cứu; citation Rau & Fang 2018 làm tiền lệ dùng Amazon) · 3.4.3 Operationalisation (PassMark cho CPU; Brand ĐỔI proxy 2 lần: "trung tâm bảo hành VN" → IDC toàn cầu → **thị phần Gartner Q1/2026** — `gartner_2026`, vì IDC không công bố % riêng Acer trong khi Gartner có đủ cả 6 hãng cùng kỳ; Battery đổi sang watt-hour thay vì giờ) · 3.4.4 TOPSIS Step 1-7.
+- **§3.5 Sensitivity analysis design** ❌ ĐÃ BỎ (2026-07-12, theo yêu cầu user) — section cũ mô tả 28 kịch bản ±10%/±20%; đã xóa khỏi `03-methodology.tex` cùng section kết quả tương ứng ở Ch4 §4.6 (không còn tính năng sensitivity analysis trong report).
 
 ### Chapter 4 — Results (mirror 1-1 với Ch.3, mẫu Maghsoudi)
 - **§4.1 Criteria development outcomes** ✅ (MỚI 2026-07-12, chuyển từ Ch3) — 4.1.1 The Candidate Criteria Set: bảng `tab:criteria` 14 tiêu chí/6 nhóm (đã MOVE nguyên khối từ Ch3 §3.2.3 cũ, label `subsec:criteria-set`/`tab:criteria` giữ nguyên); 4.1.2 Interview-Driven Refinement: narrative GPU loại/Software Compatibility thêm/định nghĩa SSD+Design tinh chỉnh/pin hạ chuẩn (MOVE nguyên khối từ Ch3 §3.2.2 cũ).
 - **§4.2 Criteria screening results** ✅ — `tables/survey-results.tex`, 84 phiếu, 7 giữ/7 loại, trả lời RQ1.
 - **§4.3 Criteria weights + CR** ✅ — `tables/ahp-weights.tex` (eigenvector, CR=0.0483), battery-reversal vs Lam 2023, trả lời RQ2.
-- **§4.4 Decision scenario & alternatives** 🟡 — danh sách laptop từ 7 trang review + CellphoneS + benchmark PassMark + ma trận quyết định. Nguồn `02_du-lieu-tho/laptop-thi-truong/`.
-- **§4.5 TOPSIS ranking** 🟡 — bảng closeness `C_i` + S⁺/S⁻ + Rank (kiểu Lam Table 8).
-- **§4.6 Sensitivity analysis** 🟡 — bảng/hình biến thiên rank theo kịch bản.
+- **§4.4 Decision scenario & alternatives** ✅ (2026-07-12) — 12 candidate thật từ Amazon.com, bảng `tab:decision-matrix` (xoay ngang, `sidewaystable`). Nguồn: `02_du-lieu-tho/laptop-thi-truong/2026-07-12_amazon-laptop-candidates-raw_v1.0_final_user.csv`.
+- **§4.5 TOPSIS ranking** ✅ (2026-07-12) — chạy `topsis.py --latex tables/topsis-ranking.tex` thật trên `03_phan-tich/du-lieu-sach/2026-07-12_topsis-decision-matrix_v1.0_final_user.csv`; hạng 1 Lenovo ThinkPad T14 Gen 6 (AMD) Ci=0.6152, hạng 2 Dell 14 Premium 0.6046, hạng 3 Apple MacBook Air M5 0.6039. Section cuối cùng của Ch4 (không còn §4.6 sau khi bỏ sensitivity analysis).
 
 ### Chapter 5 — Discussion
 - **§5.1 Interpretation of weights** 🟢 (nguồn có sẵn) — **TRỌNG TÂM/điểm bán**: lý thuyết quốc tế vs thực tiễn VN (pin 4-7h thay vì tối đa; trọng lượng do xe máy; loại GPU; tương thích phần mềm Windows). Nguồn: `...v2.0`.
-- **§5.2 Interpretation of ranking** 🟡 — tiêu chí nào quyết định top; khớp kỳ vọng khảo sát/phỏng vấn; độ ổn định qua sensitivity.
+- **§5.2 Interpretation of ranking** 🟡 — tiêu chí nào quyết định top; khớp kỳ vọng khảo sát/phỏng vấn.
 - **§5.3 Practical/managerial implications** 🟢 — hàm ý cho người mua cá nhân / bộ phận thu mua / nhà bán lẻ / hãng SX (mục riêng kiểu Saputro 5.4).
 - **§5.4 Comparison with prior studies** 🟡 — đối chiếu trọng số/thứ hạng với Sönmez 2020, Gaur 2023, Lam 2023, Maghsoudi 2026.
 
@@ -60,7 +59,7 @@ Thứ tự đã sắp lại 2026-07-12 theo đúng flow Stage 1→2→3 của Ch
 - **B. Expert Interview Protocol and Summary** ✅ (đổi từ D, nội dung không đổi).
 - **C. Likert Survey Questionnaire** ✅ (đổi từ A, nội dung không đổi).
 - **D. AHP Pairwise Comparison Matrix + tính từng bước** ✅ (đổi từ B; 4 mục D.1-D.4 tái lập power-iteration của `ahp.py`).
-- **E. Laptop Dataset + Benchmarks + TOPSIS step-by-step** 🟡 (đổi từ C, chờ Phase 5, đã ghi rõ cấu trúc sẽ giống Appendix D khi có dữ liệu thật).
+- **E. Laptop Dataset + Benchmarks + TOPSIS step-by-step** ✅ (đổi từ C; 2026-07-12: E.1 Raw Dataset — 12 candidate thật từ Amazon.com + bảng truy vết CPU/weight nguyên văn; E.2 Benchmark and Market-Share Conversion — bảng conversion key PassMark (9 CPU) + Gartner Brand % (6 hãng) + ma trận đã chuyển đổi `tab:decision-matrix-converted`; E.3 TOPSIS Step-by-Step Calculation — norms, normalised matrix, weighted matrix, A+/A-, separation S+/S-, toàn bộ sinh từ `topsis.py`, không tính tay).
 
 ---
 

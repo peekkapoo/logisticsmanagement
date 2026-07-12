@@ -1,0 +1,15 @@
+Alternative,Price,CPU,RAM,SSD,Brand,Weight,Battery
+type,cost,benefit,benefit,benefit,benefit,cost,benefit
+weight,0.3491,0.2769,0.1201,0.1592,0.0430,0.0258,0.0258
+Lenovo ThinkPad X1 Carbon Gen 13 Aura Edition,2289,18898,32,2048,26.5,1.09,57
+Lenovo ThinkPad X1 Carbon Gen 14 Aura Edition,3499,20946,32,2048,26.5,1.00,58
+Apple MacBook Air M4,1494,23622,24,512,10.6,1.24,53.8
+Apple MacBook Air M5,1749,26831,24,1024,10.6,1.23,53.8
+Asus ExpertBook P5,1675,18898,32,1024,6.7,1.29,63
+HP EliteBook Ultra G1i,1539,18898,32,1024,19.3,1.36,56
+Lenovo ThinkPad X9 15 Aura Edition (2025),1799,18898,32,1024,26.5,1.40,80
+Dell 14 Premium (XPS 14 2026),1890,30684,32,1024,16.5,1.72,69.5
+Lenovo ThinkPad T14 Gen 6 (AMD),1100,19546,16,512,26.5,1.41,57
+Lenovo ThinkPad T14 Gen 7,2357,20452,32,512,26.5,2.22,60
+Acer Aspire 5,395,5811,8,128,6.4,1.63,48
+Lenovo ThinkPad X1 Carbon Gen 12,1685,16676,32,1024,26.5,1.08,57

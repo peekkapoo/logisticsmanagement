@@ -308,24 +308,35 @@ its current laptop recommendations are lab-based.
   \end{tabular}
 \end{table}
 
-From each outlet in the pool, the current recommendation list for business or office
-laptops is collected, and the union of these lists forms the raw candidate set. Because
-the same model frequently appears on several lists, the set is deduplicated by
-manufacturer and model designation, treating configuration variants of the same model as
-a single candidate at this step. The deduplicated list is then filtered for availability
-at CellphoneS, the Vietnamese retailer from which price and configuration data are
-drawn: a model that cannot actually be purchased through this channel is outside the
-buyer's option space regardless of its international standing. The date of collection is
-recorded with the data, since both the recommendation lists and the retail catalogue
+From each outlet in the pool, the current recommendation list for the best business or
+premium laptops of the model year is collected, and the union of these lists forms the raw
+candidate set. Because the same model frequently appears on several lists, the set is
+deduplicated by manufacturer and model designation, treating configuration variants of the
+same model as a single candidate at this step. Price and configuration data for the
+deduplicated set are then collected from Amazon.com rather than from a Vietnamese retailer,
+because the outlets' recommendations are dominated by newly launched, internationally
+released configurations that Vietnamese retail catalogues do not yet carry at the time of
+collection, so the buyer of the scenario in \Cref{subsec:scenario-design} would in practice
+have to source most of these models through an international retailer regardless of the
+Vietnamese market context. Amazon.com is the world's largest online retailer and the
+leading e-commerce platform in the United States, and using its product listings as a
+source of laptop specification and price data has direct precedent in the
+consumer-electronics literature: \textcite{rau_optimal_2018} construct their notebook
+price-history dataset directly from Amazon product listings. The date of collection is
+recorded with the data, since both the recommendation lists and the retailer's catalogue
 change over time.
 
 \subsection{Data Collection and Operationalisation}\label{subsec:operationalisation}
 
 Each remaining alternative is scored on the retained criteria, and the way each
 criterion is measured is fixed before the data are collected. Five criteria are directly
-quantitative and are taken as listed by the retailer: the price in Vietnamese dong, the
-memory capacity in gigabytes, the storage capacity in gigabytes, the device weight in
-kilograms, and the battery capacity as specified by the manufacturer. The processor
+quantitative and are taken as listed on Amazon.com: the price in US dollars, the memory
+capacity in gigabytes, the storage capacity in gigabytes, the device weight in kilograms
+(converted from the pounds figure shown in the listing), and the battery capacity in
+watt-hours as specified by the manufacturer. Watt-hours are used in preference to a
+manufacturer-claimed runtime in hours, because the latter is measured under differing,
+vendor-specific workloads and is therefore not commensurable across brands, whereas
+watt-hour capacity is a fixed physical specification of the battery itself. The processor
 cannot be treated this way: chipset designations such as product names and generation
 labels are neither numeric nor directly comparable across manufacturers. The criterion is
 therefore operationalised through a standardised benchmark score, using the PassMark CPU
@@ -334,13 +345,22 @@ This step matters for the validity of the analysis, because TOPSIS requires attr
 values that are numeric, monotonic in desirability, and commensurable
 \parencite{behzadian_state--art_2012}; a benchmark score satisfies all three conditions
 where a chipset name satisfies none. Brand, the one qualitative criterion, is likewise
-converted into an observable quantity rather than scored by hand: it is operationalised
-as the number of authorised service centres each manufacturer maintains in Vietnam, a
-figure published by the manufacturers themselves. This proxy is chosen because the brand
-criterion belongs to the trust and after-sales group of \Cref{tab:criteria}, and a
-service network is the concrete, verifiable expression of that trust, whereas a
-hand-assigned brand score would reintroduce exactly the subjectivity that the screening
-and weighting stages were designed to control.
+converted into an observable quantity rather than scored by hand: it is operationalised as
+each manufacturer's worldwide PC shipment market share for the first quarter of 2026, as
+reported by the market-research firm Gartner \parencite{gartner_2026}. This proxy is
+chosen in preference to a Vietnam-specific measure, such as a count of authorised service
+centres, because no freely accessible source publishes brand-level market share for the
+Vietnamese laptop market specifically; global shipment share is disclosed quarterly and is
+independently reproducible, and it still functions as the concrete, verifiable expression
+of manufacturer standing that the trust and after-sales group of \Cref{tab:criteria}
+calls for, whereas a hand-assigned brand score would reintroduce exactly the subjectivity
+that the screening and weighting stages were designed to control. Gartner is used in
+preference to IDC, the other major PC-market tracker, because Gartner's quarterly release
+reports a share figure for every one of the six brands present in this candidate set,
+including Acer, whereas IDC's release names only its top five vendors by shipment volume
+and groups every remaining brand, Acer included, into a single undifferentiated "other
+vendors" residual; using a single source that individually reports all six brands avoids
+mixing two trackers' figures within the same criterion column.
 
 \subsection{The TOPSIS Procedure}\label{subsec:topsis-procedure}
 
@@ -383,8 +403,3 @@ the best and worst weighted scores of each criterion, respecting its benefit or 
 \paragraph{Step 7 --- Ranking.}
 The alternatives are ranked in descending order of $C_i$; the laptop with the highest
 $C_i$ is the recommended choice.
-
-\section{Sensitivity Analysis Design}\label{sec:sensitivity-design}
-% TODO: thiet ke phan tich do nhay — thay doi trong so theo kich ban, kiem tra thu hang
-% co on dinh khong (mau Calik 2021 Table 11 / Sonmez 2020 da kich ban).
-\textit{[Phase 6 — see \texttt{SUON-NOI-DUNG.md} \S3.6.]}
