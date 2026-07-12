@@ -13,6 +13,9 @@
 
 \usepackage[margin=2.5cm]{geometry}
 \usepackage{booktabs}        % bang dep: \toprule \midrule \bottomrule, khong ke doc
+\usepackage{array,tabularx,longtable}
+\usepackage{ragged2e}
+\usepackage{float}
 \usepackage{graphicx}
 \graphicspath{{figures/}}
 \usepackage{amsmath,amssymb,mathtools}
@@ -24,7 +27,16 @@
 
 % Ghi chu duoi bang/hinh (Note/Source) theo chuan bai bao khoa hoc:
 % caption chi la tieu de ngan; don vi, nguong, nguon dat o note duoi float.
-\newcommand{\floatnote}[1]{\par\vspace{4pt}\begin{minipage}{\linewidth}\footnotesize #1\end{minipage}}
+% \floatnote{note}{source}: Note xuong dong rieng (trai), Source xuong dong moi ben duoi (phai).
+% \floatsource{source}: chi co Source (khong co Note rieng), can phai.
+\newcommand{\floatnote}[2]{%
+  \par\vspace{4pt}
+  {\raggedright\footnotesize #1\par}
+  {\raggedleft\footnotesize #2\par}%
+}
+\newcommand{\floatsource}[1]{\par\vspace{4pt}{\raggedleft\footnotesize #1\par}}
+\newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
 
 % Khung vien kep trang bia (dua tren current page, khong can remember picture
 % vi khong tham chieu node giua cac trang khac nhau).

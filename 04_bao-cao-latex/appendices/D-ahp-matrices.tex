@@ -26,7 +26,7 @@ follow from reciprocity.
     \textbf{Battery}     & 1/8  & 1/8  & 1/6  & 1/6  & 1/3  & 1    & 1 \\
     \bottomrule
   \end{tabular}
-  \floatnote{\emph{Note:} entries above the diagonal are the 21 elicited judgements on the Saaty scale; entries below the diagonal follow from reciprocity. \emph{Source:} authors' own expert elicitation.}
+  \floatnote{\emph{Note:} entries above the diagonal are the 21 elicited judgements on the Saaty scale; entries below the diagonal follow from reciprocity.}{\emph{Source:} Authors.}
 \end{table}
 
 \section{Step 1 --- Column Sums}\label{app:ahp-step1}
@@ -46,7 +46,7 @@ totals.
     Column sum & 2.8429 & 3.2123 & 11.5333 & 8.0095 & 25.8333 & 34.0000 & 33.0000 \\
     \bottomrule
   \end{tabular}
-  \floatnote{\emph{Source:} authors' own computation.}
+  \floatsource{\emph{Source:} Authors.}
 \end{table}
 
 \section{Step 2 --- Weight Vector by Power Iteration (Eigenvector Method)}\label{app:ahp-step2}
@@ -77,12 +77,16 @@ taken as the final weight vector.
     $k=6$ & 0.3491 & 0.2769 & 0.1201 & 0.1593 & 0.0430 & 0.0258 & 0.0258 \\
     \bottomrule
   \end{tabular}
-  \floatnote{\emph{Source:} authors' own computation.}
+  \floatsource{\emph{Source:} Authors.}
 \end{table}
 
 The converged weight vector is therefore
-$\mathbf{w} = (0.3491,\ 0.2769,\ 0.1201,\ 0.1592,\ 0.0430,\ 0.0258,\ 0.0258)$, matching the
-values reported in \Cref{tab:ahp-weights} of \Cref{sec:weights}.
+\[
+\mathbf{w} =
+\bigl(0.3491,\ 0.2769,\ 0.1201,\ 0.1592,\
+      0.0430,\ 0.0258,\ 0.0258\bigr),
+\]
+matching the values reported in \Cref{tab:ahp-weights} of \Cref{sec:weights}.
 
 \section{Step 3 --- Consistency Check}\label{app:ahp-step3}
 
@@ -104,7 +108,7 @@ $\lambda_{\max} = 7.3823$ directly rather than as an average over inconsistent e
     $(A\mathbf{w})_i / w_i$  & 7.3823 & 7.3823 & 7.3823 & 7.3823 & 7.3823 & 7.3823 & 7.3823 \\
     \bottomrule
   \end{tabular}
-  \floatnote{\emph{Source:} authors' own computation.}
+  \floatsource{\emph{Source:} Authors.}
 \end{table}
 
 With $\lambda_{\max} = 7.3823$ and $n = 7$, the consistency index from \Cref{eq:cr} is
@@ -142,7 +146,7 @@ then normalised to sum to one. \Cref{tab:ahp-geomean} compares the two methods.
     Geometric mean         & 0.3366 & 0.2882 & 0.1185 & 0.1615 & 0.0429 & 0.0264 & 0.0259 \\
     \bottomrule
   \end{tabular}
-  \floatnote{\emph{Source:} authors' own computation.}
+  \floatsource{\emph{Source:} Authors.}
 \end{table}
 
 The two methods rank all seven criteria identically and differ from one another by at most

@@ -11,55 +11,57 @@
 
 The study is organised into three sequential stages, each of which answers one of the
 research questions stated in \Cref{sec:objectives}. The first stage develops the set of
-evaluation criteria: candidate criteria are synthesised from the literature reviewed in
+evaluation criteria. Candidate criteria are synthesised from the literature reviewed in
 \Cref{ch:literature}, refined through expert interviews, and then screened through a
-large-scale survey, so that only criteria whose importance is confirmed by actual office
-workers enter the quantitative model. The second stage quantifies the relative importance
+convenience survey of respondents rating each criterion for office-work relevance, so that
+only criteria receiving broad support beyond the expert panel enter the quantitative model.
+The second stage quantifies the relative importance
 of the retained criteria with AHP, including an explicit consistency check before the
 weights are accepted. The third stage applies the model to a concrete purchase scenario:
 candidate laptops are identified from the recommendation lists of professional review
-outlets, their attribute data are collected from the Vietnamese retailer CellphoneS and
-operationalised into a decision matrix, and TOPSIS ranks them using the weights obtained
-in the second stage. The stages are
-strictly ordered: the pairwise comparison in Stage~2 cannot be designed until the criteria
+outlets, their price and configuration data are collected from Amazon.com at a recorded
+date and operationalised into a decision matrix, and TOPSIS ranks them using the weights
+obtained in the second stage. The stages are
+strictly ordered, since the pairwise comparison in Stage~2 cannot be designed until the criteria
 set is fixed, and the ranking in Stage~3 is meaningful only after the weights have passed
 the consistency check. \Cref{fig:framework} summarises this pipeline.
 
 \begin{figure}[htbp]
   \centering
   \begin{tikzpicture}[
-      node distance=7mm and 9mm,
-      stage/.style={draw, rounded corners=2pt, align=center, minimum width=34mm,
-                    minimum height=11mm, font=\small},
-      substep/.style={draw, align=center, minimum width=30mm, minimum height=8mm,
-                      font=\footnotesize},
-      lbl/.style={font=\footnotesize\itshape},
+      node distance=6mm,
+      process/.style={draw, rounded corners=2pt, align=center, minimum width=29mm,
+                      minimum height=12mm, font=\footnotesize},
+      output/.style={draw, rounded corners=2pt, align=center, minimum width=30mm,
+                     minimum height=12mm, font=\footnotesize, fill=gray!10},
+      lbl/.style={font=\scriptsize\itshape, align=center},
       arr/.style={-{Stealth[length=2.5mm]}, thick}
     ]
-    % Stage 1 column
-    \node[substep] (lit) {Literature synthesis};
-    \node[substep, below=of lit] (int) {Expert interviews\\ (purposive, $n=5$)};
-    \node[substep, below=of int] (sur) {Likert survey screening\\ (retain if mean $\geq 3.0$)};
-    \node[stage, below=of sur] (s1out) {Retained criteria};
-    % Stage 2
-    \node[stage, right=14mm of s1out] (s2) {Stage 2: AHP\\ weighting + CR check};
-    % Stage 3
-    \node[stage, right=14mm of s2] (s3) {Stage 3: Scenario\\ application + TOPSIS};
-    % labels
-    \node[lbl, above=2mm of lit] {Stage 1: Criteria development};
-    \node[lbl, below=1mm of s2] {answers RQ2};
-    \node[lbl, below=1mm of s3] {answers RQ3};
-    \node[lbl, below=1mm of s1out] {answers RQ1};
-    % arrows
-    \draw[arr] (lit) -- (int);
-    \draw[arr] (int) -- (sur);
-    \draw[arr] (sur) -- (s1out);
-    \draw[arr] (s1out) -- node[above, font=\footnotesize] {weights} (s2);
-    \draw[arr] (s2) -- node[above, font=\footnotesize] {ranking} (s3);
+    \node[process] (develop) {Literature synthesis\\ Expert refinement ($n=5$)};
+    \node[process, right=of develop] (screen) {Likert screening\\ (mean $\geq 3.0$ retained)};
+    \node[output, right=of screen] (criteria) {Retained\\ criteria};
+    \node[process, below=12mm of criteria] (ahp) {Pairwise judgements\\ AHP + CR check ($n=1$)};
+    \node[output, below=12mm of ahp] (weights) {Criteria weights\\ (CR-checked)};
+    \node[process, left=of weights] (candidates) {Alternative identification\\ (review outlets)};
+    \node[process, left=of candidates] (decisionmatrix) {Decision matrix\\ assembly};
+    \node[process, below=12mm of decisionmatrix] (topsis) {TOPSIS\\ distances};
+    \node[output, right=of topsis] (rank) {Closeness scores\\ and final ranking};
+    \draw[arr] (develop) -- (screen);
+    \draw[arr] (screen) -- (criteria);
+    \draw[arr] (criteria) -- (ahp);
+    \draw[arr] (ahp) -- (weights);
+    \draw[arr] (weights) -- (candidates);
+    \draw[arr] (candidates) -- (decisionmatrix);
+    \draw[arr] (decisionmatrix) -- (topsis);
+    \draw[arr] (topsis) -- (rank);
+    \node[lbl, above=2mm of screen] {Stage 1 --- answers RQ1};
+    \node[lbl, below=2mm of weights] {Stage 2 --- answers RQ2};
+    \node[lbl, below=2mm of topsis] {Stage 3 --- answers RQ3};
   \end{tikzpicture}
   \caption{The proposed research model.}
   \label{fig:framework}
-  \floatnote{\emph{Source:} authors' own elaboration.}
+  \floatnote{\emph{Note:} the figure sets out the planned procedure only; no computed
+  values are reported here, as these belong to \Cref{ch:results}.}{\emph{Source:} Authors.}
 \end{figure}
 
 \section{Stage 1 --- Criteria Development}\label{sec:stage1}
@@ -69,7 +71,7 @@ the consistency check. \Cref{fig:framework} summarises this pipeline.
 The starting point of the criteria set is the body of laptop-selection and
 consumer-behaviour studies reviewed in \Cref{sec:prior-studies}. From these sources,
 every attribute that at least one prior study used to evaluate laptops or closely related
-devices was extracted and consolidated: price appears in nearly all of them
+devices was extracted and consolidated. Price appears in nearly all of them
 \parencite{sonmez_cakir_determination_2020,weng_siew_lam_evaluation_2023,liao_determinants_2022,rau_optimal_2018},
 core hardware attributes such as processor, memory, and storage recur across the MCDM
 applications \parencite{gaur_application_2023,maghsoudi_hybrid_2026}, and service-related
@@ -79,10 +81,11 @@ Attributes that overlap in meaning were merged into a single criterion, and attr
 to specialised use cases outside the office-worker persona, such as colour-accurate
 displays for design work, were excluded at this stage. The remaining attributes were then
 organised into thematic groups reflecting different aspects of the purchase decision, such
-as core hardware capability or trust and after-sales value, so that the pairwise
-comparisons of \Cref{sec:stage2} could later be structured hierarchically rather than as a
-single flat list. The resulting set of candidate criteria is reported in
-\Cref{subsec:criteria-set}.
+as core hardware capability or trust and after-sales value, purely to aid the presentation
+and screening of the candidate set in \Cref{tab:criteria}; the criteria that survive
+screening are compared through a single flat pairwise matrix in \Cref{sec:stage2} rather
+than through a grouped or multi-level AHP hierarchy. The resulting set of candidate
+criteria is reported in \Cref{subsec:criteria-set}.
 
 \subsection{Expert Interviews}\label{subsec:expert-interviews}
 
@@ -90,18 +93,22 @@ Because the candidate criteria from \Cref{subsec:lit-synthesis} were derived fro
 conducted outside Vietnam, they were validated against local practice before being
 quantified. Five experts
 were selected purposively so that each occupies a different position in the laptop
-procurement process: a deputy head of an international relations office with seven years
-of end-user experience (CG-01), an IT administrator who specifies and maintains office
-fleets (CG-02), an import--export documentation officer representing the target persona
-(CG-03), a head of product development with ten years of managerial purchasing experience
-(CG-04), and a retail sales consultant who advises laptop buyers daily (CG-05).
+procurement process. They comprise a deputy head of an international relations office
+with seven years of end-user experience (CG-01), an IT administrator who specifies and
+maintains office fleets (CG-02), an import--export documentation officer representing the
+target persona (CG-03), a head of product development with ten years of managerial
+purchasing experience (CG-04), and a retail sales consultant who advises laptop buyers
+daily (CG-05).
 
-The interview protocol itself, rather than being improvised, was constructed following the
-Interview Protocol Refinement (IPR) framework, whose four phases require that every
-question be traceable to a research objective, that the questions be sequenced as an
-inquiry-based conversation rather than a checklist, that the draft be reviewed before
-fieldwork, and that it be piloted \parencite{castillo-montoya_preparing_2016}. Applying
-this framework produced a five-part funnel that moves from the concrete to the general: a
+The interview protocol itself, rather than being improvised, was informed by the Interview
+Protocol Refinement (IPR) framework, whose four phases call for every question to be
+traceable to a research objective, for the questions to be sequenced as an inquiry-based
+conversation rather than a checklist, for the draft to be reviewed before fieldwork, and
+for the instrument to be piloted \parencite{castillo-montoya_preparing_2016}. The present
+protocol follows the first two phases in full and was reviewed internally before
+fieldwork, though no separate pilot interview was conducted ahead of the five recorded
+sessions. Applying this framework produced a five-part funnel that moves from the concrete
+to the general, comprising a
 warm-up section grounding each respondent in a recent, specific laptop-selection episode; a
 stimulus-based section in which a literature finding for each criterion group is read
 aloud immediately before the matching question, so that agreement or disagreement is
@@ -115,9 +122,9 @@ asks the respondent to recall the specific case behind an answer or to explain t
 reasoning process that produced it, a technique adapted from cognitive interviewing that
 keeps a response anchored in the respondent's actual experience rather than a general
 impression formed on the spot \parencite{willis_cognitive_2005}. This funnel structure and
-probing technique operate inside a semi-structured session that functions as the
-qualitative first round of a Delphi-style refinement preceding AHP, an arrangement applied
-in prior criteria-development work \parencite{al_hazza_integrated_2022,mcmillan_how_2016}.
+probing technique operate inside a semi-structured session that functions as a structured
+expert refinement stage preceding AHP, an arrangement applied in prior
+criteria-development work \parencite{al_hazza_integrated_2022,mcmillan_how_2016}.
 Each session lasted twenty to thirty minutes; all five respondents gave informed consent,
 no audio was recorded, and only written notes were retained.
 
@@ -133,23 +140,34 @@ reported together with the resulting criteria set in \Cref{subsec:criteria-set}.
 Expert validation establishes that a criterion is defensible, but not that the target
 population actually weighs it when buying. The candidate criteria from
 \Cref{subsec:expert-interviews} were therefore submitted to a wider screening survey
-before any pairwise comparison was designed. A questionnaire was distributed through
-Google Forms in which respondents rated the importance of each criterion when choosing a
+before any pairwise comparison was designed. A questionnaire was distributed online
+through Google Forms as a self-administered, voluntary-response instrument, open to any
+respondent willing to complete it rather than restricted by a formal occupational
+eligibility check; respondents rated the importance of each criterion when choosing a
 laptop for office work on a five-point Likert scale, from 1 (not important) to 5 (very
 important). The instrument deliberately contained one rating item per candidate criterion
 and no other items, keeping completion time short and avoiding demographic questions that
-the screening decision does not use.
+the screening decision does not use. Because each criterion is measured by a single item
+rather than a multi-item scale, the exercise functions as item-level importance screening
+rather than validation of a latent psychometric construct, and because the sample was
+recruited by convenience rather than by a method targeting demographically verified office
+workers, the 84 responses collected are best read as a screening signal from a broadly
+relevant respondent pool rather than as a confirmed office-worker panel; this qualification
+carries through the reporting of results in \Cref{sec:screening} and is revisited as a
+limitation in \Cref{sec:limitations}.
 
-The retention rule was fixed before data collection: a criterion is retained if its sample
-mean is at least 3.0, the midpoint of the scale, and removed otherwise. On a five-point
-scale the midpoint separates responses that lean towards importance from those that lean
-away from it, so a mean below 3.0 indicates that respondents on balance do not regard the
-criterion as important \parencite{chyung_evidencebased_2017}. Committing to the threshold
-in advance prevents the rule from being adjusted after the results are known. Responses
-missing more than 20\% of the items were to be discarded, and straight-lined responses,
-in which a respondent gives the same rating to every item, were to be flagged for a group
-decision rather than silently removed. The screening outcome, which reduces the candidate
-set to the criteria carried into Stage~2, is reported in \Cref{sec:screening}.
+The retention rule was fixed before data collection. A criterion is retained if its sample
+mean is at least 3.0, the midpoint of the scale, and removed otherwise; this is a pragmatic
+decision rule keyed to the scale midpoint rather than a psychometrically validated
+cut-off. On a five-point scale the midpoint separates responses that lean towards
+importance from those that lean away from it, so a mean below 3.0 indicates that
+respondents on balance do not regard the criterion as important
+\parencite{chyung_evidencebased_2017}. Committing to the threshold in advance prevents the
+rule from being adjusted after the results are known. Responses missing more than 20\% of
+the items were to be discarded, and straight-lined responses, in which a respondent gives
+the same rating to every item, were to be flagged for a group decision rather than
+silently removed. The screening outcome, which reduces the candidate set to the criteria
+carried into Stage~2, is reported in \Cref{sec:screening}.
 
 \section{Stage 2 --- AHP for Criteria Weighting}\label{sec:stage2}
 
@@ -158,12 +176,12 @@ Analytic Hierarchy Process, whose theoretical basis is reviewed in \Cref{sec:ahp
 The procedure follows five steps.
 
 \paragraph{Step 1 --- Hierarchy construction.}
-The decision problem is structured into three levels: the goal of selecting the most
-suitable laptop for a Vietnamese office worker at the top, the criteria retained from
-Stage~1 at the intermediate level, and the candidate laptop models at the bottom. Only
-the upper two levels are involved in this stage; the alternatives enter the model in
-Stage~3, where they are evaluated on directly measurable data rather than on pairwise
-judgements.
+The AHP component of the model is structured into two levels only, the goal of selecting
+the most suitable laptop for a Vietnamese office worker at the top and the seven criteria
+retained from Stage~1 immediately below it. The candidate laptop models are not entered
+into this hierarchy and are not compared through pairwise judgement at any point.
+Alternatives are instead introduced in Stage~3, where TOPSIS evaluates them directly on
+measurable attribute data using the weights this stage produces.
 
 \paragraph{Step 2 --- Pairwise comparison.}
 The pairwise judgements were elicited from one representative expert drawn from the
@@ -172,7 +190,7 @@ experience of office laptop procurement. For $n$ retained criteria the expert co
 $n(n-1)/2$ comparisons, each expressing how much more important one criterion is than
 another on the nine-point ratio scale of \Cref{tab:saaty}. Relying on a single judgement
 set concentrates the weighting in one perspective, which is why the consistency check in
-Step~5 is applied strictly: an inconsistent matrix is returned to the expert for
+Step~5 is applied strictly. An inconsistent matrix is returned to the expert for
 re-evaluation rather than accepted or averaged away.
 
 \begin{table}[htbp]
@@ -191,7 +209,7 @@ re-evaluation rather than accepted or averaged away.
     2, 4, 6, 8 & Intermediate values \\
     \bottomrule
   \end{tabular}
-  \floatnote{\emph{Source:} adapted from \textcite{saaty_analytic_1987}.}
+  \floatsource{\emph{Source:} adapted from \textcite{saaty_analytic_1987}.}
 \end{table}
 
 \paragraph{Step 3 --- Comparison matrix.}
@@ -224,8 +242,10 @@ consistency check in Step~5 verifies, and because the comparative simulations of
 increasingly as matrices grow larger or less consistent. In computation the eigenvector is
 obtained by power iteration, repeatedly multiplying a normalised weight vector by $A$
 until convergence. As a cross-check, the weights are also computed by the geometric mean
-of each row; agreement between the two vectors in the ordering of criteria is treated as
-evidence that the result does not depend on the derivation method.
+of each row; agreement between the two vectors in the ordering of criteria shows that the
+priority ordering is stable across these two computational routes, though it does not by
+itself establish that the ordering would hold under a different elicitation or aggregation
+method more broadly.
 
 \paragraph{Step 5 --- Consistency check.}
 Because the judgements are elicited from a human respondent, they may contradict one
@@ -238,8 +258,8 @@ consistency ratio $CR = CI/RI$, where the consistency index is
 $\lambda_{\max}$ is the principal eigenvalue from \Cref{eq:weight}, and $RI$ is the random
 index, the mean consistency index of randomly generated reciprocal matrices of the same
 order (\Cref{tab:ri}). A matrix is accepted when $CR \le 0.10$
-\parencite{Saaty2008DECISIONMW}. If the threshold is exceeded, the weights are not used:
-the three pairwise entries that deviate most from the values a consistent matrix would
+\parencite{Saaty2008DECISIONMW}. If the threshold is exceeded, the weights are not used.
+The three pairwise entries that deviate most from the values a consistent matrix would
 imply are identified and returned to the expert for re-evaluation, and the matrix is
 recomputed. The threshold is never relaxed to accommodate a marginally failing matrix.
 
@@ -254,7 +274,7 @@ recomputed. The threshold is never relaxed to accommodate a marginally failing m
     RI & 0.58 & 0.90 & 1.12 & 1.24 & 1.32 & 1.41 & 1.45 & 1.49 \\
     \bottomrule
   \end{tabular}
-  \floatnote{\emph{Source:} adapted from \textcite{saaty_analytic_1987}.}
+  \floatsource{\emph{Source:} adapted from \textcite{saaty_analytic_1987}.}
 \end{table}
 
 \section{Stage 3 --- Scenario-Based Application with TOPSIS}\label{sec:stage3}
@@ -262,16 +282,16 @@ recomputed. The threshold is never relaxed to accommodate a marginally failing m
 \subsection{Decision Scenario}\label{subsec:scenario-design}
 
 The third stage applies the weighted criteria to a concrete decision situation. The
-scenario mirrors the problem statement of \Cref{sec:problem}: an office worker in Vietnam
-needs a laptop for work, has browsed review websites and the catalogues of established
-retailers, and still cannot decide, because the information available compares products
-one attribute at a time while the actual decision requires weighing all attributes at
-once. Framing Stage~3 as a scenario serves two purposes. It keeps the demonstration
+scenario mirrors the problem statement of \Cref{sec:problem}, in which an office worker in
+Vietnam needs a laptop for work, has browsed review websites and the catalogues of
+established retailers, and still cannot decide, because the information available
+compares products one attribute at a time while the actual decision requires weighing all
+attributes at once. Framing Stage~3 as a scenario serves two purposes. It keeps the demonstration
 honest, since every modelling choice, from which laptops enter the comparison to how each
 criterion is measured, must be one this buyer could reproduce from publicly available
 information; and it makes the output directly interpretable, since the resulting ranking
 answers the question the buyer actually asks. The stage proceeds in three steps that
-parallel a standard data workflow: identifying the alternatives, collecting and
+parallel a standard data workflow, namely identifying the alternatives, collecting and
 operationalising their attribute data, and analysing the resulting decision matrix with
 TOPSIS.
 
@@ -280,23 +300,23 @@ TOPSIS.
 The candidate laptops are not chosen by the researchers' own judgement, which would risk
 pre-selecting the winner, but harvested from published recommendation lists of
 professional review outlets and then filtered for local availability. An outlet is
-included in the source pool if it satisfies three conditions: it maintains a documented,
-standardised laboratory testing protocol rather than opinion-only reviews; it actively
-covers laptops as a product category; and its editorial operation is stable enough that
-its current recommendations reflect that protocol. Seven outlets meet these conditions,
-summarised in \Cref{tab:review-sources}. One widely known outlet, Engadget, was
-considered and excluded: it reduced its editorial staff by roughly one third in 2024,
-reoriented its output towards search-driven affiliate content, and changed ownership in
-early 2026, so the stability condition is not met. CNET is retained with a caveat: the
-outlet published AI-generated articles without clear disclosure in 2023, but it operates
-its own testing laboratory and tightened human editorial review after the incident, and
-its current laptop recommendations are lab-based.
+included in the source pool if it satisfies three conditions. It must maintain a
+documented, standardised laboratory testing protocol rather than opinion-only reviews,
+actively cover laptops as a product category, and keep an editorial operation stable
+enough that its current recommendations reflect that protocol. Seven outlets meet these
+conditions, summarised in \Cref{tab:review-sources}. One widely known outlet, Engadget, was
+considered and excluded, because it reduced its editorial staff by roughly one third in
+2024, reoriented its output towards search-driven affiliate content, and changed
+ownership in early 2026, so the stability condition is not met. CNET is retained with a
+caveat. The outlet published AI-generated articles without clear disclosure in 2023, but
+it operates its own testing laboratory and tightened human editorial review after the
+incident, and its current laptop recommendations are lab-based.
 
 \begin{table}[htbp]
   \centering
   \caption{Review outlets used as sources for alternative identification.}
   \label{tab:review-sources}
-  \begin{tabular}{@{}lp{3.6cm}p{5.8cm}@{}}
+  \begin{tabularx}{\textwidth}{@{}L{2.4cm}L{3.8cm}Y@{}}
     \toprule
     \textbf{Outlet} & \textbf{Operator} & \textbf{Testing approach} \\
     \midrule
@@ -308,9 +328,8 @@ its current laptop recommendations are lab-based.
     Wirecutter   & The New York Times  & Hands-on testing; no sponsored review placements \\
     RTINGS       & Independent         & Instrumented measurement (display, thermals, input latency) \\
     \bottomrule
-  \end{tabular}
-  \floatnote{\emph{Source:} authors' own compilation from the editorial policies of the
-  listed outlets.}
+  \end{tabularx}
+  \floatsource{\emph{Source:} Authors.}
 \end{table}
 
 From each outlet in the pool, the current recommendation list for the best business or
@@ -326,8 +345,8 @@ have to source most of these models through an international retailer regardless
 Vietnamese market context. Amazon.com is the world's largest online retailer and the
 leading e-commerce platform in the United States, and using its product listings as a
 source of laptop specification and price data has direct precedent in the
-consumer-electronics literature: \textcite{rau_optimal_2018} construct their notebook
-price-history dataset directly from Amazon product listings. The date of collection is
+consumer-electronics literature, where \textcite{rau_optimal_2018} construct their
+notebook price-history dataset directly from Amazon product listings. The date of collection is
 recorded with the data, since both the recommendation lists and the retailer's catalogue
 change over time.
 
@@ -335,22 +354,22 @@ change over time.
 
 Each remaining alternative is scored on the retained criteria, and the way each
 criterion is measured is fixed before the data are collected. Five criteria are directly
-quantitative and are taken as listed on Amazon.com: the price in US dollars, the memory
-capacity in gigabytes, the storage capacity in gigabytes, the device weight in kilograms
-(converted from the pounds figure shown in the listing), and the battery capacity in
-watt-hours as specified by the manufacturer. Watt-hours are used in preference to a
+quantitative and are taken as listed on Amazon.com, namely the price in US dollars, the
+memory capacity in gigabytes, the storage capacity in gigabytes, the device weight in
+kilograms (converted from the pounds figure shown in the listing), and the battery
+capacity in watt-hours as specified by the manufacturer. Watt-hours are used in preference to a
 manufacturer-claimed runtime in hours, because the latter is measured under differing,
 vendor-specific workloads and is therefore not commensurable across brands, whereas
 watt-hour capacity is a fixed physical specification of the battery itself. The processor
-cannot be treated this way: chipset designations such as product names and generation
-labels are neither numeric nor directly comparable across manufacturers. The criterion is
+cannot be treated this way, because chipset designations such as product names and
+generation labels are neither numeric nor directly comparable across manufacturers. The criterion is
 therefore operationalised through a standardised benchmark score, using the PassMark CPU
 database, which converts heterogeneous processor names into a single performance scale.
 This step matters for the validity of the analysis, because TOPSIS requires attribute
 values that are numeric, monotonic in desirability, and commensurable
 \parencite{behzadian_state--art_2012}; a benchmark score satisfies all three conditions
 where a chipset name satisfies none. Brand, the one qualitative criterion, is likewise
-converted into an observable quantity rather than scored by hand: it is operationalised as
+converted into an observable quantity rather than scored by hand. It is operationalised as
 each manufacturer's worldwide PC shipment market share for the first quarter of 2026, as
 reported by the market-research firm Gartner \parencite{gartner_2026}. This proxy is
 chosen in preference to a Vietnam-specific measure, such as a count of authorised service
@@ -366,6 +385,28 @@ including Acer, whereas IDC's release names only its top five vendors by shipmen
 and groups every remaining brand, Acer included, into a single undifferentiated "other
 vendors" residual; using a single source that individually reports all six brands avoids
 mixing two trackers' figures within the same criterion column.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Operational definitions of the TOPSIS criteria.}
+  \label{tab:operationalisation}
+  \begin{tabularx}{\textwidth}{@{}L{2.5cm}L{3.2cm}L{1.5cm}L{1.3cm}Y@{}}
+    \toprule
+    \textbf{Criterion} & \textbf{Operational measure} & \textbf{Unit} & \textbf{Type} & \textbf{Primary source} \\
+    \midrule
+    Price & Listed purchase price & USD & Cost & Amazon.com listing \\
+    CPU & PassMark CPU benchmark score & Points & Benefit & PassMark CPU database \\
+    RAM & Installed memory capacity & GB & Benefit & Amazon.com listing \\
+    SSD & Solid-state storage capacity & GB & Benefit & Amazon.com listing \\
+    Brand & Worldwide PC shipment share, Q1 2026 & \% & Benefit & Gartner \parencite{gartner_2026} \\
+    Size / weight & Device mass converted to kilograms & kg & Cost & Amazon.com listing \\
+    Battery life & Manufacturer-specified battery capacity & Wh & Benefit & Product specification \\
+    \bottomrule
+  \end{tabularx}
+  \floatnote{\emph{Note:} benefit criteria are preferred at higher values; cost criteria
+  are preferred at lower values. Battery capacity and worldwide shipment share are the
+  observable proxies used for battery life and brand, respectively.}{\emph{Source:} Authors.}
+\end{table}
 
 \subsection{The TOPSIS Procedure}\label{subsec:topsis-procedure}
 

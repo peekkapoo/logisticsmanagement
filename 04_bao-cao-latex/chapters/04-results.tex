@@ -23,7 +23,7 @@ and durability, ecosystem utility, and trust and after-sales value. \Cref{tab:cr
 lists the resulting set together with each criterion's group and its direction of
 preference. Most criteria are benefit criteria, for which a larger value is preferred;
 price and physical size or weight are cost criteria, for which a smaller value is
-preferred. The distinction matters at two later points: it determines the direction of the
+preferred. The distinction matters at two later points. It determines the direction of the
 ideal solutions in TOPSIS (\Cref{sec:stage3}), and it guards against the error of treating
 a heavier or more expensive machine as better simply because its raw attribute value is
 larger.
@@ -32,7 +32,7 @@ larger.
   \centering
   \caption{The fourteen candidate evaluation criteria in six groups.}
   \label{tab:criteria}
-  \begin{tabular}{@{}clcp{4.5cm}@{}}
+  \begin{tabularx}{\textwidth}{@{}L{1.2cm}L{4.6cm}L{2.2cm}Y@{}}
     \toprule
     \textbf{ID} & \textbf{Criterion} & \textbf{Type} & \textbf{Group} \\
     \midrule
@@ -51,9 +51,8 @@ larger.
     C13 & Brand                   & Benefit & Trust \& after-sales \\
     C14 & After-sales / warranty  & Benefit & Trust \& after-sales \\
     \bottomrule
-  \end{tabular}
-  \floatnote{\emph{Source:} authors' own synthesis from the reviewed literature and the
-  expert interviews.}
+  \end{tabularx}
+  \floatsource{\emph{Source:} Authors.}
 \end{table}
 
 \subsection{Interview-Driven Refinement}\label{subsec:interview-outcomes}
@@ -61,19 +60,19 @@ larger.
 Following the revision rule described in \Cref{subsec:expert-interviews}, the interviews
 changed the candidate set in two ways. First, the dedicated graphics card was removed.
 Four of the five experts converged independently on the argument that a discrete GPU is a
-cost without a corresponding benefit for office work: it raises the purchase price,
+cost without a corresponding benefit for office work, since it raises the purchase price,
 weight, and thermal load while shortening battery life, and the budget it consumes is
 better redirected towards a newer-generation processor, more memory, or faster storage.
 This judgement is consistent with the finding of \textcite{maghsoudi_hybrid_2026} that the
 graphics card ranked last among ten notebook attributes in their expert-weighted model.
 Second, software compatibility was added. The experts who work inside Vietnamese offices
 (CG-01, CG-03) described a lock-in effect that the international literature rarely makes
-explicit: accounting packages, internal ERP systems, and the government's customs
+explicit, in which accounting packages, internal ERP systems, and the government's customs
 declaration software are written for Windows, so a device that cannot run them is excluded
 from consideration regardless of its other merits. The interviews also sharpened the
 definitions of two retained criteria, restricting the storage criterion to solid-state
 drives and extending the design criterion to cover shell material, and recalibrated the
-expectation for battery life: because mains power is readily available in offices, a
+expectation for battery life, because mains power is readily available in offices, so a
 runtime of four to seven hours was considered sufficient, a markedly lower bar than the
 top-priority status that battery life receives in \textcite{weng_siew_lam_evaluation_2023}.
 The revised set therefore still contains fourteen criteria, but with GPU replaced by
@@ -81,10 +80,29 @@ software compatibility and with definitions anchored to local working conditions
 the candidate set reported in \Cref{tab:criteria} above and carried into the screening
 survey of \Cref{subsec:screening}.
 
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[
+      box/.style={draw, rounded corners=2pt, align=center, text width=6.8cm,
+                  minimum height=14mm, font=\footnotesize},
+      arr/.style={-{Stealth[length=2.5mm]}, thick},
+      note/.style={font=\scriptsize, align=left}
+    ]
+    \node[box] (initial) {Literature-derived set\\14 criteria\\includes GPU};
+    \node[box, below=15mm of initial] (revised) {Expert-revised set\\14 criteria\\GPU out; software compatibility in};
+    \node[box, below=15mm of revised] (retained) {Survey-retained set\\7 criteria\\mean $\geq 3.0$};
+    \draw[arr] (initial) -- node[right, note] {expert refinement\\($n=5$)} (revised);
+    \draw[arr] (revised) -- node[right, note] {Likert screening\\($N=84$)} (retained);
+  \end{tikzpicture}
+  \caption{Transition from the literature-derived criteria to the final retained set.}
+  \label{fig:criteria-transition}
+  \floatsource{\emph{Source:} Authors.}
+\end{figure}
+
 \section{Criteria Screening Results}\label{sec:screening}
 
 The screening survey described in \Cref{subsec:screening} collected 84 responses, all of
-which were complete: no respondent left more than 20\% of the items unanswered, and no
+which were complete. No respondent left more than 20\% of the items unanswered, and no
 straight-lined response was detected, so every questionnaire entered the analysis.
 \Cref{tab:survey-results} reports the descriptive statistics for the fourteen candidate
 criteria together with the retention decision under the pre-committed threshold of a mean
@@ -92,7 +110,7 @@ of at least 3.0.
 
 \input{tables/survey-results}
 
-Seven criteria pass the threshold: battery life records the highest mean (4.02), followed
+Seven criteria pass the threshold. Battery life records the highest mean (4.02), followed
 by memory and physical size or weight (both 3.96), storage (3.89), processor (3.86), and
 price and brand (both 3.79). The seven removed criteria all fall clearly below the
 midpoint, from keyboard experience (2.88) down to durability (2.36). The gap between the
@@ -102,8 +120,8 @@ threshold around the midpoint. These seven criteria constitute the answer to RQ1
 define the dimension of the pairwise comparison in Stage~2. It is worth recording, ahead
 of the fuller treatment in \Cref{ch:discussion}, that several criteria emphasised in the
 expert interviews, notably software compatibility, durability, and after-sales support,
-were screened out by the wider respondent pool, a divergence between professional and
-end-user perspectives that the two-step design of Stage~1 makes visible rather than
+were screened out by the wider respondent pool, a divergence between the expert panel and
+the survey respondents that the two-step design of Stage~1 makes visible rather than
 concealing.
 
 \section{Criteria Weights and Consistency Check}\label{sec:weights}
@@ -111,7 +129,7 @@ concealing.
 The retained criteria were compared pairwise by the representative expert as described in
 \Cref{sec:stage2}, producing a $7 \times 7$ reciprocal matrix from 21 elicited judgements.
 Before the weights were interpreted, the matrix was submitted to the consistency check of
-\Cref{eq:cr}: the principal eigenvalue is $\lambda_{\max} = 7.3823$, giving a consistency
+\Cref{eq:cr}. The principal eigenvalue is $\lambda_{\max} = 7.3823$, giving a consistency
 index of $CI = 0.0637$ and, with the random index $RI = 1.32$ for $n = 7$, a consistency
 ratio of $CR = 0.0483$. As this value lies below the acceptance threshold of 0.10
 \parencite{Saaty2008DECISIONMW}, the judgement set is internally coherent and the derived
@@ -120,24 +138,41 @@ priority vector.
 
 \input{tables/ahp-weights}
 
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[x=14cm,y=0.72cm,font=\footnotesize]
+    \foreach \name/\value/\y in {Price/.3491/7,CPU/.2769/6,SSD/.1592/5,RAM/.1201/4,Brand/.0430/3,{Size / weight}/.0258/2,{Battery life}/.0258/1}{
+      \fill[gray!65] (0,\y-0.22) rectangle (\value,\y+0.22);
+      \node[anchor=east] at (-0.01,\y) {\name};
+      \node[anchor=west] at (\value+0.006,\y) {\pgfmathprintnumber[fixed,precision=4]{\value}};
+    }
+    \draw[->] (0,0.45) -- (0.38,0.45) node[right] {Weight};
+    \foreach \x in {0,.1,.2,.3}{\draw (\x,0.40)--(\x,0.50) node[below=2mm] {\pgfmathprintnumber[fixed,precision=1]{\x}};}
+  \end{tikzpicture}
+  \caption{AHP weights of the seven retained criteria.}
+  \label{fig:ahp-weights}
+  \floatnote{\emph{Note:} weights are ordered from highest to lowest.}{\emph{Source:} Authors.}
+\end{figure}
+
 The weight structure is strongly concentrated at the top. Price carries the largest weight
 (0.3491) and the processor the second largest (0.2769); together these two criteria
 account for approximately 62.6\% of the total priority, so the model characterises the
 office-laptop decision primarily as a trade-off between budget and computing capability.
 A middle tier follows, comprising storage (0.1592) and memory (0.1201), while brand
 (0.0430), size or weight (0.0258), and battery life (0.0258) form a low-priority tier that
-collectively holds less than 10\% of the weight. The position of battery life is notable:
-although it recorded the highest mean in the screening survey, it receives the smallest
-AHP weight, and the same reversal separates this result from
+collectively holds less than 10\% of the weight. The position of battery life is notable,
+because although it recorded the highest mean in the screening survey, it receives the
+smallest AHP weight, and the same reversal separates this result from
 \textcite{weng_siew_lam_evaluation_2023}, who report battery life as the most heavily
 weighted criterion in their mobile-phone model. This pattern is consistent with the
 recalibration that emerged from the expert interviews, in which battery life is a
 requirement that most office laptops already satisfy rather than a differentiator; its
 interpretation is developed in \Cref{ch:discussion}. As a robustness check, the weights
 were recomputed by the geometric-mean method described in \Cref{sec:stage2}; the resulting
-vector preserves the same ordering of all seven criteria, indicating that the priority
-structure does not depend on the derivation method. These weights answer RQ2 and enter
-Stage~3 as the weighting vector for TOPSIS.
+vector preserves the same ordering of all seven criteria, indicating that this ordering is
+stable across the two computational methods applied here rather than an artefact of the
+eigenvector procedure specifically. These weights answer RQ2 and enter Stage~3 as the
+weighting vector for TOPSIS.
 
 \section{Decision Scenario and Alternatives}\label{sec:scenario}
 
@@ -173,8 +208,7 @@ candidates by these identifiers.
     Can12 & Lenovo ThinkPad X1 Carbon Gen 12 \\
     \bottomrule
   \end{tabular}
-  \floatnote{\emph{Source:} authors' own compilation from the review outlets of
-  \Cref{tab:review-sources}.}
+  \floatsource{\emph{Source:} Authors.}
 \end{table}
 
 \Cref{tab:decision-matrix} reports the attribute values in the form in which they were
@@ -185,13 +219,13 @@ TOPSIS procedure of \Cref{sec:ranking}.
 
 \input{tables/decision-matrix}
 
-The twelve candidates span an order-of-magnitude price range, from \$395 for the
+The twelve candidates span a nearly ninefold price range, from \$395 for the
 entry-level Acer Aspire 5 to \$3{,}499 for the top-specification ThinkPad X1 Carbon Gen 14
 Aura Edition, and are drawn from six brands, with Lenovo contributing six of the twelve
-listings. Every candidate except the Acer Aspire 5 carries 32\,GB of RAM or the 24\,GB
-unified-memory configuration used by Apple's M-series chips, so the RAM criterion mainly
-distinguishes the Aspire 5 and the 16\,GB ThinkPad T14 Gen 6 from the rest of the field
-rather than separating the remaining ten candidates from one another. The benchmark and
+listings. Every candidate except the Acer Aspire 5 (8\,GB) and the Lenovo ThinkPad T14
+Gen 6 AMD (16\,GB) carries 32\,GB of RAM or the 24\,GB unified-memory configuration used
+by Apple's M-series chips, so the RAM criterion mainly separates these two candidates from
+the rest of the field rather than distinguishing among the other ten. The benchmark and
 market-share conversion applied to the CPU and Brand columns, together with the full
 step-by-step TOPSIS calculation, is reported in \Cref{app:laptop-data}.
 
@@ -205,29 +239,51 @@ calculations underlying this table are reported step by step in \Cref{app:laptop
 
 \input{tables/topsis-ranking}
 
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[x=12cm,y=0.52cm,font=\scriptsize]
+    \foreach \id/\value/\y in {Can9/.6152/12,Can8/.6046/11,Can4/.6039/10,Can6/.5901/9,Can3/.5868/8,Can5/.5621/7,Can11/.5608/6,Can12/.5444/5,Can7/.5416/4,Can1/.5170/3,Can10/.4140/2,Can2/.3803/1}{
+      \draw[gray!45] (0.35,\y) -- (\value,\y);
+      \fill (\value,\y) circle (1.6pt);
+      \node[anchor=east] at (0.34,\y) {\id};
+      \node[anchor=west] at (\value+0.006,\y) {\pgfmathprintnumber[fixed,precision=4]{\value}};
+    }
+    \draw[->] (0.35,0.25) -- (0.66,0.25) node[right] {$C_i$};
+    \foreach \x in {.4,.5,.6}{\draw (\x,0.20)--(\x,0.30) node[below=2mm] {\pgfmathprintnumber[fixed,precision=1]{\x}};}
+  \end{tikzpicture}
+  \caption{TOPSIS closeness coefficients of the twelve candidate laptops.}
+  \label{fig:topsis-coefficients}
+  \floatnote{\emph{Note:} candidates are ordered by final rank; identifiers correspond
+  to \Cref{tab:candidate-ids}. Higher $C_i$ indicates greater proximity to the positive
+  ideal solution.}{\emph{Source:} Authors.}
+\end{figure}
+
 The Lenovo ThinkPad T14 Gen 6 (AMD) obtains the highest closeness coefficient
 ($C_i = 0.6152$), ahead of the Dell 14 Premium ($C_i = 0.6046$) and the Apple MacBook Air M5
 ($C_i = 0.6039$). The three leading alternatives are separated by no more than 0.011 in
-closeness coefficient, a narrow margin that leaves the top of the ranking sensitive to small
-changes in the underlying scores. The top-ranked model reaches this position without leading on any single
-criterion: its price of \$1{,}100 is the second lowest in the set, its processor score
-(19{,}546) is in the middle of the field, and its 16\,GB of RAM is the smallest
-configuration among the eleven non-Acer candidates, but it combines a below-median price
-with Lenovo's market-share advantage on the Brand criterion, and no single weakness is
-severe enough to offset that combination. The Dell 14 Premium and the MacBook Air M5 reach
-second and third place from a different combination: both carry the highest or
-near-highest processor scores in the field (30{,}684 and 26{,}831 respectively), which
-compensates for a price above the sample median.
+closeness coefficient, a narrow margin that suggests the top of the ranking may be
+sensitive to small changes in the underlying scores, though this was not tested through a
+formal sensitivity analysis. The top-ranked model reaches this position without dominating
+any single criterion outright. Its price of \$1{,}100 is the second lowest in the set, its
+processor score (19{,}546) is in the middle of the field, and its 16\,GB of RAM is the
+smallest configuration among the eleven non-Acer candidates; it does share the
+joint-highest Brand score (26.5) with several other Lenovo entries in the set, but this
+shared strength combines with a below-median price rather than a lead on any criterion by
+itself, and no single weakness is severe enough to offset that combination. The Dell 14
+Premium and the MacBook Air M5 reach second and third place from a different combination,
+in which both carry the highest or near-highest processor scores in the field (30{,}684
+and 26{,}831 respectively), which compensates for a price above the sample median.
 
 The lowest-ranked alternative is the Lenovo ThinkPad X1 Carbon Gen 14 Aura Edition
-($C_i = 0.3803$), the most expensive candidate at \$3{,}499, despite carrying the
-second-highest processor score in the set; because Price and CPU together account for
-62.6\% of the total criteria weight (\Cref{sec:weights}), a high score on one of these two
-criteria does not compensate for an extreme value on the other. The Acer Aspire 5, the
-cheapest candidate at \$395, ranks seventh of twelve ($C_i = 0.5608$) rather than first,
-even though Price carries the single largest weight in the model: its processor, memory,
-storage, and brand-share values are the lowest or near-lowest on every one of those
-criteria, and the combined deficit outweighs its price advantage. Taken together, the two
+($C_i = 0.3803$), the most expensive candidate at \$3{,}499, despite a mid-to-upper
+processor score (20{,}946, the fourth highest in the set); because Price and CPU together
+account for 62.6\% of the total criteria weight (\Cref{sec:weights}), even a comfortably
+above-average score on one of these two criteria does not compensate for an extreme value
+on the other. The Acer Aspire 5, the cheapest candidate at \$395, ranks seventh of twelve
+($C_i = 0.5608$) rather than first, even though Price carries the single largest weight in
+the model, because its processor, memory, storage, and brand-share values are the lowest
+or near-lowest on every one of those criteria, and the combined deficit outweighs its
+price advantage. Taken together, the two
 extremes illustrate that no criterion, however heavily weighted, guarantees a favourable
 rank on its own; TOPSIS rewards a candidate's overall balance across the weighted profile
 rather than dominance on a single attribute. The practical implication of this result,
