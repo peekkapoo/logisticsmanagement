@@ -20,21 +20,26 @@ Cột **Portable**: `generic` = mang sang project nào cũng dùng được · `
 |---|---|---|---|
 | `project-switch` | skill | generic | Bối cảnh hoá toolkit cho project mới (chính file này thuộc về nó) |
 | `task-processor` | skill | generic* | Điều phối/định vị task; *routing bên trong gắn pipeline MADM, cần chỉnh khi đổi lĩnh vực |
-| `professional-writing` | skill | generic | Viết học thuật/blog VN-EN, LaTeX, citation |
-| `skill-smith` | subagent | generic | Tạo → viết chuẩn → audit skill (bọc skill-creator/writing-skills/audit-skills) |
-| `literature-researcher` | subagent | generic | Đọc sâu nhiều paper, trích tiêu chí/citation (bọc pdf + professional-writing) |
+| `professional-writing` | skill | generic | Viết học thuật/blog VN-EN, LaTeX, citation, đọc sâu paper (đã gộp chức năng literature-researcher) |
+| `skill-smith` | subagent + mirror Codex | generic | Tạo → viết chuẩn → audit skill (bọc skill-creator/writing-skills/audit-skills) |
 | `pdf` / `xlsx` / `pptx` | skill | generic | Xử lý file định dạng |
-| `officecli` | skill | generic | Wrapper CLI cho Word/Excel/PowerPoint (.docx/.xlsx/.pptx) không vendor source OfficeCLI |
-| `office-docs` | subagent | generic | Xử lý Office files dài/nhiều file, bọc officecli + pptx/xlsx/pdf |
+| `officecli` | skill (dùng chung Claude+Codex, không mirror riêng) | generic | Wrapper CLI cho Word/Excel/PowerPoint (.docx/.xlsx/.pptx) không vendor source OfficeCLI |
+| `office-docs` | subagent (chỉ Claude, không mirror Codex) | generic | Xử lý Office files dài/nhiều file, bọc officecli + pptx/xlsx/pdf |
 | `mcdm-toolkit` | skill | **domain** | AHP/TOPSIS — chỉ hợp project MCDM/ra quyết định đa tiêu chí |
 | `likert-analysis` | skill | **domain** | Phân tích khảo sát Likert |
 | `data-pipeline` | skill | generic | Thu thập/làm sạch/xuất dữ liệu có cấu trúc |
-| `data-gatherer` | subagent | **domain** | Crawl laptop CellphoneS + PassMark (bọc data-pipeline + xlsx) |
+| `data-gatherer` | subagent + mirror Codex | **domain** | Crawl laptop CellphoneS + PassMark (bọc data-pipeline + xlsx) |
 | `supply-chain-consultant` | skill | domain | Tư vấn SCM/logistics |
 
 ---
 
 ## Changelog
+
+## 2026-07-11 (f) — Đảo ngược refactor Antigravity, khôi phục chuẩn dual-agent Claude Code + Codex
+**Sửa:** dời `.agents/AGENTS.md` → `AGENTS.md` gốc; tạo lại `CLAUDE.md` gốc mỏng (`@AGENTS.md` + phần riêng Claude). Dời toàn bộ `.agents/skills/*` → `.claude/skills/*` để Claude Code autoload lại được (đã mất khả năng này từ 2026-07-09(e)). Dựng lại 3 subagent Claude đã bị xoá: `.claude/agents/{skill-smith,data-gatherer,office-docs}.md`; mirror Codex tương ứng đặt ở `.codex/skills/{skill-smith,data-gatherer}/` (2 file trong `.agents/skills/` vốn dĩ vẫn mang nội dung "(Codex)" cũ, chỉ bị đặt sai thư mục nên đổi tên sang đúng chỗ). Thêm lại mirror `.codex/skills/project-switch/SKILL.md`. Cập nhật routing 3 nơi (`task-processor` Bước 4, `AGENTS.md` mục 5, file này).
+**Không khôi phục:** subagent `literature-researcher` — quyết định gộp vào `professional-writing` (2026-07-09(e)) và luồng parse thủ công MinerU (2026-07-11) là các quyết định nội dung hợp lệ, độc lập với lỗi cấu trúc; hồi sinh subagent này sẽ tham chiếu lại script `academic_parser.py` đã xoá. Cũng không tạo mirror Codex riêng cho `officecli` — nội dung gần như trùng lặp 100% với bản Claude, nên `AGENTS.md` trỏ Codex đọc thẳng `.claude/skills/officecli/SKILL.md`.
+**Vì sao:** refactor "Antigravity IDE standard" (2026-07-09(e)) gộp hết vào `.agents/` cho một hệ sinh thái khác, nhưng làm **Claude Code mất autoload** (cần `CLAUDE.md` gốc + skill ở `.claude/skills/`) và sai chuẩn discovery `AGENTS.md` của Codex (file phải ở gốc repo, không phải thư mục con). Người dùng xác nhận không còn dùng Antigravity, chỉ cần Claude Code + Codex.
+**Bài học cho project sau:** đừng gộp cấu trúc cho một IDE/ecosystem thứ ba nếu nó phá vỡ cơ chế autoload gốc của các agent đang thực sự dùng — luôn kiểm tra "agent X có tự tìm thấy AGENTS.md/CLAUDE.md/skill ở đường dẫn mới không" trước khi refactor cấu trúc thư mục. Trên Windows, `git mv` có thể báo `Permission denied` khi rename thư mục lồng nhiều file (workaround: `cp -r` rồi `rm -rf`, git vẫn tự nhận diện rename qua nội dung).
 
 ## 2026-07-09 (e) — Refactor kiến trúc Agent tương thích Antigravity IDE
 **Sửa/Gộp:** Phục hồi nguyên vẹn `professional-writing`, gộp lại chức năng đọc sâu (literature review) và xóa subagent `literature-researcher`. Chuyển đổi toàn bộ kiến trúc (cả `.claude` và `.codex`) về một nguồn duy nhất là `.agents/skills/` chuẩn của Antigravity IDE. Xóa bỏ hoàn toàn `CLAUDE.md` và dời `AGENTS.md` vào thư mục Workspace Customizations Root (`.agents/AGENTS.md`).

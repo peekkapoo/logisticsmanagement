@@ -28,10 +28,12 @@ __pycache__/
 
 # Cache model HuggingFace/docling của academic_parser (nặng ~1.2GB, tải lại được)
 .claude/skills/professional-writing/models/
-.agents/skills/professional-writing/models/
 
 # Vùng nháp/thử nghiệm của agent (không commit)
 scratch/
 
 # Ảnh trích xuất từ MinerU (nặng, tái tạo lại được từ D:\miner_u) — chỉ giữ full.md
 01_tai-lieu-tham-khao/bai-bao/*/images/
+
+# Cache index cuc bo cua VS Code extension (index.db/.db-shm/.db-wal, khong phai du lieu du an)
+.vexp/
