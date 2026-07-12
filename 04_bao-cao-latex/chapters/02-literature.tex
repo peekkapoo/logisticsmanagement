@@ -66,8 +66,7 @@ weighting and ranking, rather than duplicating the same mechanism twice.
       node[below=1pt, font=\scriptsize\itshape, text width=3.6cm, align=center]
       {this study: AHP weights feed TOPSIS ranking} (dist.south);
   \end{tikzpicture}
-  \caption{The five families of MCDM methods, with the pairwise-comparison and
-  distance-based groups combined in this study.}
+  \caption{Families of MCDM methods.}
   \label{fig:mcdm-taxonomy}
   \floatnote{\emph{Note:} representative methods are listed under each family; AHP and
   TOPSIS, used in this study, are shown in bold.}{\emph{Source:} adapted from
@@ -99,9 +98,38 @@ closer look at each method in turn.
 The Analytic Hierarchy Process was introduced by \textcite{saaty_analytic_1987} as a method of
 measurement built on ratio scales derived from pairwise comparison. According to \textcite{zyoud_bibliometric-based_2017},
 AHP rests on three principles. Decomposition structures a decision into a hierarchy of a
-goal, criteria, and alternatives; comparative judgement elicits the relative importance of
+goal, criteria, and alternatives, illustrated in its complete form in \Cref{fig:ahp-hierarchy};
+comparative judgement elicits the relative importance of
 elements at the same hierarchical level through pairwise comparison; and synthesis of priorities
-aggregates these judgements into an overall priority vector. Comparisons are expressed on a
+aggregates these judgements into an overall priority vector.
+
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[
+      font=\footnotesize,
+      lvl/.style={draw, rounded corners=2pt, align=center, minimum width=26mm,
+                  minimum height=9mm},
+      goal/.style={lvl, fill=gray!12, font=\footnotesize\bfseries},
+      lk/.style={-{Latex[length=1.6mm]}, gray!55, thin}
+    ]
+    \node[goal] (goal) at (5.2,4.2) {Goal};
+    \node[lvl] (c1) at (0,2.1)   {Criterion 1};
+    \node[lvl] (c2) at (3.47,2.1) {Criterion 2};
+    \node[lvl] (c3) at (6.93,2.1) {$\cdots$};
+    \node[lvl] (c4) at (10.4,2.1) {Criterion $n$};
+    \node[lvl] (a1) at (0,0)   {Alternative 1};
+    \node[lvl] (a2) at (3.47,0) {Alternative 2};
+    \node[lvl] (a3) at (6.93,0) {$\cdots$};
+    \node[lvl] (a4) at (10.4,0) {Alternative $m$};
+    \foreach \c in {c1,c2,c3,c4}{\draw[lk] (goal) -- (\c.north);}
+    \foreach \c in {c1,c2,c3,c4}{\foreach \a in {a1,a2,a3,a4}{\draw[lk] (\c.south) -- (\a.north);}}
+  \end{tikzpicture}
+  \caption{The complete three-level AHP hierarchy.}
+  \label{fig:ahp-hierarchy}
+  \floatsource{\emph{Source:} adapted from \textcite{sostar_assessment_2023}.}
+\end{figure}
+
+Comparisons are expressed on a
 nine-point ratio scale (\Cref{tab:saaty}), which allows both quantitative and qualitative criteria
 to be evaluated within the same framework, a property that makes AHP well suited to decisions such
 as laptop selection in which some attributes, for instance processor performance, are naturally
@@ -138,7 +166,8 @@ and should not be read as a group consensus.
 
 The independence assumption and the possibility of rank reversal remain relevant design
 limitations. The model treats the retained criteria as analytically separable even where practical
-relationships exist, such as those between battery capacity and weight. AHP is used only to weight
+relationships exist, such as those between battery capacity and weight. Unlike the complete
+hierarchy of \Cref{fig:ahp-hierarchy}, AHP is used only to weight
 criteria rather than to rank the laptop alternatives, which reduces but does not eliminate the
 need to examine how the final ranking responds to the chosen criteria structure and weights.
 

@@ -54,7 +54,7 @@
 \usepackage[style=apa,backend=biber]{biblatex}
 \addbibresource{references.bib}
 
-\usepackage{hyperref}        % load gan cuoi
+\usepackage[hidelinks]{hyperref}  % hidelinks: tat khung vien mau quanh link (TOC/Cref/citation)
 \usepackage{cleveref}        % PHAI load SAU hyperref
 
 \title{A Hybrid Approach to Laptop Selection\\
@@ -78,7 +78,7 @@
 \input{chapters/05-discussion}
 \input{chapters/06-conclusion}
 
-\printbibliography[heading=bibintoc]
+\printbibliography[heading=bibintoc,title={References}]
 
 \appendix
 \input{appendices/A-criteria-theory} % ly luan hoc thuat cho tung tieu chi (theo flow Stage 1)
